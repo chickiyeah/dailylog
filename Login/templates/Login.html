@@ -13,7 +13,6 @@
   function Login() {
     let id = document.getElementById("ID").value
     let password = document.getElementById("PassWord").value
-    alert(id+" "+password)
             $.ajax({
                 type: 'POST',
                 url: '/Login',
@@ -30,38 +29,16 @@
 
     <div class="Input">
       <span>아이디 : </span>
-      <input id="ID" class="form-control" type="text" placeholder="????? ????????.">
+      <input id="ID" class="form-control" type="text" placeholder="아이디를 입력하세요.">
     </div>
 
     <div class="Input">
       <span>비밀번호 : </span>
-      <input id="PassWord" class="form-control" type="text" placeholder="??й???? ????????.">
+      <input id="PassWord" class="form-control" type="text" placeholder="비밀번호를 입력하세요.">
     </div>
 
     <input class="button" onclick="Login()" type="button" id="Login" value="로그인" />
   </div>
-
-  <!-- ?????? -->
-  <script src="Login.js" type="module"/>
-  <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
-  <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
-  <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"></script>
-  <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js"></script>
-  <script>
-        import firebase from "firebase/compat";
-
-        const firebaseConfig = {
-        apiKey: "AIzaSyCVb40j3gvwMG2vVbBPgTNgAY1E-c6aq2c",
-        authDomain: "chi-talk.firebaseapp.com",
-        projectId: "chi-talk",
-        storageBucket: "chi-talk.appspot.com",
-        databaseURL: "https://chi-talk-default-rtdb.asia-southeast1.firebasedatabase.app/",
-        messagingSenderId: "610565215401",
-        appId: "1:610565215401:web:2f6b876047977af0b705b8",
-        measurementId: "G-W2MBLH5D13"
-      };
-      firebase.initializeApp(firebaseConfig)
-  </script>
 
 
 
