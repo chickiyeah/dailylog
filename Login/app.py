@@ -86,9 +86,29 @@ async def get_user():
 async def post_mapdata():
     Lng = request.form['Lng']
     Lat = request.form['Lat']
+    Adr = request.form['Adr']
     Id = auth.current_user.localId
+    Name = request.form['Name']
+    Desc = request.form['Desc']
+
+    json = {
+        'Lng' : Lng,
+        'Lat' : Lat,
+        'Adr':Adr,
+        'Name': Name,
+        'Desc':Desc      
+    }
+    try:
+        res = requests.post(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+            json=json
+        )
+    except requests.exceptions.RequestException as error:
+        return error
+
     return
+
+#여기부터 작성
 
 if __name__ == '__main__':
    app.run('0.0.0.0', port=5000, debug=True)
-
