@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    width: 1980px;
+    margin: auto;
+    color: #515151;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 30px 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -480px;
+}
+
+#nav ul li {
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.nav_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 230px;
+}
+
+/* %는 자동 간격 조정됨. */
+.nav_icon img {
+    width: 20PX;
+    margin-right: 15px;
+}
+
+.top_hr {
+    position: relative;
+    top: 135px;
+    opacity: 30%;
+}
+
+/* 중간 레이아웃 width주면 안 먹힘. */
+#main {
+    /* width: 1750px; */
+    position: relative;
+    top: 250px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.main_banner p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.main_banner img {
+    width: 27%;
+    background: #000;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 40px;
+    opacity: 50%;
+}
+
+/* 안 보임 */
+.bottom_hr {
+    margin-bottom: 50px;
+    opacity: 30%;
+}

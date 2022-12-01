@@ -1,42 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>로그인 페이지</title>
-    <style>
-        .mytitle {
-            width: 300px;
-            height: 200px;
-
-            color: white;
-
+    <title>Insert title here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        #login {
+            width: 350px;
+            height: 550px;
             text-align: center;
-
-            background-image: url('https://mblogthumb-phinf.pstatic.net/20160325_105/starleedent_1458877544416iq2wS_PNG/%BA%ED%B7%E7%B8%F0%C6%BC%C7%C1.png?type=w2');
-            background-size: cover;
-            background-position: center;
-
             border-radius: 10px;
-
-            padding-top: 40px;
+            margin: 100px auto 100px auto;
+            padding: 20px;
         }
 
-        .wrap {
-            width: 300px;
+        .wrap > p {
+            font-size: 10px;
+            color: #9B9B9B;
+
+        }
+
+        article {
             margin: auto;
-        }
-    </style>
-</head>
+            padding-top: 20px;
 
+        }
+
+        input {
+            outline: none;
+            border: 10px;
+        }
+
+        .form-control {
+            height: 50px;
+            display: block;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        article > p {
+            padding-top: 20px;
+            text-align: left;
+            color: #9B9B9B;
+            font-size: 17px;
+        }
+
+        .no_email {
+            text-align: right;
+            font-size: 17px;
+            color: #35B8E1;
+
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        #submit {
+            background-color: #33B3FF;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Nixie One', cursive;
+            font-weight: bold;
+
+        }
+
+        .nosign {
+            color: #515151;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .dailylog {
+            line-height: 60%;
+        }
+
+        .signup {
+            color: #35B8E1;
+        }
+
+    </style>
+
+</head>
 <body>
-<div class="wrap">
-    <div class="mytitle">
-        <h1> 로그인 페이지 </h1>
-        <h5>아이디, 비밀번호를 입력해주세요</h5>
-    </div>
-    <p>ID:<input type="text"/></p>
-    <p>PW:<input type="text"/></p>
-    <button>로그인하기</button>
-</div>
+<section class="wrap" id="login">
+    <header class="dailylog">
+        <h1>DAILY</h1>
+        <h1>LOG</h1>
+    </header>
+    <p>로그인에 필요한 정보를 입력해주세요</p>
+    <article>
+        <p>이메일</p>
+        <input type="email" class="form-control">
+        <p>비밀번호</p>
+        <input type="email" class="form-control">
+        <p class="no_email" onClick="location.href='url'">입력한 계정이 없다면?</p>
+        <input type="submit" class="form-control" id="submit" value="로그인">
+        <p class="nosign">아직 회원이 아니세요? <span onClick="location.href='url'" class="signup">회원가입</span></p>
+    </article>
+</section>
+
+
 </body>
 </html>

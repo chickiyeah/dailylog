@@ -27,7 +27,7 @@ def home():
     print(default_app.name)
     return render_template('index.html')
 
-@app.route("/register")
+@app.route("/Login")
 def regitster():
     return render_template('loginpage.html')
 
@@ -108,7 +108,21 @@ async def post_mapdata():
 
     return
 
-#여기부터 작성
+####여기부터 작성
+@app.route("/Map", methods=["GET"])
+async def get_mapdata():
+
+    json = {}
+    try:
+        res = request.get(
+                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+                json=json
+            )
+    except requests.exceptions.RequestException as error:
+        return error
+
+    return
+    
 
 if __name__ == '__main__':
    app.run('0.0.0.0', port=5000, debug=True)
