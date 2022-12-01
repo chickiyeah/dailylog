@@ -28,8 +28,12 @@ def home():
     return render_template('index.html')
 
 @app.route("/Login")
-def regitster():
+def Login():
     return render_template('loginpage.html')
+
+@app.route("/register")
+def Register():
+    return render_template('register.html')
 
 @app.route("/Loginform")
 def loginpage():

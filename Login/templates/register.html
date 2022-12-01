@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/joinstyle.css">
+    <title>DAILY LOG</title>
+</head>
+
+<script>
+    function Register() {
+      let id = document.getElementById("ID").value
+      let password = document.getElementById("PassWord").value
+              $.ajax({
+                  type: 'POST',
+                  url: '/User/Register',
+                  data: {email:id, password:password},
+                  success: function (response) {
+                      console.log(response)
+                  }
+              });
+    }
+  </script>
+
+<body>
+    <div>
+        <!-- 헤더 시작 -->
+        <header id="header">
+            <div>
+                <h1>DAILY<br>LOG</h1>
+                <p>회원가입에 필요한 기본정보를 입력해주세요.</p>
+            </div>
+        </header>
+        <!-- 헤더 끝 -->
+        <!-- 메인 시작 -->
+        <main id="main">
+            <section class="content">
+                <div class="join_section">
+                    <div>
+                        <label for="email">이메일</label>
+                        <input type="text" id="email" placeholder="아이디로 사용됩니다.">
+                    </div>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="실명을 입력해주세요. 비밀번호 찾기에 사용됩니다.">
+                    </div>
+                    <div>
+                        <label for="nickname">닉네임</label>
+                        <input type="text" id="nickname" placeholder="표시되는 닉네임입니다. ( 금지어는 사용할 수 없습니다. )">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호</label>
+                        <input type="text" id="password" placeholder="사용하실 비밀번호를 적어주세요.">
+                    </div>
+                    <div>
+                        <label for="birthday">생년월일</label>
+                        <input type="text" id="birthday" placeholder="생년월일을 2000/03/04 같이 적어주세요.">
+                    </div>
+                    <div>
+                        <label for="phone">전화번호</label>
+                        <input type="text" id="phone" placeholder="아이디/비밀번호 찾기에 사용됩니다.">
+                    </div>
+                    <div>
+                        <button type="submit">
+                            회원가입
+                        </button>
+                    </div>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- 메인 끝 -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    width: 1980px;
+    margin: auto;
+    color: #515151;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 100px;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: -90px;
+    opacity: 50%;
+}
+
+.content {
+    width: 860px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+}
+
+.join_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join_section div {
+    margin: 10px 0;
+}
+
+.join_section label {
+    font-size: 12px;
+    opacity: 50%;
+    display: block;
+    padding-bottom: 6px;
+}
+
+.join_section input {
+    width: 300px;
+    font-size: 12px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+}
+
+button {
+    width: 330px;
+    font-size: 12px;
+    background-color: #35B8E1;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
