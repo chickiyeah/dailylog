@@ -10,23 +10,13 @@
   <link href="../static/Login.css" rel="stylesheet" type="text/css"/>
 </head>
 <script>
-  function Login() {
-    let id = document.getElementById("ID").value
-    let password = document.getElementById("PassWord").value
-            $.ajax({
-                type: 'POST',
-                url: '/Login',
-                data: {email:id, password:password},
-                success: function (response) {
-                    console.log(response)
-                }
-            });
-    //todo. sql 연결
+  function Change() {
+    console.log(document.getElementById('option').innerText = "text")
   }
 </script>
 <body>
   <div class = "Screen">
-
+    <label id="option">오늘의 기분</label>
     <div class="Input">
       <span>아이디 : </span>
       <input id="ID" class="form-control" type="text" placeholder="아이디를 입력하세요.">
@@ -37,7 +27,7 @@
       <input id="PassWord" class="form-control" type="text" placeholder="비밀번호를 입력하세요.">
     </div>
 
-    <input class="button" onclick="Login()" type="button" id="Login" value="로그인" />
+    <input class="button" onclick="Change()" type="button" id="Login" value="로그인" />
   </div>
 
 

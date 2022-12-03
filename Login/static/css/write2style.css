@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+
 h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
@@ -55,43 +56,67 @@ h1 {
     opacity: 30%;
 }
 
-/* 중간 레이아웃 width주면 안 먹힘. */
 #main {
-    /* width: 1750px; */
     position: relative;
-    top: 250px;
+    top: 200px;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+.write_bt {
+    display: block;
+    text-align: right;
+    padding-right: 300px;
 }
 
-.main_banner p {
+/* 이런 경우엔 부모에 block을 주고 자식에 right준다. 위에<< */
+.write_main div button {
     font-size: 15px;
-    letter-spacing: 0px;
-    opacity: 50%;
-    margin-bottom: 20px;
+    background-color: #35B8E1;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 27px;
+
 }
 
-.main_banner img {
-    width: 27%;
-    background: #000;
+.write_main div button:hover {
+    background-color: #08a3d2;
+}
+
+.write_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 300px;
+    padding: 30px 30px;
+    border: 1px solid rgba(146, 146, 146, 0.5);
+    ;
+    border-radius: 30px;
+}
+
+.write_box h2 {
+    font-size: 19px;
+}
+
+.write_box p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.user_info {
+    font-size: 17px;
+    opacity: 60%;
 }
 
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 300px;
+    top: 400px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;
     opacity: 50%;
 }
 
-/* 안 보임 */
 .bottom_hr {
     margin-bottom: 50px;
     opacity: 30%;
