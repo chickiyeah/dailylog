@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/mypage5.css">
+    <title>DAILY LOG</title>
+</head>
+
+<body>
+    <!-- 헤더 시작 -->
+    <header id="header">
+        <div>
+            <h1>DAILY<br>LOG</h1>
+        </div>
+        <!-- 네비 시작 -->
+        <nav id="nav">
+            <ul>
+                <li><a href="/map">지도보기</a></li>
+                <li><a href="/Write/2">기록하기</a></li>
+                <li><a href="#">랭킹보기</a></li>
+                <li><a href="/Mypage">마이페이지</a></li>
+            </ul>
+        </nav>
+        <!-- 네비 끝 -->
+        <div class="nav_icon">
+            <img src="../static/assets/search.png" alt="메뉴의 검색 아이콘">
+            <img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘">
+            <img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘">
+        </div>
+    </header>
+    <div class="top_hr">
+        <hr>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <main id="main">
+        <section class="content">
+            <div class="mylike_section">
+                <div class="mylike_left">
+                    <ul>
+                        <li onclick="location.href='/Mypage'">내계정</li>
+                        <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
+                        <li onclick="location.href='/Mypage/Like'">좋아요</li>
+                        <li onclick="logout()">로그아웃</li>
+                        <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
+                    </ul>
+                </div>
+                <div class="mylike_right">
+                    <div class="session_out">
+                        <div>
+                            <p>데일리로그는 회원 탈퇴일로부터 계정과 닉네임을 포함한 계정 정보(아이디/이메일/닉네임)는
+                                개인정보 보호방침에 따라 30일간 보관되며,
+                                30일 경과된 후에는 모든 개인 정보는 완전히 삭제되며 더 이상 복구할 수 없게 됩니다.
+                                계정 삭제에 관한 정책을 읽고 동의하시면 현재 비밀번호를 입력하고 탈퇴하기를 눌러주세요.
+                            </p>
+                        </div>
+                        <div>
+                            <label for="password">비밀번호</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div>
+                            <button>탈퇴하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 메인 끝 -->
+
+    <!-- 푸터 시작 -->
+    <footer id="footer">
+        <div class="bottom_hr">
+            <hr>
+        </div>
+        <div>
+            <p>Copyright 2022 . DAILYLOG . All Rights Reserved .</p>
+            <p>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</p>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+</body>
+
+</html>

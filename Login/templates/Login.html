@@ -1,36 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>로그인 창</title>
+    <meta charset="UTF-8">
+    <title>DAILY LOG에 오신것을 환영합니다!</title>
+    <link rel="stylesheet" href="../static/css/Login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
-  <!-- CSS -->
-  <link href="../static/Login.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        A:link {text-decoration:none; color:#000000;}
+        A:visited {text-decoration:none; color:#000000;}
+        A:active {text-decoration:none; color:#000000;}
+        A:hover {text-decoration:none; color:#000000;}
+    </style>
+
+    <script>
+        function Login() {
+            let id = document.getElementById("emaill").value
+            let password = document.getElementById("passwordd").value
+            $.ajax({
+              type: 'POST',
+              url: '/User/Login',
+              data: {email: id, password:password},
+              success: function (response) {
+                if(response == "MISSING_EMAIL"){
+                        alert("이메일을 입력해주세요.")
+                        return
+                    }  
+                      if(response == "INVALID_EMAIL"){
+                        alert("입력하신 이메일을 확인해주세요.")
+                        return
+                      }
+    
+                      if(response == "INVALID_PASSWORD"){
+                        alert("비밀번호가 일치하지 않습니다.")
+                        return
+                      } 
+    
+                      if(response == "MISSING_PASSWORD"){
+                        alert("비밀번호를 입력해주세요.")
+                        return
+                      }
+                      console.log("\""+response+"\"")
+                document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "id = "+response
+                if(location.href.includes("?")){
+                    loc = location.href.split("?")[1].split("loc%20=%20")[1]
+                    location.href = "/"+loc
+                }else{
+                    location.href = `/`;
+                }
+              }
+            })
+        }
+    
+        function is_checked() {
+            const checkbox = document.getElementById("flexCheckDefault");
+            const is_checked = checkbox.checked;
+            if(is_checked){
+                document.getElementById("passwordd").type = "text"
+                document.getElementById("passwordd").autocomplete = "off"
+            }else{
+                document.getElementById("passwordd").type = "password"
+                document.getElementById("passwordd").autocomplete = "current-password"
+            }
+        }
+    </script>
 </head>
-<script>
-  function Change() {
-    console.log(document.getElementById('option').innerText = "text")
-  }
-</script>
+
+
+
 <body>
-  <div class = "Screen">
-    <label id="option">오늘의 기분</label>
-    <div class="Input">
-      <span>아이디 : </span>
-      <input id="ID" class="form-control" type="text" placeholder="아이디를 입력하세요.">
-    </div>
-
-    <div class="Input">
-      <span>비밀번호 : </span>
-      <input id="PassWord" class="form-control" type="text" placeholder="비밀번호를 입력하세요.">
-    </div>
-
-    <input class="button" onclick="Change()" type="button" id="Login" value="로그인" />
-  </div>
-
-
-
+<section id="login">
+    <a style="text-decoration-line: none; text-decoration: none;" href="/"><header class="Input">
+        <h1>DAILY</h1>
+        <h1>LOG</h1>
+    </header></a>
+    <p class="small">로그인에 필요한 정보를 입력해주세요</p>
+    <article>
+        <p>이메일</p>
+        <input class="email_input" id="emaill" type="email" onkeypress="javascript:if(event.keyCode==13) Login()" class="form-control">
+        <p id = "password">비밀번호</p>
+        <input class="email_input" id="passwordd" type="password" onkeypress="javascript:if(event.keyCode==13) Login()" autocomplete="current-password" class="form-control">
+          <span class="form-check">
+              <input class="form-check-input-login" onclick="is_checked()" type="checkbox"  id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                  비밀번호 표시
+              </label>
+          </span>
+        <p class="no_email" onClick="location.href='url'">입력한 계정이 없다면?</p>
+        <input type="submit" class="submit" value="로그인">
+        <p class="nosign">아직 회원이 아니세요? <a href='/register'><span class="signup">회원가입</span></a></p>
+    </article>
+</section>
 </body>
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/mypage1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>DAILY LOG</title>
+    <script>
+        $(document).ready(function () {
+        if(document.cookie.includes("id=")){
+            login = true
+            if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+            }
+        }else{ 
+            login = false
+            location.href = "/Login?loc = Mypage"
+            alert("로그인이 필요합니다.")
+        }
+    })
+    </script>
+</head>
+<script>
+    function logout() {
+        document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+        location.href = "/"
+        alert("로그아웃 되었습니다.")
+    }
+</script>
+<body>
+    <!-- 헤더 시작 -->
+    <header id="header">
+        <div>
+            <a href="/"><h1>DAILY<br>LOG</h1></a>
+        </div>
+        <!-- 네비 시작 -->
+        <nav id="nav">
+            <ul>
+                <li><a href="/map">지도보기</a></li>
+                <li><a href="/Write/2">기록하기</a></li>
+                <li><a href="#">랭킹보기</a></li>
+                <li><a href="/Mypage">마이페이지</a></li>
+            </ul>
+        </nav>
+        <!-- 네비 끝 -->
+        <div class="nav_icon">
+            <img src="../static/assets/search.png" alt="메뉴의 검색 아이콘">
+            <img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘">
+            <img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘">
+        </div>
+    </header>
+    <div class="top_hr">
+        <hr>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <main id="main">
+        <section class="content">
+            <div class="profile_section">
+                <div class="profile_left">
+                    <ul>
+                        <li onclick="location.href='/Mypage'">내계정</li>
+                        <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
+                        <li onclick="location.href='/Mypage/Like'">좋아요</li>
+                        <li onclick="logout()">로그아웃</li>
+                        <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
+                    </ul>
+                </div>
+                <div class="profile_right">
+                    <div>
+                        <label for="email">이메일</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="nickname">닉네임</label>
+                        <input type="text" id="nickname">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호 확인</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div>
+                        <label for="phone">전화번호</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="profile_submit">
+                        <button type="submit">
+                            회원정보 수정
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 메인 끝 -->
+
+    <!-- 푸터 시작 -->
+    <footer id="footer">
+        <div class="bottom_hr">
+            <hr>
+        </div>
+        <div>
+            <p>Copyright 2022 . DAILYLOG . All Rights Reserved .</p>
+            <p>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</p>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+</body>
+
+</html>

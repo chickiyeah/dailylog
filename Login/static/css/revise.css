@@ -1,0 +1,57 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+
+
+}
+
+#main {
+    width: 600px;
+    height: 1000px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    display: block;
+    padding: 3px;
+    font-size: 15px;
+    text-align: center;
+    color: #9B9B9B;
+    text-align: right;
+}
+
+.picture > img {
+    width: 100%;
+    height: 500px;
+}
+
+.comment {
+    display: block;
+    margin: auto;
+    width: 500px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+
+.submit {
+    width: 100px;
+    height: 50px;
+    display: block;
+    outline: none;
+    border-radius: 20px;
+    background-color: #33B3FF;
+    color: white;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin: auto;
+    margin-top: 100px;
+}

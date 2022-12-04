@@ -6,62 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/write2style.css">
+    <link rel="stylesheet" href="../static/css/mypage2.css">
     <title>DAILY LOG</title>
-
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        if(document.cookie.includes("id=")){
-            login = true
-            if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
-            }
-        }else{ 
-            login = false
-            location.href = "/Login?loc = write/2"
-            alert("로그인이 필요합니다.")
-        }
-    })
 
-    function addCard(Date, Name, UserName, Ex) {
-        card = Card(Date, Name, UserName, Ex)
-        $("#write_main").prepend(card)
-    }
-
-    function Card(Date, Name, UserName, link,  Ex) {
-    return `<a href="/Record?${link}">
-                <div class="write_box">
-                    <div>
-                        <h2>${Date}</h2>
-                        <p>${Name}</p>
-                    </div>
-                    <div class="user_info">
-                        <p>${UserName}</p>
-                        <p>${Ex}</p>
-                    </div>
-                </div>
-            </a>`
-}
-</script>
 <body>
-
-        <!-- 헤더 시작 -->
+    <!-- 헤더 시작 -->
     <header id="header">
         <div>
-             <a href="/"><h1>DAILY<br>LOG</h1></a>
+            <h1>DAILY<br>LOG</h1>
         </div>
         <!-- 네비 시작 -->
         <nav id="nav">
             <ul>
                 <li><a href="/map">지도보기</a></li>
-                <li><a href="/write/2">기록하기</a></li>
+                <li><a href="/Write/2">기록하기</a></li>
                 <li><a href="#">랭킹보기</a></li>
-                <li><a href="#">마이페이지</a></li>
+                <li><a href="/Mypage">마이페이지</a></li>
             </ul>
         </nav>
         <!-- 네비 끝 -->
@@ -77,14 +38,25 @@
     <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
-    <!-- 데이터 넘겨오면 뿌려주는 부분인데 어떻게 구현해야할지.. -->
     <main id="main">
-         <section id="section">
-            <div class="write_bt">
-                <a href="/write/1"><button>글쓰기</button></a>
-            </div>
-            <div class="write_main" id="write_main">
-                <a href="/Record">
+        <section class="content">
+            <div class="mywrite_section">
+                <div class="mywrite_left">
+                    <ul>
+                        <li onclick="location.href='/Mypage'">내계정</li>
+                        <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
+                        <li onclick="location.href='/Mypage/Like'">좋아요</li>
+                        <li onclick="logout()">로그아웃</li>
+                        <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
+                    </ul>
+                </div>
+                <div class="mywrite_right">
+                    <div class="write_bt">
+                        <div>
+                            <button>수정</button>
+                            <button>삭제</button>
+                        </div>
+                    </div>
                     <div class="write_box">
                         <div>
                             <h2>12/01</h2>
@@ -95,7 +67,7 @@
                             <p>3시간 전</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
     </main>
@@ -112,7 +84,6 @@
         </div>
     </footer>
     <!-- 푸터 끝 -->
-
 </body>
 
 </html>

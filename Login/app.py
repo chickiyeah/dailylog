@@ -1,4 +1,5 @@
 
+import random
 import string
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
@@ -41,7 +42,7 @@ def home():
 
 @app.route("/Login")
 def Login():
-    return render_template('loginpage.html')
+    return render_template('Login.html')
 
 @app.route("/register")
 def Register():
@@ -56,9 +57,51 @@ def loginpage():
 async def user_login():
     email = request.form['email']
     password = request.form['password']
-    auth.sign_in_with_email_and_password(email, password)
+    try:
+        auth.sign_in_with_email_and_password(email, password)
+    except requests.exceptions.HTTPError as erra:
+        #HTTP 에러가 발생한 경우
+        #오류 가져오기 json.loads(str(erra).split("]")[1].split('"errors": [\n')[1])['message']
+        return json.loads(str(erra).split("]")[1].split('"errors": [\n')[1])['message']
+
     currentuser = auth.current_user
-    return currentuser
+    user = requests.get(
+        url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+        json={'Id':currentuser['localId']}
+    )
+    user.encoding = "UTF-8"
+    return json.loads(user.text)['id']
+
+@app.route("/Record")
+async def record():
+    return render_template("revisepage.html")
+
+@app.route("/Mypage")
+async def mypage():
+    return render_template("mypage1.html")
+
+@app.route("/Mypage/Write")
+async def myWrite():
+    return render_template("mypage2.html")
+
+@app.route("/Mypage/Like")
+async def Like():
+    return render_template("mypage3.html")
+
+@app.route("/Mypage/Delete")
+async def Delete():
+    return render_template("mypage5.html")
+
+@app.route("/Good_Say", methods=["GET"])
+async def good_say():
+    id = random.randrange(0,592)
+    user = requests.get(
+        url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/good_say',
+        json={'number':id}
+    )
+    user.encoding = "UTF-8"
+    return json.loads(user.text)
+
 
 @app.route("/User/Register", methods=["POST"])
 async def user_create():
@@ -136,14 +179,15 @@ async def user_create():
 
     return c['errorMessage']
 
-@app.route("/User", methods=["GET"])
+@app.route("/User", methods=["POST"])
 async def get_user():
-    id = auth.current_user
+    id = request.form['id']
     user = requests.get(
         url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
         json={'Id':id}
     )
-    return user
+    user.encoding = "UTF-8"
+    return json.loads(user.text)
 
 @app.route("/write/1")
 def write():

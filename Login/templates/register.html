@@ -66,18 +66,40 @@
                       if(response == "OK"){
                         alert('회원가입 성공!')
                       }
-                      console.log(response)
+                      location.href("/Login")
                   }
               });
     }
+
+    function is_checked() {
+            const checkbox = document.getElementById("flexCheckDefault");
+            const is_checked = checkbox.checked;
+            if(is_checked){
+                document.getElementById("password").type = "text"
+                document.getElementById("password").autocomplete = "off"
+            }else{
+                document.getElementById("password").type = "password"
+                document.getElementById("password").autocomplete = "current-password"
+            }
+        }
   </script>
+  <style>
+    .check-password{
+        display: flex;
+    }
+
+    .form-check-input-login{
+        margin-left: -220px;
+        padding-right: 0px;
+    }
+  </style>
 
 <body>
     <div>
         <!-- 헤더 시작 -->
         <header id="header">
             <div>
-                <h1>DAILY<br>LOG</h1>
+                <a href="/"><h1>DAILY<br>LOG</h1></a>
                 <p>회원가입에 필요한 기본정보를 입력해주세요.</p>
             </div>
         </header>
@@ -102,6 +124,12 @@
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" placeholder="비밀번호를 입력해주세요.">
                     </div>
+                    <span class="check-password">
+                        <input class="form-check-input-login" title="비밀번호 표시" onclick="is_checked()" type="checkbox" name="flexCheckDefault" id="flexCheckDefault">
+                        <label for="flexCheckDefault" style="float:right">
+                            비밀번호 표시
+                        </label>
+                    </span>
                     <div>
                         <label for="birthday">생년월일</label>
                         <input type="date" id="birthday" placeholder="생년월일을 2000/03/04 같이 입력해주세요.">

@@ -1,22 +1,143 @@
-.Input {
+* {
+    font-family: 'Nixie One', cursive;
+}
+
+#login {
+    width: 350px;
+    height: 550px;
     text-align: center;
+    border-radius: 10px;
+    margin: 100px auto 100px auto;
+    padding: 20px;
+}
+
+.small {
+    font-size: 10px;
+    text-align: center;
+    color: #9B9B9B;
+}
+
+article > p {
+    padding-top: 20px;
+    text-align: left;
+    color: #9B9B9B;
+    font-size: 17px;
+}
+
+header {
+    line-height: 60%;
+}
+
+h1 {
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section {
+    display: block;
+    padding: 30px;
+}
+
+article {
+    width: 310px;
+    margin: auto;
+}
+
+article > p {
+    padding-top: 20px;
+    text-align: left;
+    color: #9B9B9B;
+    font-size: 5px;
     margin-bottom: 10px;
 }
 
-.Screen {
-    justify-items: center;
-    flex:1;
-    background-color: cyan;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: table;
+.email_input {
+
+    width: 280px;
+    height: 35px;
+    background-color: #fff;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 6px 12px;
+    font-size: 10px;
+    line-height: 1.42857143;
+    color: #555;
+    background-image: none;
+    border: 1px solid #ccc;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    display: block;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+
 }
 
-.button {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+.no_email {
+    text-align: right;
+    font-size: 13px;
+    color: #35B8E1;
+    padding-top: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
 }
+
+.submit {
+    width: 310px;
+    height: 50px;
+    display: block;
+    outline: none;
+    border-radius: 30px;
+    background-color: #33B3FF;
+    color: white;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+
+}
+
+.nosign {
+    color: #515151;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+
+.signup {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #33B3FF;
+    font-size: 12px;
+}
+#password {
+    padding-top: 0px;
+}
+.form-check-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #515151;
+    font-size: 10px;
+}
+.form-check {
+    text-align: left;
+    text-justify: auto;
+    width: 300px;
+    display: inline-block;
+    padding-top: 5px;
+}
+   

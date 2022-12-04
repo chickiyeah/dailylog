@@ -18,12 +18,12 @@ body {
 h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
+    margin-left: 35px;
 }
 
 #nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 #nav ul {
@@ -65,7 +65,7 @@ h1 {
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -81,6 +81,97 @@ h1 {
     background: #000;
 }
 
+.bottom_hr {
+    margin-bottom: 50px;
+    opacity: 30%;
+}
+
+.main_place {
+    margin: 100px 0;
+}
+
+.main_place p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin: 50px 0 20px 0;
+}
+
+.main_menu p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin: 50px 0 0 0;
+    color: #35B8E1;
+}
+
+.main_menu h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.main_text h3:nth-child(3) {
+    color: #35B8E1;
+}
+
+.main_phone {
+    margin-bottom: 50px;
+}
+
+.main_phone p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin: 50px 0 0 0;
+    color: #FF774D;
+}
+
+.main_phone h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.main_phone h3:nth-child(3) {
+    color: #FF774D;
+}
+
+.phone_name div {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.phone_name h6 {
+    font-weight: 300;
+    font-size: 13px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.phone_name h6:hover {
+    font-weight: 600;
+}
+
+.saying {
+    width: 40%;
+    margin: auto;
+}
+
+.saying_text {
+    margin: 20px;
+    border: 1px solid #515151;
+    padding: 50px 25px;
+    border-radius: 50px;
+    opacity: 40%;
+}
+
+.saying_text p:nth-child(1) {
+    padding-bottom: 20px;
+}
+
 #footer {
     display: flex;
     flex-direction: column;
@@ -92,167 +183,27 @@ h1 {
     opacity: 50%;
 }
 
-.bottom_hr {
-    margin-bottom: 50px;
-    opacity: 30%;
-}
 
-/* MAP */
-.map_wrap {
-    position: relative;
-    width: 100%;
-    height: 350px;
-}
-
-.title {
-    font-weight: bold;
-    display: block;
-}
-
-.hAddr {
-    position: absolute;
-    left: 20px;
-    top: 1px;
-    border-radius: 2px;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 1;
-    padding: 5px;
-}
-
-#centerAddr {
-    display: block;
-    margin-top: 2px;
-    font-weight: normal;
-}
-
-.bAddr {
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-#main {
-    top: 200px;
-}
-
-.join_section {
-    margin: auto;
-}
-
-.join_section input {
-    width: 220px;
-    height: 10px;
-    font-size: 12px;
-    border: 1px solid #515151;
-    padding: 15px;
-    border-radius: 30px;
-    opacity: 30%;
-    margin-right: 5px;
-}
-
-.join_section label {
-    font-size: 12px;
-    opacity: 50%;
-    display: block;
-    padding-bottom: 6px;
-}
-
-.search_btn {
-    width: 80px;
-    height: 42px;
-    font-size: 12px;
-    padding: 13px;
-    border-radius: 18px;
-    background-color: #35B8E1;
-    color: white;
-    top: 10px;
-
-}
-#flexCheckDefault {
-    display:inline-block;
-    width: 30px;
-    line-height: 50px;
-    padding: 15px;
-    zoom: 1.5;
-
-}
-.form-check {
-    display: inline-block;
-    text-align: center;
-
-}
-#map {
-    margin: auto;
-    width: 1000px;
-    height: 500px;
-    margin-bottom: 120px;
-
-}
-.map_location {
-    border-radius: 20px;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-.map_wrap {
-    margin-bottom: 50px;
-}
-
-/* 글 목록 */
-.write_bt {
-    display: block;
-    text-align: right;
-    padding-right: 300px;
-}
-
-/* 이런 경우엔 부모에 block을 주고 자식에 right준다. */
-.write_main div button {
-    font-size: 15px;
-    background-color: #35B8E1;
-    color: #fff;
-    border-radius: 20px;
-    padding: 10px 27px;
-    margin: 0 0 0 auto;
-}
-
-.write_main div button:hover {
-    background-color: #08a3d2;
-}
-
-.write_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 50px;
-    padding: 30px 30px;
-    border: 1px solid rgba(146, 146, 146, 0.5);
-    ;
-    border-radius: 30px;
-}
-
-.write_box h2 {
-    font-size: 19px;
-}
-
-.write_box p {
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-.user_info {
-    font-size: 17px;
-    opacity: 60%;
-}
-
-#footer {
-    padding-top: 50px;
-}
+/* 반응형 시작 */
 
 @media all and (max-width: 1024px){ 	
     /*태블릿*/
+    
     #map {
         width: 980px;
         height: 400px;
+    }
+    
+    #nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: -180px;
+    }
+
+    #nav ul li {
+        margin-right: 10px;
+        font-size: 10px;
+        letter-spacing: -1px;
     }
     .hAddr {
         left: 30px;
@@ -382,5 +333,4 @@ h1 {
 } 
 
 @media all and (min-width: 1024px){ 
-    /*데스크탑 */
 }
