@@ -78,19 +78,27 @@ async def record():
 
 @app.route("/Mypage")
 async def mypage():
-    return render_template("mypage1.html")
+    return render_template("profile.html")
 
 @app.route("/Mypage/Write")
 async def myWrite():
-    return render_template("mypage2.html")
+    return render_template("mywrite.html")
 
 @app.route("/Mypage/Like")
 async def Like():
-    return render_template("mypage3.html")
+    return render_template("mylike.html")
 
 @app.route("/Mypage/Delete")
 async def Delete():
-    return render_template("mypage5.html")
+    return render_template("sessionout.html")
+
+@app.route("/Login/find_account")
+async def find_account():
+    return render_template("idpw.html")
+
+@app.route("/rank")
+async def rank():
+    return render_template("ranking.html")
 
 @app.route("/Good_Say", methods=["GET"])
 async def good_say():
@@ -196,6 +204,10 @@ def write():
 @app.route("/write/2")
 def write2():
     return render_template("write2.html")
+
+@app.route("/edit")
+async def edit():
+    return render_template("write2(update).html")
 
 @app.route("/map")
 def map():

@@ -59,7 +59,7 @@ h1 {
     margin-top: 200px;
 }
 
-.mylike_section {
+.session_section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,8 +67,13 @@ h1 {
 }
 
 .mylike_left {
+    padding-right: 10px;
+}
+
+.hr {
+    height: 600px;
     border-right: 1px solid #d7d7d7;
-    padding-right: 50px;
+    margin-left: 30px;
 }
 
 .mylike_left ul li {
@@ -86,57 +91,78 @@ h1 {
     opacity: 50%;
 }
 
-.mylike_right {
-    width: 80%;
+.session_right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.session_article {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: auto;
 }
 
-.write_bt {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 680px;
-}
-
-.write_box {
-    width: 800px;
+.session_article div h5,
+p {
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 300px;
-    padding: 30px 30px;
-    border: 1px solid rgba(146, 146, 146, 0.5);
-    border-radius: 30px;
-}
-
-.write_box h2 {
-    font-size: 19px;
-}
-
-.write_box p {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 3px;
+    opacity: 50%;
 }
 
-.user_info {
-    font-size: 17px;
-    opacity: 60%;
+.session_article p {
+    margin-bottom: 20px;
 }
 
-.likeBT button img {
-    width: 30%;
+.session_text {
+    width: 40%;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.session_article div {
+    margin: 10px 0;
+}
+
+.session_article label {
+    font-size: 12px;
+    opacity: 50%;
+    display: block;
+    padding-bottom: 6px;
+    margin-top: 10px;
+}
+
+.session_article input {
+    width: 300px;
+    font-size: 11px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+}
+
+.session_article button {
+    width: 330px;
+    font-size: 12px;
+    background-color: #FF774D;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.session_article button:hover {
+    background-color: #f86437;
 }
 
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 200px;
+    top: 80px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;

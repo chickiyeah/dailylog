@@ -7,55 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/writestyle.css">
+    <link rel="stylesheet" href="../static/css/write2(update)style.css">
     <title>DAILY LOG</title>
 
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    let link = []
-
-    function upload() {
-        if($(".title").text() == ''){
-            $(".title").focus()
-            alert('제목을 입력해주세요.')
-            return
+    $(document).ready(function () {
+        if(document.cookie.includes("id=")){
+            login = true
+            if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+            }
+        }else{ 
+            login = false
+            location.href = "/Login?loc = write/2"
+            alert("로그인이 필요합니다.")
         }
+    })
 
-        if($(".map").text() == ''){
-            $(".map").focus()
-            alert('지역을 입력해주세요.')
-            //$(".map").attr('placeholder', '지역을 입력해주세요.')
-            return
-        }
-
-        if($(".todayuser").text() == ''){
-            $(".todayuser").focus()
-            alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
-            return
-        }
-
-        if($("#select #option").text() == '오늘의 기분'){
-            $("#select #option").focus()
-            $("#select ul").toggle();
-            alert("오늘의 기분을 선택해주세요.")
-            return
-        }
-
-        if($("#select2 #option2").text() == '오늘의 메뉴'){
-            $("#select2 #option2").focus()
-            $("#select2 ul").toggle();
-            alert("오늘의 메뉴를 선택해주세요.")
-            return
-        }
-
-        if($("#textarea").html() == ''){
-            $("#textarea").focus()
-            alert("내용을 입력해주세요.")
-            return
-        }
-
-        
+    function addCard(Date, Name, UserName, Ex) {
+        card = Card(Date, Name, UserName, Ex)
+        $("#write_main").prepend(card)
     }
+
+    function Card(Date, Name, UserName, link,  Ex) {
+    return `<a href="/Record?${link}">
+                <div class="write_box">
+                    <div>
+                        <h2>${Date}</h2>
+                        <p>${Name}</p>
+                    </div>
+                    <div class="user_info">
+                        <p>${UserName}</p>
+                        <p>${Ex}</p>
+                    </div>
+                </div>
+            </a>`
+}
 </script>
 <body>
 
@@ -94,19 +85,19 @@
                         <h2>오늘의 하루</h2>
                     </div>
                     <div>
-                        <input type="text" id="title" class="title" placeholder="제목">
+                        <input type="text" id="title" placeholder="제목">
                     </div>
                     <div>
-                        <input type="text" id="maps" class="maps" placeholder="지역">
+                        <input type="text" id="maps" placeholder="지역">
                     </div>
                     <div>
-                        <input type="text" id="todayuser" class="todayuser" placeholder="오늘 만난 사람">
+                        <input type="text" id="todayuser" placeholder="오늘 만난 사람">
                     </div>
                     <div class="select_box">
                         <div class="write_select">
                             <div id="select" class="select">
                                 <strong></strong>
-                                <div id="option" class="feel" >오늘의 기분</div>
+                                <div id="option">오늘의 기분</div>
                                 <ul>
                                     <li data-option="맑음">맑음</li>
                                     <li data-option="흐림">흐림</li>
@@ -132,16 +123,16 @@
                     <div>
                         <form action = '/UploadFile' method = "POST" entype = "multipart/form-data">
                             <input type="file" name="file" id="input">
-                        </form>    
+                        </form>
                     </div>
                     <div id="textarea" contenteditable="true">
                     </div>
                     <div>
-                        <button type="reset">
+                        <button type="reset" class="reset_btn">
                             취소
                         </button>
-                        <button type="submit" onclick="upload()">
-                            글쓰기
+                        <button type="submit">
+                            수정
                         </button>
                     </div>
                 </div>

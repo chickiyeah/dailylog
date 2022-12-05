@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/mypage3.css">
+    <link rel="stylesheet" href="../static/css/sessionout.css">
     <title>DAILY LOG</title>
 </head>
 
@@ -40,7 +40,7 @@
     <!-- 메인 시작 -->
     <main id="main">
         <section class="content">
-            <div class="mylike_section">
+            <div class="session_section">
                 <div class="mylike_left">
                     <ul>
                         <li onclick="location.href='/Mypage'">내계정</li>
@@ -50,15 +50,26 @@
                         <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
                     </ul>
                 </div>
-                <div class="mylike_right">
-                    <div class="write_box">
-                        <div>
-                            <h2>12/01</h2>
-                            <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
+                <div class="hr"></div>
+                <div class="session_right">
+                    <div class="session_article">
+                        <div class="session_text">
+                            <h5>탈퇴하기 전에</h5>
+                            <p>
+                                회원 탈퇴 전, 안내 사항을 꼭 확인해주세요. 탈퇴 후에는 아이디와 데이터 복구가 불가능합니다.
+                            </p>
+                            <h5>서비스 이용 기록 삭제</h5>
+                            <p>
+                                프로필 등록 정보, 입사지원정보, 입사지원 현황 등 취업에 필요한
+                                서비스 이용 기록이 모두 삭제되며, 삭제된 데이터는 복구되지 않습니다. 필요한 데이터는 미리 백업을 해두시기 바랍니다.
+                            </p>
                         </div>
-                        <div class="user_info">
-                            <p>츠키</p>
-                            <p>3시간 전</p>
+                        <div>
+                            <label for="password">비밀번호</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div>
+                            <button>탈퇴하기</button>
                         </div>
                     </div>
                 </div>

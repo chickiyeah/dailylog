@@ -59,72 +59,91 @@ h1 {
     margin-top: 200px;
 }
 
-.profile_section {
+.ranking_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking_text {
+    text-align: center;
+}
+
+.ranking_text p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin: 50px 0 0 0;
+    color: #FF774D;
+}
+
+.ranking_text h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.ranking_text h3:nth-child(3) {
+    color: #FF774D;
+}
+
+.mylike_category ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 200px 50px 0 140px;
+    margin: 50px;
 }
 
-.profile_left {
-    border-right: 1px solid #d7d7d7;
-    padding-right: 50px;
-}
-
-.profile_left ul li {
+.mylike_category ul li {
+    padding: 10px 70px;
+    background: #fff;
+    color: #FF774D;
     font-size: 15px;
-    margin-bottom: 7px;
-}
-
-.profile_left ul li:hover {
-    font-weight: 500;
+    font-weight: 300;
+    margin-right: 15px;
+    border: 1px solid #FF774D;
+    border-radius: 30px;
     cursor: pointer;
 }
 
-.profile_left ul li:nth-child(5) {
-    margin-top: 20px;
-    opacity: 50%;
-}
-
-.profile_right {
-    margin-right: 500px;
-}
-
-.profile_right div {
-    margin: 10px 0;
-}
-
-.profile_right label {
-    font-size: 12px;
-    opacity: 50%;
-    display: block;
-    padding-bottom: 6px;
-}
-
-.profile_right input {
-    width: 300px;
-    font-size: 12px;
-    border: 1px solid #515151;
-    padding: 15px;
-    border-radius: 18px;
-    opacity: 30%;
-}
-
-button {
-    width: 330px;
-    font-size: 12px;
-    background-color: #35B8E1;
+.mylike_category ul li:hover {
+    background: #FF774D;
     color: #fff;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 20px;
+}
+
+.ranking div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.ranking p {
+    margin-right: 50px;
+    padding: 8px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.ranking p:nth-child(1) {
+    background-color: #FF774D;
+    color: #fff;
+}
+
+.ranking p:nth-child(2) {
+    margin-left: -50px;
+}
+
+.ranking p:nth-child(3) {
+    color: #FF774D;
+    font-weight: 600;
+    margin-left: -40px;
 }
 
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 50px;
+    top: 80px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;

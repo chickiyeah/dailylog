@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/mypage2.css">
+    <link rel="stylesheet" href="../static/css/mywrite.css">
     <title>DAILY LOG</title>
 </head>
 
@@ -50,18 +50,22 @@
                         <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
                     </ul>
                 </div>
+                <div class="hr"></div>
                 <div class="mywrite_right">
                     <div class="write_bt">
                         <div>
-                            <button>수정</button>
+                            <button onClick="location.href='http://daily-log.kro.kr/edit'">수정</button>
                             <button>삭제</button>
                         </div>
                     </div>
                     <div class="write_box">
-                        <div>
-                            <h2>12/01</h2>
-                            <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
-                        </div>
+                        <input type="checkbox" id="check_btn">
+                        <label for="chkBox">
+                            <div>
+                                <h2>12/01</h2>
+                                <h3>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</h3>
+                            </div>
+                        </label>
                         <div class="user_info">
                             <p>츠키</p>
                             <p>3시간 전</p>
