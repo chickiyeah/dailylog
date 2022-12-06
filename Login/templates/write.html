@@ -13,28 +13,34 @@
 </head>
 <script>
     let link = []
+    let meetl = []
 
     function upload() {
-        if($(".title").text() == ''){
+        ok = true
+        if(document.getElementById("title").value == ''){
+            ok = false
             $(".title").focus()
             alert('제목을 입력해주세요.')
             return
         }
 
-        if($(".map").text() == ''){
+        if(document.getElementById("maps").value == ''){
+            ok = false
             $(".map").focus()
             alert('지역을 입력해주세요.')
             //$(".map").attr('placeholder', '지역을 입력해주세요.')
             return
         }
 
-        if($(".todayuser").text() == ''){
+        if(document.getElementById("todayuser").value == ''){
+            ok = false
             $(".todayuser").focus()
             alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
             return
         }
 
         if($("#select #option").text() == '오늘의 기분'){
+            ok = false
             $("#select #option").focus()
             $("#select ul").toggle();
             alert("오늘의 기분을 선택해주세요.")
@@ -42,6 +48,7 @@
         }
 
         if($("#select2 #option2").text() == '오늘의 메뉴'){
+            ok = false
             $("#select2 #option2").focus()
             $("#select2 ul").toggle();
             alert("오늘의 메뉴를 선택해주세요.")
@@ -49,9 +56,66 @@
         }
 
         if($("#textarea").html() == ''){
+            ok = false
             $("#textarea").focus()
             alert("내용을 입력해주세요.")
             return
+        }
+
+        if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+        }
+
+        if(ok == true){
+            if($(".todayuser").text() != "없음"){
+                meet = $(".todayuser").text()
+                if(meet.includes(",")){
+                    ms = meet.split(",")
+                    ms.forEach((a) => meetl.push(a))
+                    json = {
+                        'Author':id,
+                        'Name': document.getElementById("title").value,
+                        'Desc': $("#textarea").html(),
+                        'People_meet': meetl,
+                        'Feel': $("#select #option").text(),
+                        'Eat': $("#select2 #option2").text(),
+                        'AttachFiles': link,
+                        'Area': document.getElementById("maps").value
+                    }
+                    console.log(json)
+                    $.ajax({
+                        url:"/write/upload",
+                        method:"POST",
+                        data:json,
+                        success: function(response){
+                            console.log(response)
+                        }
+                    })
+                }else{
+                        meetl.push("none")
+                        json = {
+                            'Author':id,
+                            'Name': document.getElementById("title").value,
+                            'Desc': $("#textarea").html(),
+                            'People_meet': meetl,
+                            'Feel': $("#select #option").text(),
+                            'Eat': $("#select2 #option2").text(),
+                            'AttachFiles': link,
+                            'Area': document.getElementById("maps").value
+                        }
+                        console.log(json)
+                        $.ajax({
+                            url:"/write/upload",
+                            method:"POST",
+                            data:json,
+                            success: function(response){
+                                console.log(response)
+                            }
+                        })
+                    }           
+            }
         }
 
         

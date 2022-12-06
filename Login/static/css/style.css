@@ -21,6 +21,12 @@ h1 {
     margin-left: 35px;
 }
 
+#header div i {
+    color: #515151;
+    font-size: 50px;
+    display: none;
+}
+
 #nav {
     display: flex;
     align-items: center;
@@ -36,6 +42,39 @@ h1 {
     margin-right: 30px;
     font-size: 15px;
     letter-spacing: -1px;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav ul li:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+    font-weight: 500;
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+
+    30% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    65% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .nav_icon {
@@ -60,7 +99,7 @@ h1 {
 #main {
     /* width: 1750px; */
     position: relative;
-    top: 250px;
+    top: 134px;
 }
 
 .content {
@@ -70,14 +109,52 @@ h1 {
 }
 
 .main_banner p {
-    font-size: 15px;
-    letter-spacing: 0px;
-    opacity: 50%;
-    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Rock Salt', cursive;
+    color: #35B8E1;
+}
+
+.p1 {
+    font-family: 'Rock Salt', cursive;
+    position: absolute;
+    top: 120px;
+    left: 770px;
+    transform: rotate(10deg);
+    opacity: 80%;
+    color: #35B8E1;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+
+.p1 p:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.p1 p:nth-child(2) {
+    font-size: 25px;
+    letter-spacing: 3px;
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out
+}
+
+.fade {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .main_banner img {
-    width: 27%;
+    width: 100%;
     background: #000;
 }
 
@@ -137,26 +214,148 @@ h1 {
     color: #FF774D;
 }
 
-.phone_name div {
-    margin: 50px 0;
+.phone_main {
+    margin: 50px 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    border: 1px solid #ddd;
+    width: 80%;
+    height: 300px;
 }
 
-.phone_name h6 {
-    font-weight: 300;
-    font-size: 13px;
+.phone_name img {
+    width: 20%;
+    margin: auto;
+}
+
+.phone_name div h5 {
+    font-size: 17px;
     margin-right: 5px;
     cursor: pointer;
+    font-weight: 500;
+    color: #FF774D;
 }
 
-.phone_name h6:hover {
-    font-weight: 600;
+.phone_name div h6 {
+    font-size: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 300;
+    color: #FF774D;
+}
+
+/* Mobile iPhone Mockup */
+.mockup-container {
+    text-align: center;
+}
+
+.mockup {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.mobile-mockup {
+    position: relative;
+    border: 1px solid #ddd;
+    width: 215px;
+    height: 425px;
+    border-radius: 27px;
+    background-color: #fff;
+}
+
+.iframe-url {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49%);
+    border: 1px solid #ddd;
+    width: 390px;
+    height: 690px;
+}
+
+.iframe-url iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.home-btn {
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-btn span {
+    border: 1px solid #ddd;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6px;
+    border-radius: 50%;
+}
+
+.home-btn span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px #eee;
+}
+
+.power {
+    width: 5px;
+    height: 40px;
+    position: absolute;
+    left: 99.7%;
+    top: 115px;
+}
+
+.power span {
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    box-shadow: inset 0 0 5px #eee;
+}
+
+.volume span:nth-child(3) {
+    bottom: 0;
+}
+
+.camera {
+    height: 80px;
+    position: absolute;
+    width: 100%;
+}
+
+.camera span {
+    position: absolute;
+    background-color: #000;
+}
+
+.camera span:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .saying {
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -183,55 +382,60 @@ h1 {
     opacity: 50%;
 }
 
-
 /* 반응형 시작 */
 
-@media all and (max-width: 1024px){ 	
-    /*태블릿*/
-    .write_box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 50px;
-        padding: 30px 30px;
-        border: 1px solid rgba(146, 146, 146, 0.5);
-        border-radius: 30px;
-    }
-}
-
-@media all and (max-width: 798px){
-    /*모바일 */
-    h1{
-        font-size: medium;
-        margin-left: 5%;
-        margin-left: 2%;
+/* 모바일 */
+@media all and (max-width:768px) {
+    #header div h1 {
+        display: none;
     }
 
+    #header div i {
+        display: block;
+        color: #dddddd;
+        font-size: 50px;
+        position: absolute;
+        left: -50px;
+        top: 13px;
+    }
 
-
-    
-    #footer {
+    #header {
         display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 100px;
+        flex-direction: row;
+    }
+
+    #nav ul {
+        display: none;
+    }
+
+    .nav_icon {
+        position: absolute;
+        top: 20px;
+        right: -100px;
+    }
+
+    .p1{
+        display: none;
+    }
+
+    .main_menu {
         text-align: center;
-        font-size: 9px;
-        padding-bottom: 20px;
-        opacity: 50%;
     }
 
-    .bottom_hr {
-        margin-bottom: 20px;
-        opacity: 30%;
+    .main_menu img {
+        width: 100%;
     }
-    
-} 
 
-@media all and (min-width: 768px){ 
-        
-        /*태블릿 */
-} 
+    .main_phone {
+        text-align: center;
+    }
 
-@media all and (min-width: 1024px){ 
+    .saying {
+        width: 80%;
+    }
+
+    .nav_toogleBT.active {
+        display: flex;
+    }
+
 }

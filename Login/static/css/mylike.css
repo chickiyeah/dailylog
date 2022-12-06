@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
 
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
 body {
     width: 1980px;
@@ -121,4 +124,52 @@ h1 {
 .bottom_hr {
     margin-bottom: 50px;
     opacity: 30%;
+}
+
+.write_box {
+    display: block;
+    width: 450px;
+    height: 520px;
+    margin: auto;
+    border: 1px solid rgba(81, 81, 81, 0.5);
+    margin-bottom: 100px;
+
+}
+
+.box_title {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(81, 81, 81, 0.5);
+
+}
+
+.p_comment {
+    display: block;
+    padding-right: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 50%;
+    padding-top: 15px;
+}
+
+.photo {
+    display: block;
+    width: 450px;
+    height: 418px;
+    border-bottom: 1px solid rgba(81, 81, 81, 0.5);
+
+}
+.box_footer {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 15px;
+
+
+}
+.myliked {
+    float: left;
 }

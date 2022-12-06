@@ -197,6 +197,25 @@ async def get_user():
     user.encoding = "UTF-8"
     return json.loads(user.text)
 
+@app.route("/User/FindID", methods=["GET"])
+async def FindID():
+    name = request.form['name']
+    phone = request.form['phone']
+    birthday = request.form['birthday']
+
+    json = {
+        'name' : name,
+        'phone' : phone,
+        'birthday' : birthday
+    }
+
+    ID = requests.get(
+        url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user/findid',
+        json=json
+    )
+    ID.encoding = "UTF-8"
+    return json.loads(ID.text)
+
 @app.route("/write/1")
 def write():
     return render_template("write.html")
@@ -212,6 +231,86 @@ async def edit():
 @app.route("/map")
 def map():
     return render_template("map.html")
+
+@app.route("/write/upload", methods=["POST"])
+def writeupload():
+    now = datetime.now()
+    Author = request.form['Author']
+    Name = request.form['Name']
+    Desc = request.form['Desc']
+    print(request.form)
+    People_meet = request.form['People_meet[]']
+    Feel = request.form['Feel']
+    Eat = request.form['Eat']
+    AttachFiles = request.form['AttachFiles[]']
+    Area = request.form['Area']
+
+    json = {
+        'Author':Author,
+        'Name':Name,
+        'Desc':Desc,
+        'People_meet':People_meet,
+        'Feel':Feel,
+        'Eat':Eat,
+        'AttachFiles':AttachFiles,
+        'Area':Area,
+        'Created_At':str(now)
+    }
+
+    try:
+        res = requests.post(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+            json=json
+        )._content
+    except requests.exceptions.RequestException as error:
+        print(error)
+        return error
+
+    print(res)
+    return "write complete"
+####여기부터
+@app.route("/record",methods=["POST"])
+async def record2():
+    now = datetime.now()
+    Author = request.form['Author']
+    Name = request.form['Name']
+    Desc = request.form['Desc']
+    People_meet = request.form['People_meet']
+    Feel = request.form['Feel']
+    Eat = request.form['Eat']
+    AttachFiles = request.form['AttachFiles']
+    Area = request.form['Area']
+
+    json = {
+        'Author':Author,
+        'Name':Name,
+        'Desc':Desc,
+        'People_meet':People_meet,
+        'Feel':Feel,
+        'Eat':Eat,
+        'AttachFiles':AttachFiles,
+        'Area':Area,
+        'Created_At':str(now)
+    }
+
+    try:
+        res = requests.post(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+            json=json
+        )
+    except requests.exceptions.RequestException as error:
+        return error
+
+
+    return render_template("/record")
+    
+    return "record complete"
+
+
+
+
+
+
 
 @app.route("/UploadFile", methods=["POST"])
 def upload():

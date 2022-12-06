@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../static/css/reset.css">
-  <link rel="stylesheet" href="../static/css/style.css">
-  <link rel="stylesheet" href="../static/css/map.css">
+    <!-- 외부 css -->
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/map.css">
+
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Nerko+One&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pacifico&family=Rock+Salt&family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../static/assets/house.svg" type="image/x-icon">
+    <link rel="icon" href="../static/assets/house.svg" type="image/x-icon">
+
+    <!-- 스크립트 -->
+    <script src="../static/js/index.js" defer></script>
+
   <title>Daily log</title>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,6 +57,8 @@
         <header id="header">
             <div>
                 <a href="/"><h1>DAILY<br>LOG</h1></a>
+                <a href="#" class="nav_toogleBT">
+                 <i class="fa-solid fa-bars"></i></a>
             </div>
             <!-- 네비 시작 -->
             <nav id="nav">
@@ -64,14 +85,15 @@
             <section class="content">
                 <!-- story -->
                 <div class="main_banner">
-                    <div>
-                        <p>내 지난 story</p>
-                    </div>
                     <div class="bannerslide">
-                        <div>
+                        <div class="main_img">
                             <img src="../static/assets/story_img1.png" alt="스토리 이미지1">
-                            <img src="../static/assets/story_img1.png" alt="스토리 이미지2">
-                            <img src="../static/assets/story_img1.png" alt="스토리 이미지3">
+                        </div>
+                        <div class="main_text">
+                            <div class="p1">
+                                <p>I LOVE IT MY STORY..</p>
+                                <p>2022 12 PM 06:11 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,7 +123,6 @@
                     </div>
                     <div>
                         <img src="../static/assets/menu/american/steak.png" alt="한식">
-                        <h4>스테이크</h4>
                     </div>
                 </div>
 
@@ -112,13 +133,38 @@
                         <h3>오랜만에</h3>
                         <h3>연락해봐요 : )</h3>
                     </div>
-                    <div class="phone_name">
-                        <div>
-                            <h6>김철수</h6>
-                            <h6>24 days ago</h6>
+
+                    <div class="mockup-container">
+                        <div class="mockup">
+                            <div class="mobile-mockup">
+                                <div class="camera">
+                                    <span></span>
+                                </div>
+                                <div class="home-btn">
+                                    <span></span>
+                                </div>
+                                <div class="power">
+                                    <span></span>
+                                </div>
+                                <!-- Content Start -->
+                                <div class="phone_name">
+                                    <div class="phone_main"> 
+                                        <div>
+                                            <img src="../static/assets/call.png" alt="전화 아이콘">
+                                        </div>
+                                        <div>
+                                            <h5>김철수</h5>
+                                            <h6>24 days ago</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Content End -->
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
 
                 <!--  famous saying -->
                 <div class="saying">
