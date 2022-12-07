@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/id,pw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style type="text/css">
         A:link {text-decoration:none; color:#000000;}
@@ -17,6 +18,42 @@
     </style>
 </head>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#findid').click(function () {
+            var name = $("#name1").val();
+            var birthday = $("#birthday1").val();
+            var phone = $("#phone1").val()
+
+            $.ajax({
+                type: "POST",
+                url: "/User/FindID",
+                dataType: "json",
+                data: {
+                    'name': name,
+                    'birthday': birthday,
+                    'phone' : phone
+                },
+                success: function (response) {
+                    idlist = response
+                    var message = idlist.length+"개의 계정이 확인되었습니다.\n"
+
+                    idlist.forEach(element => {
+                        message = message +""+element.email+"\n"
+                    });
+                    alert(message)
+                },
+                error: function () {
+                    if (name == "" || email == "" || phone == "") {
+                        alert('이름, 전화번호, 이메일을 입력해주세요.');
+                    } else {
+                        alert('입력하신 정보가 일치하지 않거나 존재하지 않습니다.');
+                    }
+                },
+            });
+        })
+    });
+</script>     
 <body>
     <a href="/"><header id="login">
         <h1>DAILY</h1>
@@ -28,17 +65,17 @@
                 <p class="idpw_title">아이디/ 이메일 찾기</p>
                 <p style="float: left">이름</p>
                 <div class="id">
-                    <input type="email" class="email_input">
+                    <input id="name1" type="email" class="email_input">
                 </div>
                 <p style="float: left">전화번호</p>
                 <div class="id">
-                    <input type="email" class="email_input">
+                    <input id="phone1" type="email" class="email_input">
                 </div>
                 <p style="float: left">생년월일</p>
                 <div class="id">
-                    <input type="email" class="email_input">
+                    <input id="birthday1" type="email" class="email_input">
                 </div>
-                <input type="submit" class="submit" value="아이디 찾기">
+                <input id="findid" type="submit" class="submit" value="아이디 찾기">
             </div>
         </article>
         <article id="right">
@@ -50,11 +87,14 @@
                 </div>
                 <input type="submit" class="submit" value="비밀번호 찾기">
 
-
-
-
+                
         </article>
     </section>
 
 </body>
 </html>
+
+
+              
+
+ 

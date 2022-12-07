@@ -207,13 +207,13 @@ async def get_user():
     user.encoding = "UTF-8"
     return json.loads(user.text)
 
-@app.route("/User/FindID", methods=["GET"])
+@app.route("/User/FindID", methods=["POST"])
 async def FindID():
     name = request.form['name']
     phone = request.form['phone']
     birthday = request.form['birthday']
 
-    json = {
+    json1 = {
         'name' : name,
         'phone' : phone,
         'birthday' : birthday
@@ -221,9 +221,10 @@ async def FindID():
 
     ID = requests.get(
         url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user/findid',
-        json=json
+        json=json1
     )
     ID.encoding = "UTF-8"
+    
     return json.loads(ID.text)
 
 @app.route("/write/1")

@@ -26,7 +26,7 @@
 
         if(document.getElementById("maps").value == ''){
             ok = false
-            $(".maps").focus()
+            $(".map").focus()
             alert('지역을 입력해주세요.')
             //$(".map").attr('placeholder', '지역을 입력해주세요.')
             return
@@ -37,7 +37,7 @@
             $(".todayuser").focus()
             alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
             return
-        }
+        }r
 
         if($("#select #option").text() == '오늘의 기분'){
             ok = false
@@ -73,7 +73,7 @@
                     json = {
                         'Author':id,
                         'Name': document.getElementById("title").value,
-                        'Desc': document.getElementById("textarea").value,
+                        'Desc': $("#textarea").html(),
                         'People_meet': document.getElementById("todayuser").value,
                         'Feel': $("#select #option").text(),
                         'Eat': $("#select2 #option2").text(),
@@ -86,17 +86,14 @@
                         method:"POST",
                         data:json,
                         success: function(response){
-                            if(response == "OK"){
-                                    location.href="/write/2"
-                                    alert("업로드를 완료했습니다!")
-                                }
+                            console.log(response)
                         }
                     })
                 }else{
                         json = {
                             'Author':id,
                             'Name': document.getElementById("title").value,
-                            'Desc': document.getElementById("textarea").value,
+                            'Desc': $("#textarea").html(),
                             'People_meet': "None",
                             'Feel': $("#select #option").text(),
                             'Eat': $("#select2 #option2").text(),
@@ -110,7 +107,7 @@
                             data:json,
                             success: function(response){
                                 if(response == "OK"){
-                                    location.href="/write/2"
+                                    location.href="/"
                                     alert("업로드를 완료했습니다!")
                                 }
                             }
@@ -159,19 +156,19 @@
                         <h2>오늘의 하루</h2>
                     </div>
                     <div>
-                        <input type="text" id="title" placeholder="제목">
+                        <input type="text" id="title" class="title" placeholder="제목">
                     </div>
                     <div>
-                        <input type="text" id="maps" placeholder="지역">
+                        <input type="text" id="maps" class="maps" placeholder="지역">
                     </div>
                     <div>
-                        <input type="text" id="todayuser" placeholder="오늘 만난 사람">
+                        <input type="text" id="todayuser" class="todayuser" placeholder="오늘 만난 사람">
                     </div>
                     <div class="select_box">
                         <div class="write_select">
                             <div id="select" class="select">
                                 <strong></strong>
-                                <div id="option">오늘의 기분</div>
+                                <div id="option" class="feel" >오늘의 기분</div>
                                 <ul>
                                     <li data-option="맑음">맑음</li>
                                     <li data-option="흐림">흐림</li>
@@ -199,8 +196,7 @@
                             <input type="file" name="file" id="input">
                         </form>    
                     </div>
-                    <div>
-                        <textarea id="textarea" rows=20 cols=45 placeholder="오늘 있었던 일 적기"></textarea>
+                    <div id="textarea" contenteditable="true">
                     </div>
                     <div>
                         <button type="reset">

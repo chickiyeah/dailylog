@@ -1,5 +1,11 @@
 /* MAP */
 
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .map_wrap {
     position: relative;
     width: 100%;
@@ -34,11 +40,11 @@
     white-space: nowrap;
 }
 
-.join_section {
-    margin: auto;
+.map_section {
+    margin-top:200px;
 }
 
-.join_section input {
+.map_section input {
     width: 220px;
     height: 10px;
     font-size: 12px;
@@ -50,7 +56,7 @@
     margin-top: 50px;
 }
 
-.join_section label {
+.map_section label {
     font-size: 12px;
     opacity: 50%;
     display: block;
@@ -62,7 +68,7 @@
     height: 42px;
     font-size: 12px;
     padding: 13px;
-    border-radius: 18px;
+    border-radius:20px;
     background-color: #35B8E1;
     color: white;
     top: 10px;

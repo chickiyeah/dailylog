@@ -5,13 +5,14 @@ body {
     width: 1980px;
     margin: auto;
     background-color: #F5EFE1;
+    font-size: 16px
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    margin: 30px 100px;
+    margin: 2rem 6rem;
     width: 100%;
     z-index: 999;
     color: #fff;
@@ -23,20 +24,20 @@ body {
 
 .simbol i {
     color: #fff;
-    font-size: 40px;
+    font-size: 3rem;
     display: block;
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 
 #header div a i {
     color: #515151;
-    font-size: 50px;
+    font-size: 3rem;
     display: none;
 }
 
@@ -48,12 +49,12 @@ h1 {
 #nav ul {
     display: flex;
     flex-direction: row;
-    margin-left: -480px;
+    margin-left: -30rem;
 }
 
 #nav ul li {
-    margin-right: 30px;
-    font-size: 15px;
+    margin-right: 2rem;
+    font-size: 1rem;
     letter-spacing: -1px;
     transition: all 0.2s ease-in-out;
 }
@@ -66,23 +67,23 @@ h1 {
 
 @keyframes swing {
     15% {
-        transform: translateX(5px);
+        transform: translateX(0.5rem);
     }
 
     30% {
-        transform: translateX(-5px);
+        transform: translateX(-0.5rem);
     }
 
     50% {
-        transform: translateX(3px);
+        transform: translateX(0.1rem);
     }
 
     65% {
-        transform: translateX(-3px);
+        transform: translateX(-0.1rem);
     }
 
     80% {
-        transform: translateX(2px);
+        transform: translateX(0.2rem);
     }
 
     100% {
@@ -93,19 +94,19 @@ h1 {
 .nav_icon {
     display: flex;
     align-items: center;
-    margin-right: 230px;
+    margin-right: 14rem;
 }
 
 /* %는 자동 간격 조정됨. */
 .nav_icon img {
-    width: 20PX;
-    margin-right: 15px;
+    width: 1.2rem;
+    margin-right: 1rem;
 }
 
 .top_hr {
     position: relative;
-    top: 135px;
-    opacity: 30%;
+    top: 8.2rem;
+    opacity: 50%;
     z-index: 999;
     color: #fff;
 }
@@ -124,25 +125,24 @@ h1 {
 }
 
 .main_banner p {
-    font-size: 50px;
+    font-size: 3.1rem;
     font-family: 'Rock Salt', cursive;
-    color: #35B8E1;
 }
 
 .p1 {
     font-family: 'Rock Salt', cursive;
     position: absolute;
-    top: 250px;
-    left: 990px;
+    top: 15.5rem;
+    left: 60rem;
     transform: rotate(10deg);
     opacity: 80%;
     color: #F5EFE1;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: bold;
-    letter-spacing: 10px;
+    letter-spacing: 0.8rem;
 }
 
-
+/* 
 .p1 p:nth-child(1) {
     font-size: 50px;
     font-weight: bold;
@@ -154,14 +154,14 @@ h1 {
     font-size: 25px;
     letter-spacing: 3px;
     animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
+} */
 
-span {
+/* span {
     display: inline-block;
     opacity: 0;
     transform: translateY(-100%);
     transition: all 0.4s ease-in-out
-}
+} */
 
 .fade {
     opacity: 1;
@@ -173,23 +173,22 @@ span {
     background: #000;
 }
 
-.bottom_hr {
-    margin-bottom: 50px;
-    opacity: 30%;
+.main_place {
+    text-align: center;
+    margin: auto;
 }
 
 .main_place p {
-    font-size: 15px;
-    letter-spacing: 0px;
+    font-size: 1rem;
     opacity: 50%;
-    margin: 100px 0 0 0;
+    margin: 6.1rem 0 0 0;
     color: lightcoral;
 }
 
 .main_place h3 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: -2px;
+    letter-spacing: -0.1rem;
 }
 
 .main_place h3:nth-child(3) {
@@ -197,12 +196,13 @@ span {
 }
 
 .map_wrap {
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .map_wrap img {
     width: 70%;
-    border-radius: 10px;
+    border-radius: 0.8rem;
 }
 
 .main_menu {
@@ -210,17 +210,16 @@ span {
 }
 
 .main_menu p {
-    font-size: 15px;
-    letter-spacing: 0px;
+    font-size: 1rem;
     opacity: 50%;
-    margin: 50px 0 0 0;
+    margin: 6.1rem 0 0 0;
     color: #35B8E1;
 }
 
 .main_menu h3 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: -2px;
+    letter-spacing: -0.1rem;
 }
 
 .main_text h3:nth-child(3) {
@@ -232,17 +231,16 @@ span {
 }
 
 .main_phone p {
-    font-size: 15px;
-    letter-spacing: 0px;
+    font-size: 1rem;
     opacity: 50%;
-    margin: 50px 0 0 0;
+    margin: 6.1rem 0 0 0;
     color: #FF774D;
 }
 
 .main_phone h3 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: -2px;
+    letter-spacing: -0.1rem;
 }
 
 .main_phone h3:nth-child(3) {
@@ -250,13 +248,13 @@ span {
 }
 
 .phone_main {
-    margin: 50px 20px;
+    margin: 3.1rem 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 1px solid #ddd;
     width: 80%;
-    height: 300px;
+    height: 19rem;
 }
 
 .phone_name img {
@@ -265,16 +263,16 @@ span {
 }
 
 .phone_name div h5 {
-    font-size: 17px;
-    margin-right: 5px;
+    font-size: 1rem;
+    margin-right: 0.3rem;
     cursor: pointer;
     font-weight: 500;
     color: #FF774D;
 }
 
 .phone_name div h6 {
-    font-size: 10px;
-    margin-right: 5px;
+    font-size: 0.6rem;
+    margin-right: 0.3rem;
     cursor: pointer;
     font-weight: 300;
     color: #FF774D;
@@ -288,7 +286,7 @@ span {
 .mockup {
     display: inline-block;
     position: relative;
-    margin: 20px;
+    margin: 1.2rem;
     /* position: absolute;
   top: 50%;
   left: 50%;
@@ -297,10 +295,10 @@ span {
 
 .mobile-mockup {
     position: relative;
-    border: 1px solid #ddd;
-    width: 215px;
-    height: 425px;
-    border-radius: 27px;
+    border: 0.06rem solid #ddd;
+    width: 13.4rem;
+    height: 26.6rem;
+    border-radius: 1.7rem;
     background-color: #fff;
 }
 
@@ -310,8 +308,8 @@ span {
     left: 50%;
     transform: translate(-50%, -49%);
     border: 1px solid #ddd;
-    width: 390px;
-    height: 690px;
+    width: 24rem;
+    height: 43.1rem;
 }
 
 .iframe-url iframe {
@@ -320,7 +318,7 @@ span {
 }
 
 .home-btn {
-    height: 70px;
+    height: 4.3rem;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -328,8 +326,8 @@ span {
 
 .home-btn span {
     border: 1px solid #ddd;
-    width: 50px;
-    height: 50px;
+    width: 3.1rem;
+    height: 3.1rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -349,28 +347,24 @@ span {
 }
 
 .power {
-    width: 5px;
-    height: 40px;
+    width: 0.3rem;
+    height: 2.5rem;
     position: absolute;
     left: 99.7%;
-    top: 115px;
+    top: 7.2rem;
 }
 
 .power span {
-    background-color: #eee;
+    background-color: #ddd;
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 0.25rem 0.25rem 0;
     box-shadow: inset 0 0 5px #eee;
 }
 
-.volume span:nth-child(3) {
-    bottom: 0;
-}
-
 .camera {
-    height: 80px;
+    height: 5rem;
     position: absolute;
     width: 100%;
 }
@@ -380,11 +374,11 @@ span {
     background-color: #000;
 }
 
-.camera span:nth-child(1) {
-    width: 10px;
-    height: 10px;
+.camera span {
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
-    top: 15px;
+    top: 1.2rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -395,10 +389,10 @@ span {
 }
 
 .saying_text {
-    margin: 20px;
-    border: 1px solid #515151;
-    padding: 50px 25px;
-    border-radius: 50px;
+    margin: 1.25rem;
+    border: 0.06rem solid #515151;
+    padding: 3.1rem 1.6rem;
+    border-radius: 3.1rem;
     opacity: 40%;
     background: #fff;
 }
@@ -407,144 +401,81 @@ span {
     padding-bottom: 20px;
 }
 
+/* 푸터 */
+.bottom_hr {
+    margin-bottom: 3.2rem;
+}
+
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 70px;
+    top: 4.4rem;
+    align-items: center;
     text-align: center;
-    font-size: 13px;
-    padding-bottom: 40px;
+    font-size: 0.8rem;
+    padding-bottom: 2.5rem;
     opacity: 50%;
 }
 
 /* 반응형 시작 */
 
-/* 태블릿 */
-/* 브라우저 창 width가 1024px보다 작아지는 순간부터 적용  */
-@media screen and (max-width:1024px) {
-    #header div h1 {
-        display: block;
-    }
-
-    #header div a i {
-        display: block;
-        color: #fff;
-        font-size: 50px;
-        position: absolute;
-        left: 150px;
-        top: 13px;
+/* 브라우저 창 width가 768px~1024 적용  */
+@media(min-width:768px) and (max-width:1024px) {
+    html {
+        font-size: 12px;
     }
 
     #header {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #header .simbol {
+    #header .simbol i {
         display: block;
-        margin-left: 75px;
+        margin-left: -1.8rem;
+        font-size: 2.3rem;
+    }
+
+    #header div h1 {
+        display: block;
+        margin-left: 1.8rem;
+        font-size: 2.3rem;
     }
 
     .navbar_menu {
         position: absolute;
-        top: 25px;
-        right: 420px;
+        top: 1.6rem;
+        right: 52rem;
     }
 
     .nav_icon {
         position: absolute;
-        top: 25px;
-        right: 27px;
+        top: 1.6rem;
+        right: 0rem;
+    }
+
+    .p1 {
+        font-size: 1.5rem;
+        left: 46.5rem;
     }
 
     .main_menu {
         text-align: center;
-    }
-
-    .main_menu {
-        text-align: center;
-    }
-
-    .main_menu img {
-        width: 100%;
-    }
-
-    .main_phone {
-        text-align: center;
-    }
-
-    .saying {
-        width: 60%;
-    }
-
-    /* 모바일 */
-    /* 브라우저 창 width가 768px보다 작아지는 순간부터 적용  */
-    @media screen and (max-width:768px) {
-        #header div h1 {
-            display: block;
-        }
-
-        #header div a i {
-            display: block;
-            color: #fff;
-            font-size: 50px;
-            position: absolute;
-            left: -50px;
-            top: 13px;
-        }
-
-        #header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        #header .simbol {
-            display: block;
-            margin-left: -60px;
-        }
-
-        .navbar_menu {
-            position: absolute;
-            top: 25px;
-            right: 315px;
-        }
-
-        .nav_icon {
-            position: absolute;
-            top: 25px;
-            right: -90px;
-        }
-
-        .main_menu {
-            text-align: center;
-        }
-
-        .main_menu {
-            text-align: center;
-        }
-
-        .main_menu img {
-            width: 100%;
-        }
-
-        .main_phone {
-            text-align: center;
-        }
-
-        .saying {
-            width: 80%;
-        }
     }
 }
 
-/* 아이폰 12 pro */
-/* 브라우저 창 width가 390px보다 작아지는 순간부터 적용  */
-@media screen and (max-width:390px) {
+/* 브라우저 창 width가 150-767 적용  */
+@media(min-width:150px) and (max-width:767px) {
     #header div h1 {
-        display: none;
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+        position: absolute;
+        left: 3.3rem;
+        top: 0.8rem;
     }
 
     #header div a i {
@@ -562,39 +493,19 @@ span {
         justify-content: space-between;
     }
 
-    #header .simbol {
-        display: block;
-        margin-left: -60px;
+    #header .simbol i {
         display: none;
-    }
-
-    .navbar_menu {
-        position: absolute;
-        top: 25px;
-        right: 315px;
     }
 
     .nav_icon {
         display: none;
     }
 
-    .main_menu {
-        text-align: center;
-    }
-
-    .main_menu {
-        text-align: center;
-    }
-
-    .main_menu img {
-        width: 100%;
-    }
-
-    .main_phone {
-        text-align: center;
-    }
-
     .saying {
         width: 80%;
+    }
+
+    #footer {
+        margin-bottom: -100px;
     }
 }
