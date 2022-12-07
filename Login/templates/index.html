@@ -5,7 +5,6 @@
     <!-- 외부 css -->
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/map.css">
 
     <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
@@ -24,10 +23,14 @@
     <!-- 스크립트 -->
     <script src="../static/js/index.js" defer></script>
 
-  <title>Daily log</title>
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+    <!-- 타이틀 -->
+    <title>Daily log</title>
+
+    </head>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
     $(document).ready(function () {
         if(document.cookie.includes("id=")){
             login = true
@@ -50,19 +53,29 @@
             }
         })
     })
+
+    $(document).ready(function(){
+            $(".box").animate({width: 500}, 2000, 
+            function(){
+                console.log("1번끝")})
 </script>
 <body>
     <div>
-        <!-- 헤더 시작 -->
+         <!-- 헤더 시작 -->
         <header id="header">
             <div>
-                <a href="/"><h1>DAILY<br>LOG</h1></a>
-                <a href="#" class="nav_toogleBT">
-                 <i class="fa-solid fa-bars"></i></a>
+                <div class="simbol">
+                    <i class="fa-solid fa-house-user"></i>
+                </div>
+                <h1>DAILY<br>LOG</h1>
+                <!-- 모바일용 햄버거 -->
+                <!-- <a href="#" class="navbar_toogleBT">
+                    <i class="fa-solid fa-bars"></i>
+                </a> -->
             </div>
             <!-- 네비 시작 -->
             <nav id="nav">
-                <ul>
+                 <ul class="navbar_menu">
                     <li><a href="/map">지도보기</a></li>
                     <li><a href="/write/2">기록하기</a></li>
                     <li><a href="/rank">랭킹보기</a></li>
@@ -101,7 +114,9 @@
                 <!-- place -->
                 <div class="main_place">
                     <div>
-                        <p>내 지난 place</p>
+                        <p>new</p>
+                        <h3>이 장소,</h3>
+                        <h3>기억나지 않나요?</h3>
                     </div>
                     <div>
                         <div class="map_wrap">

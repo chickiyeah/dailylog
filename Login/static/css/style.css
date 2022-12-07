@@ -4,7 +4,7 @@
 body {
     width: 1980px;
     margin: auto;
-    color: #515151;
+    background-color: #F5EFE1;
 }
 
 #header {
@@ -13,15 +13,28 @@ body {
     position: absolute;
     margin: 30px 100px;
     width: 100%;
+    z-index: 999;
+    color: #fff;
+}
+
+#header div {
+    display: flex;
+}
+
+.simbol i {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+    padding-top: 15px;
 }
 
 h1 {
     font-family: 'Zilla Slab', serif;
-    font-weight: 400;
-    margin-left: 35px;
+    font-weight: 300;
+    margin-left: 15px;
 }
 
-#header div i {
+#header div a i {
     color: #515151;
     font-size: 50px;
     display: none;
@@ -48,7 +61,7 @@ h1 {
 #nav ul li:hover {
     animation: swing 1s ease;
     animation-iteration-count: 1;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @keyframes swing {
@@ -93,13 +106,15 @@ h1 {
     position: relative;
     top: 135px;
     opacity: 30%;
+    z-index: 999;
+    color: #fff;
 }
 
 /* 중간 레이아웃 width주면 안 먹힘. */
 #main {
     /* width: 1750px; */
     position: relative;
-    top: 134px;
+    z-index: 1;
 }
 
 .content {
@@ -117,12 +132,12 @@ h1 {
 .p1 {
     font-family: 'Rock Salt', cursive;
     position: absolute;
-    top: 120px;
-    left: 770px;
+    top: 250px;
+    left: 990px;
     transform: rotate(10deg);
     opacity: 80%;
-    color: #35B8E1;
-    font-size: 50px;
+    color: #F5EFE1;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 10px;
 }
@@ -163,15 +178,35 @@ span {
     opacity: 30%;
 }
 
-.main_place {
-    margin: 100px 0;
-}
-
 .main_place p {
     font-size: 15px;
     letter-spacing: 0px;
     opacity: 50%;
-    margin: 50px 0 20px 0;
+    margin: 100px 0 0 0;
+    color: lightcoral;
+}
+
+.main_place h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.main_place h3:nth-child(3) {
+    color: lightcoral;
+}
+
+.map_wrap {
+    margin-top: 30px;
+}
+
+.map_wrap img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.main_menu {
+    text-align: center;
 }
 
 .main_menu p {
@@ -355,7 +390,7 @@ span {
 }
 
 .saying {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -365,6 +400,7 @@ span {
     padding: 50px 25px;
     border-radius: 50px;
     opacity: 40%;
+    background: #fff;
 }
 
 .saying_text p:nth-child(1) {
@@ -375,7 +411,7 @@ span {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 300px;
+    top: 70px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;
@@ -384,15 +420,136 @@ span {
 
 /* 반응형 시작 */
 
-/* 모바일 */
-@media all and (max-width:768px) {
+/* 태블릿 */
+/* 브라우저 창 width가 1024px보다 작아지는 순간부터 적용  */
+@media screen and (max-width:1024px) {
+    #header div h1 {
+        display: block;
+    }
+
+    #header div a i {
+        display: block;
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        left: 150px;
+        top: 13px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header .simbol {
+        display: block;
+        margin-left: 75px;
+    }
+
+    .navbar_menu {
+        position: absolute;
+        top: 25px;
+        right: 420px;
+    }
+
+    .nav_icon {
+        position: absolute;
+        top: 25px;
+        right: 27px;
+    }
+
+    .main_menu {
+        text-align: center;
+    }
+
+    .main_menu {
+        text-align: center;
+    }
+
+    .main_menu img {
+        width: 100%;
+    }
+
+    .main_phone {
+        text-align: center;
+    }
+
+    .saying {
+        width: 60%;
+    }
+
+    /* 모바일 */
+    /* 브라우저 창 width가 768px보다 작아지는 순간부터 적용  */
+    @media screen and (max-width:768px) {
+        #header div h1 {
+            display: block;
+        }
+
+        #header div a i {
+            display: block;
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            left: -50px;
+            top: 13px;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #header .simbol {
+            display: block;
+            margin-left: -60px;
+        }
+
+        .navbar_menu {
+            position: absolute;
+            top: 25px;
+            right: 315px;
+        }
+
+        .nav_icon {
+            position: absolute;
+            top: 25px;
+            right: -90px;
+        }
+
+        .main_menu {
+            text-align: center;
+        }
+
+        .main_menu {
+            text-align: center;
+        }
+
+        .main_menu img {
+            width: 100%;
+        }
+
+        .main_phone {
+            text-align: center;
+        }
+
+        .saying {
+            width: 80%;
+        }
+    }
+}
+
+/* 아이폰 12 pro */
+/* 브라우저 창 width가 390px보다 작아지는 순간부터 적용  */
+@media screen and (max-width:390px) {
     #header div h1 {
         display: none;
     }
 
-    #header div i {
+    #header div a i {
         display: block;
-        color: #dddddd;
+        color: #fff;
         font-size: 50px;
         position: absolute;
         left: -50px;
@@ -402,20 +559,27 @@ span {
     #header {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
-    #nav ul {
+    #header .simbol {
+        display: block;
+        margin-left: -60px;
         display: none;
+    }
+
+    .navbar_menu {
+        position: absolute;
+        top: 25px;
+        right: 315px;
     }
 
     .nav_icon {
-        position: absolute;
-        top: 20px;
-        right: -100px;
+        display: none;
     }
 
-    .p1{
-        display: none;
+    .main_menu {
+        text-align: center;
     }
 
     .main_menu {
@@ -433,9 +597,4 @@ span {
     .saying {
         width: 80%;
     }
-
-    .nav_toogleBT.active {
-        display: flex;
-    }
-
 }

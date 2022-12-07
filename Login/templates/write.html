@@ -37,7 +37,7 @@
             $(".todayuser").focus()
             alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
             return
-        }
+        }r
 
         if($("#select #option").text() == '오늘의 기분'){
             ok = false
@@ -69,16 +69,12 @@
         }
 
         if(ok == true){
-            if($(".todayuser").text() != "없음"){
-                meet = $(".todayuser").text()
-                if(meet.includes(",")){
-                    ms = meet.split(",")
-                    ms.forEach((a) => meetl.push(a))
+            if(document.getElementById("todayuser").value != "없음"){
                     json = {
                         'Author':id,
                         'Name': document.getElementById("title").value,
                         'Desc': $("#textarea").html(),
-                        'People_meet': meetl,
+                        'People_meet': document.getElementById("todayuser").value,
                         'Feel': $("#select #option").text(),
                         'Eat': $("#select2 #option2").text(),
                         'AttachFiles': link,
@@ -94,12 +90,11 @@
                         }
                     })
                 }else{
-                        meetl.push("none")
                         json = {
                             'Author':id,
                             'Name': document.getElementById("title").value,
                             'Desc': $("#textarea").html(),
-                            'People_meet': meetl,
+                            'People_meet': "None",
                             'Feel': $("#select #option").text(),
                             'Eat': $("#select2 #option2").text(),
                             'AttachFiles': link,
@@ -111,10 +106,13 @@
                             method:"POST",
                             data:json,
                             success: function(response){
-                                console.log(response)
+                                if(response == "OK"){
+                                    location.href="/"
+                                    alert("업로드를 완료했습니다!")
+                                }
                             }
                         })
-                    }           
+                             
             }
         }
 

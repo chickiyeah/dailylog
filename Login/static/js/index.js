@@ -1,10 +1,3 @@
-// 햄버거 nav 보였다 안 보였다.
-const toggleBTn = document.querySelector(".nav_toogleBT");
-const menu = document.querySelector("#nav ul");
-
-toggleBTn.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
 
 // 배너 위 텍스트 애니메이션
 const p1 = document.querySelector(".p1");

@@ -1,176 +1,4 @@
 /* MAP */
-body {
-    width: 1980px;
-    margin: auto;
-    color: #515151;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    margin: 30px 100px;
-    width: 100%;
-}
-
-h1 {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 400;
-    margin-left: 35px;
-}
-
-#header div i {
-    color: #515151;
-    font-size: 50px;
-    display: none;
-}
-
-#nav {
-    display: flex;
-    align-items: center;
-}
-
-#nav ul {
-    display: flex;
-    flex-direction: row;
-    margin-left: -480px;
-}
-
-#nav ul li {
-    margin-right: 30px;
-    font-size: 15px;
-    letter-spacing: -1px;
-    transition: all 0.2s ease-in-out;
-}
-
-#nav ul li:hover {
-    animation: swing 1s ease;
-    animation-iteration-count: 1;
-    font-weight: 500;
-}
-
-.nav_icon {
-    display: flex;
-    align-items: center;
-    margin-right: 230px;
-}
-
-@keyframes swing {
-    15% {
-        transform: translateX(5px);
-    }
-
-    30% {
-        transform: translateX(-5px);
-    }
-
-    50% {
-        transform: translateX(3px);
-    }
-
-    65% {
-        transform: translateX(-3px);
-    }
-
-    80% {
-        transform: translateX(2px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.nav_icon {
-    display: flex;
-    align-items: center;
-    margin-right: 230px;
-}
-
-/* %는 자동 간격 조정됨. */
-.nav_icon img {
-    width: 20PX;
-    margin-right: 15px;
-}
-
-.top_hr {
-    position: relative;
-    top: 135px;
-    opacity: 30%;
-}
-
-/* 중간 레이아웃 width주면 안 먹힘. */
-#main {
-    /* width: 1750px; */
-    position: relative;
-    top: 134px;
-}
-
-.fade {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.main_banner img {
-    width: 100%;
-    background: #000;
-}
-
-.bottom_hr {
-    margin-bottom: 50px;
-    opacity: 30%;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.main_banner p {
-    font-size: 50px;
-    font-family: 'Rock Salt', cursive;
-    color: #35B8E1;
-}
-
-.p1 {
-    font-family: 'Rock Salt', cursive;
-    position: absolute;
-    top: 120px;
-    left: 770px;
-    transform: rotate(10deg);
-    opacity: 80%;
-    color: #35B8E1;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 10px;
-}
-
-
-.p1 p:nth-child(1) {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-.p1 p:nth-child(2) {
-    font-size: 25px;
-    letter-spacing: 3px;
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-/* %는 자동 간격 조정됨. */
-.nav_icon img {
-    width: 20PX;
-    margin-right: 15px;
-}
-
-.top_hr {
-    position: relative;
-    top: 135px;
-    opacity: 30%;
-}
 
 .map_wrap {
     position: relative;
@@ -204,9 +32,6 @@ h1 {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-#main {
-    /* top: 200px; */
 }
 
 .join_section {
@@ -275,8 +100,9 @@ h1 {
 /* Map 끝 */
 
 /* 반응형 시작 */
+/* 태블릿 */
 @media all and (max-width: 1024px){ 
-    /* 태블릿 */
+
     #map {
         width: 980px;
         height: 400px;
@@ -300,8 +126,9 @@ h1 {
     }
 }
 
-@media all and (max-width: 768px){
+
     /*모바일 */
+@media all and (max-width: 768px){
     #nav {
         display: flex;
         align-items: center;

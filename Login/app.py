@@ -1,4 +1,14 @@
 
+import cgi
+import html
+
+import django
+from django.utils.html import escape
+try:
+    from html import unescape
+except ImportError:
+        from html.parser import HTMLParser
+
 import random
 import string
 from flask import Flask, render_template, request, jsonify
@@ -72,7 +82,7 @@ async def user_login():
     user.encoding = "UTF-8"
     return json.loads(user.text)['id']
 
-@app.route("/Record")
+@app.route("/write/detail")
 async def record():
     return render_template("revisepage.html")
 
@@ -238,17 +248,17 @@ def writeupload():
     Author = request.form['Author']
     Name = request.form['Name']
     Desc = request.form['Desc']
-    print(request.form)
-    People_meet = request.form['People_meet[]']
+    People_meet = request.form['People_meet']
     Feel = request.form['Feel']
     Eat = request.form['Eat']
     AttachFiles = request.form['AttachFiles[]']
     Area = request.form['Area']
+    
 
     json = {
         'Author':Author,
         'Name':Name,
-        'Desc':Desc,
+        'Description':escape(Desc),
         'People_meet':People_meet,
         'Feel':Feel,
         'Eat':Eat,
@@ -256,6 +266,8 @@ def writeupload():
         'Area':Area,
         'Created_At':str(now)
     }
+
+    print(json)
 
     try:
         res = requests.post(
@@ -267,29 +279,29 @@ def writeupload():
         return error
 
     print(res)
-    return "write complete"
+
+    if(str(res).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
+        return "OK"
+
+    return res['errorMessage']
 ####여기부터
 @app.route("/record",methods=["POST"])
 async def record2():
     now = datetime.now()
+    Date = request.form['Date']
     Author = request.form['Author']
     Name = request.form['Name']
     Desc = request.form['Desc']
-    People_meet = request.form['People_meet']
-    Feel = request.form['Feel']
-    Eat = request.form['Eat']
     AttachFiles = request.form['AttachFiles']
-    Area = request.form['Area']
+   
 
     json = {
         'Author':Author,
         'Name':Name,
         'Desc':Desc,
-        'People_meet':People_meet,
-        'Feel':Feel,
-        'Eat':Eat,
+        'Date':Date,
         'AttachFiles':AttachFiles,
-        'Area':Area,
+      
         'Created_At':str(now)
     }
 
@@ -302,7 +314,7 @@ async def record2():
         return error
 
 
-    return render_template("/record")
+    return render_template("record.html")
     
     return "record complete"
 

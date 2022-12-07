@@ -1,0 +1,201 @@
+body {
+    width: 1980px;
+    margin: auto;
+    color: #515151;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 30px 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    margin-left: 35px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -480px;
+}
+
+#nav ul li {
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.nav_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 230px;
+}
+
+/* %는 자동 간격 조정됨. */
+.nav_icon img {
+    width: 20PX;
+    margin-right: 15px;
+}
+
+.top_hr {
+    position: relative;
+    top: 135px;
+    opacity: 30%;
+}
+
+
+
+#footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 530px;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 40px;
+    opacity: 50%;
+}
+
+.bottom_hr {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    opacity: 30%;
+}
+
+/* 반응형 시작 */
+
+/* 태블릿 */
+/* 브라우저 창 width가 1024px보다 작아지는 순간부터 적용  */
+@media screen and (max-width:1024px) {
+    #header div h1 {
+        display: block;
+    }
+
+    #header div a i {
+        display: block;
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        left: 150px;
+        top: 13px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header .simbol {
+        display: block;
+        margin-left: 75px;
+    }
+
+    .navbar_menu {
+        position: absolute;
+        top: 25px;
+        right: 420px;
+    }
+
+    .nav_icon {
+        position: absolute;
+        top: 25px;
+        right: 27px;
+    }
+
+    .main_menu {
+        text-align: center;
+    }
+
+    .main_menu {
+        text-align: center;
+    }
+
+    .main_menu img {
+        width: 100%;
+    }
+
+    .main_phone {
+        text-align: center;
+    }
+
+    .saying {
+        width: 60%;
+    }
+
+    /* 모바일 */
+    /* 브라우저 창 width가 768px보다 작아지는 순간부터 적용  */
+    @media screen and (max-width:768px) {
+        #header div h1 {
+            display: block;
+        }
+
+        #header div a i {
+            display: block;
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            left: -50px;
+            top: 13px;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #header .simbol {
+            display: block;
+            margin-left: -60px;
+        }
+
+        .navbar_menu {
+            position: absolute;
+            top: 25px;
+            right: 315px;
+        }
+
+        .nav_icon {
+            position: absolute;
+            top: 25px;
+            right: -90px;
+        }
+
+        .main_menu {
+            text-align: center;
+        }
+
+        .main_menu {
+            text-align: center;
+        }
+
+        .main_menu img {
+            width: 100%;
+        }
+
+        .main_phone {
+            text-align: center;
+        }
+
+        .saying {
+            width: 80%;
+        }
+
+        /* .navbar_toogleBT {
+        display: block;
+    } */
+
+    }
+}
