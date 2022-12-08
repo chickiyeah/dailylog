@@ -227,6 +227,21 @@ async def FindID():
     
     return json.loads(ID.text)
 
+@app.route("/User/ResetPW", methods=["POST"])
+async def RSTPW():
+    email = request.form['email']
+
+
+    try:
+        auth.send_password_reset_email(email)
+    except requests.exceptions.HTTPError as err:
+        print(json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message'])
+        return json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message']
+
+
+
+    return "DONE"
+
 @app.route("/write/1")
 def write():
     return render_template("write.html")
@@ -234,6 +249,10 @@ def write():
 @app.route("/write/2")
 def write2():
     return render_template("write2.html")
+
+@app.route("/write/popupmap")
+async def writemap():
+    return render_template("popupmap.html")
 
 @app.route("/edit")
 async def edit():
@@ -380,3 +399,28 @@ async def get_mapdata():
 
 if __name__ == '__main__':
    app.run('0.0.0.0', port=80, debug=True)
+
+
+####여기부터
+
+@app.route("/Write",methods=["GET"])
+async def example():
+        Author = request.form['Author']
+
+        #변수 = {}
+        json = { 
+            'Author':Author,
+        }
+        
+        print(json)
+
+        try:
+            res = requests.post(
+                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+                json=json
+            )
+        except requests.exceptions.RequestException as error:
+            return error
+
+
+        return render_template("write.html")

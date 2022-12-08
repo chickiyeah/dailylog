@@ -15,6 +15,14 @@
     let link = []
     let meetl = []
 
+
+    var openWin
+
+    function openMap() {
+        window.name = "글 작성";
+        openWin = window.open("/write/popupmap", "장소를 선택해주세요.","width=870, height=550, resizable = no, scrollbars = no")
+    }
+
     function upload() {
         ok = true
         if(document.getElementById("title").value == ''){
@@ -162,7 +170,7 @@
                         <input type="text" id="title" placeholder="제목">
                     </div>
                     <div>
-                        <input type="text" id="maps" placeholder="지역">
+                        <input onclick="openMap()" type="text" id="maps" placeholder="지역">
                     </div>
                     <div>
                         <input type="text" id="todayuser" placeholder="오늘 만난 사람">

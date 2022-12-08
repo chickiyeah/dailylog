@@ -16,10 +16,12 @@
         A:active {text-decoration:none; color:#000000;}
         A:hover {text-decoration:none; color:#000000;}
     </style>
+
 </head>
 
 <script type="text/javascript">
     $(document).ready(function () {
+        $("#RSTPW").click(RstPW())
         $('#findid').click(function () {
             var name = $("#name1").val();
             var birthday = $("#birthday1").val();
@@ -81,15 +83,61 @@
         <article id="right">
             <div id="right_content" class="idpw_article">
                 <p class="idpw_title">비밀번호 찾기</p>
-                <p style="float: left">전화번호</p>
+                <p style="float: left">이메일</p>
                 <div class="id">
-                    <input type="email" class="email_input">
+                    <input id="email1" onkeypress="javascript:if(event.keyCode==13) RstPW()" type="email" class="email_input">
                 </div>
-                <input type="submit" class="submit" value="비밀번호 찾기">
+                <input id="RSTPW" onclick="RstPW()" type="submit" class="submit" value="비밀번호 찾기">
 
                 
         </article>
     </section>
+
+    <script>
+        function RstPW() {
+        var email = $("#email1").val()
+
+        $.ajax({
+            type: "POST",
+            url: "/User/ResetPW",
+            dataType: 'json',
+            data:{
+                "email": email
+            },
+            success: function (response) {
+                if(response == "DONE"){
+                    alert("이메일을 전송했습니다.\n이메일이 오지 않은경우 스팸메일함을 확인해보세요.")
+                }
+                if(response == "INVALID_EMAIL"){
+                    alert("이메일 형태가 올바르지 않습니다.\n입력값을 확인해주세요")
+                }
+                if(response == "EMAIL_NOT_FOUND"){
+                    alert("해당 이메일을 찾을수 없습니다.\n아이디가 올바르지 않습니다.")
+                }
+                if(response == "MISSING_EMAIL"){
+                    alert("이메일을 입력해주세요.")
+                }
+                console.log(response)
+            },
+            error: function(err) {
+                err = err.responseText
+                if(err == "DONE"){
+                    alert("이메일을 전송했습니다.\n이메일이 오지 않은경우 스팸메일함을 확인해보세요.")
+                }
+                if(err == "INVALID_EMAIL"){
+                    alert("이메일 형태가 올바르지 않습니다.\n입력값을 확인해주세요")
+                }
+                if(err == "EMAIL_NOT_FOUND"){
+                    alert("해당 이메일을 찾을수 없습니다.\n아이디가 올바르지 않습니다.")
+                }
+                if(err == "MISSING_EMAIL"){
+                    alert("이메일을 입력해주세요.")
+                }
+                console.log(err)
+            }
+        })
+    }
+    </script>
 
 </body>
 </html>

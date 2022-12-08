@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
 
+/*  */
+.main_wrap{
+    display: inline-block;
+    flex-direction: column;
+}
 
 body {
-    width: 1980px;
+    /* width: 1980px; */
+    width: 100%;
     margin: auto;
     background-color: #F5EFE1;
-    font-size: 16px
+    font-size: 16px;
 }
 
 #header {
@@ -113,6 +119,7 @@ h1 {
 
 /* 중간 레이아웃 width주면 안 먹힘. */
 #main {
+    width: 100%;
     /* width: 1750px; */
     position: relative;
     z-index: 1;
@@ -129,47 +136,14 @@ h1 {
     font-family: 'Rock Salt', cursive;
 }
 
-.p1 {
-    font-family: 'Rock Salt', cursive;
-    position: absolute;
-    top: 15.5rem;
-    left: 60rem;
-    transform: rotate(10deg);
-    opacity: 80%;
-    color: #F5EFE1;
-    font-size: 1.9rem;
-    font-weight: bold;
-    letter-spacing: 0.8rem;
-}
-
-/* 
-.p1 p:nth-child(1) {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-.p1 p:nth-child(2) {
-    font-size: 25px;
-    letter-spacing: 3px;
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-} */
-
-/* span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 0.4s ease-in-out
-} */
-
-.fade {
-    opacity: 1;
-    transform: translateY(0);
+.main_text{
+    position: relative;
 }
 
 .main_banner img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     background: #000;
 }
 
@@ -200,7 +174,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.map_wrap img {
+.map_wrap img{
     width: 70%;
     border-radius: 0.8rem;
 }
@@ -287,10 +261,6 @@ h1 {
     display: inline-block;
     position: relative;
     margin: 1.2rem;
-    /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); */
 }
 
 .mobile-mockup {
@@ -403,7 +373,9 @@ h1 {
 
 /* 푸터 */
 .bottom_hr {
-    margin-bottom: 3.2rem;
+    width: 100%;
+    margin-bottom: 50px;
+    opacity: 30%;
 }
 
 #footer {
@@ -419,7 +391,6 @@ h1 {
 }
 
 /* 반응형 시작 */
-
 /* 브라우저 창 width가 768px~1024 적용  */
 @media(min-width:768px) and (max-width:1024px) {
     html {
@@ -431,6 +402,10 @@ h1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    #main{
+        width: 100%;
     }
 
     #header .simbol i {
@@ -458,8 +433,7 @@ h1 {
     }
 
     .p1 {
-        font-size: 1.5rem;
-        left: 46.5rem;
+        display: none;
     }
 
     .main_menu {
