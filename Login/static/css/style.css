@@ -1,226 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
-
-/*  */
-.main_wrap{
-    display: inline-block;
-    flex-direction: column;
-}
-
-body {
-    /* width: 1980px; */
-    width: 100%;
-    margin: auto;
-    background-color: #F5EFE1;
-    font-size: 16px;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
+.circle {
     position: absolute;
-    margin: 2rem 6rem;
-    width: 100%;
-    z-index: 999;
-    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    background: #CB4B16;
+    border-radius: 80%;
+    backface-visibility: hidden;
 }
 
-#header div {
-    display: flex;
-}
-
-.simbol i {
-    color: #fff;
-    font-size: 3rem;
-    display: block;
-    padding-top: 1rem;
-}
-
-h1 {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 300;
-    margin-left: 1rem;
-}
-
-#header div a i {
-    color: #515151;
-    font-size: 3rem;
-    display: none;
-}
-
-#nav {
-    display: flex;
-    align-items: center;
-}
-
-#nav ul {
-    display: flex;
-    flex-direction: row;
-    margin-left: -30rem;
-}
-
-#nav ul li {
-    margin-right: 2rem;
-    font-size: 1rem;
-    letter-spacing: -1px;
-    transition: all 0.2s ease-in-out;
-}
-
-#nav ul li:hover {
-    animation: swing 1s ease;
-    animation-iteration-count: 1;
-    font-weight: 400;
-}
-
-@keyframes swing {
-    15% {
-        transform: translateX(0.5rem);
-    }
-
-    30% {
-        transform: translateX(-0.5rem);
-    }
-
-    50% {
-        transform: translateX(0.1rem);
-    }
-
-    65% {
-        transform: translateX(-0.1rem);
-    }
-
-    80% {
-        transform: translateX(0.2rem);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.nav_icon {
-    display: flex;
-    align-items: center;
-    margin-right: 14rem;
-}
-
-/* %는 자동 간격 조정됨. */
-.nav_icon img {
-    width: 1.2rem;
-    margin-right: 1rem;
-}
-
-.top_hr {
-    position: relative;
-    top: 8.2rem;
-    opacity: 50%;
-    z-index: 999;
-    color: #fff;
-}
-
-/* 중간 레이아웃 width주면 안 먹힘. */
-#main {
-    width: 100%;
-    /* width: 1750px; */
-    position: relative;
-    z-index: 1;
-}
-
-.content {
+.main_visual {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.main_banner p {
-    font-size: 3.1rem;
-    font-family: 'Rock Salt', cursive;
-}
-
-.main_text{
-    position: relative;
-}
-
-.main_banner img {
+.banner_wrap span img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background: #000;
 }
 
-.main_place {
-    text-align: center;
-    margin: auto;
+/* place */
+.map_wrap {
+    background-color: #FFE4E1;
+    height: 38rem;
+    padding: 8rem 5rem 2rem;
 }
 
-.main_place p {
+.map_text p {
     font-size: 1rem;
     opacity: 50%;
-    margin: 6.1rem 0 0 0;
     color: lightcoral;
 }
 
-.main_place h3 {
+.map_text h3 {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: -0.1rem;
 }
 
-.main_place h3:nth-child(3) {
+.map_text h3:nth-child(3) {
     color: lightcoral;
-}
-
-.map_wrap {
-    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.map_wrap img{
-    width: 70%;
-    border-radius: 0.8rem;
+/* 지도 모니터 */
+.map_box {
+    width: 40rem;
+    height: 23rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2.25rem;
 }
 
-.main_menu {
-    text-align: center;
+.map_header {
+    height: 3rem;
+    position: relative;
+    width: 100%;
 }
 
-.main_menu p {
+.map_header span {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+.map_header span:nth-child(1) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: lightcoral;
+}
+
+.map_header span:nth-child(2) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(130%);
+    background-color: lightskyblue;
+}
+
+.map_header span:nth-child(3) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(300%);
+    background-color: lightgreen;
+}
+
+.map_img img {
+    width: 80%;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-left: 0.7rem;
+    border-radius: 1rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* food */
+.food_wrap {
+    background-color: #D5C2EE;
+    width: 60%;
+    height: 38rem;
+    padding: 8rem 0;
+}
+
+.food_wrap p {
     font-size: 1rem;
     opacity: 50%;
-    margin: 6.1rem 0 0 0;
-    color: #35B8E1;
+    color: #e30f3d;
 }
 
-.main_menu h3 {
+.food_wrap h3 {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: -0.1rem;
 }
 
-.main_text h3:nth-child(3) {
-    color: #35B8E1;
+.food_wrap h3:nth-child(3) {
+    color: #e30f3d;
 }
 
-.main_phone {
-    margin-bottom: 50px;
+.food_img {
+    margin: auto;
 }
 
-.main_phone p {
+.food_img img {
+    width: 99%;
+}
+
+/* phone */
+.phone_wrap {
+    background-color: rgb(189, 244, 189);
+    width: 40%;
+    height: 38rem;
+    padding: 8rem 0;
+}
+
+.phone_wrap p {
     font-size: 1rem;
     opacity: 50%;
-    margin: 6.1rem 0 0 0;
-    color: #FF774D;
+    color: rgb(0, 129, 0);
 }
 
-.main_phone h3 {
+.phone_wrap h3 {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: -0.1rem;
 }
 
-.main_phone h3:nth-child(3) {
-    color: #FF774D;
+.phone_wrap h3:nth-child(3) {
+    color: rgb(0, 129, 0);
 }
 
+/* Mobile iPhone Mockup */
 .phone_main {
     margin: 3.1rem 1.3rem;
     display: flex;
@@ -228,7 +169,7 @@ h1 {
     justify-content: center;
     border: 1px solid #ddd;
     width: 80%;
-    height: 19rem;
+    height: 16rem;
 }
 
 .phone_name img {
@@ -252,7 +193,6 @@ h1 {
     color: #FF774D;
 }
 
-/* Mobile iPhone Mockup */
 .mockup-container {
     text-align: center;
 }
@@ -266,8 +206,8 @@ h1 {
 .mobile-mockup {
     position: relative;
     border: 0.06rem solid #ddd;
-    width: 13.4rem;
-    height: 26.6rem;
+    width: 12.4rem;
+    height: 23.6rem;
     border-radius: 1.7rem;
     background-color: #fff;
 }
@@ -288,7 +228,7 @@ h1 {
 }
 
 .home-btn {
-    height: 4.3rem;
+    height: 4.2rem;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -353,133 +293,23 @@ h1 {
     transform: translateX(-50%);
 }
 
-.saying {
-    width: 60%;
-    margin: auto;
+/* 명언 */
+.saying_warp {
+    background-color: #FFE4E1;
+    height: 12rem;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .saying_text {
-    margin: 1.25rem;
-    border: 0.06rem solid #515151;
-    padding: 3.1rem 1.6rem;
-    border-radius: 3.1rem;
-    opacity: 40%;
-    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 1rem;
 }
 
 .saying_text p:nth-child(1) {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
-/* 푸터 */
-.bottom_hr {
-    width: 100%;
-    margin-bottom: 50px;
-    opacity: 30%;
-}
 
-#footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 4.4rem;
-    align-items: center;
-    text-align: center;
-    font-size: 0.8rem;
-    padding-bottom: 2.5rem;
-    opacity: 50%;
-}
-
-/* 반응형 시작 */
-/* 브라우저 창 width가 768px~1024 적용  */
-@media(min-width:768px) and (max-width:1024px) {
-    html {
-        font-size: 12px;
-    }
-
-    #header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #main{
-        width: 100%;
-    }
-
-    #header .simbol i {
-        display: block;
-        margin-left: -1.8rem;
-        font-size: 2.3rem;
-    }
-
-    #header div h1 {
-        display: block;
-        margin-left: 1.8rem;
-        font-size: 2.3rem;
-    }
-
-    .navbar_menu {
-        position: absolute;
-        top: 1.6rem;
-        right: 52rem;
-    }
-
-    .nav_icon {
-        position: absolute;
-        top: 1.6rem;
-        right: 0rem;
-    }
-
-    .p1 {
-        display: none;
-    }
-
-    .main_menu {
-        text-align: center;
-    }
-}
-
-/* 브라우저 창 width가 150-767 적용  */
-@media(min-width:150px) and (max-width:767px) {
-    #header div h1 {
-        display: block;
-        color: #fff;
-        font-size: 3rem;
-        position: absolute;
-        left: 3.3rem;
-        top: 0.8rem;
-    }
-
-    #header div a i {
-        display: block;
-        color: #fff;
-        font-size: 50px;
-        position: absolute;
-        left: -50px;
-        top: 13px;
-    }
-
-    #header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #header .simbol i {
-        display: none;
-    }
-
-    .nav_icon {
-        display: none;
-    }
-
-    .saying {
-        width: 80%;
-    }
-
-    #footer {
-        margin-bottom: -100px;
-    }
-}
+@media(min-width:768px) and (max-width:1024px) {}

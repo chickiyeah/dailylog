@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>장소를 선택해주세요.</title>
   <link rel="stylesheet" href="../static/css/reset.css">
     <style>
@@ -46,6 +48,11 @@
             margin-right: auto;
             margin-bottom: 1rem;
         }
+        #map_buttom {
+            margin:auto;
+            display: table;
+            
+        }
 
     </style>
 </head>
@@ -69,7 +76,13 @@
             <span id="centerAddr"></span>
         </div>
     </div>
-    <div id="map" style="width:70%;height: 30rem; left:10px; top: -70px;"></div>
+    <div id="map_buttom">
+        <span>
+            <button onclick="sear()" type="submit" class="search_btn">
+                확인
+            </button>
+        </span>
+    </div>
 
 
     <!-- 모든 라이브러리 적용 상태 -->

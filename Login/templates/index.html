@@ -1,288 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-    <!-- 외부 css -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/style.css">
+    <title>DAYLE LOG</title>
 
     <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
 
-    <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Nerko+One&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pacifico&family=Rock+Salt&family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="../static/assets/house.svg" type="image/x-icon">
-    <link rel="icon" href="../static/assets/house.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/house.svg" type="image/x-icon">
+    <link rel="icon" href="./assets/img/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
-    <script src="../static/js/index.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+</head>
 
-    <!-- 타이틀 -->
-    <title>Daily log</title>
-
-    </head>
-    <!-- 제이쿼리 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-
-    $(document).ready(function () {
-        if(document.cookie.includes("id=")){
-            login = true
-            if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
-            }
-        }else{
-            login = false
-        }
-
-        $.ajax({
-            url:"/Good_Say",
-            method:"GET",
-            success: function(response) {
-                console.log(response)
-                document.getElementById("good_say").innerHTML = response.message
-                document.getElementById("good_say_author").innerHTML = response.author
-            }
-        })
-    })
-
-    
-</script>
 <body>
-    <div class="main_wrap">
-         <!-- 헤더 시작 -->
-        <header id="header">
-            <div>
-                <div class="simbol">
-                    <i class="fa-solid fa-house-user"></i>
+    <div class="wrap">
+        <!-- 헤더 시작 -->
+        <header class="header">
+            <div class="top_align">
+                <!-- 네비 시작 -->
+                <nav>
+                    <ul>
+                        <li><a href="/map">지도보기</a></li>
+                        <li><a href="/write/2">기록하기</a></li>
+                        <li><a href="#">랭킹보기</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                    </ul>
+                </nav>
+                <!-- 네비 끝 -->
+                <!-- 로고 시작 -->
+                <div class="top_logo">
+                    <div class="simbol">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <h1>DAILY LOG</h1>
+                    <!-- 모바일용 햄버거 -->
+                    <a href="#" class="nav_toogleBT">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
-                <h1>DAILY<br>LOG</h1>
-                <!-- 모바일용 햄버거 -->
-                <a href="#" class="navbar_toogleBT">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-            <!-- 네비 시작 -->
-            <nav id="nav">
-                 <ul class="navbar_menu">
-                    <li><a href="/map">지도보기</a></li>
-                    <li><a href="/write/2">기록하기</a></li>
-                    <li><a href="/rank">랭킹보기</a></li>
-                    <li><a href="/Mypage">마이페이지</a></li>
-                </ul>
-            </nav>
-            <!-- 네비 끝 -->
-            <div class="nav_icon">
-                <a><img src="../static/assets/search.png" alt="메뉴의 검색 아이콘"></a>
-                <a><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
-                <a href="/Login"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
+                <!-- 아이콘 시작 -->
+                <div class="top_icon">
+                    <img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘">
+                    <img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘">
+                </div>
+                <!-- 아이콘 끝 -->
             </div>
         </header>
-        <div class="top_hr">
-            <hr>
-        </div>
         <!-- 헤더 끝 -->
-        <!-- 메인시작 -->
-        <main id="main">
-            <section class="content">
-                <!-- story -->
-                <div class="main_banner">
-                    <div class="bannerslide">
-                        <div class="main_img">
-                            <img src="../static/assets/story_img1.png" alt="스토리 이미지1">
-                        </div>
-                        <div class="main_text">
-                            <div class="p1">
-                                <p>I LOVE IT MY STORY..</p>
-                                <p>2022 12 PM 06:11 </p>
-                            </div>
-                        </div>
+        <!-- <div class="circle"></div> -->
+        <!-- 메인 시작 -->
+        <main class="main">
+            <div class="main_visual">
+                <section>
+                    <!-- 메인배너 -->
+                    <div class="banner_wrap">
+                        <span>
+                            <img src="../static/assets//story_img1.png" alt="스토리 이미지1">
+                        </span>
                     </div>
-                </div>
-
-                <!-- place -->
-                    <div class="main_place" style="
-                    margin-left: auto;
-                    margin-right: auto;
-                    display: table;">
-                        <div>
+                    <!-- place -->
+                    <div class="map_wrap">
+                        <div class="map_text">
                             <p>new</p>
                             <h3>이 장소,</h3>
-                            <h3>기억나지 않나요?</h3>
+                            <h3>기억나나요?</h3>
                         </div>
-                        <div>
-                            <div>
-                            <div class="map_wrap">
-                                <div id="map" style="width:1000px; height:500px;"></div>
-                                <div class="hAddr">
-                                    <span>지도중심기준 주소정보</span>
-                                    <span id="centerAddr"></span>
-                                    </div>
+                        <div class="map_box">
+                            <div class="map_header">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="map_section">
+                                <div class="map_img">
+                                    <img src="./assets/img/maps.JPG" alt="지도">
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                <!-- menu -->
-                <div class="main_menu">
-                    <div class="main_text">
-                        <p>new</p>
-                        <h3>오늘은</h3>
-                        <h3>이 메뉴 어때요?</h3>
+                    <article class="article">
+                    <!-- menu -->
+                    <div class="food_wrap">
+                        <div class="food_text">
+                            <p>new</p>
+                            <h3>오늘은</h3>
+                            <h3>이 메뉴 어때요?</h3>
+                        </div>
+                            <img src="../static/assets/menu/american/steak.png" alt="한식">
                     </div>
-                    <div>
-                        <img src="../static/assets/menu/american/steak.png" alt="한식">
-                    </div>
-                </div>
-
-                <!-- phone -->
-                <div class="main_phone">
-                    <div>
-                        <p>new</p>
-                        <h3>오랜만에</h3>
-                        <h3>연락해봐요 : )</h3>
-                    </div>
-
-                    <div class="mockup-container">
-                        <div class="mockup">
-                            <div class="mobile-mockup">
-                                <div class="camera">
-                                    <span></span>
-                                </div>
-                                <div class="home-btn">
-                                    <span></span>
-                                </div>
-                                <div class="power">
-                                    <span></span>
-                                </div>
-                                <!-- Content Start -->
-                                <div class="phone_name">
-                                    <div class="phone_main"> 
-                                        <div>
-                                            <img src="../static/assets/call.png" alt="전화 아이콘">
-                                        </div>
-                                        <div>
-                                            <h5>김철수</h5>
-                                            <h6>24 days ago</h6>
+                    <!-- phone -->
+                    <div class="phone_wrap">
+                        <div class="phone_text">
+                            <p>new</p>
+                            <h3>오랜만에</h3>
+                            <h3>연락해봐요 : )</h3>
+                        </div>
+                        <!-- 아이폰 목업 시작 -->
+                        <div class="mockup-container">
+                            <div class="mockup">
+                                <div class="mobile-mockup">
+                                    <div class="camera">
+                                        <span></span>
+                                    </div>
+                                    <div class="home-btn">
+                                        <span></span>
+                                    </div>
+                                    <div class="power">
+                                        <span></span>
+                                    </div>
+                                    <!-- Content Start -->
+                                    <div class="phone_name">
+                                        <div class="phone_main">
+                                            <div>
+                                                <img src="../static/assets/call.png" alt="전화 아이콘">
+                                            </div>
+                                            <div>
+                                                <h5>김철수</h5>
+                                                <h6>24 days ago</h6>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- Content End -->
                                 </div>
-                                <!-- Content End -->
                             </div>
                         </div>
+                        <!-- 아이폰 목업 끝 -->
                     </div>
-
-                </div>
-
-
-                <!--  famous saying -->
-                <div class="saying">
-                    <div class="saying_text">
-                        <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
-                        <p id="good_say_author">- 그라시아 -</p>
+                    </article>
+                    <!-- 명언 시작 -->
+                    <div class="saying_warp">
+                        <div class="saying_text">
+                            <p>눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
+                            <p>- 그라시아 -</p>
+                        </div>
                     </div>
-            </section>
+                </section>
+            </div>
         </main>
         <!-- 메인 끝 -->
-
         <!-- 푸터 시작 -->
-        <footer id="footer">
-            <div class="bottom_hr">
-                <hr>
-            </div>
-            <div>
-                <p>Copyright 2022 . DAILYLOG . All Rights Reserved .</p>
-                <p>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</p>
+        <footer class="footer">
+            <div class="bottom_wrap">
+                <div class="bottom_simbol">
+                    <i class="fa-solid fa-house-user"></i>
+                </div>
+                <div class="bottom_info">
+                    <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
+                    <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
+                </div>
             </div>
         </footer>
         <!-- 푸터 끝 -->
     </div>
-
-
-
-
-        <!-- 지도 스크립트 -->
-        <!-- 모든 라이브러리 적용 상태 -->
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
-    
-        <script>
-        let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = {
-                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-                level: 1 // 지도의 확대 레벨
-            };  
-    
-        // 지도를 생성합니다    
-        let map = new kakao.maps.Map(mapContainer, mapOption); 
-    
-        // 주소-좌표 변환 객체를 생성합니다
-        let geocoder = new kakao.maps.services.Geocoder();
-    
-        let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
-            infowindow = new kakao.maps.InfoWindow({zindex:1}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
-    
-        // 현재 지도 중심좌표로 주소를 검색해서 지도 좌측 상단에 표시합니다
-        searchAddrFromCoords(map.getCenter(), displayCenterInfo);
-    
-        // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
-        kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
-            searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
-                if (status === kakao.maps.services.Status.OK) {
-                    let detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
-                    detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
-                    
-                    let content = '<div class="bAddr">' +
-                                    '<span class="title">주소정보</span>' + 
-                                    detailAddr + 
-                                '</div>';
-    
-                    // 마커를 클릭한 위치에 표시합니다 
-                    marker.setPosition(mouseEvent.latLng);
-                    marker.setMap(map);
-    
-                    // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
-                    infowindow.setContent(content);
-                    infowindow.open(map, marker);
-                }   
-            });
-        });
-    
-        // 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
-        kakao.maps.event.addListener(map, 'idle', function() {
-            searchAddrFromCoords(map.getCenter(), displayCenterInfo);
-        });
-    
-        function searchAddrFromCoords(coords, callback) {
-            geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);         
-        }
-    
-        function searchDetailAddrFromCoords(coords, callback) {
-            geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
-        }
-    
-        // 지도 좌측상단에 지도 중심좌표에 대한 주소정보를 표출하는 함수입니다
-        function displayCenterInfo(result, status) {
-            if (status === kakao.maps.services.Status.OK) {
-                let infoDiv = document.getElementById('centerAddr');
-    
-                for(let i = 0; i < result.length; i++) {
-                    // 행정동의 region_type 값은 'H' 이므로
-                    if (result[i].region_type === 'H') {
-                        infoDiv.innerHTML = result[i].address_name;
-                        break;
-                    }
-                }
-            }    
-        }
-        </script>
 </body>
 
 </html>

@@ -2,15 +2,12 @@
 
 
 body {
-    max-width: 100%;
     width: 100%;
     word-break: keep-all;
     /*넣어주는 이유 찾아보기*/
     overflow-x: hidden;
-    font-family: 'Caveat', cursive;
-    font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
-    background: #F6F6F6; 
+    background: #fff6f5;
 }
 
 html,

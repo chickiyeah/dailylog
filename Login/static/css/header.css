@@ -1,201 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+
 body {
-    width: 1980px;
-    margin: auto;
-    color: #515151;
+    font-size: 16px;
 }
 
-#header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    margin: 30px 100px;
+/* 헤더 */
+.header {
     width: 100%;
+    position: absolute;
 }
 
-h1 {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 400;
-    margin-left: 35px;
-}
-
-#nav {
-    display: flex;
-    align-items: center;
-}
-
-#nav ul {
+.top_align {
     display: flex;
     flex-direction: row;
-    margin-left: -480px;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding: 3rem;
 }
 
-#nav ul li {
-    margin-right: 30px;
-    font-size: 15px;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+
+nav ul li {
+    margin-right: 1.1rem;
+    font-size: 1rem;
+    font-weight: 300;
     letter-spacing: -1px;
+    transition: all 0.2s ease-in-out;
 }
 
-.nav_icon {
+nav ul li:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+    font-weight: 400;
+}
+
+/* 네비 애니메이션 */
+@keyframes swing {
+    15% {
+        transform: translateX(0.5rem);
+    }
+
+    30% {
+        transform: translateX(-0.5rem);
+    }
+
+    50% {
+        transform: translateX(0.1rem);
+    }
+
+    65% {
+        transform: translateX(-0.1rem);
+    }
+
+    80% {
+        transform: translateX(0.2rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.top_logo {
     display: flex;
     align-items: center;
-    margin-right: 230px;
+    margin-left: -17rem;
 }
 
-/* %는 자동 간격 조정됨. */
-.nav_icon img {
-    width: 20PX;
-    margin-right: 15px;
+.top_logo i {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 0.6rem;
 }
 
-.top_hr {
-    position: relative;
-    top: 135px;
-    opacity: 30%;
+.top_logo h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+}
+
+.nav_toogleBT {
+    display: none;
+}
+
+.top_icon img {
+    width: 1.3rem;
+    margin-right: 1rem;
 }
 
 
+/* 푸터 */
+.footer {
+    border-top: 1px solid rgb(201, 201, 201);
+}
 
-#footer {
-    position: fixed;
+.bottom_wrap {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 530px;
-    text-align: center;
-    font-size: 13px;
-    padding-bottom: 40px;
-    opacity: 50%;
-}
-
-.bottom_hr {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
     opacity: 30%;
+    font-size: 0.9rem;
 }
 
-/* 반응형 시작 */
+.bottom_simbol i {
+    margin-right: 0.3rem;
+}
 
-/* 태블릿 */
-/* 브라우저 창 width가 1024px보다 작아지는 순간부터 적용  */
-@media screen and (max-width:1024px) {
-    #header div h1 {
+@media(min-width:768px) and (max-width:1024px) {
+    nav ul {
+        margin-left: 0.2rem;
+    }
+
+    .top_logo {
+        margin-left: 0.2rem;
+    }
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .nav_toogleBT a i {
         display: block;
     }
 
-    #header div a i {
-        display: block;
-        color: #fff;
-        font-size: 50px;
-        position: absolute;
-        left: 150px;
-        top: 13px;
+    .top_logo {
+        display: none;
     }
 
-    #header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #header .simbol {
-        display: block;
-        margin-left: 75px;
-    }
-
-    .navbar_menu {
-        position: absolute;
-        top: 25px;
-        right: 420px;
-    }
-
-    .nav_icon {
-        position: absolute;
-        top: 25px;
-        right: 27px;
-    }
-
-    .main_menu {
-        text-align: center;
-    }
-
-    .main_menu {
-        text-align: center;
-    }
-
-    .main_menu img {
-        width: 100%;
-    }
-
-    .main_phone {
-        text-align: center;
-    }
-
-    .saying {
-        width: 60%;
-    }
-
-    /* 모바일 */
-    /* 브라우저 창 width가 768px보다 작아지는 순간부터 적용  */
-    @media screen and (max-width:768px) {
-        #header div h1 {
-            display: block;
-        }
-
-        #header div a i {
-            display: block;
-            color: #fff;
-            font-size: 50px;
-            position: absolute;
-            left: -50px;
-            top: 13px;
-        }
-
-        #header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        #header .simbol {
-            display: block;
-            margin-left: -60px;
-        }
-
-        .navbar_menu {
-            position: absolute;
-            top: 25px;
-            right: 315px;
-        }
-
-        .nav_icon {
-            position: absolute;
-            top: 25px;
-            right: -90px;
-        }
-
-        .main_menu {
-            text-align: center;
-        }
-
-        .main_menu {
-            text-align: center;
-        }
-
-        .main_menu img {
-            width: 100%;
-        }
-
-        .main_phone {
-            text-align: center;
-        }
-
-        .saying {
-            width: 80%;
-        }
-
-        /* .navbar_toogleBT {
-        display: block;
-    } */
-
+    nav ul {
+        display: none;
     }
 }
