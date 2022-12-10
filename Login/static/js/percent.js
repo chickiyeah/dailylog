@@ -6,7 +6,6 @@ $(document).ready(function () {
         }else{
             id = document.cookie.split("id=")[1].replace(" ","")
         }
-        let userinfo = ""
         $.ajax({
             url:"/User",
             method:"POST",
@@ -14,8 +13,7 @@ $(document).ready(function () {
                 id:id
             },
             success: function(response){
-                name = response.nickname
-                console.log(userinfo)
+                let name = response.nickname
                             //목록 가져오기
                 $.ajax({
                     url:"/Write",
@@ -219,7 +217,9 @@ function getPersonPercent() {
             response.forEach(element => {
                 peo = element.People_meet
 
-                if(peo.includes(""))
+                if(peo.includes(",")){
+                    peo.split
+                }
                 result[peo] = (result[peo] || 0)+1; 
             })
 
