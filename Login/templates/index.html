@@ -14,11 +14,11 @@
     <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./assets/img/house.svg" type="image/x-icon">
-    <link rel="icon" href="./assets/img/house.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
+    <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
-    <script src="./assets/js/index.js" defer></script>
+    <script src="./static/js/index.js" defer></script>
 </head>
 
 <body>
@@ -30,9 +30,9 @@
                 <nav>
                     <ul>
                         <li><a href="/map">지도보기</a></li>
-                        <li><a href="/write/2">기록하기</a></li>
-                        <li><a href="#">랭킹보기</a></li>
-                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="/write/1">기록하기</a></li>
+                        <li><a href="/rank">랭킹보기</a></li>
+                        <li><a href="/Mypage">마이페이지</a></li>
                     </ul>
                 </nav>
                 <!-- 네비 끝 -->
@@ -41,7 +41,7 @@
                     <div class="simbol">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
-                    <h1>DAILY LOG</h1>
+                    <a href="/"><h1>DAILY LOG</h1></a>
                     <!-- 모바일용 햄버거 -->
                     <a href="#" class="nav_toogleBT">
                         <i class="fa-solid fa-bars"></i>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="map_section">
                                 <div class="map_img">
-                                    <img src="./assets/img/maps.JPG" alt="지도">
+                                    <div id="map" style="width:96%;height: 18rem;"></div>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +161,62 @@
         </footer>
         <!-- 푸터 끝 -->
     </div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
+    
+    <script>
+    let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = {
+            center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+            level: 1 // 지도의 확대 레벨
+        };  
+
+    // 지도를 생성합니다    
+    let map = new kakao.maps.Map(mapContainer, mapOption); 
+
+    // 주소-좌표 변환 객체를 생성합니다
+    let geocoder = new kakao.maps.services.Geocoder();
+
+    let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
+        infowindow = new kakao.maps.InfoWindow({zindex:1}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
+
+    // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
+    kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+        searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
+            if (status === kakao.maps.services.Status.OK) {
+                let detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
+                detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
+                
+                let content = '<div class="bAddr">' +
+                                '<span class="title">주소정보</span>' + 
+                                detailAddr + 
+                            '</div>';
+
+                // 마커를 클릭한 위치에 표시합니다 
+                marker.setPosition(mouseEvent.latLng);
+                marker.setMap(map);
+
+                // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
+                infowindow.setContent(content);
+                infowindow.open(map, marker);
+            }   
+        });
+    });
+
+    // 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
+    kakao.maps.event.addListener(map, 'idle', function() {
+        
+    });
+
+    function searchAddrFromCoords(coords, callback) {
+        geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);         
+    }
+
+    function searchDetailAddrFromCoords(coords, callback) {
+        geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
+    }
+
+    </script>
 </body>
 
 </html>

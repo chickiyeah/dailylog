@@ -1,10 +1,10 @@
 .circle {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     top: 50%;
     left: 50%;
-    margin: -50px 0 0 -50px;
+    margin: -3.125rem 0 0 -3.125rem;
     background: #CB4B16;
     border-radius: 80%;
     backface-visibility: hidden;
@@ -91,10 +91,10 @@
     background-color: lightgreen;
 }
 
-.map_img img {
+.map_img #map {
     width: 80%;
     height: auto;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-left: 0.7rem;
     border-radius: 1rem;
 }
@@ -103,6 +103,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Map Font */
+.bAddr {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.title {
+    font-weight: bold;
+    display: block;
 }
 
 /* food */

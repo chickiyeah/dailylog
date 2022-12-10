@@ -1,0 +1,27 @@
+.mypage_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18rem 0 8rem 0;
+}
+
+.mypage_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.9rem;
+}
+
+.mypage_left ul li {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.mypage_left ul li:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mypage_left ul li:nth-child(5) {
+    margin-top: 1.25rem;
+    opacity: 50%;
+}

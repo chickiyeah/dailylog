@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+
+
   <title>장소를 선택해주세요.</title>
   <link rel="stylesheet" href="../static/css/reset.css">
     <style>
-        .map_wrap {position:relative;width:96%;height:350px;}
+        .map_wrap {position:relative;width:96%;height:31rem;}
         .title {font-weight:bold;display:block;}
-        .hAddr {position:absolute;left:10px;top:10px;border-radius: 2px;background:#fff;background:rgba(255,255,255,0.8);z-index:1;padding:5px;}
-        #centerAddr {display:block;margin-top:2px;font-weight: normal;}
+        .hAddr {position:absolute;left:0.625rem;top:0.625rem;border-radius: 0.125rem;background:#fff;background:rgba(255,255,255,0.8);z-index:1;padding:0.3125rem;}
+        #centerAddr {display:block;margin-top:0.125rem;font-weight: normal;}
         .bAddr {padding:5px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
         #sel {    
                 margin: 1.25rem;
@@ -22,24 +25,23 @@
                 font-weight: 600;
             }
         .input {
-            width: 220px;
-            height: 10px;
-            font-size: 12px;
-            border: 1px solid #515151;
-            padding: 15px;
-            border-radius: 30px;
-            margin-right: 5px;
-            margin-top: 50px;
+            width: 13.75rem;
+            height: 0.625rem;
+            font-size: 0.75rem;
+            border: 0.0625rem solid #515151;
+            padding: 0.9375rem;
+            border-radius: 1.875rem;
+            margin-right: 0.3125rem;
+            margin-top: 0.025rem;
         }
         .search_btn {
-            width: 80px;
-            height: 42px;
-            font-size: 12px;
-            padding: 10px;
-            border-radius:20px;
+            width: 5rem;
+            height: 2.625rem;
+            font-size: 0.75rem;
+            padding: 0.625rem;
+            border-radius: 1.25rem;
             background-color: #35B8E1;
             color: white;
-            top: 0px;
 
         }
         .map_top {
@@ -55,7 +57,26 @@
         }
 
     </style>
+
+
 </head>
+<script>
+    $(document).ready(function() {        
+        // Geolocation API에 액세스할 수 있는지를 확인
+        if (navigator.geolocation) {
+            //위치 정보를 얻기
+            navigator.geolocation.getCurrentPosition (function(pos) {
+                console.log(pos.coords.latitude);     // 위도
+                console.log(pos.coords.longitude); // 경도
+            },
+            function(err){
+                console.log(err)
+            });
+        } else {
+            alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+        }
+    });
+</script>
 <body>
     <div id="sel">
         장소를 선택해주세요.
@@ -77,11 +98,17 @@
         </div>
     </div>
     <div id="map_buttom">
-        <span>
-            <button onclick="sear()" type="submit" class="search_btn">
-                확인
-            </button>
-        </span>
+        <div id="selected" class="selected">
+            
+        </div>
+
+        <div>
+            <span>
+                <button onclick='opener.document.getElementById("maps").value = load;window.close()'  type="submit" class="search_btn">
+                    확인
+                </button>
+            </span>
+        </div>
     </div>
 
 
@@ -89,6 +116,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
     
     <script>
+    let locd = ''
 
     function sear() {
         keyword = document.getElementById("searp").value
@@ -113,7 +141,7 @@
     let geocoder = new kakao.maps.services.Geocoder();
 
     let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
-        infowindow = new kakao.maps.InfoWindow({zindex:1}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
+        infowindow = new kakao.maps.InfoWindow({zindex:3}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
 
     // 현재 지도 중심좌표로 주소를 검색해서 지도 좌측 상단에 표시합니다
     searchAddrFromCoords(map.getCenter(), displayCenterInfo);
@@ -128,10 +156,10 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-    map.markers
     // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
     kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
-        console.log(map.markers)
+        hideMarkers()
+        markers.push(marker)
         searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
             if (status === kakao.maps.services.Status.OK) {
                 let coords = mouseEvent.latLng.toString().replace("(","").replace(")","").split(",")
@@ -144,6 +172,26 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
                                 '<span class="title">주소정보</span>' + 
                                 detailAddr + 
                             '</div>';
+                
+
+                document.cookie = "adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "road_adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LAT = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LNG = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "name = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "adr = "+result[0].address.address_name
+                !!result[0].road_address ? document.cookie = "road_adr = "+result[0].road_address.address_name : '';
+                document.cookie = "LAT = "+coords[0]
+                document.cookie = "LNG = "+coords[1]
+
+                load = !!result[0].road_address ? result[0].road_address.address_name : result[0].address.address_name
+                
+                $("#selected").empty()
+                $("#selected").append(
+                    `<span>
+                        <span class="title">선택된 주소 : ${load}</span>
+                    </span>`
+                )
 
                 // 마커를 클릭한 위치에 표시합니다 
                 marker.setPosition(mouseEvent.latLng);
@@ -170,7 +218,7 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
             // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
             // LatLngBounds 객체에 좌표를 추가합니다
             var bounds = new kakao.maps.LatLngBounds();
-
+            hideMarkers()
             for (var i=0; i<data.length; i++) {
                 displayMarker(data[i]);    
                 bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
@@ -182,6 +230,23 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
             alert("검색 결과가 없습니다.")
         }
     }
+
+    // 배열에 추가된 마커들을 지도에 표시하거나 삭제하는 함수입니다
+function setMarkers(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }            
+}
+
+// "마커 보이기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에 표시하는 함수입니다
+function showMarkers() {
+    setMarkers(map)    
+}
+
+// "마커 감추기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에서 삭제하는 함수입니다
+function hideMarkers() {
+    setMarkers(null);    
+}
 
         // 지도에 마커를 표시하는 함수입니다
     function displayMarker(place) {
@@ -202,7 +267,7 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
             searchDetailAddrFromCoords(new kakao.maps.LatLng(place.y, place.x) , function(result, status) {
             if (status === kakao.maps.services.Status.OK) {
                 let detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
-                detailAddr += '<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>'
+                detailAddr += '<div>장소 이름 : ' + place.place_name + '</div>'
                 detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
                 detailAddr += '<div>위도 (LAT) : ' + place.y + '</div>';
                 detailAddr += '<div>경도 (LNG) : ' + place.x + '</div>';
@@ -212,6 +277,26 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
                                 detailAddr + 
                             '</div>';
 
+
+
+                document.cookie = "adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "road_adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LAT = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LNG = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "name = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "adr = "+result[0].address.address_name
+                !!result[0].road_address ? document.cookie = "road_adr = "+result[0].road_address.address_name : '';
+                document.cookie = "LAT = "+place.y
+                document.cookie = "LNG = "+place.x
+                document.cookie = "name = "+place.place_name
+
+                load = !!result[0].road_address ? result[0].road_address.address_name+" ("+place.place_name+")" : result[0].address.address_name+" ("+place.place_name+")"
+                $("#selected").empty()
+                $("#selected").append(
+                    `<span>
+                        <span class="title">선택된 주소 : ${load}</span>
+                    </span>`
+                )
                 // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
                 infowindow.setContent(content);
                 infowindow.open(map, marker);

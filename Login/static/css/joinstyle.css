@@ -1,5 +1,5 @@
 body {
-    width: 1980px;
+    width: 123.75rem;
     margin: auto;
     color: #515151;
 }
@@ -8,20 +8,20 @@ h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     text-align: center;
-    margin: 100px;
+    margin: 6.25rem;
 }
 
 p {
     text-align: center;
-    font-size: 12px;
-    margin-top: -90px;
+    font-size: 0.75rem;
+    margin-top: -5.625rem;
     opacity: 50%;
 }
 
 .content {
-    width: 860px;
+    width: 53.75rem;
     margin: 0 auto;
-    padding: 50px 0 50px 0;
+    padding: 3.125rem 0 3.125rem 0;
 }
 
 .join_section {
@@ -31,30 +31,30 @@ p {
 }
 
 .join_section div {
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .join_section label {
-    font-size: 12px;
+    font-size: 0.75rem;
     opacity: 50%;
     display: block;
-    padding-bottom: 6px;
+    padding-bottom: 0.375rem;
 }
 
 .join_section input {
-    width: 300px;
-    font-size: 12px;
-    border: 1px solid #515151;
-    padding: 15px;
-    border-radius: 18px;
+    width: 18.75rem;
+    font-size: 0.75rem;
+    border: 0.063rem solid #515151;
+    padding: 0.938rem;
+    border-radius: 1.125rem;
     opacity: 30%;
 }
 
 button {
-    width: 330px;
-    font-size: 12px;
+    width: 20.625rem;
+    font-size: 0.75rem;
     background-color: #35B8E1;
     color: #fff;
-    padding: 15px;
-    border-radius: 20px;
+    padding: 0.938rem;
+    border-radius: 1.25rem;
 }

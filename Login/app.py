@@ -271,11 +271,12 @@ def writeupload():
     People_meet = request.form['People_meet']
     Feel = request.form['Feel']
     Eat = request.form['Eat']
-    AttachFiles = request.form['AttachFiles[]']
-    Area = request.form['Area']
-    
+    try:
+        AttachFiles = request.form['AttachFiles[]']
+    except KeyError:
+        AttachFiles = 'null'
 
-    json = {
+    json1 = {
         'Author':Author,
         'Name':Name,
         'Description':escape(Desc),
@@ -283,24 +284,30 @@ def writeupload():
         'Feel':Feel,
         'Eat':Eat,
         'AttachFiles':AttachFiles,
-        'Area':Area,
+        'ADR':request.form['Area[ADR]'],
+        'LOAD_ADR':request.form['Area[LOAD_ADR]'],
+        'LAT':request.form['Area[LAT]'],
+        'LNG':request.form['Area[LNG]'],
+        'AREA_NAME':request.form['Area[NAME]'],
+        'CUSTOM_NAME':request.form['Area[CUSTOM_NAME]'],
         'Created_At':str(now)
     }
 
-    print(json)
+    print(json1)
 
     try:
         res = requests.post(
             url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
-            json=json
+            json=json1
         )._content
     except requests.exceptions.RequestException as error:
         print(error)
         return error
 
-    print(res)
+    
 
     if(str(res).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
+        print(str(res).split("\"")[1].split("\"")[0])
         return "OK"
 
     return res['errorMessage']
@@ -396,31 +403,61 @@ async def get_mapdata():
 
     return
     
+####여기부터
+
+@app.route("/Write",methods=["POST"])
+async def example():
+        Author = request.form['Author']
+
+        #변수 = {}
+        json1 = { 
+            'Author':Author,
+        }       
+
+        try:
+            res = requests.post(
+                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+                json=json1
+            )
+        except requests.exceptions.RequestException as error:
+            return error
+
+        res.encoding = "UTF-8"
+
+        return json.loads(res._content)
+
+
+####여기부터
+@app.route("/ranking",methods=['POST'])
+async def example2(): 
+
+    try:
+        res = requests.get(
+                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+                json=json
+            )._content
+        res.encoding = "UTF-8"
+        happy = 1
+        medium = 1
+        bad = 1
+        total = res['total']
+        happyp = happy/total * 100
+        mediump = medium/total * 100
+        badp = bad/total * 100
+    except requests.exceptions.RequestException as error:
+        return error
+
+
+    return render_template('ranking.html')
 
 if __name__ == '__main__':
    app.run('0.0.0.0', port=80, debug=True)
 
 
-####여기부터
-
-@app.route("/Write",methods=["GET"])
-async def example():
-        Author = request.form['Author']
-
-        #변수 = {}
-        json = { 
-            'Author':Author,
-        }
-        
-        print(json)
-
-        try:
-            res = requests.post(
-                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
-                json=json
-            )
-        except requests.exceptions.RequestException as error:
-            return error
+#####여기부터
 
 
-        return render_template("write.html")
+
+
+
+

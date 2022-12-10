@@ -1,0 +1,55 @@
+.write_wrap {
+    margin: 8rem 5rem 2rem;
+    text-align: center;
+}
+
+.write_section {
+    padding: 20rem 0 3rem 0;
+    margin-bottom: 38rem;
+}
+
+.write_bt {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* 이런 경우엔 부모에 block을 주고 자식에 right준다. 위에<< */
+.write_section div button {
+    font-size: 0.9rem;
+    background-color: #35B8E1;
+    color: #fff;
+    border-radius: 2rem;
+    width: 5rem;
+    height: 3rem;
+
+}
+
+.write_section div button:hover {
+    background-color: #08a3d2;
+}
+
+.write_box {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.9rem 1.9rem;
+    border: 1px solid rgba(146, 146, 146, 0.5);
+    border-radius: 1.9rem;
+}
+
+.write_box h2 {
+    font-size: 1.2rem;
+}
+
+.write_box p {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.user_info {
+    font-size: 1rem;
+    opacity: 60%;
+}

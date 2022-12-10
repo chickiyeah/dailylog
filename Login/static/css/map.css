@@ -1,192 +1,145 @@
-/* MAP */
-
-.content {
-    display: flex;
-    flex-direction: column;
+/* place */
+.map_wrap {
+    padding: 8rem 5rem 2rem;
     text-align: center;
 }
 
-.map_wrap {
-    position: relative;
-    width: 100%;
-    height: 350px;
+.map_section {
+    margin: 7rem 0 3rem 0;
 }
 
+.map_section input {
+    width: 30rem;
+    height: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid #515151;
+    padding: 1rem;
+    border-radius: 2rem;
+    opacity: 30%;
+    margin-right: 0.3rem;
+}
+
+.search_btn {
+    width: 5rem;
+    height: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #35B8E1;
+    color: white;
+}
+
+.form-check input {
+    width: 1rem;
+}
+
+.map_section label {
+    font-size: 0.8rem;
+    opacity: 80%;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+/* 지도 모니터 */
+.map_box {
+    width: 70rem;
+    height: 40rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2.25rem;
+    margin-bottom: 5rem;
+}
+
+.map_header {
+    height: 3rem;
+    position: relative;
+    width: 100%;
+    background: #e6e6e6;
+    border-radius: 2.25rem;
+}
+
+.map_header span {
+    position: absolute;
+    top: 1.2rem;
+    left: 4rem;
+}
+
+.map_nav {
+    position: relative;
+    opacity: 25%;
+    top: 1rem;
+    left: -28rem;
+}
+
+.map_nav i {
+    margin-right: 1rem;
+}
+
+.map_nav i:nth-child(2),
+i:nth-child(3) {
+    transform: scaleX(-1);
+}
+
+.map_header span:nth-child(1) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: lightcoral;
+}
+
+.map_header span:nth-child(2) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(130%);
+    background-color: lightskyblue;
+}
+
+.map_header span:nth-child(3) {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transform: translateX(300%);
+    background-color: lightgreen;
+}
+
+.map_img #map {
+    width: 90%;
+    height: 30rem;
+    border-radius: 1rem;
+    margin-top: -5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    z-index: 0;
+}
 .title {
-    font-weight: bold;
-    display: block;
+    font-weight:bold;
+    display:block;
 }
 
 .hAddr {
-    position: absolute;
-    left: 80px;
-    top: 8px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 1;
-    padding: 5px;
+    position:absolute;
+    left:27.625rem;
+    top:32.625rem;
+    border-radius: 1.125rem;
+    background:#fff;
+    background:rgba(255,255,255,0.8);
+    z-index:1;
+    padding:0.3125rem;
 }
 
 #centerAddr {
-    display: block;
-    margin-top: 2px;
+    display:block;
+    margin-top:0.125rem;
     font-weight: normal;
 }
 
 .bAddr {
-    padding: 5px;
+    padding:5px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-
-.map_section {
-    margin-top:200px;
-}
-
-.map_section input {
-    width: 220px;
-    height: 10px;
-    font-size: 12px;
-    border: 1px solid #515151;
-    padding: 15px;
-    border-radius: 30px;
-    opacity: 30%;
-    margin-right: 5px;
-    margin-top: 50px;
-}
-
-.map_section label {
-    font-size: 12px;
-    opacity: 50%;
-    display: block;
-    padding-bottom: 6px;
-}
-
-.search_btn {
-    width: 80px;
-    height: 42px;
-    font-size: 12px;
-    padding: 13px;
-    border-radius:20px;
-    background-color: #35B8E1;
-    color: white;
-    top: 10px;
-
-}
-#flexCheckDefault {
-    display:inline-block;
-    width: 30px;
-    line-height: 50px;
-    padding: 15px;
-    zoom: 1.5;
-
-}
-.form-check {
-    display: inline-block;
-    text-align: center;
-
-}
-#map {
-    margin: auto;
-    width: 92%;
-    height: 700px;
-    margin-bottom: 120px;
-    padding-right: 10px;
-}
-.map_location {
-    border-radius: 20px;
-    /*margin-right: auto;*/
-    margin-bottom: 100px;
-}
-.map_wrap {
-    margin-bottom: 250px;
-}
-
-/* Map 끝 */
-
-/* 반응형 시작 */
-/* 태블릿 */
-@media all and (max-width: 1024px){ 
-
-    #map {
-        width: 980px;
-        height: 400px;
-    }
-    
-    #nav ul {
-        display: flex;
-        flex-direction: row;
-        margin-left: -180px;
-    }
-
-    #nav ul li {
-        margin-right: 10px;
-        font-size: 10px;
-        letter-spacing: -1px;
-    }
-    .hAddr {
-        left: 30px;
-        top: 10px;
-        border-radius: 20px;
-    }
-}
-
-
-    /*모바일 */
-@media all and (max-width: 768px){
-    #nav {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #nav ul {
-        display: flex;
-        flex-direction: row;
-        margin-left: 0px;
-    }
-
-    #nav ul li {
-        margin-right: 10px;
-        font-size: 10px;
-        letter-spacing: -1px;
-    }
-
-    #header {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        margin: 10px 10px;
-        width: 100%;
-    }
-
-    .top_hr {
-        position: relative;
-        top: 55px;
-        opacity: 30%;
-    }
-
-    .nav_icon {
-        display: flex;
-        align-items: center;
-        margin-right: 5px;
-    }
-
-    #main {
-        top: 60px;
-    }
-
-    #map {
-        width: 95%;
-        height: 350px;
-        margin-left: 2%;
-    }
-
-    .hAddr {
-        left: 20px;
-        top: 10px;
-        border-radius: 20px;
-    }
 }
