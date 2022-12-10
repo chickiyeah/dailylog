@@ -18,6 +18,7 @@
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
         $(document).ready(function () {
         if(document.cookie.includes("id=")){
@@ -293,14 +294,17 @@
                 <div class="write_bt">
                     <button onclick="location.href='/write/2'" >기록하기</button>
                 </div>
-                <div class="write_box">
-                    <div>
-                        <h2>12/01</h2>
-                        <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
-                    </div>
-                    <div class="user_info">
-                        <p>츠키</p>
-                        <p>3시간 전</p>
+
+                <div class="write_main" id="write_main">
+                    <div class="write_box">
+                        <div>
+                            <h2>12/01</h2>
+                            <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
+                        </div>
+                        <div class="user_info">
+                            <p>츠키</p>
+                            <p>3시간 전</p>
+                        </div>
                     </div>
                 </div>
             </div>

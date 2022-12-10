@@ -118,7 +118,7 @@ function getFeelPercent(){
                 if(greatper == element){
                     data = {
                         "name":"맑음",
-                        "value":element
+                        "per":element
                     }
                     top.push(data)
                 }
@@ -126,7 +126,7 @@ function getFeelPercent(){
                 if(goodper == element){
                     data = {
                         "name":"흐림",
-                        "value":element
+                        "per":element
                     }
                     top.push(data)
                 }
@@ -134,7 +134,7 @@ function getFeelPercent(){
                 if(mediumper == element){
                     data = {
                         "name":"비",
-                        "value":element
+                        "per":element
                     }
                     top.push(data)
                 }
@@ -142,7 +142,7 @@ function getFeelPercent(){
                 if(badper == element){
                     data = {
                         "name":"눈",
-                        "value":element
+                        "per":element
                     }
                     top.push(data)
                 }
@@ -150,7 +150,7 @@ function getFeelPercent(){
                 if(too_badper == element){
                     data = {
                         "name":"바람",
-                        "value":element
+                        "per":element
                     }
                     top.push(data)
                 }
@@ -218,9 +218,15 @@ function getPersonPercent() {
                 peo = element.People_meet
 
                 if(peo.includes(",")){
-                    peo.split
+                    peo.split(",").forEach(ele => {
+                        result[ele] = (result[ele] || 0)+1; 
+                    })
+                }else{
+                    if(peo != "None"){
+                        result[peo] = (result[peo] || 0)+1; 
+                    }
                 }
-                result[peo] = (result[peo] || 0)+1; 
+                
             })
 
             
@@ -243,6 +249,7 @@ function getPersonPercent() {
             for(var i = 0; i < keyarr.length; i++){
                 permap.push({'name':keyarr[i], 'per':per[i]})
             }
+            console.log(permap)
 
             return permap
                 
@@ -250,4 +257,47 @@ function getPersonPercent() {
 
         }
     })           
+}
+
+function getEatPercent(){
+    $.ajax({
+        url:"/Write",
+        method:"POST",
+        data:{
+            "Author":id
+        },
+        success: function(response){
+            const result = {};
+                response.forEach(element => {
+                    adr = element.Eat
+                    result[adr] = (result[adr] || 0)+1; 
+                })
+    
+                
+                let per = []
+                let resmap = new Map(Object.entries(result))
+                const mapSort1 = new Map([...resmap.entries()].sort((a, b) => b[1] - a[1]));
+                let max = 0
+    
+                mapSort1.forEach(element => {
+                    max += element
+                })
+    
+                mapSort1.forEach(element => {
+                    percent = element/max * 100
+                    per.push(percent)
+                })
+    
+                let keyarr = Array.from(mapSort1.keys())
+                let permap = []
+                for(var i = 0; i < keyarr.length; i++){
+                    permap.push({'name':keyarr[i], 'per':per[i]})
+                }
+
+                console.log(permap)
+    
+                return permap                       
+    
+        }
+    });
 }
