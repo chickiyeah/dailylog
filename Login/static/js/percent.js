@@ -6,6 +6,7 @@ $(document).ready(function () {
         }else{
             id = document.cookie.split("id=")[1].replace(" ","")
         }
+        getFeelPercent()
         $.ajax({
             url:"/User",
             method:"POST",
@@ -70,6 +71,19 @@ function compare(a, b) {
 }
 
 
+function addCard(rank, str, per) {
+    let card = Card(rank, str, per)
+    $("#ranking_card").append(card)
+}
+
+function Card(rank, str, per) {
+return `<div>
+            <h2>${rank}위</h2>
+            <h4>${str}</h4>
+            <p>${per}%</p>
+        </div>`
+}
+
 function getFeelPercent(){
     $.ajax({
         url:"/Write",
@@ -118,7 +132,7 @@ function getFeelPercent(){
                 if(greatper == element){
                     data = {
                         "name":"맑음",
-                        "per":element
+                        "per":element.toFixed(2)
                     }
                     top.push(data)
                 }
@@ -126,7 +140,7 @@ function getFeelPercent(){
                 if(goodper == element){
                     data = {
                         "name":"흐림",
-                        "per":element
+                        "per":element.toFixed(2)
                     }
                     top.push(data)
                 }
@@ -134,7 +148,7 @@ function getFeelPercent(){
                 if(mediumper == element){
                     data = {
                         "name":"비",
-                        "per":element
+                        "per":element.toFixed(2)
                     }
                     top.push(data)
                 }
@@ -142,7 +156,7 @@ function getFeelPercent(){
                 if(badper == element){
                     data = {
                         "name":"눈",
-                        "per":element
+                        "per":element.toFixed(2)
                     }
                     top.push(data)
                 }
@@ -150,14 +164,19 @@ function getFeelPercent(){
                 if(too_badper == element){
                     data = {
                         "name":"바람",
-                        "per":element
+                        "per":element.toFixed(2)
                     }
                     top.push(data)
                 }
             });
 
             console.log(top)
-            return top
+            $("#ranking_card").empty()
+            for(var i = 0; i < 3; i++){
+                 j = i + 1                   
+                 console.log(j,top[i].name,top[i].per)
+                 addCard(j,top[i].name,top[i].per)
+            }          
         }
     });
 }
@@ -188,7 +207,7 @@ function getPlacePercent(){
 
             mapSort1.forEach(element => {
                 percent = element/max * 100
-                per.push(percent)
+                per.push(percent.toFixed(2))
             })
 
             let keyarr = Array.from(mapSort1.keys())
@@ -197,10 +216,12 @@ function getPlacePercent(){
                 permap.push({'name':keyarr[i], 'per':per[i]})
             }
 
-            return permap
-                
-            
-
+            $("#ranking_card").empty()
+            for(var i = 0; i < 3; i++){
+                 j = i + 1                   
+                 console.log(j,permap[i].name,permap[i].per)
+                 addCard(j,permap[i].name,permap[i].per)
+            }          
         }
     })        
 }
@@ -241,7 +262,7 @@ function getPersonPercent() {
 
             mapSort1.forEach(element => {
                 percent = element/max * 100
-                per.push(percent)
+                per.push(percent.toFixed(2))
             })
 
             let keyarr = Array.from(mapSort1.keys())
@@ -249,9 +270,14 @@ function getPersonPercent() {
             for(var i = 0; i < keyarr.length; i++){
                 permap.push({'name':keyarr[i], 'per':per[i]})
             }
-            console.log(permap)
-
-            return permap
+            
+            
+            $("#ranking_card").empty()
+            for(var i = 0; i < 3; i++){
+                 j = i + 1                   
+                 console.log(j,permap[i].name,permap[i].per)
+                 addCard(j,permap[i].name,permap[i].per)
+            }          
                 
             
 
@@ -285,7 +311,7 @@ function getEatPercent(){
     
                 mapSort1.forEach(element => {
                     percent = element/max * 100
-                    per.push(percent)
+                    per.push(percent.toFixed(2))
                 })
     
                 let keyarr = Array.from(mapSort1.keys())
@@ -294,9 +320,13 @@ function getEatPercent(){
                     permap.push({'name':keyarr[i], 'per':per[i]})
                 }
 
-                console.log(permap)
-    
-                return permap                       
+                
+                $("#ranking_card").empty()
+                for(var i = 0; i < 3; i++){
+                     j = i + 1                   
+                     console.log(j,permap[i].name,permap[i].per)
+                     addCard(j,permap[i].name,permap[i].per)
+                }                      
     
         }
     });

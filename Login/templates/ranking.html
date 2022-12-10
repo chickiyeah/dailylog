@@ -70,28 +70,14 @@
                 </div>
                 <div class="ranking_category">
                     <ul>
-                        <li><a href="#">기분</a></li>
-                        <li><a href="#">장소</a></li>
-                        <li><a href="#">사람</a></li>
-                        <li><a href="#">음식</a></li>
+                        <li onclick="getFeelPercent()"><a >기분</a></li>
+                        <li onclick="getPlacePercent()"><a >장소</a></li>
+                        <li onclick="getPersonPercent()"><a >사람</a></li>
+                        <li onclick="getEatPercent()"><a >음식</a></li>
                     </ul>
                 </div>
-                <div class="ranking_card">
-                    <div>
-                        <h2>1위</h2>
-                        <h4>맑음</h4>
-                        <p>74.32%</p>
-                    </div>
-                    <div>
-                        <h2>2위</h2>
-                        <h4>흐림</h4>
-                        <p>34.32%</p>
-                    </div>
-                    <div>
-                        <h2>3위</h2>
-                        <h4>눈</h4>
-                        <p>14.32%</p>
-                    </div>
+                <div id="ranking_card" class="ranking_card">
+                    <!--  데이터 들어가는 자리 -->
                 </div>
             </div>
         </section>
