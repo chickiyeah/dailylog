@@ -89,6 +89,147 @@
         }
     })
 
+    
+
+    var openWin
+
+    function openMap() {
+        window.name = "글 작성";
+        openWin = window.open("/write/popupmap", "장소를 선택해주세요.","width=870, height=880, resizable = no, scrollbars = no")
+    }
+
+    function upload() {
+        ok = true
+        if(document.getElementById("title").value == ''){
+            ok = false
+            $(".title").focus()
+            alert('제목을 입력해주세요.')
+            return
+        }
+
+        if(document.getElementById("maps").value == ''){
+            ok = false
+            $(".maps").focus()
+            alert('지역을 입력해주세요.')
+            //$(".map").attr('placeholder', '지역을 입력해주세요.')
+            return
+        }
+
+        if(document.getElementById("todayuser").value == ''){
+            ok = false
+            $(".todayuser").focus()
+            alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
+            return
+        }
+
+        if($("#select #option").text() == '오늘의 기분'){
+            ok = false
+            $("#select #option").focus()
+            $("#select ul").toggle();
+            alert("오늘의 기분을 선택해주세요.")
+            return
+        }
+
+        if($("#select2 #option2").text() == '오늘의 메뉴'){
+            ok = false
+            $("#select2 #option2").focus()
+            $("#select2 ul").toggle();
+            alert("오늘의 메뉴를 선택해주세요.")
+            return
+        }
+
+        if($("#textarea").val() == ''){
+            ok = false
+            $("#textarea").focus()
+            alert("내용을 입력해주세요.")
+            return
+        }
+
+        if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+        }
+
+        if(ok == true){
+            if(document.getElementById("todayuser").value != "없음"){
+                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
+                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
+                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
+                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
+                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+
+                    json = {
+                        'Author':id,
+                        'Name': document.getElementById("title").value,
+                        'Desc': document.getElementById("textarea").value,
+                        'People_meet': document.getElementById("todayuser").value,
+                        'Feel': $("#select #option").text(),
+                        'Eat': $("#select2 #option2").text(),
+                        'AttachFiles': link,
+                        'Area': {
+                            'ADR' : ADR,
+                            'LOAD_ADR' : LOAD_ADR,
+                            'LAT' : LAT,
+                            'LNG' : LNG,
+                            'NAME' : NAME,
+                            'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                        }
+                    }
+                    $.ajax({
+                        url:"/write/upload",
+                        method:"POST",
+                        data:json,
+                        success: function(response){
+                            console.log(response)
+                            if(response == "OK"){
+                                    location.href="/write/2"
+                                    alert("업로드를 완료했습니다!")
+                                }
+                        }
+                    })
+                }else{
+                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
+                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
+                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
+                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
+                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+
+                        json = {
+                            'Author':id,
+                            'Name': document.getElementById("title").value,
+                            'Desc': document.getElementById("textarea").value,
+                            'People_meet': "None",
+                            'Feel': $("#select #option").text(),
+                            'Eat': $("#select2 #option2").text(),
+                            'AttachFiles': link,
+                            'Area': {
+                                'ADR' : ADR,
+                                'LOAD_ADR' : LOAD_ADR,
+                                'LAT' : LAT,
+                                'LNG' : LNG,
+                                'NAME' : NAME,
+                                'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                            }
+                        }
+                        $.ajax({
+                            url:"/write/upload",
+                            method:"POST",
+                            data:json,
+                            success: function(response){
+                                if(response == "OK"){
+                                    location.href="/write/2"
+                                    alert("업로드를 완료했습니다!")
+                                }
+                            }
+                        })
+                             
+            }
+        }
+
+        
+    }
+
     function compare(a, b) {
         return a-b
     }
@@ -343,7 +484,10 @@
                         <input type="text" id="title" placeholder="제목">
                     </div>
                     <div>
-                        <input type="text" id="maps" placeholder="지역">
+                        <input onclick="openMap()" type="text" id="maps" placeholder="지역" readonly>
+                    </div>
+                    <div>
+                        <input type="text" id="mapname" placeholder="장소이름">
                     </div>
                     <div>
                         <input type="text" id="todayuser" placeholder="오늘 만난 사람">
@@ -409,6 +553,9 @@
         </div>
     </footer>
     <!-- 푸터 끝 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../static/js/write.js"></script>
 </body>
 
 </html>

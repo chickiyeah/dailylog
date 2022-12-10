@@ -244,7 +244,7 @@ async def RSTPW():
 
 @app.route("/write/1")
 def write():
-    return render_template("write.html")
+    return render_template("write1.html")
 
 @app.route("/write/2")
 def write2():
