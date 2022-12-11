@@ -148,12 +148,17 @@ i:nth-child(3) {
     height: 40rem;
     margin: auto;
 }
+
+
 @media screen and (max-width: 778.4px) {
     #searp {
         margin-bottom: 20px;
-       
+        width: auto;
+    
     }
-     
+    .map_wrap {
+        margin: auto;
+    }
 }
 @media screen and (max-width: 1280px) {
     .map_content{
@@ -161,14 +166,15 @@ i:nth-child(3) {
         width: auto;
     }
     .map_nav {
-        Position: fixed;
-        text-align: left;
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        width: 200px;
     }
     .hAddr {
-        position: sticky;
-        left: 27.625rem;
-        top: 32.625rem;
-        text-align: left;
+        position: absolute;
+        left: 50px;
+        top: 100px;
     }
 
 
