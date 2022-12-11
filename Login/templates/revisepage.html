@@ -16,6 +16,110 @@
     <title>DAILY LOG</title>
 
 </head>
+<script>
+    $(document).ready(function () {
+        if(document.cookie.includes("id=")){
+            login = true
+            if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+            }
+            let userinfo = ""
+            $.ajax({
+                url:"/User",
+                method:"POST",
+                data:{
+                    id:id
+                },
+                success: function(response){
+                    name = response.nickname
+                    console.log(userinfo)
+                                //목록 가져오기
+                    $.ajax({
+                        url:"/Write",
+                        method:"POST",
+                        data:{
+                            "Author":id
+                        },
+                        success: function(response){
+                            response.forEach(element => {
+                                let now = new Date()
+
+                                let year = now.getFullYear()
+                                let month = now.getMonth()
+                                let day = now.getDate()
+                                let hours = now.getHours()+9
+                                let minutes = now.getMinutes()
+                                let seconds = now.getSeconds()
+
+                                let nowdate = new Date(year, month, day, hours, minutes, seconds)
+
+                                let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
+                                let a = ""
+
+                                let wmon = element.Created_At.split("-")[1]
+                                let wday = element.Created_At.split("-")[2].split("T")[0]
+
+                                if(chai < 1000 * 60)
+                                    a += '방금'
+                                else if(chai < 1000 * 60 * 60)
+                                    a += Math.floor(chai / (1000 * 60)) + '분 전';
+                                else if(chai < 1000 * 60 * 60 * 24)
+                                    a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
+                                else if(chai < 1000 * 60 * 60 * 24 * 30)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
+                                else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
+                                else
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
+                                
+                                if(location.href.includes("?")){
+                                    loc = location.href.split("?")[1].split("loc%20=%20")[1]
+                                    location.href = "/"+loc
+                                }else{
+                                    location.href = `/`;
+                                }
+
+                                addCard(wmon+"/"+wday, element.Description, name, a, element.Created_At)
+                            });
+                        }
+                    })
+                }
+            })
+
+        }else{ 
+            login = false
+            location.href = "/Login?loc = write/1"
+            alert("로그인이 필요합니다.")
+        }
+    })
+
+    function addCard(Date, Name, UserName, Ex, id) {
+        card = Card(Date, Name, UserName, Ex, id)
+        $("#write_main").prepend(card)
+    }
+    function card(name, adr, people_meet, image, date, feel, desc) {
+
+        return `<h1>${name}</h1>
+                <p>${adr}</p>
+                <p>${people_meet}</p>
+                <article>
+                    <div class="picture">
+                        <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                    </div>
+                    <p>${date}</p>
+                    <p>기분 : ${feel}</p>
+                    <div class="comment">
+                        ${desc}
+                    </div>
+                    <div class="btn">
+                        <input type="submit" class="submit" value="수정">
+                        <input type="submit" class="submit" value="삭제" style="background-color: #FF774D">
+                    </div>
+                </article>`
+    }
+</script>    
 <body>
 <div>
     <!-- 헤더 시작 -->

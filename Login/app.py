@@ -47,7 +47,7 @@ Storage = Firebase(firebaseConfig).storage()
 #네비게이터
 @app.route('/')
 def home():
-    print(default_app.name)
+    #print(default_app.name)
     return render_template('index.html')
 
 @app.route("/Login")
@@ -118,6 +118,7 @@ async def good_say():
         json={'number':id}
     )
     user.encoding = "UTF-8"
+
     return json.loads(user.text)
 
 
@@ -132,7 +133,6 @@ async def user_create():
     name = request.form['name']
     #이메일이 공란이면
     if(len(email) == 0):
-        print(len(email))
         return "MISSING_EMAIL"
 
     #비번이 공란이면
@@ -235,7 +235,7 @@ async def RSTPW():
     try:
         auth.send_password_reset_email(email)
     except requests.exceptions.HTTPError as err:
-        print(json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message'])
+        #print(json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message'])
         return json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message']
 
 
@@ -333,8 +333,6 @@ async def writeupload():
         'Created_At':str(now)
     }
 
-    print(json1)
-
     try:
         res = requests.post(
             url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
@@ -347,7 +345,7 @@ async def writeupload():
     
 
     if(str(res).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
-        print(str(res).split("\"")[1].split("\"")[0])
+        #print(str(res).split("\"")[1].split("\"")[0])
         return "OK"
 
     return res['errorMessage']

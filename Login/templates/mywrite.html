@@ -127,19 +127,21 @@ function Delete() {
 }
 
 function Card(Date, Name, UserName, Ex, id) {
-return `<div id=${id} class="write_box">
-            <input id=${id}_chk class="optionCheck" type="checkbox" id="check_btn">
-            <label for="chkBox">
-                <div>
-                    <h2>${Date}</h2>
-                    <h3>${Name}</h3>
-                </div>
-            </label>
-            <div class="user_info">
-                <p>${UserName}</p>
-                <p>${Ex}</p>
+return `<a href="/write/detail?postid=${id}">
+            <div id=${id} class="write_box">
+                <input id=${id}_chk class="optionCheck" type="checkbox" id="check_btn">
+                    <label for="chkBox">
+                    <div>
+                        <h2>${Date}</h2>
+                        <h3>${Name}</h3>
+                    </div>
+                </label>
+                <div class="user_info">
+                    <p>${UserName}</p>
+                    <p>${Ex}</p>
+                </div>              
             </div>
-        </div>`
+        </a>`
 }
 </script>
 <body>
