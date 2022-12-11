@@ -22,9 +22,11 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function () {
-        let link = ""
+            let link = ""
         let postid = ""
+        let befimg = ""
+    $(document).ready(function () {
+
         if(location.href.includes("?")){
             postid = location.href.split("?")[1].split("postid=")[1]
         }else{
@@ -98,6 +100,7 @@
                                     if(element.AttachFiles == "null" || element.AttachFiles == ""){
                                         $("#file").append("<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 현재이미지 없음</span>")
                                     }else{
+                                        befimg = element.AttachFiles
                                         $("#file").append(`<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 원본이미지 <a style="color:blue;" href="${element.AttachFiles}">클릭</a></span>`)
                                     }
                                 }
@@ -191,7 +194,11 @@
                     LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
                     !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
                     !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
-
+                    if(link == ""){
+                        if(befimg != ""){
+                            link = befimg
+                        }
+                    }
                     json = {
                         'Author':id,
                         'Name': document.getElementById("title").value,
@@ -207,18 +214,18 @@
                             'LNG' : LNG,
                             'NAME' : NAME,
                             'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
-                        }
+                        },
+                        'Created_At':postid
                     }
                     $.ajax({
-                        url:"/write/upload",
-                        method:"POST",
+                        url:"/Write",
+                        method:"PATCH",
                         data:json,
                         success: function(response){
                             console.log(response)
                             if(response == "OK"){
-                                    location.href="/write/2"
-                                    alert("업로드를 완료했습니다!")
-                                }
+                                //location.href="/write/detail?postid="+postid
+                            }
                         }
                     })
                 }else{
@@ -227,7 +234,11 @@
                     LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
                     !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
                     !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
-
+                    if(link == ""){
+                        if(befimg != ""){
+                            link = befimg
+                        }
+                    }    
                         json = {
                             'Author':id,
                             'Name': document.getElementById("title").value,
@@ -243,17 +254,18 @@
                                 'LNG' : LNG,
                                 'NAME' : NAME,
                                 'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
-                            }
+                            },
+                            'Created_At':postid
                         }
                         $.ajax({
-                            url:"/write/upload",
-                            method:"POST",
+                            url:"/Write",
+                            method:"PATCH",
                             data:json,
                             success: function(response){
                                 if(response == "OK"){
-                                    location.href="/write/1"
-                                    alert("업로드를 완료했습니다!")
+                                    //location.href="/write/detail?postid="+postid
                                 }
+                                console.log(response)
                             }
                         })
                              

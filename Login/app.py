@@ -273,7 +273,7 @@ async def patch():
         AttachFiles = 'null'
 
     json1 = {
-        'Author':Author,
+        'id':Author,
         'Name':Name,
         'Description':escape(Desc),
         'People_meet':People_meet,
@@ -299,6 +299,7 @@ async def patch():
         return error
 
     
+    print(res)
 
     if(str(res).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
         #print(str(res).split("\"")[1].split("\"")[0])
