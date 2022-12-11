@@ -126,6 +126,23 @@
         card = Card(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description)
         $('#main').prepend(card)
     }
+
+    function Delete() {
+        let created_At = location.href.split("?")[1].split("postid=")[1]
+        $.ajax({
+            url:'/Write',
+            method:"DELETE",
+            data:{
+                'id':id,
+                'Created_At':created_At
+            },
+            success: function(response) {
+                location.href = "/"
+                alert("글을 삭제했습니다.")
+            }
+        })
+    }
+
     function Card(name, adr, people_meet, image, date, feel, desc) {
 
         return `<h1>${name}</h1>
@@ -142,7 +159,7 @@
                     </div>
                     <div class="btn">
                         <input type="submit" class="submit" value="수정">
-                        <input type="submit" class="submit" value="삭제" style="background-color: #FF774D">
+                        <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
                     </div>
                 </article>`
     }
