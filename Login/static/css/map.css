@@ -152,5 +152,7 @@ i:nth-child(3) {
     #map_wrap {
         width: 100%;
     }
+    .map_section input {
+        width: auto;
 
     }
