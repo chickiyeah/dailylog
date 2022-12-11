@@ -1,17 +1,20 @@
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-
-
+.revise_wrap{
+    margin: 7rem 0 3rem 0;
+    text-align: center;
 }
+
 
 #main {
     width: 37.5rem;
     height: 68.75rem;
     display: block;
     text-align: center;
-    border-radius: 0.625rem;
+    border: 1px solid #D9D9D9;
     margin: auto;
-    padding: 1.25rem;
+}
+
+main > h1 {
+    font-weight: initial;
 }
 
 p {
@@ -38,7 +41,7 @@ p {
 
 .submit {
     width: 6.25rem;
-    height: 50px;
+    height: 3.13rem;
     display: block;
     outline: none;
     border-radius: 1.25rem;
@@ -55,3 +58,10 @@ p {
     margin: auto;
     margin-top: 100px;
 }
+
+.content {
+    display: block;
+
+}
+
+

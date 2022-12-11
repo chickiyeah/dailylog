@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/header.css">
-    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
-    <link rel="stylesheet" href="../static/css/writestyle.css">
+    <link rel="stylesheet" href="../static/css/header2.css">
     <link rel="stylesheet" href="../static/css/revise.css">
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <title>DAILY LOG</title>
+
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
+    <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <script>
@@ -112,18 +117,19 @@
         let Date = wyear+"년 "+wmon+"월 "+wday+"일"
         let people_meet = ""
         let image = ""
+        let card = ""
         if(element.People_meet == "None"){
             people_meet = "없음"
         }else{
             people_meet = element.People_meet
         }
 
-        if(element.AttachFiles == "null"){
-            image = '../static/assets/white_base.PNG'
+        if(element.AttachFiles == "null" || element.AttachFiles == ""){
+            card = Card(element.Name, element.AREA_ADR, people_meet, Date, element.Feel, element.Description)
         }else{
-            image = element.AttachFiles
+            card = CardI(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description)
         }
-        card = Card(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description)
+        
         $('#main').prepend(card)
     }
 
@@ -143,7 +149,7 @@
         })
     }
 
-    function Card(name, adr, people_meet, image, date, feel, desc) {
+    function CardI(name, adr, people_meet, image, date, feel, desc) {
 
         return `<h1>${name}</h1>
                 <p>${adr}</p>
@@ -163,37 +169,101 @@
                     </div>
                 </article>`
     }
+    function Card(name, adr, people_meet,  date, feel, desc) {
+
+    return `<h1>${name}</h1>
+            <p>${adr}</p>
+            <p>${people_meet}</p>
+            <article>
+                <p>${date}</p>
+                <p>기분 : ${feel}</p>
+                <div class="comment">
+                    ${desc}
+                </div>
+                <div class="btn">
+                    <input type="submit" class="submit" value="수정">
+                    <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
+                </div>
+            </article>`
+    }
 </script>    
 <body>
-<div>
-    <!-- 헤더 시작 -->
-    <header id="header">
-        <div>
-            <a href="/"><h1>DAILY<br>LOG</h1></a>
-        </div>
-        <!-- 네비 시작 -->
-        <nav id="nav">
-            <ul>
-                <li><a href="/map">지도보기</a></li>
-                <li><a href="/write/1">기록하기</a></li>
-                <li><a href="/rank">랭킹보기</a></li>
-                <li><a href="/Mypage">마이페이지</a></li>
-            </ul>
-        </nav>
-        <!-- 네비 끝 -->
-        <div class="nav_icon">
-            <img src="../static/assets/search2.png" alt="메뉴의 검색 아이콘">
-            <img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘">
-            <img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘">
-        </div>
-    </header>
+    <div class="wrap">
+        <!-- 헤더 시작 -->
+        <header class="header">
+            <div class="top_align">
+                <!-- 네비 시작 -->
+                <nav>
+                    <ul>
+                        <li><a href="/map">지도보기</a></li>
+                        <li><a href="/write/1">기록하기</a></li>
+                        <li><a href="/rank">랭킹보기</a></li>
+                        <li><a href="/Mypage">마이페이지</a></li>
+                    </ul>
+                </nav>
+                <!-- 네비 끝 -->
+                <!-- 로고 시작 -->
+                <div class="top_logo">
+                    <div class="simbol">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <a href="/"><h1>DAILY LOG</h1></a>
+                    <!-- 모바일용 햄버거 -->
+                    <a href="#" class="nav_toogleBT">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <!-- 아이콘 시작 -->
+                <div class="top_icon">
+                    <img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘">
+                    <img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘">
+                </div>
+                <!-- 아이콘 끝 -->
+            </div>
+        </header>
+    </div>    
     <!-- 헤더 끝 -->
-    <div class="top_hr">
-        <hr>
-    </div>
-<main id="main">
-</main>
+    
+    <!-- 메인 시작 -->
+    <main id="main">
+        <section class="revise_wrap">
+            <h1>오늘 제일 햅삐한 하루 <3 </h1>
+            <div class="content">
+                <p>제주도</p>
+                <p>하니, 다니엘, 민지 등</p>
+                <article>
+                    <div class="picture">
+                        <img src="../static/assets/newjeans.png" alt="메뉴의 마이페이지 아이콘">
+                    </div>
+                    <p>2022년 11월 30일</p>
+                    <p>맑음 일식</p>
+                    <div class="comment">
+                        내가 만든 쿠키 너를 위해 구웠지But you know that it ain't for free, yeah내가 만든 쿠키너무 부드러우니자꾸만 떠오르니널 choco-chip으로Sprinkle로입맛 버리게 만들고 싶어숨기고 있지만 널 더 보고 싶어If you want itYou can get itIf you want it네 목소리를 또 들려줘 boy식사는 없어 마음속을 녹이지So good, yeahLooking at my cookie역시 향기부터 다르니 (Taste it)한입은 모자라니널 choco-chip으로Sprinkle로정신 못 차리게 만들고 싶어숨기고 있지만 널 더 보고 싶어If you want itYou can get itIf you want it
+                    </div>
+                    <div class="btn">
+                        <input type="submit" class="submit" value="수정">
+                        <input type="submit" class="submit" value="삭제" style="background-color: #FF774D">
+                    </div>
+                </article>
+            </div>    
+        </section>
+    </main>
+    
+    <!-- 메인 끝 -->
 
-
-</body>
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="bottom_wrap">
+            <div class="bottom_simbol">
+                <i class="fa-solid fa-house-user"></i>
+            </div>
+            <div class="bottom_info">
+                <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
+                <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+    
+    </body>
 </html>

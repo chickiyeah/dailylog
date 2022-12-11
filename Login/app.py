@@ -387,7 +387,22 @@ async def record2():
 
 
 
+@app.route("/User", methods=["DELETE"])
+async def deleteuser():
+    id = request.form['id']
+    phone = request.form['phone']
+    email = request.form['email']
 
+    try:
+        res = requests.delete(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+            json=json
+        )
+    except requests.exceptions.RequestException as error:
+        return error
+
+    #auth.delete_user(uid)
+    return
 
 @app.route("/UploadFile", methods=["POST"])
 def upload():
