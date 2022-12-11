@@ -110,8 +110,21 @@
         let wday = element.Created_At.split("-")[2].split("T")[0]
 
         let Date = wyear+"년 "+wmon+"월 "+wday+"일"
-        card = Card(Date, Name, UserName, Ex, id)
-        document.getElementById("main").prepend(card)
+        let people_meet = ""
+        let image = ""
+        if(element.People_meet == "None"){
+            people_meet = "없음"
+        }else{
+            people_meet = element.People_meet
+        }
+
+        if(element.AttachFiles == "null"){
+            image = '../static/assets/white_base.PNG'
+        }else{
+            image = element.AttachFiles
+        }
+        card = Card(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description)
+        $('#main').prepend(card)
     }
     function Card(name, adr, people_meet, image, date, feel, desc) {
 
@@ -162,23 +175,6 @@
         <hr>
     </div>
 <main id="main">
-    <h1>오늘 제일 햅삐한 하루 <3</h1>
-    <p>제주도</p>
-    <p>하니, 다니엘, 민지 등</p>
-    <article>
-        <div class="picture">
-            <img src="../static/assets/newjeans.png" alt="메뉴의 마이페이지 아이콘">
-        </div>
-        <p>2022년 11월 30일</p>
-        <p>맑음 일식</p>
-        <div class="comment">
-            내가 만든 쿠키 너를 위해 구웠지But you know that it ain't for free, yeah내가 만든 쿠키너무 부드러우니자꾸만 떠오르니널 choco-chip으로Sprinkle로입맛 버리게 만들고 싶어숨기고 있지만 널 더 보고 싶어If you want itYou can get itIf you want it네 목소리를 또 들려줘 boy식사는 없어 마음속을 녹이지So good, yeahLooking at my cookie역시 향기부터 다르니 (Taste it)한입은 모자라니널 choco-chip으로Sprinkle로정신 못 차리게 만들고 싶어숨기고 있지만 널 더 보고 싶어If you want itYou can get itIf you want it
-        </div>
-        <div class="btn">
-            <input type="submit" class="submit" value="수정">
-            <input type="submit" class="submit" value="삭제" style="background-color: #FF774D">
-        </div>
-    </article>
 </main>
 
 
