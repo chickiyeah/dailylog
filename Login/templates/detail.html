@@ -20,8 +20,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <script>
+    let postid = ""
     $(document).ready(function () {
-        let postid = ""
+        
         if(location.href.includes("?")){
             postid = location.href.split("?")[1].split("postid=")[1]
         }else{
@@ -175,8 +176,8 @@
                                 </div>
                                 <div class="detail_bT">
                                     <input type="submit" class="submit" value="좋아요">
-                                    <input type="submit" class="submit" value="수정">
-                                    <a heft="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
+                                    <a href="/write/edit?postid=${postid}" ><input type="submit" class="submit" value="수정">
+                                    <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
                             </div>
                         </div>
@@ -210,8 +211,8 @@
                                 </div>
                                 <div class="detail_bT">
                                     <input type="submit" class="submit" value="좋아요">
-                                    <input type="submit" class="submit" value="수정">
-                                    <a heft="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
+                                    <a href="/write/edit?postid=${postid}"><input type="submit" class="submit" value="수정">
+                                    <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
                             </div>
                         </div>
