@@ -1,9 +1,3 @@
-.revise_wrap{
-    margin: 7rem 0 3rem 0;
-    text-align: center;
-}
-
-
 #main {
     width: 37.5rem;
     height: 68.75rem;
@@ -13,8 +7,14 @@
     margin: auto;
 }
 
+.revise_wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+
 main > h1 {
-    font-weight: initial;
+    font-weight: 600;
 }
 
 p {
@@ -61,7 +61,6 @@ p {
 
 .content {
     display: block;
-
 }
 
 

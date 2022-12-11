@@ -393,10 +393,16 @@ async def deleteuser():
     phone = request.form['phone']
     email = request.form['email']
 
+
+    json1 = {
+        'id':id,
+        'phone':phone,
+        'email':email
+    }
     try:
         res = requests.delete(
             url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
-            json=json
+            json=json1
         )
     except requests.exceptions.RequestException as error:
         return error

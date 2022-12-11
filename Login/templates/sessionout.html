@@ -63,7 +63,14 @@
                         url: "/User",
                         data: {'id':response},
                         success: function(response) {
-                            console.log(response)
+                            $.ajax({
+                                type:"DELETE",
+                                url: "/User",
+                                data: {'id':response.id,'email':response.email,'phone':response.phone},
+                                success: function(response) {
+                                    console.log(response)
+                                }
+                            })
                         }
                     })
                     

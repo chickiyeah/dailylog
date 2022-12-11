@@ -151,40 +151,52 @@
 
     function CardI(name, adr, people_meet, image, date, feel, desc) {
 
-        return `<h1>${name}</h1>
-                <p>${adr}</p>
-                <p>${people_meet}</p>
-                <article>
-                    <div class="picture">
-                        <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+        return `<section class="revise_wrap">
+                    <div>
+                        <h1>${name}</h1>
                     </div>
-                    <p>${date}</p>
-                    <p>기분 : ${feel}</p>
-                    <div class="comment">
-                        ${desc}
-                    </div>
-                    <div class="btn">
-                        <input type="submit" class="submit" value="수정">
-                        <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
-                    </div>
-                </article>`
+                    <div class="content">
+                        <p>${adr}</p>
+                        <p>${people_meet}</p>
+                        <article>
+                            <div class="picture">
+                                <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                            </div>
+                            <p>${date}</p>
+                            <p>기분 : ${feel}</p>
+                            <div class="comment">
+                                ${desc}
+                            </div>
+                            <div class="btn">
+                                <input type="submit" class="submit" value="수정">
+                                <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
+                            </div>
+                        </article>
+                    </div>    
+                </section>`
     }
     function Card(name, adr, people_meet,  date, feel, desc) {
 
-    return `<h1>${name}</h1>
-            <p>${adr}</p>
-            <p>${people_meet}</p>
-            <article>
-                <p>${date}</p>
-                <p>기분 : ${feel}</p>
-                <div class="comment">
-                    ${desc}
+    return `<section class="revise_wrap">
+                <div>
+                    <h1>${name}</h1>
                 </div>
-                <div class="btn">
-                    <input type="submit" class="submit" value="수정">
-                    <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
-                </div>
-            </article>`
+                <div class="content">
+                    <p>${adr}</p>
+                    <p>${people_meet}</p>
+                    <article>
+                        <p>${date}</p>
+                        <p>기분 : ${feel}</p>
+                        <div class="comment">
+                            ${desc}
+                        </div>
+                        <div class="btn">
+                            <input type="submit" class="submit" value="수정">
+                            <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
+                        </div>
+                    </article>
+                </div>    
+            </section>`
     }
 </script>    
 <body>
@@ -227,7 +239,9 @@
     <!-- 메인 시작 -->
     <main id="main">
         <section class="revise_wrap">
-            <h1>오늘 제일 햅삐한 하루 <3 </h1>
+            <div>
+                <h1>오늘 제일 햅삐한 하루 <3 </h1>
+            </div>
             <div class="content">
                 <p>제주도</p>
                 <p>하니, 다니엘, 민지 등</p>
