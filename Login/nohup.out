@@ -4538,3 +4538,258 @@ MISSING_EMAIL
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 210-353-672
+99.82.168.45 - - [11/Dec/2022 12:43:49] "GET / HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:43:49] "GET /static/css/header.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:43:49] "GET /static/css/reset.css HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:43:49] "GET /static/css/style.css HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:43:50] "GET /static/js/index.js HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:43:50] "GET /static/assets//story_img1.png HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:43:50] "GET /static/assets/like.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:43:50] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:43:50] "GET /static/assets/call.png HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:43:50] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:44:24] "GET /Mypage HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:44:25] "GET /static/css/header2.css HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:44:25] "GET /static/css/header3.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:44:25] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:44:25] "GET /static/css/profile.css HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:44:26] "GET /static/assets/like2.png HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:44:26] "GET /static/assets/mypage2.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:44:28] "GET /Login?loc%20=%20Mypage HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:44:30] "GET /static/css/Login.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:44:30] "GET /static/css/header.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:44:32] "GET /favicon.ico HTTP/1.1" 404 -
+99.82.168.45 - - [11/Dec/2022 12:44:41] "POST /User/Login HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:44:41] "GET /Mypage HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:44:42] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:44:42] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:44:42] "GET /static/css/header3.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:44:42] "GET /static/css/profile.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:44:42] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:44:42] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:44:45] "POST /User HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:44:50] "POST /User HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:44:51] "PATCH /User HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:44:51] "GET /Mypage HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:44:53] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:44:53] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:44:53] "GET /static/css/header3.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:44:53] "GET /static/css/profile.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:44:53] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:44:54] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:44:55] "POST /User HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:44:56] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:44:56] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:45:15] "GET /Mypage/Write HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:45:16] "GET /static/css/mywrite.css HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:45:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:45:16] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:45:16] "GET /static/css/header3.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:45:17] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:45:17] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:45:19] "POST /User HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:45:20] "GET /Mypage/static/assets/house.svg HTTP/1.1" 404 -
+99.82.168.44 - - [11/Dec/2022 12:45:20] "POST /Write HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:45:47] "GET /map HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:45:47] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:45:47] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:45:47] "GET /static/css/map.css HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:45:49] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:45:49] "GET /static/js/index.js HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:45:49] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:45:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:45:51] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:45:58] "GET /write/2 HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:45:59] "GET /static/css/write2.css HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:45:59] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:45:59] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:46:00] "GET /static/assets/like2.jpg HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:46:00] "GET /static/js/write.js HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:46:00] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:46:02] "GET /write/static/assets/house.svg HTTP/1.1" 404 -
+99.82.168.46 - - [11/Dec/2022 12:46:02] "POST /User HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:46:03] "POST /Write HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:46:12] "GET /write/popupmap HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:46:12] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:47:32] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:47:32] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:47:32] "GET /static/css/write2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:49:17] "GET /write/2 HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:49:18] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:49:18] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:49:18] "GET /static/css/write2.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:49:20] "GET /static/js/write.js HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:49:20] "GET /static/assets/like2.jpg HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:49:20] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:49:23] "POST /User HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:49:24] "POST /Write HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:49:39] "GET /write/popupmap HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:49:40] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:50:18] "POST /write/upload HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:50:18] "GET /write/2 HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:50:22] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:50:22] "GET /static/css/write2.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:50:22] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:50:24] "GET /static/js/write.js HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:50:24] "GET /static/assets/like2.jpg HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:50:24] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:50:27] "POST /User HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:50:27] "POST /Write HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:50:32] "GET /write/1 HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:50:32] "GET /static/css/write1.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:50:32] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:50:32] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:50:33] "GET /static/js/write.js HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:50:33] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:50:34] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:50:36] "POST /User HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 12:50:36] "POST /Write HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:51:17] "GET / HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:51:17] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:17] "GET /static/css/header.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:17] "GET /static/css/style.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:18] "GET /static/js/index.js HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:19] "GET /static/assets/like.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:19] "GET /static/assets/mypage.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:19] "GET /static/assets//story_img1.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:19] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:19] "GET /static/assets/call.png HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:23] "GET /write/1 HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:51:23] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.45 - - [11/Dec/2022 12:51:23] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:23] "GET /static/css/write1.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:26] "GET /static/js/write.js HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:26] "GET /static/assets/like2.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:26] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:51:27] "POST /User HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 12:51:28] "POST /Write HTTP/1.1" 200 -
+99.82.163.46 - - [11/Dec/2022 12:51:32] "GET /.env HTTP/1.1" 404 -
+99.82.163.41 - - [11/Dec/2022 12:51:32] code 400, message Bad request syntax ('\x16\x03\x01\x01H\x01\x00\x01D\x03\x03\x97ðõ¿5ËÈÁ\x13Êï\x98\x05§nf-')
+99.82.163.41 - - [11/Dec/2022 12:51:32] "H Dðõ¿5ËÈÁÊï§nf-" HTTPStatus.BAD_REQUEST -
+99.82.168.45 - - [11/Dec/2022 12:51:34] "GET /write/2 HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 12:51:35] "GET /static/css/reset.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:51:35] "GET /static/css/header2.css HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 12:51:35] "GET /static/css/write2.css HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:38] "GET /static/js/write.js HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:38] "GET /static/assets/like2.jpg HTTP/1.1" 304 -
+99.82.168.46 - - [11/Dec/2022 12:51:40] "GET /static/assets/mypage2.png HTTP/1.1" 304 -
+99.82.168.44 - - [11/Dec/2022 12:51:42] "POST /User HTTP/1.1" 200 -
+99.82.168.45 - - [11/Dec/2022 12:51:42] "POST /Write HTTP/1.1" 200 -
+128.14.209.162 - - [11/Dec/2022 12:55:14] "GET / HTTP/1.1" 200 -
+192.241.199.24 - - [11/Dec/2022 12:56:10] "GET / HTTP/1.1" 200 -
+13.248.119.77 - - [11/Dec/2022 12:57:27] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+{'Author': 'exC5FzPrtDWpiw2rfzhex3w7yEB3', 'Name': '메인서버 테스트', 'Description': '좋았다', 'People_meet': '가족', 'Feel': '맑음', 'Eat': '한식', 'AttachFiles': 'null', 'ADR': '전북전주시 덕진구 송천동2가 1268', 'LOAD_ADR': '전라북도전주시 덕진구 붓내3길 29', 'LAT': '35.868202759397676', 'LNG': '127.12554048283505', 'AREA_NAME': '송천주공아파트', 'CUSTOM_NAME': '우리 동네', 'Created_At': '2022-12-11 12:50:18.366361'}
+Status Code : 200 | OK : Successfully added data 
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
+13.248.122.40 - - [11/Dec/2022 13:09:58] "GET /.env HTTP/1.1" 404 -
+13.248.122.42 - - [11/Dec/2022 13:09:58] "POST / HTTP/1.1" 405 -
+205.210.31.153 - - [11/Dec/2022 13:13:08] "GET / HTTP/1.1" 200 -
+95.214.235.205 - - [11/Dec/2022 13:15:28] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 13:15:29] "POST / HTTP/1.1" 405 -
+99.82.165.40 - - [11/Dec/2022 13:15:42] "GET / HTTP/1.1" 200 -
+99.82.165.41 - - [11/Dec/2022 13:15:43] "GET / HTTP/1.1" 200 -
+99.82.165.41 - - [11/Dec/2022 13:15:43] "GET /static/assets/house.svg HTTP/1.1" 200 -
+99.82.165.40 - - [11/Dec/2022 13:15:43] "GET /static/assets/house.svg HTTP/1.1" 200 -
+99.82.165.40 - - [11/Dec/2022 13:15:44] "GET /favicon.ico HTTP/1.1" 404 -
+99.82.165.42 - - [11/Dec/2022 13:15:44] "GET /favicon.ico HTTP/1.1" 404 -
+99.82.168.41 - - [11/Dec/2022 13:26:43] "GET / HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 13:26:44] "GET /static/css/header.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 13:26:44] "GET /static/css/style.css HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 13:26:44] "GET /static/css/reset.css HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 13:26:44] "GET /static/js/index.js HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 13:26:44] "GET /static/assets/menu/american/steak.png HTTP/1.1" 304 -
+99.82.168.41 - - [11/Dec/2022 13:26:44] "GET /static/assets//story_img1.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 13:26:44] "GET /static/assets/like.png HTTP/1.1" 200 -
+99.82.168.44 - - [11/Dec/2022 13:26:44] "GET /static/assets/call.png HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 13:26:44] "GET /static/assets/mypage.png HTTP/1.1" 200 -
+99.82.168.46 - - [11/Dec/2022 13:26:45] "GET /static/assets/house.svg HTTP/1.1" 200 -
+99.82.168.41 - - [11/Dec/2022 13:26:46] "GET /static/assets/house.svg HTTP/1.1" 304 -
+99.82.166.73 - - [11/Dec/2022 13:27:13] "GET / HTTP/1.1" 200 -
+13.248.98.105 - - [11/Dec/2022 13:33:28] "GET / HTTP/1.1" 200 -
+13.248.113.201 - - [11/Dec/2022 13:34:07] "GET /.env HTTP/1.1" 404 -
+13.248.113.202 - - [11/Dec/2022 13:34:07] "POST / HTTP/1.1" 405 -
+109.237.97.180 - - [11/Dec/2022 13:35:18] "GET /.env HTTP/1.1" 404 -
+109.237.97.180 - - [11/Dec/2022 13:35:18] code 400, message Bad request syntax ('\x16\x03\x01\x01H\x01\x00\x01D\x03\x03\x8a£\x8bÏ\x87@»_Ú3\x0e')
+109.237.97.180 - - [11/Dec/2022 13:35:18] "H D£Ï@»_Ú3" HTTPStatus.BAD_REQUEST -
+23.251.102.74 - - [11/Dec/2022 13:40:41] "GET / HTTP/1.1" 200 -
+99.82.172.235 - - [11/Dec/2022 13:42:44] "GET / HTTP/1.1" 200 -
+99.82.172.203 - - [11/Dec/2022 13:44:03] "GET / HTTP/1.1" 200 -
+65.49.20.70 - - [11/Dec/2022 13:44:27] "GET / HTTP/1.1" 200 -
+99.82.172.238 - - [11/Dec/2022 13:46:06] "GET /favicon.ico HTTP/1.1" 404 -
+65.49.20.102 - - [11/Dec/2022 13:47:53] "GET /favicon.ico HTTP/1.1" 404 -
+99.82.172.201 - - [11/Dec/2022 13:48:12] "GET /favicon.ico HTTP/1.1" 404 -
+205.210.31.135 - - [11/Dec/2022 13:55:05] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03jVs¦Íî\x93h\x98Z×\x16\x88¿×&f:`aÉE%\x16\x13å\x92âë\x8eé0\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+205.210.31.135 - - [11/Dec/2022 13:55:05] " Ê  ÆjVs¦ÍîhZ×¿×&f:`aÉE%åâëé0  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+128.1.248.42 - - [11/Dec/2022 13:55:58] "GET / HTTP/1.1" 200 -
+172.104.11.34 - - [11/Dec/2022 13:59:19] code 400, message Bad request version ('À\x14À')
+172.104.11.34 - - [11/Dec/2022 13:59:19] "   PTøýÂÆµ%¨M\ÇöWq2ÒDÉDt×¶Â9Ø   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+34.77.127.183 - - [11/Dec/2022 13:59:20] "GET / HTTP/1.1" 200 -
+45.79.128.205 - - [11/Dec/2022 13:59:21] code 400, message Bad request version ('À\x14À')
+45.79.128.205 - - [11/Dec/2022 13:59:21] "   ¤µ"Oh+½j*à|vBÍê´ýø¤ÀPeô§Ç   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+99.83.101.204 - - [11/Dec/2022 13:59:48] "GET / HTTP/1.0" 200 -
+99.83.101.174 - - [11/Dec/2022 14:00:45] code 400, message Bad request version ('À\x14À')
+99.83.101.174 - - [11/Dec/2022 14:00:45] "   «adoQá¢£<¾ÁÊp±E¶üÄRt4   À/À0À+À,Ì¨Ì©ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+198.235.24.12 - - [11/Dec/2022 14:01:50] "GET / HTTP/1.0" 200 -
+13.248.108.141 - - [11/Dec/2022 14:05:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+13.248.108.141 - - [11/Dec/2022 14:05:33] "   Õ½5/ÉmÏ?´û" HTTPStatus.BAD_REQUEST -
+99.83.101.237 - - [11/Dec/2022 14:09:22] "GET / HTTP/1.1" 200 -
+99.83.101.238 - - [11/Dec/2022 14:09:22] "GET / HTTP/1.1" 200 -
+99.83.101.233 - - [11/Dec/2022 14:09:22] code 505, message Invalid HTTP version (2.0)
+99.83.101.233 - - [11/Dec/2022 14:09:22] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+99.83.101.234 - - [11/Dec/2022 14:09:22] "GET /./static/assets/house.svg HTTP/1.1" 404 -
+99.83.101.238 - - [11/Dec/2022 14:09:23] "GET /./static/assets/house.svg HTTP/1.1" 404 -
+99.83.101.234 - - [11/Dec/2022 14:09:23] "GET /favicon.ico HTTP/1.1" 404 -
+135.125.246.110 - - [11/Dec/2022 14:21:58] "POST / HTTP/1.1" 405 -
+135.125.246.110 - - [11/Dec/2022 14:21:58] "GET /.env HTTP/1.1" 404 -
+99.83.101.238 - - [11/Dec/2022 14:27:04] "GET / HTTP/1.1" 200 -
+99.83.101.234 - - [11/Dec/2022 14:27:04] "GET / HTTP/1.1" 200 -
+99.83.101.233 - - [11/Dec/2022 14:27:05] code 505, message Invalid HTTP version (2.0)
+99.83.101.233 - - [11/Dec/2022 14:27:05] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+99.83.101.238 - - [11/Dec/2022 14:27:05] "GET /./static/assets/house.svg HTTP/1.1" 404 -
+99.83.101.237 - - [11/Dec/2022 14:27:05] "GET /./static/assets/house.svg HTTP/1.1" 404 -
+99.83.101.234 - - [11/Dec/2022 14:27:06] "GET /favicon.ico HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 14:30:49] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 14:30:49] "POST / HTTP/1.1" 405 -
+212.102.44.69 - - [11/Dec/2022 14:44:42] "GET http://169.254.169.254/latest/meta-data/ HTTP/1.1" 404 -
+13.248.119.41 - - [11/Dec/2022 14:47:17] "GET /.env HTTP/1.1" 404 -
+13.248.119.43 - - [11/Dec/2022 14:47:18] "POST / HTTP/1.1" 405 -
+105.155.176.24 - - [11/Dec/2022 15:02:00] "GET / HTTP/1.1" 200 -
+95.214.235.205 - - [11/Dec/2022 15:09:10] "GET /.env HTTP/1.1" 404 -
+95.214.235.205 - - [11/Dec/2022 15:09:11] "POST / HTTP/1.1" 405 -
+13.248.113.234 - - [11/Dec/2022 15:12:47] "GET /.env HTTP/1.1" 404 -
+13.248.113.237 - - [11/Dec/2022 15:12:48] "POST / HTTP/1.1" 405 -
+185.216.71.17 - - [11/Dec/2022 15:13:25] "GET / HTTP/1.1" 200 -
+13.248.107.106 - - [11/Dec/2022 15:26:51] "GET /Login HTTP/1.1" 200 -
+119.163.184.101 - - [11/Dec/2022 15:31:33] "POST /GponForm/diag_Form?images/ HTTP/1.1" 404 -
+ * Detected change in '/home/ubuntu/dailylog/Login/app.py', reloading
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+[DEFAULT]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-353-672
