@@ -22,3 +22,10 @@ function setChar() {
   char++;
   char === characters.length && clearInterval(timer);
 }
+
+$(document).ready(function () {
+  if(location.href.includes("?")){
+    document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+    location.href = "/"
+  }
+})

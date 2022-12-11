@@ -57,7 +57,7 @@
                         alert("비밀번호를 입력해주세요.")
                         return
                     }
-                    
+                
                     $.ajax({
                         type:"POST",
                         url: "/User",
@@ -68,10 +68,10 @@
                                 url: "/User",
                                 data: {'id':response.id,'email':response.email,'phone':response.phone},
                                 success: function(response) {
-                                    if(response == "OK"){
+                                    if(response == "OK"){                                    
                                         document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                                        location.href = "/"
-                                        alert("탈퇴가 완료되었습니다.\n안녕히 가십시오.")
+                                        alert("탈퇴가 완료되었습니다.\n감사합니다.")
+                                        location.href = "/?delete" 
                                     }
                                 }
                             })

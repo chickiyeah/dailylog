@@ -47,14 +47,14 @@
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">
-                    <img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘">
-                    <img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘">
+                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
+                    <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
                 </div>
                 <!-- 아이콘 끝 -->
             </div>
         </header>
     </div>    
-        <!-- 헤더 끝 -->
+    <!-- 헤더 끝 -->
     <!-- 메인시작 -->
     <main id="main">
         <section id="section">
@@ -89,28 +89,30 @@
                     </span>
                     </ul>
                 </div>
-                <div class="map_box">
-                    <div class="map_header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="map_nav">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-rotate-left"></i>
-                    </div>
-                    <div class="map_section">
-                        <div class="map_img">
-                            <div id="map"></div>
-        
-                            <div class="hAddr">
-                                <span class="title">지도중심기준 주소정보</span>
-                                <span id="centerAddr"></span>
+                <div class="map_content">
+                    <div class="map_box">
+                        <div class="map_header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="map_nav">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+                        <div class="map_section">
+                            <div class="map_img">
+                                <div id="map"></div>
+            
+                                <div class="hAddr">
+                                    <span class="title">지도중심기준 주소정보</span>
+                                    <span id="centerAddr"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
         </section>
 

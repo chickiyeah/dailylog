@@ -43,7 +43,7 @@
 
 /* 지도 모니터 */
 .map_box {
-    width: 70rem;
+    width: 100%;
     height: 40rem;
     margin: 0 auto;
     background: #fff;
@@ -142,4 +142,9 @@ i:nth-child(3) {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.map_content {
+    width: 70rem;
+    height: 40rem;
+    margin: auto;
 }

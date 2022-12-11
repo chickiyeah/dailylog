@@ -84,7 +84,7 @@ async def user_login():
 
 @app.route("/write/detail")
 async def record():
-    return render_template("revisepage.html")
+    return render_template("detail.html")
 
 @app.route("/Mypage")
 async def mypage():
