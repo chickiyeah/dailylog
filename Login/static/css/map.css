@@ -169,7 +169,7 @@ i:nth-child(3) {
         margin: auto;
         padding-left: 0.625rem;
         padding-right: 0.625rem;
-    }
+    }    
     
 }
 @media screen and (max-width: 80rem) {
