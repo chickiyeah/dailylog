@@ -12,12 +12,20 @@
     <link rel="stylesheet" href="../static/css/revise.css">
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>DAILY LOG</title>
 
 </head>
 <script>
     $(document).ready(function () {
+        let postid = ""
+        if(location.href.includes("?")){
+            postid = location.href.split("?")[1].split("postid=")[1]
+        }else{
+            location.href = `/`;
+            alert("표시할 글의 아이디가 지정되어있지 않습니다.\n카드에서 다시 클릭해보세요.\n홈으로 이동합니다.")
+        }
         if(document.cookie.includes("id=")){
             login = true
             if(document.cookie.split("id=")[1].includes(";")){
@@ -34,7 +42,6 @@
                 },
                 success: function(response){
                     name = response.nickname
-                    console.log(userinfo)
                                 //목록 가져오기
                     $.ajax({
                         url:"/Write",
@@ -74,32 +81,39 @@
                                 else
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
                                 
-                                if(location.href.includes("?")){
-                                    loc = location.href.split("?")[1].split("loc%20=%20")[1]
-                                    location.href = "/"+loc
-                                }else{
-                                    location.href = `/`;
-                                }
 
-                                addCard(wmon+"/"+wday, element.Description, name, a, element.Created_At)
+                                if(postid == element.Created_At) {
+                                    addCard(element)
+                                }
                             });
                         }
                     })
                 }
             })
 
-        }else{ 
+        }else{
+            if(location.href.includes("?")){
+                loc = location.href.split("?")[1].split("postid=")[1]
+                location.href = `/Login?loc = write/detail?postid=${loc}`
+            }else{
+                location.href = `/Login?loc = `;
+            } 
             login = false
-            location.href = "/Login?loc = write/1"
             alert("로그인이 필요합니다.")
         }
     })
 
-    function addCard(Date, Name, UserName, Ex, id) {
+    function addCard(element) {
+        console.log(element)
+        let wyear = element.Created_At.split("-")[0]
+        let wmon = element.Created_At.split("-")[1]
+        let wday = element.Created_At.split("-")[2].split("T")[0]
+
+        let Date = wyear+"년 "+wmon+"월 "+wday+"일"
         card = Card(Date, Name, UserName, Ex, id)
-        $("#write_main").prepend(card)
+        document.getElementById("main").prepend(card)
     }
-    function card(name, adr, people_meet, image, date, feel, desc) {
+    function Card(name, adr, people_meet, image, date, feel, desc) {
 
         return `<h1>${name}</h1>
                 <p>${adr}</p>

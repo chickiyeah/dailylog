@@ -75,7 +75,7 @@
                                 else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + ' 달전';
                                 
-                                addCard(wmon+"/"+wday, element.Description, name, a)
+                                addCard(wmon+"/"+wday, element.Description, name, a, element.Created_At)
                             });
                         }
                     })
@@ -89,13 +89,13 @@
         }
     })
 
-    function addCard(Date, Name, UserName, Ex) {
-        card = Card(Date, Name, UserName, Ex)
+    function addCard(Date, Name, UserName, Ex, id) {
+        card = Card(Date, Name, UserName, Ex, id)
         $("#write_main").prepend(card)
     }
 
-    function Card(Date, Name, UserName, Ex) {
-    return `<a href="/Record?detail">
+    function Card(Date, Name, UserName, Ex, id) {
+    return `<a href="/write/detail?postid=${id}">
                 <div class="write_box">
                     <div>
                         <h2>${Date}</h2>
