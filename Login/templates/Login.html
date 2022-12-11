@@ -15,6 +15,10 @@
         A:hover {text-decoration:none; color:#000000;}
     </style>
 
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
+        <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
+
     <script>
         function Login() {
             let id = document.getElementById("emaill").value
@@ -42,7 +46,6 @@
                         alert("비밀번호를 입력해주세요.")
                         return
                       }
-                      console.log("\""+response+"\"")
                 document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
                 document.cookie = "id = "+response
                 if(location.href.includes("?")){

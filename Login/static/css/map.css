@@ -150,31 +150,43 @@ i:nth-child(3) {
 }
 
 
-@media screen and (max-width: 778.4px) {
+
+
+
+
+@media screen and (max-width: 30rem) {
+    .search_btn {
+    width: 22%;
+}
+}
+@media screen and (max-width: 48.65rem) {
     #searp {
-        margin-bottom: 20px;
-        width: auto;
+        margin-bottom: 1.25rem;
+        width: 70%;
     
     }
     .map_wrap {
         margin: auto;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
     }
+    
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 80rem) {
     .map_content{
         position: relative;
         width: auto;
     }
     .map_nav {
         position: absolute;
-        left: 50px;
-        top: 100px;
-        width: 200px;
+        left: 3.125rem;
+        top: 6.25rem;
+        width: 12.5rem;
     }
     .hAddr {
         position: absolute;
-        left: 50px;
-        top: 100px;
+        left: 3.125rem;
+        top: 6.25rem;
     }
 
 

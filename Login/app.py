@@ -258,6 +258,54 @@ async def writemap():
 async def edit():
     return render_template("write2(update).html")
 
+@app.route("/Write",methods=['PATCH'])
+async def patch():
+    now = datetime.now()
+    Author = request.form['Author']
+    Name = request.form['Name']
+    Desc = request.form['Desc']
+    People_meet = request.form['People_meet']
+    Feel = request.form['Feel']
+    Eat = request.form['Eat']
+    try:
+        AttachFiles = request.form['AttachFiles']
+    except KeyError:
+        AttachFiles = 'null'
+
+    json1 = {
+        'Author':Author,
+        'Name':Name,
+        'Description':escape(Desc),
+        'People_meet':People_meet,
+        'Feel':Feel,
+        'Eat':Eat,
+        'AttachFiles':AttachFiles,
+        'ADR':request.form['Area[ADR]'],
+        'LOAD_ADR':request.form['Area[LOAD_ADR]'],
+        'LAT':request.form['Area[LAT]'],
+        'LNG':request.form['Area[LNG]'],
+        'AREA_NAME':request.form['Area[NAME]'],
+        'CUSTOM_NAME':request.form['Area[CUSTOM_NAME]'],
+        'Created_At':request.form['Created_At']
+    }
+
+    try:
+        res = requests.patch(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+            json=json1
+        )._content
+    except requests.exceptions.RequestException as error:
+        print(error)
+        return error
+
+    
+
+    if(str(res).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
+        #print(str(res).split("\"")[1].split("\"")[0])
+        return "OK"
+
+    return res['errorMessage']
+
 @app.route("/map")
 def map():
     return render_template("map.html")
@@ -312,7 +360,7 @@ async def writeupload():
     Feel = request.form['Feel']
     Eat = request.form['Eat']
     try:
-        AttachFiles = request.form['AttachFiles[]']
+        AttachFiles = request.form['AttachFiles']
     except KeyError:
         AttachFiles = 'null'
 
