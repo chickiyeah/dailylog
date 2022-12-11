@@ -224,7 +224,7 @@
                             data:json,
                             success: function(response){
                                 if(response == "OK"){
-                                    location.href="/write/2"
+                                    location.href="/write/1"
                                     alert("업로드를 완료했습니다!")
                                 }
                             }
@@ -528,7 +528,9 @@
                         </div>
                     </div>
                     <div>
-                        <input type="file">
+                        <form action = '/UploadFile' method = "POST" entype = "multipart/form-data">
+                            <input type="file" name="file" id="input">
+                        </form>  
                     </div>
                     <div>
                         <textarea id="textarea" rows=20 cols=45 placeholder="오늘 있었던 일 적기"></textarea>
@@ -564,6 +566,27 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../static/js/write.js"></script>
+    <script>
+        const inputElement = document.getElementById("input").addEventListener("change", handleFiles)
+
+        function handleFiles() {
+            const filelist = this.files
+            for (let i = 0, numFiles = filelist.length; i < numFiles; i++){
+                let file = filelist[i]
+                let formdata = new FormData()
+                formdata.append('File', file)
+                    let xhr = new XMLHttpRequest();
+                    xhr.open('POST', '/UploadFile' ,true)
+                    xhr.onload = xhr.onerror = function() {
+                        link.push( xhr.responseText )
+                        image = `<img src="${xhr.responseText}">`
+                        console.log(image)
+                        $("#textarea").append(image)
+                    };
+                    xhr.send(formdata)
+            }
+        }
+    </script>
 </body>
 
 </html>

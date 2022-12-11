@@ -124,6 +124,7 @@
         if(element.AttachFiles == "null" || element.AttachFiles == ""){
             card = Card(element.Name, element.AREA_ADR, people_meet, Date, element.Feel, element.Description, element.Eat)
         }else{
+            image = element.AttachFiles
             card = CardI(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description, element.Eat)
         }
         

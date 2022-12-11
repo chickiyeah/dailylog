@@ -148,3 +148,9 @@ i:nth-child(3) {
     height: 40rem;
     margin: auto;
 }
+@media screen and (max-width: 680px) {
+    #map_wrap {
+        width: 100%;
+    }
+
+    }
