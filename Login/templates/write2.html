@@ -21,6 +21,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
+        let uploading = false
         if(document.cookie.includes("id=")){
             login = true
             if(document.cookie.split("id=")[1].includes(";")){
@@ -99,6 +100,11 @@
     }
 
     function upload() {
+        if(uploading != false){
+            alert("이미 글을 업로드 중입니다.")
+        }else{
+            
+        
         ok = true
         if(document.getElementById("title").value == ''){
             ok = false
@@ -150,7 +156,7 @@
             }else{
                 id = document.cookie.split("id=")[1].replace(" ","")
         }
-
+        uploading = true
         if(ok == true){
             if(document.getElementById("todayuser").value != "없음"){
                     ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
@@ -225,8 +231,10 @@
                         })
                              
             }
+            uploading = false
         }
-
+        
+    }
         
     }
 

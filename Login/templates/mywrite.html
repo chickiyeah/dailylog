@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../static/css/header2.css">
     <link rel="stylesheet" href="../static/css/header3.css">
     <link rel="stylesheet" href="../static/css/mywrite.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>DAILY LOG</title>
 
     <!-- 아이콘 -->
@@ -18,7 +19,128 @@
     <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 </head>
+<script>
+    $(document).ready(function () {
+    if(document.cookie.includes("id=")){
+        login = true
+        if(document.cookie.split("id=")[1].includes(";")){
+            id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+        }else{
+            id = document.cookie.split("id=")[1].replace(" ","")
+        }
+        let userinfo = ""
+        $.ajax({
+            url:"/User",
+            method:"POST",
+            data:{
+                id:id
+            },
+            success: function(response){
+                name = response.nickname
+                console.log(userinfo)
+                            //목록 가져오기
+                $.ajax({
+                    url:"/Write",
+                    method:"POST",
+                    data:{
+                        "Author":id
+                    },
+                    success: function(response){
+                        response.forEach(element => {
+                            let now = new Date()
 
+                            let year = now.getFullYear()
+                            let month = now.getMonth()
+                            let day = now.getDate()
+                            let hours = now.getHours()+9
+                            let minutes = now.getMinutes()
+                            let seconds = now.getSeconds()
+
+                            let nowdate = new Date(year, month, day, hours, minutes, seconds)
+
+                            let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
+                            let a = ""
+
+                            let wmon = element.Created_At.split("-")[1]
+                            let wday = element.Created_At.split("-")[2].split("T")[0]
+
+                            if(chai < 1000 * 60)
+                                a += '방금'
+                            else if(chai < 1000 * 60 * 60)
+                                a += Math.floor(chai / (1000 * 60)) + '분 전';
+                            else if(chai < 1000 * 60 * 60 * 24)
+                                a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
+                            else if(chai < 1000 * 60 * 60 * 24 * 30)
+                                a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
+                            else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
+                            else
+                                a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
+                            
+                            addCard(wmon+"/"+wday, element.Description, name, a, element.Created_At)
+                        });
+                    }
+                })
+            }
+        })
+
+    }else{ 
+        login = false
+        location.href = "/Login?loc = write/1"
+        alert("로그인이 필요합니다.")
+    }
+})
+
+function addCard(Date, Name, UserName, Ex, id) {
+    card = Card(Date, Name, UserName, Ex, id)
+    $("#write_main").prepend(card)
+}
+let del = false
+function Delete() {
+    let chk = document.getElementsByClassName("optionCheck")
+    let list = []
+    if(del != true){ 
+        del = true
+        for (var i = 0; i < chk.length; i++) {
+            if(chk[i].checked == true) {
+                //생성 시간, 작성자 아이디, 
+                created_At = chk[i].id.split("_chk")[0]
+                $.ajax({
+                    url:'/Write',
+                    method:"DELETE",
+                    data:{
+                        'id':id,
+                        'Created_At':created_At
+                    },
+                    success: function(response) {
+                        console.log(response)
+                    }
+                })
+            }       
+        }
+        console.log(list)
+        del = false
+    }else{
+        alert("이미 게시글 삭제가 진행 중 입니다.\n기존 삭제가 완료될때까지 대기해주세요.\n이 문제가 5분 이상 지속될시 DB의 에러 일수있으니\n문의해주시기 바랍니다.")
+    }
+}
+
+function Card(Date, Name, UserName, Ex, id) {
+return `<div id=${id} class="write_box">
+            <input id=${id}_chk class="optionCheck" type="checkbox" id="check_btn">
+            <label for="chkBox">
+                <div>
+                    <h2>${Date}</h2>
+                    <h3>${Name}</h3>
+                </div>
+            </label>
+            <div class="user_info">
+                <p>${UserName}</p>
+                <p>${Ex}</p>
+            </div>
+        </div>`
+}
+</script>
 <body>
         <!-- 헤더 시작 -->
         <header class="header">
@@ -69,23 +191,26 @@
                     </ul>
                 </div>
                 <div class="mywrite_right">
+                    <label>작성 시간이 완전히 동일한 데이터가 있는경우 중복처리될수 있습니다.</label>
                     <div class="write_bt">
                         <div>
                             <button>수정</button>
-                            <button>삭제</button>
+                            <button onclick="Delete()">삭제</button>
                         </div>
                     </div>
-                    <div class="write_box">
-                        <input type="checkbox" id="check_btn">
-                        <label for="chkBox">
-                            <div>
-                                <h2>12/01</h2>
-                                <h3>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</h3>
+                    <div id="write_main" class="write_main">
+                        <div class="write_box">
+                            <input type="checkbox" id="check_btn">
+                            <label for="chkBox">
+                                <div>
+                                    <h2>12/01</h2>
+                                    <h3>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</h3>
+                                </div>
+                            </label>
+                            <div class="user_info">
+                                <p>츠키</p>
+                                <p>3시간 전</p>
                             </div>
-                        </label>
-                        <div class="user_info">
-                            <p>츠키</p>
-                            <p>3시간 전</p>
                         </div>
                     </div>
                 </div>
