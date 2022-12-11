@@ -14,8 +14,8 @@ import string
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 import firebase_admin
-from firebase_admin import credentials
 from firebase_admin import auth
+from firebase_admin import credentials
 from firebase_admin import storage
 from firebase import Firebase
 import requests
@@ -41,7 +41,7 @@ now = datetime.now()
 cred = credentials.Certificate('./cert/firebase-service-account.json')
 default_app = firebase_admin.initialize_app(cred, {"databaseURL": "https://chi-talk-default-rtdb.asia-southeast1.firebasedatabase.app/"})
 
-auth = Firebase(firebaseConfig).auth()
+Auth = Firebase(firebaseConfig).auth()
 Storage = Firebase(firebaseConfig).storage()
 
 #네비게이터
@@ -68,13 +68,13 @@ async def user_login():
     email = request.form['email']
     password = request.form['password']
     try:
-        auth.sign_in_with_email_and_password(email, password)
+        Auth.sign_in_with_email_and_password(email, password)
     except requests.exceptions.HTTPError as erra:
         #HTTP 에러가 발생한 경우
         #오류 가져오기 json.loads(str(erra).split("]")[1].split('"errors": [\n')[1])['message']
         return json.loads(str(erra).split("]")[1].split('"errors": [\n')[1])['message']
 
-    currentuser = auth.current_user
+    currentuser = Auth.current_user
     user = requests.get(
         url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
         json={'Id':currentuser['localId']}
@@ -164,7 +164,7 @@ async def user_create():
 
     try:
         #파이어베이스의 유저만드는거 사용
-        a = auth.create_user_with_email_and_password(email, password)
+        a = Auth.create_user_with_email_and_password(email, password)
     except requests.exceptions.HTTPError as erra:
         #HTTP 에러가 발생한 경우
         #오류 가져오기 json.loads(str(erra).split("]")[1].split('"errors": [\n')[1])['message']
@@ -233,7 +233,7 @@ async def RSTPW():
 
 
     try:
-        auth.send_password_reset_email(email)
+        Auth.send_password_reset_email(email)
     except requests.exceptions.HTTPError as err:
         #print(json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message'])
         return json.loads(str(err).split("]")[1].split('"errors": [\n')[1])['message']
@@ -407,8 +407,8 @@ async def deleteuser():
     except requests.exceptions.RequestException as error:
         return error
 
-    #auth.delete_user(uid)
-    return
+    auth.delete_user(id)
+    return "OK"
 
 @app.route("/UploadFile", methods=["POST"])
 def upload():
@@ -424,7 +424,7 @@ async def post_mapdata():
     Lng = request.form['Lng']
     Lat = request.form['Lat']
     Adr = request.form['Adr']
-    Id = auth.current_user.localId
+    Id = Auth.current_user.localId
     Name = request.form['Name']
     Desc = request.form['Desc']
 

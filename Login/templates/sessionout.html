@@ -68,7 +68,11 @@
                                 url: "/User",
                                 data: {'id':response.id,'email':response.email,'phone':response.phone},
                                 success: function(response) {
-                                    console.log(response)
+                                    if(response == "OK"){
+                                        document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                                        location.href = "/"
+                                        alert("탈퇴가 완료되었습니다.\n안녕히 가십시오.")
+                                    }
                                 }
                             })
                         }
@@ -165,8 +169,8 @@
                             <input type="password" id="password">
                         </div>
                         <span class="check-password">
-                            <input class="form-check-input-login" style="height: 2rem; width: 3rem;" title="비밀번호 표시" onclick="is_checked()" type="checkbox" name="flexCheckDefault" id="flexCheckDefault">
-                            <label for="flexCheckDefault" style="float:right; margin-top: 0.2rem; margin-left: 0.5rem; font-size: 1rem;">
+                            <input class="form-check-input-login" style=" width: 1.5rem;" title="비밀번호 표시" onclick="is_checked()" type="checkbox" name="flexCheckDefault" id="flexCheckDefault">
+                            <label for="flexCheckDefault" style="float:right; margin-top: 0.2rem; margin-left: 0.5rem; font-size: 0.8rem;">
                                 비밀번호 표시
                             </label>
                         </span>
