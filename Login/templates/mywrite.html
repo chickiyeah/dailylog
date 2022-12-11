@@ -113,7 +113,8 @@ function Delete() {
                         'Created_At':created_At
                     },
                     success: function(response) {
-                        console.log(response)
+                        location.reload()
+                        alert("글을 삭제했습니다.")
                     }
                 })
             }       

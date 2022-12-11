@@ -282,6 +282,26 @@ async def UpdateUser():
 
     return "OK"
 
+@app.route("/Write", methods=["DELETE"])
+async def deletewrite():
+    id = request.form['id']
+    Created_At = request.form['Created_At']
+
+    json1 = {
+        "id":id,
+        "Created_At":Created_At
+    }
+    try:
+        res = requests.delete(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+            json=json1
+        )._content
+    except requests.exceptions.RequestException as error:
+        print(error)
+        return error
+
+    return "OK"
+
 @app.route("/write/upload", methods=["POST"])
 async def writeupload():
     now = datetime.now()
