@@ -28,6 +28,19 @@
             }else{
                 id = document.cookie.split("id=")[1].replace(" ","")
             }
+            $.ajax({
+                url:"/User",
+                method:"POST",
+                data:{
+                    id:id
+                },
+                success: function(response){
+                    document.getElementById("email").value = response.email
+                    document.getElementById("name").value = response.name
+                    document.getElementById("nickname").value = response.nickname
+                    document.getElementById("phone").value = response.phone
+                }
+            })
         }else{ 
             login = false
             location.href = "/Login?loc = Mypage"
@@ -37,6 +50,35 @@
     </script>
 </head>
 <script>
+    function update() {
+        $.ajax({
+                url:"/User",
+                method:"POST",
+                data:{
+                    id:id
+                },
+                success: function(response){
+                    if(document.getElementById("nickname").value == response.nickname) {
+                        alert("변경사항이 존재하지 않습니다.")
+                    }else{
+                        $.ajax({
+                            url:"/User",
+                            method:"PATCH",
+                            data:{
+                                'id':id,
+                                'nickname':document.getElementById("nickname").value
+                            },
+                            success: function(response){
+                                if(response == "OK"){
+                                    alert("변경이 완료되었습니다.")
+                                }
+
+                            }
+                        })
+                    }
+                }
+        })
+    }
     function logout() {
         document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
         location.href = "/"
@@ -94,31 +136,27 @@
                 </div>
                 <div class="profile_right">
                     <div>
+                        <label>홈페이지에서는 닉네임만을 변경하실수있습니다.</label>
+                        <label>기타 정보를 변경하시고 싶으신경우 문의해 주시기 바랍니다.</label>
+                    </div>
+                    <div>
                         <label for="email">이메일</label>
-                        <input type="text" id="email">
+                        <input type="text" id="email" readonly>
                     </div>
                     <div>
                         <label for="name">이름</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" readonly>
                     </div>
                     <div>
                         <label for="nickname">닉네임</label>
                         <input type="text" id="nickname">
                     </div>
                     <div>
-                        <label for="password">비밀번호</label>
-                        <input type="password" id="password">
-                    </div>
-                    <div>
-                        <label for="password">비밀번호 확인</label>
-                        <input type="password" id="password">
-                    </div>
-                    <div>
                         <label for="phone">전화번호</label>
-                        <input type="number" id="phone">
+                        <input type="number" id="phone" readonly>
                     </div>
                     <div class="profile_submit">
-                        <button type="submit">
+                        <button onclick="update()" type="submit">
                             회원정보 수정
                         </button>
                     </div>

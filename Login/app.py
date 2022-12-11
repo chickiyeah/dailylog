@@ -262,8 +262,28 @@ async def edit():
 def map():
     return render_template("map.html")
 
+@app.route("/User", methods=["PATCH"])
+async def UpdateUser():
+    id = request.form['id']
+    nick = request.form['nickname']
+
+    json1 = {
+        "id":id,
+        "nickname":nick
+    }
+    try:
+        res = requests.patch(
+            url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/user',
+            json=json1
+        )._content
+    except requests.exceptions.RequestException as error:
+        print(error)
+        return error
+
+    return "OK"
+
 @app.route("/write/upload", methods=["POST"])
-def writeupload():
+async def writeupload():
     now = datetime.now()
     Author = request.form['Author']
     Name = request.form['Name']
