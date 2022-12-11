@@ -254,7 +254,7 @@ def write2():
 async def writemap():
     return render_template("popupmap.html")
 
-@app.route("/edit")
+@app.route("/write/edit")
 async def edit():
     return render_template("write2(update).html")
 

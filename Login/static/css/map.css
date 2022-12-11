@@ -148,11 +148,28 @@ i:nth-child(3) {
     height: 40rem;
     margin: auto;
 }
-@media screen and (max-width: 680px) {
-    #map_wrap {
-        width: 100%;
+@media screen and (max-width: 778.4px) {
+    #searp {
+        margin-bottom: 20px;
+       
     }
-    .map_section input {
+     
+}
+@media screen and (max-width: 1280px) {
+    .map_content{
+        position: relative;
         width: auto;
-
     }
+    .map_nav {
+        Position: fixed;
+        text-align: left;
+    }
+    .hAddr {
+        position: sticky;
+        left: 27.625rem;
+        top: 32.625rem;
+        text-align: left;
+    }
+
+
+}

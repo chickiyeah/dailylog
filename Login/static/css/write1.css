@@ -47,6 +47,7 @@
 }
 
 .write_box p {
+    width: 40%;
     font-size: 0.9rem;
     margin-top: 0.2rem;
 }

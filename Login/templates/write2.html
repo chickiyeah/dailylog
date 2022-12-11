@@ -90,7 +90,7 @@
         }
     })
 
-    let link = []
+    let link = ""
 
     var openWin
 
@@ -578,7 +578,7 @@
                     let xhr = new XMLHttpRequest();
                     xhr.open('POST', '/UploadFile' ,true)
                     xhr.onload = xhr.onerror = function() {
-                        link.push( xhr.responseText )
+                        link= xhr.responseText
                         image = `<img src="${xhr.responseText}">`
                         console.log(image)
                         $("#textarea").append(image)

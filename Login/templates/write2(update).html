@@ -23,6 +23,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
+        let link = ""
+        let postid = ""
+        if(location.href.includes("?")){
+            postid = location.href.split("?")[1].split("postid=")[1]
+        }else{
+            location.href = `/`;
+            alert("표시할 글의 아이디가 지정되어있지 않습니다.\n카드에서 다시 클릭해보세요.\n홈으로 이동합니다.")
+        }
         if(document.cookie.includes("id=")){
             login = true
             if(document.cookie.split("id=")[1].includes(";")){
@@ -30,9 +38,81 @@
             }else{
                 id = document.cookie.split("id=")[1].replace(" ","")
             }
-        }else{ 
+            let userinfo = ""
+            $.ajax({
+                url:"/User",
+                method:"POST",
+                data:{
+                    id:id
+                },
+                success: function(response){
+                    name = response.nickname
+                                //목록 가져오기
+                    $.ajax({
+                        url:"/Write",
+                        method:"POST",
+                        data:{
+                            "Author":id
+                        },
+                        success: function(response){
+                            response.forEach(element => {
+                                let now = new Date()
+
+                                let year = now.getFullYear()
+                                let month = now.getMonth()
+                                let day = now.getDate()
+                                let hours = now.getHours()+9
+                                let minutes = now.getMinutes()
+                                let seconds = now.getSeconds()
+
+                                let nowdate = new Date(year, month, day, hours, minutes, seconds)
+
+                                let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
+                                let a = ""
+
+                                let wmon = element.Created_At.split("-")[1]
+                                let wday = element.Created_At.split("-")[2].split("T")[0]
+
+                                if(chai < 1000 * 60)
+                                    a += '방금'
+                                else if(chai < 1000 * 60 * 60)
+                                    a += Math.floor(chai / (1000 * 60)) + '분 전';
+                                else if(chai < 1000 * 60 * 60 * 24)
+                                    a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
+                                else if(chai < 1000 * 60 * 60 * 24 * 30)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
+                                else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
+                                else
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
+                                
+
+                                if(postid == element.Created_At) {
+                                    document.getElementById("title").value = element.Name
+                                    document.getElementById("textarea").value = element.Description
+                                    document.getElementById("todayuser").value = element.People_meet
+                                    $("#select #option").text(element.Feel)
+                                    $("#select2 #option2").text(element.Eat)
+                                    if(element.AttachFiles == "null" || element.AttachFiles == ""){
+                                        $("#file").append("<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 현재이미지 없음</span>")
+                                    }else{
+                                        $("#file").append(`<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 현재이미지 <a style="color:blue;" href="${element.AttachFiles}">클릭</a></span>`)
+                                    }
+                                }
+                            });
+                        }
+                    })
+                }
+            })
+
+        }else{
+            if(location.href.includes("?")){
+                loc = location.href.split("?")[1].split("postid=")[1]
+                location.href = `/Login?loc = write/detail?postid=${loc}`
+            }else{
+                location.href = `/Login?loc = `;
+            } 
             login = false
-            location.href = "/Login?loc = write/2"
             alert("로그인이 필요합니다.")
         }
     })
@@ -140,8 +220,11 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <input type="file">
+                <div id="file">
+                    <form action = '/UploadFile' method = "POST" entype = "multipart/form-data">
+                        <input type="file" name="file" id="input">
+                    </form>  
+                    
                 </div>
                 <div>
                     <textarea id="textarea" rows=20 cols=45 placeholder="오늘 있었던 일 적기"></textarea>
@@ -177,6 +260,27 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="../static/js/write.js"></script>
+    <script>
+        const inputElement = document.getElementById("input").addEventListener("change", handleFiles)
+
+        function handleFiles() {
+            const filelist = this.files
+            for (let i = 0, numFiles = filelist.length; i < numFiles; i++){
+                let file = filelist[i]
+                let formdata = new FormData()
+                formdata.append('File', file)
+                    let xhr = new XMLHttpRequest();
+                    xhr.open('POST', '/UploadFile' ,true)
+                    xhr.onload = xhr.onerror = function() {
+                        link = xhr.responseText
+                        image = `<img src="${xhr.responseText}">`
+                        console.log(image)
+                        $("#textarea").append(image)
+                    };
+                    xhr.send(formdata)
+            }
+        }
+    </script>
 </body>
 
 </html>
