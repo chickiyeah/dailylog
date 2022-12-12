@@ -154,6 +154,7 @@ nav ul li:hover {
         opacity: 80%;
         margin-left: -2rem;
         margin-top: -3rem;
+        z-index: 9999;
     }
 
     .navbar_menu li {
