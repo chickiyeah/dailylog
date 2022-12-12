@@ -34,6 +34,13 @@
             }else{
                 id = document.cookie.split("id=")[1].replace(" ","")
             }
+            document.getElementById("showall").addEventListener('click', function() {
+                if(document.getElementById("showall").checked) {
+                    showall()
+                }else{
+                    hideMarkers()
+                }
+            })
         });
 
         function showall(){
@@ -129,8 +136,8 @@
                     </div>
                     <div class="map_top2">
                         <span class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="" id="showall">
+                            <label class="form-check-label" for="showall">
                                 전체
                             </label>
                         </span>
@@ -343,20 +350,23 @@ function hideMarkers() {
 
         var bounds = new kakao.maps.LatLngBounds();
         // 마커를 생성합니다
+        bounds.extend(new kakao.maps.LatLng(LAT, LNG));
+        map.setBounds(bounds)
         var marker = new kakao.maps.Marker({
             position: new kakao.maps.LatLng(LAT, LNG), 
             image: markerImage, // 마커이미지 설정 
             map:map
         });
-        bounds.extend(new kakao.maps.LatLng(LAT, LNG));
-        map.setBounds(bounds)
+        
+        
 
         markers.push(marker)
 
         kakao.maps.event.addListener(marker, 'click', function(mouseEvent) {
             console.log(markers)
-                let detailAddr = `<div>링크 : <a href="/write/detail?postid=${Created_At1}">/write/detail?postid=${Created_At1}</a></div>`;
-                detailAddr += '<div>장소 이름 : ' + Name + '</div>'
+                let detailAddr = `<div><a style="color: blue;" href="/write/detail?postid=${Created_At1}">상세 글 보러가기</a></div>`;
+                detailAddr += '<div>이름 : ' + Name + '</div>';
+                detailAddr += '<div>기분 : ' + Feel + '</div>'; 
                 detailAddr += '<div>주소 : ' + ADR + '</div>';
                 
                 let content = '<div class="bAddr">' +

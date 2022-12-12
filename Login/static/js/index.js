@@ -1,3 +1,14 @@
+// 햄버거 메뉴 클릭시
+let toggleBT = document.querySelector(".nav_toogleBT");
+let menu = document.querySelector(".navbar_menu");
+
+toggleBT.addEventListener("click", () => {
+  console.log(1);
+  menu.classList.toggle("active");
+});
+
+
+
 
 // 배너 위 텍스트 애니메이션
 const p1 = document.querySelector(".p1");
