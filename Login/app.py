@@ -559,7 +559,7 @@ async def example2():
     return render_template('ranking.html')
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=80, port=443, debug=True)
+   app.run('0.0.0.0', port=80, ssl_context='adhoc', debug=True)
 
 
 #####여기부터
