@@ -18,7 +18,6 @@ body {
     color: #fff;
     align-items: center;
     padding: 3rem;
-    cursor: pointer;
 }
 
 nav ul {
@@ -124,15 +123,41 @@ nav ul li:hover {
 }
 
 @media(min-width:320px) and (max-width:767px) {
-    .nav_toogleBT a i {
+    .nav_toogleBT {
         display: block;
+        position: absolute;
+        top: 1rem;
+        left: 2.2rem;
+        font-size: 2.5rem;
     }
 
-    .top_logo {
+    .top_logo i,
+    .top_logo h1,
+    .top_icon {
         display: none;
     }
 
-    nav ul {
+    .navbar_menu {
         display: none;
     }
+
+    .navbar_menu.active {
+        display: block;
+        background: #515151;
+        color: #fff;
+        padding: 9.5rem;
+        position: absolute;
+        top: 0;
+        left: -3rem;
+        opacity: 80%;
+        margin-left: -2rem;
+        margin-top: -3rem;
+    }
+
+    .navbar_menu li {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 1.5rem;
+    }
+
 }

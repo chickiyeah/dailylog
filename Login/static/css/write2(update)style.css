@@ -143,6 +143,23 @@ button {
         width: auto;
         
     }
-
-
+    .write_wrap {
+        padding: 20px;
+    }
+    .select_box {
+        width: auto;
+        display: block;
+    }
+    #textarea {
+        width: auto;
+    }
+    .write_section {
+        margin: 12rem 0 3rem 0;
+    }
 }
+@media screen and (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+
+    }

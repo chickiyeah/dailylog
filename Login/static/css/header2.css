@@ -146,10 +146,14 @@ nav ul li:hover {
         padding: 3rem;
     }
 
-    nav ul {
+
+
+    .top_icon {
         display: none;
     }
-    .top_icon {
+}
+@media screen and (max-width: 1000px) {
+    nav ul {
         display: none;
     }
 }

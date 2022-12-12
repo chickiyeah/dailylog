@@ -18,13 +18,15 @@
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
-    <script src="./static/js/index.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/js/index.js" defer></script>
 
     <!-- 풀페이지 -->
-    <link rel="stylesheet" href="./jquery.fullPage.css">
-    <script src="./jquery.fullPage.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
+    <script src="./assets/js/jquery.fullPage.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
 </head>
 <script>
@@ -247,7 +249,7 @@ function getPersonPercent(id) {
             <div class="top_align">
                 <!-- 네비 시작 -->
                 <nav>
-                    <ul>
+                    <ul class="navbar_menu">
                         <li><a href="/map">지도보기</a></li>
                         <li><a href="/write/1">기록하기</a></li>
                         <li><a href="/rank">랭킹보기</a></li>
@@ -257,9 +259,7 @@ function getPersonPercent(id) {
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                    <div class="simbol">
-                        <i class="fa-solid fa-house-user"></i>
-                    </div>
+                    <i class="fa-solid fa-house-user"></i>
                     <h1>DAILY LOG</h1>
                 </div>
                 <!-- 로고 끝 -->
@@ -321,7 +321,7 @@ function getPersonPercent(id) {
                             <h3>오늘은</h3>
                             <h3>이 메뉴 어때요?</h3>
                         </div>
-                        <div class="food_img">
+                        <div id="food_image" class="food_img">
                             <img src="../static/assets/menu/american/steak.png" alt="한식">
                         </div>
                     </section>
@@ -357,8 +357,7 @@ function getPersonPercent(id) {
                                                     <img src="../static/assets/call.png" alt="전화 아이콘">
                                                 </div>
                                                 <div>
-                                                    <h5>김철수</h5>
-                                                    <h6>24 days ago</h6>
+                                                    <h5 id="peoname">김철수</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -375,8 +374,8 @@ function getPersonPercent(id) {
                     <!-- 슬라이드 영역4 -->
                     <section class="section">
                         <div class="saying_text">
-                            <p>눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
-                            <p>- 그라시아 -</p>
+                            <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
+                            <p id="good_say_author">- 그라시아 -</p>
                         </div>
                     </section>
                 </div>
