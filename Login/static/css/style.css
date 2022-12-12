@@ -308,9 +308,30 @@
 
 
 @media(min-width:768px) and (max-width:1024px) {
-
-
     
 }
 
-@media(min-width:767px) and (max-width:320px) {}
+@media(max-width:767px) and (min-width:320px) {
+
+    .map_box {
+        width: 20rem;
+        height: 24rem;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 2.25rem;
+        padding-left: 1rem;
+    }
+
+    .map_header span{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    bottom:1rem;
+    }
+
+    .map_section{
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+
+}
