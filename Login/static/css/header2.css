@@ -126,35 +126,40 @@ nav ul li:hover {
 
 @media(min-width:320px) and (max-width:767px) {
     .nav_toogleBT {
-        display: flex;
-    
-    }
-
-    .top_logo {
         display: block;
-        width: auto;
-        margin: auto;
-        text-align: center;
-        align-items: center;
-    }
-    .top_align {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        color: #515151;
-        align-items: center;
-        padding: 3rem;
+        position: absolute;
+        top: 1rem;
+        left: 2.2rem;
+        font-size: 2.5rem;
     }
 
+    .top_logo i,
+    .top_logo h1,
     .top_icon {
         display: none;
     }
-    .bottom_info {
-        text-align: center;
-    }
-}
-@media screen and (max-width: 1000px) {
-    nav ul {
+
+    .navbar_menu {
         display: none;
     }
+
+    .navbar_menu.active {
+        display: block;
+        background: #515151;
+        color: #fff;
+        padding: 9.5rem;
+        position: absolute;
+        top: 0;
+        left: -3rem;
+        opacity: 80%;
+        margin-left: -2rem;
+        margin-top: -3rem;
+    }
+
+    .navbar_menu li {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 1.5rem;
+    }
+
 }

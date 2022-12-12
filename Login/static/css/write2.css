@@ -156,3 +156,4 @@ button {
         margin: 12rem 0 3rem 0;
     }
 }
+@media(min-width:767px) and (max-width:320px) {}

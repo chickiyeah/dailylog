@@ -90,7 +90,7 @@
             <div class="top_align">
                 <!-- 네비 시작 -->
                 <nav>
-                    <ul>
+                    <ul class="navbar_menu">
                         <li><a href="/map">지도보기</a></li>
                         <li><a href="/write/1">기록하기</a></li>
                         <li><a href="/rank">랭킹보기</a></li>
@@ -100,9 +100,7 @@
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                    <div class="simbol">
-                        <i class="fa-solid fa-house-user"></i>
-                    </div>
+                    <i class="fa-solid fa-house-user"></i>
                     <h1>DAILY LOG</h1>
                 </div>
                 <!-- 로고 끝 -->
@@ -242,6 +240,7 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
     kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
         hideMarkers()
+        document.getElementById("showall").checked = false
         searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
             if (status === kakao.maps.services.Status.OK) {
                 let coords = mouseEvent.latLng.toString().replace("(","").replace(")","").split(",")
@@ -321,23 +320,23 @@ function hideMarkers() {
     function customMarker(Feel,LAT,LNG,ADR,Name,Created_At,Created_At1) {
         let link = ""
         if(Feel == "맑음"){
-            link = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png"
+            link = "../static/assets/map/sun.png"
         }
 
         if(Feel == "흐림"){
-            link = ""
+            link = "../static/assets/map/cloud.png"
         }
 
         if(Feel == "비"){
-            link = ""
+            link = "../static/assets/map/rain.png"
         }
 
         if(Feel == "눈"){
-            link = ""
+            link = "../static/assets/map/snow.png"
         }
 
         if(Feel == "바람"){
-            link = ""
+            link = "../static/assets/map/wind.png"
         }
 
         var imageSrc = link, // 마커이미지의 주소입니다    
