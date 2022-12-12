@@ -37,6 +37,15 @@
         getEatPercent(id)
         getPersonPercent(id)
     }
+    $.ajax({
+            url:"/Good_Say",
+            method:"GET",
+            success: function(response) {
+                console.log(response)
+                document.getElementById("good_say").innerHTML = response.message
+                document.getElementById("good_say_author").innerHTML = `- ${response.author} -`
+            }
+        })
   
 })
 
@@ -301,8 +310,8 @@ function getPersonPercent(id) {
                     <!-- 명언 시작 -->
                     <div class="saying_warp">
                         <div class="saying_text">
-                            <p>눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
-                            <p>- 그라시아 -</p>
+                            <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
+                            <p id="good_say_author">- 그라시아 -</p>
                         </div>
                     </div>
                 </section>

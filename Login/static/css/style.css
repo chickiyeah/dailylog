@@ -317,7 +317,7 @@
 .saying_text {
     width: 80%;
     margin: 0 auto;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .saying_text p:nth-child(1) {
