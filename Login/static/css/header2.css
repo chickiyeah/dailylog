@@ -125,15 +125,31 @@ nav ul li:hover {
 }
 
 @media(min-width:320px) and (max-width:767px) {
-    .nav_toogleBT a i {
-        display: block;
+    .nav_toogleBT {
+        display: flex;
+    
     }
 
     .top_logo {
-        display: none;
+        display: block;
+        width: auto;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .top_align {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        color: #515151;
+        align-items: center;
+        padding: 3rem;
     }
 
     nav ul {
+        display: none;
+    }
+    .top_icon {
         display: none;
     }
 }

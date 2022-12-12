@@ -20,6 +20,12 @@
     <!-- 스크립트 -->
     <script src="./static/js/index.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 풀페이지 -->
+    <link rel="stylesheet" href="./jquery.fullPage.css">
+    <script src="./jquery.fullPage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 <script>
     let id = ""
@@ -32,10 +38,12 @@
         id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
         getEatPercent(id)
         getPersonPercent(id)
+        getPlacePercent(id)
     }else{
         id = document.cookie.split("id=")[1].replace(" ","")
         getEatPercent(id)
         getPersonPercent(id)
+        getPlacePercent(id)
     }
     $.ajax({
             url:"/Good_Say",
@@ -48,6 +56,47 @@
         })
   
 })
+
+function getPlacePercent(id){
+    $.ajax({
+        url:"/Write",
+        method:"POST",
+        data:{
+            "Author":id
+        },
+        success: function(response){
+            const result = {};
+            response.forEach(element => {
+                adr = element.AREA_ADR
+                result[adr] = (result[adr] || 0)+1; 
+            })
+
+            
+            let per = []
+            let resmap = new Map(Object.entries(result))
+            const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
+            let max = 0
+
+            mapSort1.forEach(element => {
+                max += element
+            })
+
+            mapSort1.forEach(element => {
+                percent = element/max * 100
+                per.push(percent.toFixed(2))
+            })
+
+            let keyarr = Array.from(mapSort1.keys())
+            let permap = []
+            for(var i = 0; i < keyarr.length; i++){
+                permap.push({'name':keyarr[i], 'per':per[i]})
+            }
+
+                 
+                 console.log(permap[0])    
+        }
+    })        
+}
 
 function getEatPercent(id){
     $.ajax({
@@ -211,11 +260,12 @@ function getPersonPercent(id) {
                     <div class="simbol">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
-                    <a href="/"><h1>DAILY LOG</h1></a>
-                    <!-- 모바일용 햄버거 -->
-                    <a href="#" class="nav_toogleBT">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+                    <h1>DAILY LOG</h1>
+                </div>
+                <!-- 로고 끝 -->
+                <!-- 모바일용 햄버거 -->
+                <div class="nav_toogleBT">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">
@@ -228,17 +278,20 @@ function getPersonPercent(id) {
         <!-- 헤더 끝 -->
         <!-- <div class="circle"></div> -->
         <!-- 메인 시작 -->
-        <main class="main">
+        <!-- swiper슬라이더 메인컨테이너 -->
+        <main class="main" id="fullpage">
             <div class="main_visual">
-                <section>
-                    <!-- 메인배너 -->
-                    <div class="banner_wrap">
-                        <span>
-                            <img src="../static/assets//story_img1.png" alt="스토리 이미지1">
-                        </span>
-                    </div>
-                    <!-- place -->
-                    <div class="map_wrap">
+                <!-- 메인배너 -->
+                <div class="banner_wrap">
+                    <span>
+                        <img src="../static/assets//story_img1.png" alt="스토리 이미지1">
+                    </span>
+                </div>
+                <!-- 장소 시작 -->
+                <!-- 슬라이드 영역1 -->
+
+                <div class="map_wrap">
+                    <section class="section">
                         <div class="map_text">
                             <p>new</p>
                             <h3>이 장소,</h3>
@@ -256,65 +309,77 @@ function getPersonPercent(id) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <article class="article">
-                    <!-- menu -->
-                    <div class="food_wrap">
+                    </section>
+                </div>
+                <!-- 장소 끝 -->
+                <!-- 메뉴 시작 -->
+                <div class="food_wrap">
+                    <!-- 슬라이드 영역2 -->
+                    <section class="section">
                         <div class="food_text">
                             <p>new</p>
                             <h3>오늘은</h3>
                             <h3>이 메뉴 어때요?</h3>
                         </div>
-                        <div id="food_image">
+                        <div class="food_img">
                             <img src="../static/assets/menu/american/steak.png" alt="한식">
                         </div>
-                    </div>
-                    <!-- phone -->
-                    <div class="phone_wrap">
+                    </section>
+                </div>
+                <!-- 메뉴 추천 끝 -->
+                <!-- 휴대폰 시작 -->
+                <div class="phone_wrap">
+                    <!-- 슬라이드 영역3 -->
+                    <section class="section">
                         <div class="phone_text">
                             <p>new</p>
                             <h3>오랜만에</h3>
                             <h3>연락해봐요 : )</h3>
                         </div>
                         <!-- 아이폰 목업 시작 -->
-                        <div class="mockup-container">
-                            <div class="mockup">
-                                <div class="mobile-mockup">
-                                    <div class="camera">
-                                        <span></span>
-                                    </div>
-                                    <div class="home-btn">
-                                        <span></span>
-                                    </div>
-                                    <div class="power">
-                                        <span></span>
-                                    </div>
-                                    <!-- Content Start -->
-                                    <div class="phone_name">
-                                        <div class="phone_main">
-                                            <div>
-                                                <img src="../static/assets/call.png" alt="전화 아이콘">
-                                            </div>
-                                            <div>
-                                                <h5 id="peoname">김철수</h5>
+                        <div class="section">
+                            <div class="mockup-container">
+                                <div class="mockup">
+                                    <div class="mobile-mockup">
+                                        <div class="camera">
+                                            <span></span>
+                                        </div>
+                                        <div class="home-btn">
+                                            <span></span>
+                                        </div>
+                                        <div class="power">
+                                            <span></span>
+                                        </div>
+                                        <!-- Content Start -->
+                                        <div class="phone_name">
+                                            <div class="phone_main">
+                                                <div>
+                                                    <img src="../static/assets/call.png" alt="전화 아이콘">
+                                                </div>
+                                                <div>
+                                                    <h5>김철수</h5>
+                                                    <h6>24 days ago</h6>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- Content End -->
                                     </div>
-                                    <!-- Content End -->
                                 </div>
+                                <!-- 아이폰 목업 끝 -->
                             </div>
                         </div>
-                        <!-- 아이폰 목업 끝 -->
-                    </div>
-                    </article>
-                    <!-- 명언 시작 -->
-                    <div class="saying_warp">
+                    </section>
+                </div>
+                <!-- 명언 시작 -->
+                <div class="saying_warp">
+                    <!-- 슬라이드 영역4 -->
+                    <section class="section">
                         <div class="saying_text">
-                            <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
-                            <p id="good_say_author">- 그라시아 -</p>
+                            <p>눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
+                            <p>- 그라시아 -</p>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </main>
         <!-- 메인 끝 -->

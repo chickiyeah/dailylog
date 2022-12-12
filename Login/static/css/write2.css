@@ -137,3 +137,22 @@ button {
     border-radius: 1.25rem;
     margin: 0 0.3rem;
 }
+@media screen and (max-width: 768px) {
+    .write_sub input {
+        width: auto;
+        
+    }
+    .write_wrap {
+        padding: 20px;
+    }
+    .select_box {
+        width: auto;
+        display: block;
+    }
+    #textarea {
+        width: auto;
+    }
+    .write_section {
+        margin: 12rem 0 3rem 0;
+    }
+}

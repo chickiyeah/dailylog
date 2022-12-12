@@ -16,7 +16,64 @@
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
-    <script src="./static/js/index.js" defer></script>
+    <script>
+        let id = ""
+        $(document).ready(function () {
+            $("#select #option").on("click", function () {
+            $("#select ul").toggle();
+            });
+        
+            $("#select ul li").on("click", function () {
+            let val = $(this).data("option");
+            $("#select #option").text(val);
+            $("#select ul").toggle();
+            });
+
+            if(document.cookie.split("id=")[1].includes(";")){
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+            }else{
+                id = document.cookie.split("id=")[1].replace(" ","")
+            }
+        });
+
+        function showall(){
+            $.ajax({
+                url:"/Write",
+                method:"POST",
+                data:{
+                    "Author":id
+                },
+                success: function(response){
+                    const result = {};
+                    response.forEach(element => {
+
+                        let Feel = element.Feel
+                        let LAT = element.AREA_LAT
+                        let LNG = element.AREA_LNG
+                        let ADR = ""
+                        if(element.AREA_LOAD_ADR != "null"){
+                            ADR = element.AREA_LOAD_ADR
+                        }else{
+                            ADR = element.AREA_ADR
+                        }
+                        let Name = ""
+                        if(element.AREA_CUSTOM_NAME != "null" ) {
+                            Name = element.AREA_CUSTOM_NAME
+                        }else{
+                            if(element.AREA_NAME != "null") {
+                                Name = element.AREA_NAME
+                            }else{
+                                Name = ""
+                            }
+                        }
+            
+                        let Created_At = element.Created_At.split("T")[0].split("-")[0]+"-"+element.Created_At.split("T")[0].split("-")[1]+"-"+element.Created_At.split("T")[0].split("-")[2]+" "+element.Created_At.split("T")[1].split(".")[0]
+                        customMarker(Feel,LAT,LNG,ADR,Name,Created_At,element.Created_At)
+                    })
+                }
+            })
+        }
+    </script>
 
 </head>
 <body>
@@ -39,11 +96,12 @@
                     <div class="simbol">
                         <i class="fa-solid fa-house-user"></i>
                     </div>
-                    <a href="/"><h1>DAILY LOG</h1></a>
-                    <!-- 모바일용 햄버거 -->
-                    <a href="#" class="nav_toogleBT">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+                    <h1>DAILY LOG</h1>
+                </div>
+                <!-- 로고 끝 -->
+                <!-- 모바일용 햄버거 -->
+                <div class="nav_toogleBT">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">
@@ -69,25 +127,40 @@
                             </button>
                         </span>
                     </div>
-                    <span class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            전체
-                        </label>
-                    </span>
-                    <span class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            날짜
-                        </label>
-                    </span>
-                    <span class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            기분
-                        </label>
-                    </span>
-                    </ul>
+                    <div class="map_top2">
+                        <span class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                전체
+                            </label>
+                        </span>
+                        <span class="today-check">
+                            <input class="form-check-input" type="date" id="flexCheckDefault">
+                            <!-- <label class="form-check-label" for="flexCheckDefault">
+                                날짜
+                            </label> -->
+                        </span>
+                        <span class="feel-check">
+                            <div class="select_box">
+                                <div class="write_select">
+                                    <div id="select" class="select">
+                                        <strong></strong>
+                                        <div id="option">오늘의 기분</div>
+                                        <ul>
+                                            <li data-option="맑음">맑음</li>
+                                            <li data-option="흐림">흐림</li>
+                                            <li data-option="비">비</li>
+                                            <li data-option="눈">눈</li>
+                                            <li data-option="바람">바람</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <label class="form-check-label" for="flexCheckDefault">
+                                기분
+                            </label> -->
+                        </span>
+                    </div>
                 </div>
                 <div class="map_content">
                     <div class="map_box">
@@ -159,7 +232,6 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-    map.markers
     // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
     kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
         hideMarkers()
@@ -238,6 +310,65 @@ function showMarkers() {
 function hideMarkers() {
     setMarkers(null);    
 }
+
+    function customMarker(Feel,LAT,LNG,ADR,Name,Created_At,Created_At1) {
+        let link = ""
+        if(Feel == "맑음"){
+            link = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png"
+        }
+
+        if(Feel == "흐림"){
+            link = ""
+        }
+
+        if(Feel == "비"){
+            link = ""
+        }
+
+        if(Feel == "눈"){
+            link = ""
+        }
+
+        if(Feel == "바람"){
+            link = ""
+        }
+
+        var imageSrc = link, // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+            imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+            
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+        var bounds = new kakao.maps.LatLngBounds();
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(LAT, LNG), 
+            image: markerImage, // 마커이미지 설정 
+            map:map
+        });
+        bounds.extend(new kakao.maps.LatLng(LAT, LNG));
+        map.setBounds(bounds)
+
+        markers.push(marker)
+
+        kakao.maps.event.addListener(marker, 'click', function(mouseEvent) {
+            console.log(markers)
+                let detailAddr = `<div>링크 : <a href="/write/detail?postid=${Created_At1}">/write/detail?postid=${Created_At1}</a></div>`;
+                detailAddr += '<div>장소 이름 : ' + Name + '</div>'
+                detailAddr += '<div>주소 : ' + ADR + '</div>';
+                
+                let content = '<div class="bAddr">' +
+                                '<span class="title">주소정보</span>' + 
+                                detailAddr + 
+                            '</div>';
+
+                // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
+                infowindow.setContent(content);
+                infowindow.open(map, marker);
+        });
+    }
 
         // 지도에 마커를 표시하는 함수입니다
     function displayMarker(place) {

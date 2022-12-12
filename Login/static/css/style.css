@@ -1,10 +1,10 @@
 .circle {
     position: absolute;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100px;
+    height: 100px;
     top: 50%;
     left: 50%;
-    margin: -3.125rem 0 0 -3.125rem;
+    margin: -50px 0 0 -50px;
     background: #CB4B16;
     border-radius: 80%;
     backface-visibility: hidden;
@@ -22,11 +22,17 @@
     object-fit: cover;
 }
 
-/* place */
+.section {
+    margin: auto;
+}
+
+/* 장소 */
 .map_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #FFE4E1;
-    height: 38rem;
-    padding: 8rem 5rem 2rem;
+    height: 45rem;
 }
 
 .map_text p {
@@ -46,7 +52,6 @@
     margin-bottom: 2rem;
 }
 
-/* 지도 모니터 */
 .map_box {
     width: 40rem;
     height: 23rem;
@@ -91,71 +96,50 @@
     background-color: lightgreen;
 }
 
-.map_img #map {
+.map_img img {
     width: 80%;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-left: 0.7rem;
     border-radius: 1rem;
 }
 
-.article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/* Map Font */
-.bAddr {
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.title {
-    font-weight: bold;
-    display: block;
-}
-
-/* food */
+/* 음식 */
 .food_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #D5C2EE;
-    width: 60%;
-    height: 38rem;
-    padding: 8rem 0;
+    height: 45rem;
 }
 
-.food_wrap p {
+.food_text p {
     font-size: 1rem;
     opacity: 50%;
     color: #e30f3d;
 }
 
-.food_wrap h3 {
+.food_text h3 {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: -0.1rem;
 }
 
-.food_wrap h3:nth-child(3) {
+.food_text h3:nth-child(3) {
     color: #e30f3d;
 }
 
-.food_img {
-    margin: auto;
-}
-
 .food_img img {
-    width: 99%;
+    width: 100%;
 }
 
-/* phone */
+/* 연락 */
 .phone_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(189, 244, 189);
-    width: 40%;
-    height: 38rem;
-    padding: 8rem 0;
+    height: 45rem;
 }
 
 .phone_wrap p {
@@ -308,21 +292,21 @@
 
 /* 명언 */
 .saying_warp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #FFE4E1;
-    height: 12rem;
+    height: 45rem;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
 .saying_text {
-    width: 80%;
     margin: 0 auto;
-    padding: 3rem 1rem;
 }
 
-.saying_text p:nth-child(1) {
-    padding-bottom: 1rem;
-}
 
+@media screen and (max-width: 768px) {}
 
 @media(min-width:768px) and (max-width:1024px) {}

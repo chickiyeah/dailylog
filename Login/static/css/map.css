@@ -19,6 +19,13 @@
     margin-right: 0.3rem;
 }
 
+.map_top2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom :0.8rem;
+}
+
 .search_btn {
     width: 5rem;
     height: 3rem;
@@ -29,8 +36,20 @@
     color: white;
 }
 
+.today-check input{ 
+    width: 100%;
+}
+
 .form-check input {
     width: 1rem;
+}
+
+.form-check input, label{
+    padding-bottom:0.8rem;
+}
+
+.feel-check{
+    margin: 0 1rem;
 }
 
 .map_section label {
@@ -123,7 +142,7 @@ i:nth-child(3) {
 .hAddr {
     position:absolute;
     left:27.625rem;
-    top:32.625rem;
+    top:34.1rem;
     border-radius: 1.125rem;
     background:#fff;
     background:rgba(255,255,255,0.8);
@@ -147,6 +166,53 @@ i:nth-child(3) {
     width: 70rem;
     height: 40rem;
     margin: auto;
+}
+.select_box {
+    width: 21rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.write_select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+}
+
+.write_select #option {
+    font-size: 0.93rem;
+    color: #515151;
+    width: 14.4rem;
+    border: 1px solid #515151;
+    padding: 0.93rem;
+    border-radius: 3.125rem;
+    opacity: 30%;
+    margin: 0 0.3125rem;
+    display: block;
+    font-size: 0.812rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+.write_select .select ul {
+    width: 9.4rem;
+    background-color: #fff;
+    color: #909090;
+    padding: 0.63rem 0.3rem;
+    display: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    margin: 0.31rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.write_select .select ul li {
+    cursor: pointer;
+    padding: 0.3rem;
 }
 
 
