@@ -149,7 +149,10 @@
     }
 
     function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
-
+            if(desc.length > 60){
+                descleng = desc.length
+                
+            }
         return `<section id="section">
                     <div class="detail_wrap">
                         <div class="detail_section">
@@ -175,7 +178,6 @@
                                     </div>
                                 </div>
                                 <div class="detail_bT">
-                                    <input type="submit" class="submit" value="좋아요">
                                     <a href="/write/edit?postid=${postid}" ><input type="submit" class="submit" value="수정">
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
@@ -185,7 +187,9 @@
                 </section>`
     }
     function Card(name, adr, people_meet,  date, feel, desc, Eat) {
-
+        if(desc.length > 60){
+            desc = desc.substring(0,61)+"\n"+desc.substring(62)
+        }
     return `<section id="section">
                     <div class="detail_wrap">
                         <div class="detail_section">

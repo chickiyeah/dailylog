@@ -99,11 +99,18 @@
     margin-top: 3rem;
 }
 
-.map_img img {
+/* .map_img img {
     width: 80%;
     height: auto;
     margin-top: 2.5rem;
     margin-left: 0.7rem;
+    border-radius: 1rem;
+} */
+
+#map_module {
+    width:90%; 
+    height:20rem; 
+    margin:auto;
     border-radius: 1rem;
 }
 
@@ -134,7 +141,8 @@
 }
 
 .food_img img {
-    width:80%;
+    width:70%;
+    padding-top: 0.3rem;
 }
 
 /* 연락 */
@@ -143,7 +151,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(189, 244, 189);
-    height: 45rem;
+    height: 100%;
     justify-content: center;
 }
 
@@ -301,14 +309,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FFE4E1;
-    height: 45rem;
-    font-size: 0.9rem;
-    font-weight: 400;
+    margin: auto;
+    background-color: hsl(202, 100%, 77%);
+    height: 100%;
+    align-items: center;
+}
+
+.saying_img{
+    margin: auto;
+    position: relative;
+    z-index: 55;
 }
 
 .saying_text {
-    margin: 0 auto;
+    width:50%;
+    position: absolute;
+    z-index: 555;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+#good_say{
+    font-size: 2rme;
 }
 
 
@@ -335,14 +361,26 @@
         padding-left: 1rem;
     }
 
+    .map_header{
+        margin-left: -0.3rem;
+    }
+
     .map_header span{
         position: absolute;
-        top: 2rem;
+        top: 1rem;
         left: 2rem;
         bottom:1rem;
     }
-    #map{ 
-        height: 8rem; 
+
+    #map_module {
+    height:15rem; 
+    margin:auto;
+    border-radius: 1rem;
+    }
+
+    .food_img img{
+        width: 100%;
+        padding-top: 1.3rem;
     }
 
 }

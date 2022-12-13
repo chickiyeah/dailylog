@@ -17,6 +17,13 @@
     <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
+    <!-- 스크립트 -->
+    <script src="../static/js/index.js" defer></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -94,6 +101,9 @@
     }
 
     function Card(Date, Name, UserName, Ex, id) {
+        if(Name.length > 48){
+            Name = Name.substring(0, 47)
+        }
     return `<a href="/write/detail?postid=${id}">
                 <div class="write_box">
                     <div>
@@ -256,7 +266,7 @@
             <div class="top_align">
                 <!-- 네비 시작 -->
                 <nav>
-                    <ul>
+                    <ul class="navbar_menu">
                         <li><a href="/map">지도보기</a></li>
                         <li><a href="/write/1">기록하기</a></li>
                         <li><a href="/rank">랭킹보기</a></li>
@@ -266,10 +276,12 @@
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                    <div class="simbol">
-                        <i class="fa-solid fa-house-user"></i>
-                    </div>
-                    <a href="/"><h1>DAILY LOG</h1></a>
+                        <a href="/">
+                            <i class="fa-solid fa-house-user"></i>
+                        </a>
+                            <a href="/">
+                                <h1>DAILY LOG</h1>
+                            </a>
                 </div>
                 <!-- 로고 끝 -->
                 <!-- 모바일용 햄버거 -->
@@ -278,8 +290,8 @@
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
+                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
+                    <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
                 </div>
                 <!-- 아이콘 끝 -->
             </div>

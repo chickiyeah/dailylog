@@ -23,6 +23,11 @@
     justify-content: center;
     align-items: flex-end;
     padding-bottom :0.8rem;
+    text-align: center;
+}
+
+.map_top2 span:nth-child(2){
+    width: 59%;
 }
 
 .search_btn {
@@ -44,11 +49,7 @@
 }
 
 .form-check input, label{
-    padding-bottom:0.8rem;
-}
-
-.feel-check{
-    margin: 0 1rem;
+    padding-bottom: 0.8rem;
 }
 
 .map_section label {
@@ -233,6 +234,24 @@ i:nth-child(3) {
     padding: 0.3rem;
 }
 
+/* 푸터 */
+.footer {
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+.bottom_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+    opacity: 30%;
+    font-size: 0.9rem;
+}
+
+.bottom_simbol i {
+    margin-right: 0.3rem;
+}
+
 
 
 /* 반응형 */
@@ -263,17 +282,28 @@ i:nth-child(3) {
     } 
 }
 
+/* 반응형 */
 @media(max-width:767px) and (min-width:320px) {
-
+    .top_logo i{
+        display: block;
+        position: absolute;
+        font-size:2rem;
+        top:2rem;
+        right: 2rem;
+        color: #909090;
+    }
     .map_top{
-        width:80%;
+        width:60%;
         margin: auto;
     }
     .map_top2{
         display:flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 3rem;
+    }
+    .form-check-input {
+        width: 100%;
+        text-align: center;
     }
     .map_top2 span{
         margin-bottom: 1rem;
@@ -282,7 +312,8 @@ i:nth-child(3) {
         margin-left: 2rem;
     }
     .map_top2 span:nth-child(2){
-        margin-left: -1rem;
+        margin-left: -2rem;
+        padding: 0.2rem;
     }    
     .search_btn {
         width: 100%;
@@ -299,6 +330,7 @@ i:nth-child(3) {
     .map_section{
         width: 100%;
         margin-top:3.5rem;
+        margin-bottom: -1rem;
     }
     .map_content{
         width: 90%;

@@ -19,6 +19,7 @@
 
     <!-- 스크립트 -->
     <script src="../static/js/index.js" defer></script>
+    <script src="../static/js/full.js" defer></script>
 
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -395,24 +396,15 @@
                 <!-- saying 섹션 슬라이드5 시작 -->
                 <section class="section">
                     <div class="saying_warp">
+                        <div class="saying_img">
+                            <img src="../static/assets/say.png" alt="명언 뒷 배경">
+                        </div>
                         <div class="saying_text">
                             <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
                             <p id="good_say_author">- 그라시아 -</p>
                         </div>
                     </div>
                 </section>
-                <!-- footer 섹션 슬라이드6 시작 -->
-                    <!-- <footer class="section">
-                        <div class="bottom_wrap">
-                            <div class="bottom_simbol">
-                                <i class="fa-solid fa-house-user"></i>
-                            </div>
-                            <div class="bottom_info">
-                                <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
-                                <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
-                            </div>
-                        </div>
-                </footer> -->
             </div>
         </main>
         <!-- 메인 끝 -->
@@ -432,7 +424,7 @@
                     alert("검색어를 입력해주세요.")
                 }
             }
-            let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            let mapContainer = document.getElementById('map_module'), // 지도를 표시할 div 
                 mapOption = {
                     center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
                     level: 1 // 지도의 확대 레벨

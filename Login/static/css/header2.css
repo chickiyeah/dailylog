@@ -97,7 +97,7 @@ nav ul li:hover {
 
 /* 푸터 */
 .footer {
-    border-top: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid #515151;
     margin-top: 17rem;
     text-align: center;
 }
