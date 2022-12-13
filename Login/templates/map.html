@@ -51,9 +51,12 @@
                     hideMarkers()
                 }
             })
+            document.getElementById("showdate").addEventListener('change', function () {
+                showall(document.getElementById("showdate").value)
+            })
         });
 
-        function showall() {
+        function showall(filter) {
             $.ajax({
                 url: "/Write",
                 method: "POST",
@@ -85,7 +88,21 @@
                         }
 
                         let Created_At = element.Created_At.split("T")[0].split("-")[0] + "-" + element.Created_At.split("T")[0].split("-")[1] + "-" + element.Created_At.split("T")[0].split("-")[2] + " " + element.Created_At.split("T")[1].split(".")[0]
-                        customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
+                        if (filter == "") {
+                            customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
+                        } else {
+                            if(filter == "맑음" || filter == "흐림" || filter == "비" || filter == "눈" || filter == "바람") {
+                                if(filter == Feel){
+                                    customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
+                                }
+
+                            }else{
+                                Created_At = element.Created_At.split("T")[0].split("-")[0] + "-" + element.Created_At.split("T")[0].split("-")[1] + "-" + element.Created_At.split("T")[0].split("-")[2]
+                                if(filter == Created_At){
+                                    customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
+                                }
+                            }
+                        }
                     })
                 }
             })
@@ -155,7 +172,7 @@
                             </label>
                         </span>
                         <span class="today-check">
-                            <input class="form-check-input" type="date" id="flexCheckDefault">
+                            <input class="form-check-input" type="date" id="showdate">
                             <!-- <label class="form-check-label" for="flexCheckDefault">
                                 날짜
                             </label> -->
@@ -165,7 +182,7 @@
                                 <div class="write_select">
                                     <div id="select" class="select">
                                         <strong></strong>
-                                        <div id="option">오늘의 기분</div>
+                                        <div id="option">기분 선택</div>
                                         <ul>
                                             <li data-option="맑음">맑음</li>
                                             <li data-option="흐림">흐림</li>
@@ -213,7 +230,6 @@
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
 
         <script>
-
             function sear() {
                 keyword = document.getElementById("searp").value
                 if (keyword != '') {

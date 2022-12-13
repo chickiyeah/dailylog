@@ -119,12 +119,9 @@ nav ul li:hover {
     nav ul {
         margin-left: 0.2rem;
     }
+
     .top_logo {
         margin-left: 0.2rem;
-    }
-    /* 푸터 */
-    .footer {
-        margin-top: 0rem;
     }
 }
 
@@ -135,7 +132,6 @@ nav ul li:hover {
         top: 1rem;
         left: 2.2rem;
         font-size: 2.5rem;
-        z-index: 99999;
     }
 
     .top_logo i,
@@ -152,23 +148,19 @@ nav ul li:hover {
         display: block;
         background: #515151;
         color: #fff;
-        padding: 12rem;
+        padding: 9.5rem;
         position: absolute;
         top: 0;
         left: -3rem;
-        opacity: 70%;
+        opacity: 80%;
         margin-left: -2rem;
         margin-top: -3rem;
-        z-index: 9999;
     }
 
     .navbar_menu li {
         font-size: 1.5rem;
         font-weight: 400;
-        margin: 1.5rem 0 0 -1rem;
+        margin: 1.5rem;
     }
-    /* 푸터 */
-    .footer {
-        margin-top: 0.1rem;
-    }
+
 }

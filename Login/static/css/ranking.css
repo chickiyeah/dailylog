@@ -169,12 +169,14 @@
     .ranking_category {
         margin: auto 0px;
         width: 60%;
+        justify-content: center;
+        
     }
     .ranking_category ul li {
         padding: 14.4px 5.5%;
-        ;
         margin-left: 5px;
         margin-right: 5px;
+        width: 60%;
         
     }
     .ranking_category ul {
@@ -188,6 +190,5 @@
         margin: 1rem 0px;
     }
     
-    .ranking_card div {
-        margin: 3rem 1.5rem 0 1.5rem;    }
+
 }

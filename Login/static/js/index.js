@@ -10,8 +10,8 @@ toggleBT.addEventListener("click", () => {
 
 // 제이쿼리 풀페이지
 $("#fullpage").fullpage({
-  anchors: ["page1", "page2", "page3", "page4", "page5","page6"],
-  navigationTooltips: ["fullPage", "map", "food", "phone", "saying", "footer"],
+  anchors: ["page1", "page2", "page3", "page4", "page5"],
+  navigationTooltips: ["fullPage", "map", "food", "phone", "saying"],
   css3: true,
   scrollingSpeed: 800,
   navigation: true,
