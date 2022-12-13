@@ -37,7 +37,6 @@
                 },
                 success: function(response){
                     name = response.nickname
-                    console.log(userinfo)
                                 //목록 가져오기
                     $.ajax({
                         url:"/Write",
@@ -321,7 +320,6 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../static/js/write.js"></script>
     <script>
-        const inputElement = document.getElementById("input").addEventListener("change", handleFiles)
 
         function handleFiles() {
             const filelist = this.files
