@@ -20,278 +20,267 @@
     <!-- 스크립트 -->
     <script src="../static/js/index.js" defer></script>
 
-    <!-- 풀페이지 -->
-    <link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
-    <script src="./assets/js/jquery.fullPage.js"></script>
-
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- 풀페이지 -->
+    <link rel="stylesheet" href="../static/css/jquery.fullPage.css">
+    <script src="../static/js/jquery.fullPage.js"></script>
 
 </head>
 <script>
     let id = ""
     $(document).ready(function () {
-  if(location.href.includes("?")){
-    document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-    location.href = "/"
-  }
-  if(document.cookie.split("id=")[1].includes(";")){
-        id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-        getEatPercent(id)
-        getPersonPercent(id)
-        getPlacePercent(id)
-    }else{
-        id = document.cookie.split("id=")[1].replace(" ","")
-        getEatPercent(id)
-        getPersonPercent(id)
-        getPlacePercent(id)
-    }
-    $.ajax({
-            url:"/Good_Say",
-            method:"GET",
-            success: function(response) {
+        if (location.href.includes("?")) {
+            document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+            location.href = "/"
+        }
+        if (document.cookie.split("id=")[1].includes(";")) {
+            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            getEatPercent(id)
+            getPersonPercent(id)
+            getPlacePercent(id)
+        } else {
+            id = document.cookie.split("id=")[1].replace(" ", "")
+            getEatPercent(id)
+            getPersonPercent(id)
+            getPlacePercent(id)
+        }
+        $.ajax({
+            url: "/Good_Say",
+            method: "GET",
+            success: function (response) {
                 console.log(response)
                 document.getElementById("good_say").innerHTML = response.message
                 document.getElementById("good_say_author").innerHTML = `- ${response.author} -`
             }
         })
-  
-})
 
-function getPlacePercent(id){
-    $.ajax({
-        url:"/Write",
-        method:"POST",
-        data:{
-            "Author":id
-        },
-        success: function(response){
-            const result = {};
-            response.forEach(element => {
-                adr = element.AREA_ADR
-                result[adr] = (result[adr] || 0)+1; 
-            })
+    })
 
-            
-            let per = []
-            let resmap = new Map(Object.entries(result))
-            const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
-            let max = 0
-
-            mapSort1.forEach(element => {
-                max += element
-            })
-
-            mapSort1.forEach(element => {
-                percent = element/max * 100
-                per.push(percent.toFixed(2))
-            })
-
-            let keyarr = Array.from(mapSort1.keys())
-            let permap = []
-            for(var i = 0; i < keyarr.length; i++){
-                permap.push({'name':keyarr[i], 'per':per[i]})
-            }
-
-                 
-                 console.log(permap[0])    
-        }
-    })        
-}
-
-function getEatPercent(id){
-    $.ajax({
-        url:"/Write",
-        method:"POST",
-        data:{
-            "Author":id
-        },
-        success: function(response){
-            const result = {};
+    function getPlacePercent(id) {
+        $.ajax({
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
+            },
+            success: function (response) {
+                const result = {};
                 response.forEach(element => {
-                    adr = element.Eat
-                    result[adr] = (result[adr] || 0)+1; 
+                    adr = element.AREA_ADR
+                    result[adr] = (result[adr] || 0) + 1;
                 })
-    
-                
+
+
                 let per = []
                 let resmap = new Map(Object.entries(result))
                 const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
                 let max = 0
-    
+
                 mapSort1.forEach(element => {
                     max += element
                 })
-    
+
                 mapSort1.forEach(element => {
-                    percent = element/max * 100
+                    percent = element / max * 100
                     per.push(percent.toFixed(2))
                 })
-    
+
                 let keyarr = Array.from(mapSort1.keys())
                 let permap = []
-                for(var i = 0; i < keyarr.length; i++){
-                    permap.push({'name':keyarr[i], 'per':per[i]})
+                for (var i = 0; i < keyarr.length; i++) {
+                    permap.push({ 'name': keyarr[i], 'per': per[i] })
+                }
+
+
+                console.log(permap[0])
+            }
+        })
+    }
+
+    function getEatPercent(id) {
+        $.ajax({
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
+            },
+            success: function (response) {
+                const result = {};
+                response.forEach(element => {
+                    adr = element.Eat
+                    result[adr] = (result[adr] || 0) + 1;
+                })
+
+
+                let per = []
+                let resmap = new Map(Object.entries(result))
+                const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
+                let max = 0
+
+                mapSort1.forEach(element => {
+                    max += element
+                })
+
+                mapSort1.forEach(element => {
+                    percent = element / max * 100
+                    per.push(percent.toFixed(2))
+                })
+
+                let keyarr = Array.from(mapSort1.keys())
+                let permap = []
+                for (var i = 0; i < keyarr.length; i++) {
+                    permap.push({ 'name': keyarr[i], 'per': per[i] })
                 }
 
                 let eat = permap[0].name
                 //한식, 일식, 중식, 양식
-                if(eat == "한식"){
+                if (eat == "한식") {
                     hansik()
                 }
-                if(eat == "일식"){
+                if (eat == "일식") {
                     jpnsik()
                 }
-                if(eat == "중식"){
+                if (eat == "중식") {
                     chnsik()
                 }
-                if(eat == "양식"){
+                if (eat == "양식") {
                     amesik()
                 }
-    
-        }
-    });
-}
 
-function rand(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function hansik() {
-    $("#food_image").empty()
-    let imagelist = ["../static/assets/menu/korean/bibimbap.png","../static/assets/menu/korean/ramyeon.png","../static/assets/menu/korean/salad.png","../static/assets/menu/korean/tteokbokki.png"]
-    let image = imagelist[rand(0,3)]
-    $("#food_image").append(`<img src=${image} alt="한식">`)
-}
-
-function jpnsik() {
-    $("#food_image").empty()
-    let imagelist = ["../static/assets/menu/japan/eelrice.png","../static/assets/menu/japan/sushi.png","../static/assets/menu/japan/takoyaki.png"]
-    let image = imagelist[rand(0,2)]
-    $("#food_image").append(`<img src=${image} alt="일식">`)
-}
-
-function chnsik() {
-    $("#food_image").empty()
-    let imagelist = ["../static/assets/menu/china/dandan.png","../static/assets/menu/china/Dimsum.png","../static/assets/menu/china/mutton.png"]
-    let image = imagelist[rand(0,2)]
-    $("#food_image").append(`<img src=${image} alt="중식">`)
-}
-
-function amesik() {
-    $("#food_image").empty()
-    let imagelist = ["../static/assets/menu/american/Hamburger.png","../static/assets/menu/american/steak.png"]
-    let image = imagelist[rand(0,1)]
-    $("#food_image").append(`<img src=${image} alt="양식">`)
-}
-
-function getPersonPercent(id) {
-    $.ajax({
-        url:"/Write",
-        method:"POST",
-        data:{
-            "Author":id
-        },
-        success: function(response){
-            const result = {};
-            response.forEach(element => {
-                peo = element.People_meet
-
-                if(peo.includes(",")){
-                    peo.split(",").forEach(ele => {
-                        result[ele] = (result[ele] || 0)+1; 
-                    })
-                }else{
-                    if(peo != "None"){
-                        result[peo] = (result[peo] || 0)+1; 
-                    }
-                }
-                
-            })
-
-            
-            let per = []
-            let resmap = new Map(Object.entries(result))
-            const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
-            let max = 0
-
-            mapSort1.forEach(element => {
-                max += element
-            })
-
-            mapSort1.forEach(element => {
-                percent = element/max * 100
-                per.push(percent.toFixed(2))
-            })
-
-            let keyarr = Array.from(mapSort1.keys())
-            let permap = []
-            for(var i = 0; i < keyarr.length; i++){
-                permap.push({'name':keyarr[i], 'per':per[i]})
             }
-            
-            
-            $("#peoname").text(permap[0].name)
-                    
-                
-            
+        });
+    }
 
-        }
-    })           
-}
+    function rand(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function hansik() {
+        $("#food_image").empty()
+        let imagelist = ["../static/assets/menu/korean/bibimbap.png", "../static/assets/menu/korean/ramyeon.png", "../static/assets/menu/korean/salad.png", "../static/assets/menu/korean/tteokbokki.png"]
+        let image = imagelist[rand(0, 3)]
+        $("#food_image").append(`<img src=${image} alt="한식">`)
+    }
+
+    function jpnsik() {
+        $("#food_image").empty()
+        let imagelist = ["../static/assets/menu/japan/eelrice.png", "../static/assets/menu/japan/sushi.png", "../static/assets/menu/japan/takoyaki.png"]
+        let image = imagelist[rand(0, 2)]
+        $("#food_image").append(`<img src=${image} alt="일식">`)
+    }
+
+    function chnsik() {
+        $("#food_image").empty()
+        let imagelist = ["../static/assets/menu/china/dandan.png", "../static/assets/menu/china/Dimsum.png", "../static/assets/menu/china/mutton.png"]
+        let image = imagelist[rand(0, 2)]
+        $("#food_image").append(`<img src=${image} alt="중식">`)
+    }
+
+    function amesik() {
+        $("#food_image").empty()
+        let imagelist = ["../static/assets/menu/american/Hamburger.png", "../static/assets/menu/american/steak.png"]
+        let image = imagelist[rand(0, 1)]
+        $("#food_image").append(`<img src=${image} alt="양식">`)
+    }
+
+    function getPersonPercent(id) {
+        $.ajax({
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
+            },
+            success: function (response) {
+                const result = {};
+                response.forEach(element => {
+                    peo = element.People_meet
+
+                    if (peo.includes(",")) {
+                        peo.split(",").forEach(ele => {
+                            result[ele] = (result[ele] || 0) + 1;
+                        })
+                    } else {
+                        if (peo != "None") {
+                            result[peo] = (result[peo] || 0) + 1;
+                        }
+                    }
+
+                })
+
+
+                let per = []
+                let resmap = new Map(Object.entries(result))
+                const mapSort1 = new Map([...resmap.entries()].sort((a, b) => a[1] - b[1]));
+                let max = 0
+
+                mapSort1.forEach(element => {
+                    max += element
+                })
+
+                mapSort1.forEach(element => {
+                    percent = element / max * 100
+                    per.push(percent.toFixed(2))
+                })
+
+                let keyarr = Array.from(mapSort1.keys())
+                let permap = []
+                for (var i = 0; i < keyarr.length; i++) {
+                    permap.push({ 'name': keyarr[i], 'per': per[i] })
+                }
+
+
+                $("#peoname").text(permap[0].name)
+
+
+
+
+            }
+        })
+    }
 </script>
 
 <body>
     <div class="wrap">
-        <!-- 헤더 시작 -->
-        <header class="header">
-            <div class="top_align">
-                <!-- 네비 시작 -->
-                <nav>
-                    <ul class="navbar_menu">
-                        <li><a href="/map">지도보기</a></li>
-                        <li><a href="/write/1">기록하기</a></li>
-                        <li><a href="/rank">랭킹보기</a></li>
-                        <li><a href="/Mypage">마이페이지</a></li>
-                    </ul>
-                </nav>
-                <!-- 네비 끝 -->
-                <!-- 로고 시작 -->
-                <div class="top_logo">
-                    <i class="fa-solid fa-house-user"></i>
-                    <a href="/"><h1>DAILY LOG</h1></a>
-                </div>
-                <!-- 로고 끝 -->
-                <!-- 모바일용 햄버거 -->
-                <div class="nav_toogleBT">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <!-- 아이콘 시작 -->
-                <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
-                </div>
-                <!-- 아이콘 끝 -->
-            </div>
-        </header>
-        <!-- 헤더 끝 -->
-        <!-- <div class="circle"></div> -->
-        <!-- 메인 시작 -->
-        <!-- swiper슬라이더 메인컨테이너 -->
         <main class="main" id="fullpage">
             <div class="main_visual">
-                <!-- 메인배너 -->
-                <div class="banner_wrap">
+                <header class="header">
+                    <div class="top_align">
+                        <nav>
+                            <ul class="navbar_menu">
+                                <li><a href="/map">지도보기</a></li>
+                                <li><a href="/write/1">기록하기</a></li>
+                                <li><a href="/rank">랭킹보기</a></li>
+                                <li><a href="/Mypage">마이페이지</a></li>
+                            </ul>
+                        </nav>
+                        <div class="top_logo">
+                            <i class="fa-solid fa-house-user"></i>
+                            <a href="/">
+                                <h1>DAILY LOG</h1>
+                            </a>
+                        </div>
+                        <!-- 모바일용 햄버거 -->
+                        <div class="nav_toogleBT">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="top_icon">
+                            <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png"
+                                    alt="메뉴의 좋아요 아이콘"></a>
+                            <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="banner_wrap section">
                     <span>
                         <img src="../static/assets//story_img1.png" alt="스토리 이미지1">
                     </span>
                 </div>
-                <!-- 장소 시작 -->
-                <!-- 슬라이드 영역1 -->
-
-                <div class="map_wrap">
-                    <section class="section">
+                <!-- map 섹션 슬라이드2 -->
+                <section class="section">
+                    <div class="map_wrap">
                         <div class="map_text">
                             <p>new</p>
                             <h3>이 장소,</h3>
@@ -305,17 +294,15 @@ function getPersonPercent(id) {
                             </div>
                             <div class="map_section">
                                 <div class="map_img">
-                                    <div id="map" style="width:96%;height: 18rem;"></div>
+                                    <div id="map" style="width:90%;height: 18rem; margin: auto;"></div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-                <!-- 장소 끝 -->
-                <!-- 메뉴 시작 -->
-                <div class="food_wrap">
-                    <!-- 슬라이드 영역2 -->
-                    <section class="section">
+                    </div>
+                </section>
+                <!-- food 섹션 슬라이드3 시작 -->
+                <section class="section">
+                    <div class="food_wrap">
                         <div class="food_text">
                             <p>new</p>
                             <h3>오늘은</h3>
@@ -324,132 +311,127 @@ function getPersonPercent(id) {
                         <div id="food_image" class="food_img">
                             <img src="../static/assets/menu/american/steak.png" alt="한식">
                         </div>
-                    </section>
-                </div>
-                <!-- 메뉴 추천 끝 -->
-                <!-- 휴대폰 시작 -->
-                <div class="phone_wrap">
-                    <!-- 슬라이드 영역3 -->
-                    <section class="section">
+                    </div>
+                </section>
+                <!-- phone 섹션 슬라이드4 시작 -->
+                <section class="section">
+                    <div class="phone_wrap">
                         <div class="phone_text">
                             <p>new</p>
                             <h3>오랜만에</h3>
                             <h3>연락해봐요 : )</h3>
                         </div>
                         <!-- 아이폰 목업 시작 -->
-                        <div class="section">
-                            <div class="mockup-container">
-                                <div class="mockup">
-                                    <div class="mobile-mockup">
-                                        <div class="camera">
-                                            <span></span>
-                                        </div>
-                                        <div class="home-btn">
-                                            <span></span>
-                                        </div>
-                                        <div class="power">
-                                            <span></span>
-                                        </div>
-                                        <!-- Content Start -->
-                                        <div class="phone_name">
-                                            <div class="phone_main">
-                                                <div>
-                                                    <img src="../static/assets/call.png" alt="전화 아이콘">
-                                                </div>
-                                                <div>
-                                                    <h5 id="peoname">김철수</h5>
-                                                </div>
+                        <div class="mockup-container">
+                            <div class="mockup">
+                                <div class="mobile-mockup">
+                                    <div class="camera">
+                                        <span></span>
+                                    </div>
+                                    <div class="home-btn">
+                                        <span></span>
+                                    </div>
+                                    <div class="power">
+                                        <span></span>
+                                    </div>
+                                    <!-- Content Start -->
+                                    <div class="phone_name">
+                                        <div class="phone_main">
+                                            <div>
+                                                <img src="../static/assets/call.png" alt="전화 아이콘">
+                                            </div>
+                                            <div>
+                                                <h5 id="peoname">김철수</h5>
                                             </div>
                                         </div>
-                                        <!-- Content End -->
                                     </div>
+                                    <!-- Content End -->
                                 </div>
-                                <!-- 아이폰 목업 끝 -->
                             </div>
+                            <!-- 아이폰 목업 끝 -->
                         </div>
-                    </section>
-                </div>
-                <!-- 명언 시작 -->
-                <div class="saying_warp">
-                    <!-- 슬라이드 영역4 -->
-                    <section class="section">
+                    </div>
+                </section>
+                <!-- saying 섹션 슬라이드5 시작 -->
+                <section class="section">
+                    <div class="saying_warp">
                         <div class="saying_text">
                             <p id="good_say">눈동자로 상대방의 마음을 읽어라. 눈은 마음의 창이다.</p>
                             <p id="good_say_author">- 그라시아 -</p>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+                <!-- footer 섹션 슬라이드6 시작 -->
+                    <footer class="section">
+                        <div class="bottom_wrap">
+                            <div class="bottom_simbol">
+                                <i class="fa-solid fa-house-user"></i>
+                            </div>
+                            <div class="bottom_info">
+                                <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
+                                <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
+                            </div>
+                        </div>
+                    </footer>
             </div>
         </main>
         <!-- 메인 끝 -->
-        <!-- 푸터 시작 -->
-        <footer class="footer">
-            <div class="bottom_wrap">
-                <div class="bottom_simbol">
-                    <i class="fa-solid fa-house-user"></i>
-                </div>
-                <div class="bottom_info">
-                    <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
-                    <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
-                </div>
-            </div>
-        </footer>
-        <!-- 푸터 끝 -->
     </div>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
-    
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4c43d4733daa8022e6465b441f59f10c&libraries=services,clusterer,drawing"></script>
+
     <script>
-    let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-        mapOption = {
-            center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-            level: 1 // 지도의 확대 레벨
-        };  
+        let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                level: 1 // 지도의 확대 레벨
+            };
 
-    // 지도를 생성합니다    
-    let map = new kakao.maps.Map(mapContainer, mapOption); 
+        // 지도를 생성합니다    
+        let map = new kakao.maps.Map(mapContainer, mapOption);
 
-    // 주소-좌표 변환 객체를 생성합니다
-    let geocoder = new kakao.maps.services.Geocoder();
+        // 주소-좌표 변환 객체를 생성합니다
+        let geocoder = new kakao.maps.services.Geocoder();
 
-    let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
-        infowindow = new kakao.maps.InfoWindow({zindex:1}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
+        let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
+            infowindow = new kakao.maps.InfoWindow({ zindex: 1 }); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
 
-    // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
-    kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
-        searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
-            if (status === kakao.maps.services.Status.OK) {
-                let detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
-                detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
-                
-                let content = '<div class="bAddr">' +
-                                '<span class="title">주소정보</span>' + 
-                                detailAddr + 
-                            '</div>';
+        // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
+        kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+            searchDetailAddrFromCoords(mouseEvent.latLng, function (result, status) {
+                if (status === kakao.maps.services.Status.OK) {
+                    let detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
+                    detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
 
-                // 마커를 클릭한 위치에 표시합니다 
-                marker.setPosition(mouseEvent.latLng);
-                marker.setMap(map);
+                    let content = '<div class="bAddr">' +
+                        '<span class="title">주소정보</span>' +
+                        detailAddr +
+                        '</div>';
 
-                // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
-                infowindow.setContent(content);
-                infowindow.open(map, marker);
-            }   
+                    // 마커를 클릭한 위치에 표시합니다 
+                    marker.setPosition(mouseEvent.latLng);
+                    marker.setMap(map);
+
+                    // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
+                    infowindow.setContent(content);
+                    infowindow.open(map, marker);
+                }
+            });
         });
-    });
 
-    // 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
-    kakao.maps.event.addListener(map, 'idle', function() {
-        
-    });
+        // 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
+        kakao.maps.event.addListener(map, 'idle', function () {
 
-    function searchAddrFromCoords(coords, callback) {
-        geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);         
-    }
+        });
 
-    function searchDetailAddrFromCoords(coords, callback) {
-        geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
-    }
+        function searchAddrFromCoords(coords, callback) {
+            geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);
+        }
+
+        function searchDetailAddrFromCoords(coords, callback) {
+            geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
+        }
 
     </script>
 </body>

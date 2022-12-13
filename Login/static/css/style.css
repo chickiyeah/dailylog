@@ -22,9 +22,9 @@
     object-fit: cover;
 }
 
-.section {
+/* .section {
     margin: auto;
-}
+} */
 
 /* 장소 */
 .map_wrap {
@@ -53,8 +53,8 @@
 }
 
 .map_box {
-    width: 40rem;
-    height: 23rem;
+    width: 50rem;
+    height: 30rem;
     margin: 0 auto;
     background: #fff;
     border-radius: 2.25rem;

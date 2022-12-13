@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAILY LOG에 오신것을 환영합니다!</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/Login.css">
-        <link rel="stylesheet" href="../static/css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -89,14 +89,20 @@
         <p id = "password">비밀번호</p>
         <input class="email_input" id="passwordd" type="password" onkeypress="javascript:if(event.keyCode==13) Login()" autocomplete="current-password" class="form-control">
           <span class="form-check">
-              <input class="form-check-input-login" onclick="is_checked()" type="checkbox"  id="flexCheckDefault">
+        <input class="form-check-input-login" onclick="is_checked()" type="checkbox"  id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                   비밀번호 표시
               </label>
           </span>
-        <a href="/Login/find_account" target="_blank"><p class="no_email">입력한 계정이 없다면?</p></a>
+        <a href="/Login/find_account" target="_blank">
+            <p class="no_email">입력한 계정이 없다면?</p>
+        </a>
         <input onclick="Login()" type="submit" class="submit" value="로그인">
-        <p class="nosign">아직 회원이 아니세요? <a href='/register'><span class="signup">회원가입</span></a></p>
+        <p class="nosign">아직 회원이 아니세요? 
+            <a href='/register'>
+                <span class="signup">회원가입</span>
+            </a>
+        </p>
     </article>
 </section>
 </body>

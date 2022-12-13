@@ -8,6 +8,20 @@ toggleBT.addEventListener("click", () => {
 });
 
 
+// 제이쿼리 풀페이지
+$("#fullpage").fullpage({
+  anchors: ["page1", "page2", "page3", "page4", "page5","page6"],
+  navigationTooltips: ["fullPage", "map", "food", "phone", "saying", "footer"],
+  css3: true,
+  scrollingSpeed: 800,
+  navigation: true,
+  slidesNavigation: true,
+  responsiveHeight: 400,
+  dragAndMove: true,
+  dragAndMoveKey: "YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=",
+  controlArrows: false,
+});
+
 
 
 // // 배너 위 텍스트 애니메이션
