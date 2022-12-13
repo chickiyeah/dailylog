@@ -159,13 +159,21 @@ i:nth-child(3) {
 }
 
 .bAddr {
+    /* 수정 X */
+    margin-left: -9rem;
+    bottom: 2.5rem;
+    z-index: 9999;
+    position: absolute;
+    margin-bottom: 2rem;
+    /* 수정 X */
     padding:1rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     font-size: 0.9rem;
     color: #515151;
-    z-index: 9999;
+    background-color: #d1d1d1;
+
 }
 
 .bAddr span{

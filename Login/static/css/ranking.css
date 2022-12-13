@@ -162,3 +162,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media(max-width:767px) and (min-width:320px) {
+    #ranking_card {
+        flex-direction: column;
+    }
+    .ranking_category {
+        margin: auto 0px;
+        width: 60%;
+    }
+    .ranking_category ul li {
+        padding: 14.4px 5.5%;
+        ;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+    .ranking_category ul {
+        margin: auto 0px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ranking_text {
+        text-align: center;
+        margin: 1rem 0px;
+    }
+    
+    .ranking_card div {
+        margin: 3rem 1.5rem 0 1.5rem;    }
+}
