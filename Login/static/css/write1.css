@@ -56,3 +56,17 @@
     font-size: 1rem;
     opacity: 60%;
 }
+@media screen and (max-width: 768px) {
+    .write_box {
+        width: 70%;
+
+    }
+          
+    .write_bt {
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    }   
+
+}

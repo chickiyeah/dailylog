@@ -125,6 +125,7 @@ nav ul li:hover {
 }
 
 @media(min-width:320px) and (max-width:767px) {
+
     .nav_toogleBT {
         display: block;
         position: absolute;
@@ -146,6 +147,7 @@ nav ul li:hover {
     .navbar_menu.active {
         display: block;
         background: #515151;
+        height: 30rem;
         color: #fff;
         padding: 9.5rem;
         position: absolute;

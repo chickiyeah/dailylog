@@ -25,3 +25,10 @@
     margin-top: 1.25rem;
     opacity: 50%;
 }
+
+@media screen and (max-width: 768px) {
+    .mypage_left {
+        display: none;
+    }
+
+}

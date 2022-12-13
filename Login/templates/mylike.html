@@ -18,8 +18,83 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
-</head>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<script>
+        let id = ""
+    $(document).ready(function () {
+        if (location.href.includes("?")) {
+            document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+            location.href = "/"
+        }
+        if (document.cookie.split("id=")[1].includes(";")) {
+            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            showimage(id)
+        } else {
+            id = document.cookie.split("id=")[1].replace(" ", "")
+            showimage(id)
+        }
+
+    })
+
+    function rand(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function ima(link) {
+        return `<img src="${link}" alt="사용자가 좋아요 이미지">`
+    }
+        function showimage(id) {
+            $.ajax({
+                url: "/Write",
+                method: "POST",
+                data: {
+                    "Author": id
+                },
+                success: function (response) {
+                    const result = {};
+                        let num = []
+                        let length = response.length
+                        let inum = 0
+                        if(length > 5){
+                            while (num.length < 5)
+                            {
+                                num1 = rand(0,response.length - 1)
+                                console.log(inum)
+                                if(!num.includes(num1)){
+
+                                    if(response[num1].AttachFiles != "null"){
+                                        inum = 0
+                                        num.push(num1)
+                                    }else{
+                                        if(inum > 6){
+                                            break;
+                                        }else{
+                                            inum += 1
+                                        }
+                                    }
+                                    
+                                }
+                            }
+
+                            for (var i = 0; i < num.length; i ++) {
+                                console.log(num[i])
+                                let imae = ima(response[num[i]].AttachFiles)
+                                $("#image").append(imae)
+                            }
+                        }else{
+                            let max = response.length
+                            for (var i = 0; i < max; i ++) {
+                                let imae = ima(response[i].AttachFiles)
+                                $("#image").append(imae)
+                            }                            
+                        }
+                }
+            })
+        }
+</script>
 <body>
         <!-- 헤더 시작 -->
         <header class="header">
@@ -72,16 +147,14 @@
             </div>
             <div class="mylike_right">
                 <div class="mylike_card">
-                    <figure>
+                    <figure id="image">
                         <div></div>
-                        <img src="../static/assets/like1.jpg" alt="사용자가 좋아요 이미지">
-                        <img src="../static/assets/like2.jpg" alt="사용자가 좋아요 이미지">
-                        <img src="../static/assets/like3.jpg" alt="사용자가 좋아요 이미지">
-                        <img src="../static/assets/like4.jpg" alt="사용자가 좋아요 이미지">
-                        <img src="../static/assets/like5.jpg" alt="사용자가 좋아요 이미지">
                     </figure>
                 </div>
-                <div>페이징처리</div>
+                <div>
+                    <!-- 페이징처리 -->
+                
+                </div>
             </div>
         </div>
     </section>
