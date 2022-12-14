@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20rem 0 8rem 0;
+    padding: 15rem 0 8rem 0;
 }
 
 .ranking_text {
@@ -27,7 +27,8 @@
 .ranking_category ul {
     display: flex;
     flex-direction: row;
-    margin: 1.6rem
+    margin: 1.6rem;
+    justify-content: center;
 }
 
 .ranking_category ul li {
@@ -172,32 +173,41 @@
         color: #909090;
     }
 
+    .ranking_section {
+    padding-top: 10rem;
+    }
+
     #ranking_card {
         flex-direction: column;
     }
     .ranking_category {
-        margin: auto 0px;
+        margin: auto;
         width: 60%;
         justify-content: center;
         
     }
     .ranking_category ul li {
-        padding: 14.4px 5.5%;
-        margin-left: 5px;
-        margin-right: 5px;
+        padding: 0.9rem 5.5%;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
         width: 60%;
         
     }
     .ranking_category ul {
-        margin: auto 0px;
+        margin: auto;
         display: flex;
         align-items: center;
         
     }
     .ranking_text {
+        width: 50%;
         text-align: center;
-        margin: 1rem 0px;
+        padding: 1rem;
+        margin: auto;
     }
-    
+    .ranking_text h4{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
 
 }

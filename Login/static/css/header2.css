@@ -97,8 +97,7 @@ nav ul li:hover {
 
 /* 푸터 */
 .footer {
-    border-top: 1px solid #515151;
-    margin-top: 17rem;
+    border-top: 1px solid #d2d2d2;
     text-align: center;
 }
 
@@ -162,5 +161,8 @@ nav ul li:hover {
         font-weight: 400;
         margin: 1.5rem;
     }
-
+    /* 푸터 */
+    .footer {
+        margin-top: 0.1rem;
+    }
 }

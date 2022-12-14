@@ -17,6 +17,9 @@
     <link rel="shortcut icon" href="../static/assets/house.svg" type="image/x-icon">
     <link rel="icon" href="../static/assets/house.svg" type="image/x-icon">
 
+    <!-- 스크립트 -->
+    <script src="../static/js/index.js" defer></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <script>
@@ -214,7 +217,6 @@
                                     </div>
                                 </div>
                                 <div class="detail_bT">
-                                    <input type="submit" class="submit" value="좋아요">
                                     <a href="/write/edit?postid=${postid}"><input type="submit" class="submit" value="수정">
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
@@ -240,14 +242,17 @@
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                    <div class="simbol">
-                        <i class="fa-solid fa-house-user"></i>
-                    </div>
-                    <a href="/"><h1>DAILY LOG</h1></a>
-                    <!-- 모바일용 햄버거 -->
-                    <a href="#" class="nav_toogleBT">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+                        <a href="/">
+                            <i class="fa-solid fa-house-user"></i>
+                        </a>
+                            <a href="/">
+                                <h1>DAILY LOG</h1>
+                            </a>
+                </div>
+                <!-- 로고 끝 -->
+                <!-- 모바일용 햄버거 -->
+                <div class="nav_toogleBT">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">

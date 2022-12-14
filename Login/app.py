@@ -461,11 +461,12 @@ async def deleteuser():
 
 @app.route("/UploadFile", methods=["POST"])
 def upload():
+    now = datetime.now()
     File = request.files['File']
     #print(File)
     a = Storage.child("/daily-log/"+str(now)).put(File)
     #print(a)
-    #print("https://firebasestorage.googleapis.com/v0/b/chi-talk.appspot.com/o/daily-log%2F"+str(now)+"?alt=media&token="+a['downloadTokens'])
+    print("https://firebasestorage.googleapis.com/v0/b/chi-talk.appspot.com/o/daily-log%2F"+str(now)+"?alt=media&token="+a['downloadTokens'])
     return "https://firebasestorage.googleapis.com/v0/b/chi-talk.appspot.com/o/daily-log%2F"+str(now)+"?alt=media&token="+a['downloadTokens']
 
 @app.route("/Map", methods=["POST"])

@@ -12,7 +12,7 @@
     display: block;
     text-align: right;
     margin-bottom: 1rem;
-    margin-right: 27rem;
+    margin-right: 22rem;
 }
 
 /* 이런 경우엔 부모에 block을 주고 자식에 right준다. 위에<< */
@@ -31,7 +31,7 @@
 }
 
 .write_box {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,9 +47,11 @@
 }
 
 .write_box p {
-    width: 40%;
+    width:95%;
     font-size: 0.9rem;
     margin-top: 0.2rem;
+    overflow: hidden;  		
+    text-overflow: ellipsis;  
 }
 
 .user_info {
@@ -77,10 +79,10 @@
     display: block;
     text-align: right;
     margin-bottom: 1rem;
-    margin-right: 3rem;
+    margin-right: 1.6rem;
     }   
     .write_box p {
-        width: 115.66px;
+        width:8rem;
         font-size: 0.9rem;
         margin-top: 0.2rem;
         overflow: hidden;  		
@@ -88,5 +90,4 @@
         white-space: nowrap; 		
         word-break:break-all
     }
-
 }

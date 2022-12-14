@@ -70,7 +70,7 @@
 }
 
 .write_select .select ul {
-    width: 9.4rem;
+    width: 15.7rem;
     background-color: #fff;
     color: #909090;
     padding: 0.63rem 0.3rem;
@@ -111,7 +111,7 @@
 }
 
 .write_select2 .select2 ul {
-    width: 9.3rem;
+    width: 15.7rem;
     background-color: #fff;
     color: #909090;
     padding: 0.6rem 0.3rem;
@@ -166,7 +166,7 @@ button {
         margin: 12rem 0 3rem 0;
     }
     .text_div {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     .btn_div {
@@ -178,7 +178,7 @@ button {
     }
         
     .write_select #option {
-        width: 160.8px;
+        width: 90%;
         padding: 14.88px;
         margin: 0px;
 
@@ -187,17 +187,23 @@ button {
         width: 192.55px;
     }
     .write_select2 #option2 {
-        width: 160.8px;
+        width: 90%;
         padding: 14.88px;
         margin: 0px;
     }
     .write_sub input {
-        width: 160.8px;
         font-size: 0.75rem;
         border: 1px solid #515151;
         padding: 14.88px;
         border-radius: 1.125rem;
         opacity: 30%;
         margin: 0px;
+    }
+
+    .write_select .select ul {
+    width: 11.7rem;
+    }
+    .write_select2 .select2 ul {
+    width: 11.7rem;
     }
 }

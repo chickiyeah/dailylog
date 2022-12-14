@@ -26,10 +26,6 @@
     text-align: center;
 }
 
-.map_top2 span:nth-child(2){
-    width: 59%;
-}
-
 .search_btn {
     width: 5rem;
     height: 3rem;
@@ -217,7 +213,7 @@ i:nth-child(3) {
 }
 
 .write_select .select ul {
-    width: 9.4rem;
+    width: 15.4rem;
     background-color: #fff;
     color: #909090;
     padding: 0.63rem 0.3rem;
@@ -365,7 +361,6 @@ i:nth-child(3) {
         color: #515151;
         z-index: 9999;
     }
-
     .bAddr span{
         font-size:0.9rem;
         margin: 0.3rem;

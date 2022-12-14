@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/header2.css">
     <link rel="stylesheet" href="../static/css/write2(update)style.css">
+
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
+
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
+
     <!-- 스크립트 -->
     <script src="./static/js/index.js" defer></script>
 
@@ -98,10 +103,10 @@
                                     $("#select #option").text(element.Feel)
                                     $("#select2 #option2").text(element.Eat)
                                     if(element.AttachFiles == "null" || element.AttachFiles == ""){
-                                        $("#file").append("<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 현재이미지 없음</span>")
+                                        $("#file").append("<span>*이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 현재이미지 없음</span>")
                                     }else{
                                         befimg = element.AttachFiles
-                                        $("#file").append(`<span>이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 원본이미지 <a style="color:blue;" href="${element.AttachFiles}">클릭</a></span>`)
+                                        $("#file").append(`<span>*이미지를 업로드하면 원래 이미지를 덮어쓰게됩니다. 원본이미지 <a style="color:blue;" href="${element.AttachFiles}">클릭</a></span>`)
                                     }
                                 }
                             });
@@ -305,8 +310,8 @@
                 </div>
             <!-- 아이콘 시작 -->
             <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
+                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
+                    <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
             </div>
             <!-- 아이콘 끝 -->
         </div>
