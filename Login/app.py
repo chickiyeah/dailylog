@@ -560,10 +560,7 @@ async def example2():
     return render_template('ranking.html')
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=80, debug=True)
-
-
-#####여기부터
+   app.run('0.0.0.0', port=80, debug=False)
 
 
 
