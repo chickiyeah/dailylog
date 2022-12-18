@@ -68,7 +68,12 @@
     border: 1px solid #515151;
     border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
     transition: 0.5s;
+}
 
+@keyframes circle{
+0%{
+    transform:rotate(0);
+}
 }
 
 
