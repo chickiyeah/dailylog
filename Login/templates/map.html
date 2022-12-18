@@ -88,7 +88,8 @@
                         }
 
                         let Created_At = element.Created_At.split("T")[0].split("-")[0] + "-" + element.Created_At.split("T")[0].split("-")[1] + "-" + element.Created_At.split("T")[0].split("-")[2] + " " + element.Created_At.split("T")[1].split(".")[0]
-                        if (filter == "") {
+                        console.log(filter)
+                        if (filter == undefined) {
                             customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
                         } else {
                             if (filter == "맑음" || filter == "흐림" || filter == "비" || filter == "눈" || filter == "바람") {
