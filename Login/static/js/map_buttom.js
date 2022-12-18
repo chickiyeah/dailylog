@@ -1,4 +1,3 @@
-
 function sear() {
     keyword = document.getElementById("searp").value
     if (keyword != '') {
@@ -7,7 +6,7 @@ function sear() {
         alert("검색어를 입력해주세요.")
     }
 }
-let mapContainer = document.getElementById('map_module'), // 지도를 표시할 div 
+let mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
         center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
         level: 1 // 지도의 확대 레벨
@@ -26,7 +25,7 @@ let marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입
     infowindow = new kakao.maps.InfoWindow({ zindex: 3 }); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
 
 // 현재 지도 중심좌표로 주소를 검색해서 지도 좌측 상단에 표시합니다
-//searchAddrFromCoords(map.getCenter(), displayCenterInfo);
+searchAddrFromCoords(map.getCenter(), displayCenterInfo);
 
 // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
 var mapTypeControl = new kakao.maps.MapTypeControl();
@@ -42,6 +41,7 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
     hideMarkers()
     hideOverlay()
+    document.getElementById("showall").checked = false
     searchDetailAddrFromCoords(mouseEvent.latLng, function (result, status) {
         if (status === kakao.maps.services.Status.OK) {
             let coords = mouseEvent.latLng.toString().replace("(", "").replace(")", "").split(",")
@@ -58,9 +58,9 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
             $("#selected").empty()
             $("#selected").append(
                 `<span>
-                        <span class="title">선택된 주소</span>
-                        ${detailAddr}
-                    </span>`
+            <span class="title">선택된 주소</span>
+            ${detailAddr}
+        </span>`
             )
 
             // 마커를 클릭한 위치에 표시합니다 
@@ -82,9 +82,9 @@ kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
 });
 
 // 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
-/*kakao.maps.event.addListener(map, 'idle', function () {
+kakao.maps.event.addListener(map, 'idle', function () {
     searchAddrFromCoords(map.getCenter(), displayCenterInfo);
-});*/
+});
 
 // 장소 검색 객체를 생성합니다
 var ps = new kakao.maps.services.Places();
@@ -136,17 +136,6 @@ function hideOverlay() {
     setOverlay(null)
 }
 
-function panTo(lat, lng) {
-    // 이동할 위도 경도 위치를 생성합니다 
-    lat = parseFloat(lat) + 0.0005
-    console.log(lat)
-    var moveLatLon = new kakao.maps.LatLng(lat, lng);
-
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
-    map.panTo(moveLatLon);
-}
-
 function customMarker(Feel, LAT, LNG, ADR, Name, Created_At, Created_At1) {
     let link = ""
     if (Feel == "맑음") {
@@ -179,39 +168,14 @@ function customMarker(Feel, LAT, LNG, ADR, Name, Created_At, Created_At1) {
 
     var bounds = new kakao.maps.LatLngBounds();
     // 마커를 생성합니다
-    //console.log(LAT += 0.03)
     bounds.extend(new kakao.maps.LatLng(LAT, LNG));
     map.setBounds(bounds)
-
     var marker = new kakao.maps.Marker({
         position: new kakao.maps.LatLng(LAT, LNG),
         image: markerImage, // 마커이미지 설정 
         map: map
     });
 
-    let detailAddr = `<div><a style="color: blue;" href="/write/detail?postid=${Created_At1}">상세 글 보러가기</a></div>`;
-    detailAddr += '<div>이름 : ' + Name + '</div>';
-    detailAddr += '<div>기분 : ' + Feel + '</div>';
-    detailAddr += '<div>주소 : ' + ADR + '</div>';
-
-    let content = '<div class="bAddr">' +
-        '<span class="title">주소정보</span>' +
-        detailAddr +
-        '</div>';
-
-    bounds.extend(marker.getPosition());
-    map.setBounds(bounds)
-
-
-    var overlay = new kakao.maps.CustomOverlay({
-        content: content,
-        map: map,
-        position: marker.getPosition()
-    })
-    overlays.push(overlay)
-
-
-    panTo(LAT, LNG)
 
 
     markers.push(marker)
@@ -227,6 +191,10 @@ function customMarker(Feel, LAT, LNG, ADR, Name, Created_At, Created_At1) {
             '<span class="title">주소정보</span>' +
             detailAddr +
             '</div>';
+
+        bounds.extend(marker.getPosition());
+        map.setBounds(bounds)
+
         var overlay = new kakao.maps.CustomOverlay({
             content: content,
             map: map,
@@ -271,9 +239,9 @@ function displayMarker(place) {
                 $("#selected").empty()
                 $("#selected").append(
                     `<span>
-                        <span class="title">선택된 주소</span>
-                        ${detailAddr}
-                    </span>`
+            <span class="title">선택된 주소</span>
+            ${detailAddr}
+        </span>`
                 )
 
                 var overlay = new kakao.maps.CustomOverlay({
@@ -299,8 +267,8 @@ function searchDetailAddrFromCoords(coords, callback) {
     geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
 }
 
-        // 지도 좌측상단에 지도 중심좌표에 대한 주소정보를 표출하는 함수입니다
-/*function displayCenterInfo(result, status) {
+// 지도 좌측상단에 지도 중심좌표에 대한 주소정보를 표출하는 함수입니다
+function displayCenterInfo(result, status) {
     if (status === kakao.maps.services.Status.OK) {
         let infoDiv = document.getElementById('centerAddr');
 
@@ -312,4 +280,4 @@ function searchDetailAddrFromCoords(coords, callback) {
             }
         }
     }
-}*/
+}

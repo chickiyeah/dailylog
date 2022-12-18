@@ -18,17 +18,22 @@
     margin-right: 0.3rem;
 }
 
+.map_top input {
+    background-color: #fff6e9;
+}
+
 .map_top2 {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 0.8rem;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .search_btn {
     width: 5rem;
-    height: 3rem;
     font-size: 0.8rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -36,17 +41,31 @@
     color: white;
 }
 
+.form-check {
+    margin-left: 5rem;
+}
+
+.today-check {
+    width: 15%;
+}
+
 .today-check input {
     width: 100%;
+    background-color: #fff6e9;
+    margin-left: -53rem;
 }
 
 .form-check input {
-    width: 1rem;
+    width: 2rem;
 }
 
 .form-check input,
 label {
     padding-bottom: 0.8rem;
+}
+
+.feel-check {
+    margin-left: -55rem;
 }
 
 .map_section label {
@@ -140,10 +159,10 @@ i:nth-child(3) {
 
 .hAddr {
     position: absolute;
-    top: 34.1rem;
-    left: 26.6rem;
+    top: 34rem;
+    left: 23rem;
     border-radius: 0.8rem;
-    background: lightcoral;
+    background: #FF774D;
     color: #fff;
     opacity: 80%;
     z-index: 1;
@@ -171,7 +190,9 @@ i:nth-child(3) {
     white-space: nowrap;
     font-size: 0.9rem;
     color: #515151;
-    background-color: #d1d1d1;
+    background-color: #fff;
+    border-radius: 2rem;
+    opacity: 80%;
 
 }
 
@@ -265,6 +286,25 @@ i:nth-child(3) {
         margin: auto;
     }
 
+    .map_top2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .form-check {
+        margin-left: 10rem;
+    }
+
+    .today-check {
+        margin-left: -38rem;
+    }
+
+    .select_box {
+        margin-left: -37rem;
+    }
+
     .map_box {
         width: 100%;
     }
@@ -295,18 +335,27 @@ i:nth-child(3) {
         font-size: 2rem;
         top: 2rem;
         right: 2rem;
-        color: #909090;
+        color: #515151;
     }
 
     .map_top {
-        width: 60%;
-        margin: auto;
+        width: 66%;
+        margin: 0 auto;
+    }
+
+    .map_top input {
+        width: 87%;
+        position: relative;
+        z-index: -1;
+        margin-bottom: 1.25rem;
     }
 
     .map_top2 {
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
 
     .form-check-input {
@@ -314,27 +363,24 @@ i:nth-child(3) {
         text-align: center;
     }
 
-    .map_top2 span {
+    .form-check {
+        width: 100%;
+        margin: auto;
+    }
+
+    .today-check{
+        width: 73%;
         margin-bottom: 1rem;
+        margin-left: 55rem;
     }
 
-    .map_top2 span:nth-child(1) {
-        margin-left: 2rem;
-    }
-
-    .map_top2 span:nth-child(2) {
-        margin-left: -2rem;
-        padding: 0.2rem;
+    .feel-check {
+        width: 100%;
+        margin: auto;
     }
 
     .search_btn {
         width: 100%;
-        padding: 1rem 0;
-    }
-
-    #searp {
-        margin-bottom: 1.25rem;
-        width: 90%;
     }
 
     .map_box {
