@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.mywrite_right .label{
+.mywrite_right .label {
     font-size: 0.9em;
     opacity: 50%;
     margin-bottom: 3rem;
@@ -64,7 +64,7 @@ input[type="checkbox"] {
     font-size: 14px;
     margin-top: 3px;
     font-weight: 400;
-    word-break:break-all;
+    word-break: break-all;
 }
 
 .write_box p {
@@ -77,7 +77,7 @@ input[type="checkbox"] {
     opacity: 60%;
 }
 
-label .chkBox{
+label .chkBox {
     margin-left: -26rem;
 }
 

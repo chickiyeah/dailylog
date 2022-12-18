@@ -18,11 +18,11 @@
     margin-right: 0.3rem;
 }
 
-.map_top2{
+.map_top2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom :0.8rem;
+    padding-bottom: 0.8rem;
     text-align: center;
 }
 
@@ -32,11 +32,11 @@
     font-size: 0.8rem;
     padding: 1rem;
     border-radius: 2rem;
-    background-color: #35B8E1;
+    background-color: #FF774D;
     color: white;
 }
 
-.today-check input{ 
+.today-check input {
     width: 100%;
 }
 
@@ -44,7 +44,8 @@
     width: 1rem;
 }
 
-.form-check input, label{
+.form-check input,
+label {
     padding-bottom: 0.8rem;
 }
 
@@ -130,27 +131,28 @@ i:nth-child(3) {
     display: table;
     z-index: 0;
 }
+
 .title {
-    font-weight:600;
-    display:block;
+    font-weight: 600;
+    display: block;
     letter-spacing: -0.03rem;
 }
 
 .hAddr {
-    position:absolute;
-    top:34.1rem;
-    left:26.6rem;
+    position: absolute;
+    top: 34.1rem;
+    left: 26.6rem;
     border-radius: 0.8rem;
-    background:lightcoral;
+    background: lightcoral;
     color: #fff;
     opacity: 80%;
-    z-index:1;
-    padding:0.6rem;
+    z-index: 1;
+    padding: 0.6rem;
 }
 
 #centerAddr {
-    display:block;
-    margin-top:0.125rem;
+    display: block;
+    margin-top: 0.125rem;
     font-weight: 300;
     letter-spacing: -0.03rem;
 }
@@ -163,7 +165,7 @@ i:nth-child(3) {
     position: absolute;
     margin-bottom: 2rem;
     /* 수정 X */
-    padding:1rem;
+    padding: 1rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -173,15 +175,16 @@ i:nth-child(3) {
 
 }
 
-.bAddr span{
+.bAddr span {
     font-size: 1.1rem;
     margin: 0.3rem;
-} 
+}
 
 .map_content {
     width: 70rem;
     margin: auto;
 }
+
 .select_box {
     width: 21rem;
     display: flex;
@@ -256,104 +259,128 @@ i:nth-child(3) {
         margin-bottom: 1.25rem;
         width: 50%;
     }
+
     .map_wrap {
         width: 100%;
         margin: auto;
-    }   
-    .map_box{
+    }
+
+    .map_box {
         width: 100%;
     }
-    .map_nav{
+
+    .map_nav {
         margin-left: 13rem;
     }
+
     .search_btn {
         width: 22%;
     }
-    .hAddr{
+
+    .hAddr {
         margin: 1rem 0 0 -14rem;
     }
-    .map_content{
+
+    .map_content {
         width: 80%;
         margin: auto;
-    } 
+    }
 }
 
 /* 반응형 */
 @media(max-width:767px) and (min-width:320px) {
-    .top_logo i{
+    .top_logo i {
         display: block;
         position: absolute;
-        font-size:2rem;
-        top:2rem;
+        font-size: 2rem;
+        top: 2rem;
         right: 2rem;
         color: #909090;
     }
-    .map_top{
-        width:60%;
+
+    .map_top {
+        width: 60%;
         margin: auto;
     }
-    .map_top2{
-        display:flex;
+
+    .map_top2 {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .form-check-input {
         width: 100%;
         text-align: center;
     }
-    .map_top2 span{
+
+    .map_top2 span {
         margin-bottom: 1rem;
     }
-    .map_top2 span:nth-child(1){
+
+    .map_top2 span:nth-child(1) {
         margin-left: 2rem;
     }
-    .map_top2 span:nth-child(2){
+
+    .map_top2 span:nth-child(2) {
         margin-left: -2rem;
         padding: 0.2rem;
-    }    
+    }
+
     .search_btn {
         width: 100%;
         padding: 1rem 0;
-    }    
+    }
+
     #searp {
         margin-bottom: 1.25rem;
-        width:90%;
+        width: 90%;
     }
-    .map_box{
+
+    .map_box {
         width: 100%;
-        height:80%;
+        height: 80%;
     }
-    .map_section{
+
+    .map_section {
         width: 100%;
-        margin-top:3.5rem;
+        margin-top: 3.5rem;
         margin-bottom: -1rem;
     }
-    .map_content{
+
+    .map_content {
         width: 90%;
         margin: auto;
-    } 
-    .map_section{
-       height: 26rem; 
     }
-    .map_img #map{
+
+    .map_section {
+        height: 26rem;
+    }
+
+    .map_img #map {
         height: 25rem;
-        margin-top:-4rem;
+        margin-top: -4rem;
     }
-    .map_header span{
+
+    .map_header span {
         position: absolute;
     }
-    .map_nav{
+
+    .map_nav {
         margin-left: 13rem;
     }
+
     .search_btn {
-        width:100%;
+        width: 100%;
     }
-    .hAddr{
-        width:60%;
+
+    .hAddr {
+        width: 60%;
         margin: 26rem 0 0 -22.5rem;
     }
+
     .bAddr {
-        padding:0.5rem;
+        padding: 0.5rem;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -361,8 +388,9 @@ i:nth-child(3) {
         color: #515151;
         z-index: 9999;
     }
-    .bAddr span{
-        font-size:0.9rem;
+
+    .bAddr span {
+        font-size: 0.9rem;
         margin: 0.3rem;
-    } 
+    }
 }

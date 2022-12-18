@@ -1,4 +1,3 @@
-
 #login {
     width: 100%;
     height: 34.375rem;
@@ -13,7 +12,7 @@
     margin: 1rem;
 }
 
-article > p {
+article>p {
     padding-top: 1.7rem;
     text-align: left;
     color: #9B9B9B;
@@ -41,7 +40,7 @@ article {
     margin: auto;
 }
 
-article > p {
+article>p {
     padding-top: 1.25rem;
     text-align: left;
     color: #9B9B9B;
@@ -117,14 +116,17 @@ article > p {
     color: #33B3FF;
     font-size: 0.75rem;
 }
+
 #password {
     padding-top: 0rem;
 }
+
 .form-check-label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #515151;
     font-size: 0.625rem;
 }
+
 .form-check {
     text-align: left;
     text-justify: auto;
@@ -132,16 +134,14 @@ article > p {
     display: inline-block;
     padding-top: 0.313rem;
 }
-   
 
-@media(min-width:768px) and (max-width:1024px) {
-    
-}
+
+@media(min-width:768px) and (max-width:1024px) {}
 
 @media(max-width:767px) and (min-width:320px) {
 
-   
-#login {
-    width: 85%;
+
+    #login {
+        width: 85%;
     }
 }

@@ -1,6 +1,6 @@
-
 import cgi
 import html
+
 
 import django
 from django.utils.html import escape
@@ -36,6 +36,7 @@ firebaseConfig = {
 
 #서버 현재 시간
 now = datetime.now()
+
 
 #파이어베이스 서비스 세팅
 cred = credentials.Certificate('./cert/firebase-service-account.json')
@@ -80,7 +81,7 @@ async def user_login():
         json={'Id':currentuser['localId']}
     )
     user.encoding = "UTF-8"
-    return json.loads(user.text)['id']
+    return json.loads(user.text)['id'] 
 
 @app.route("/write/detail")
 async def record():
@@ -560,7 +561,7 @@ async def example2():
     return render_template('ranking.html')
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=80, debug=False)
+   app.run('0.0.0.0', port=80, debug=True)
 
 
 

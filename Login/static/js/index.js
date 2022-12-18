@@ -6,4 +6,3 @@ toggleBT.addEventListener("click", () => {
   console.log(1);
   menu.classList.toggle("active");
 });
-

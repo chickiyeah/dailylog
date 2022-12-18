@@ -16,7 +16,7 @@
 
 <script>
     function Register() {
-    
+
         let email = document.getElementById("email").value
         let phone = document.getElementById("phone").value
         let password = document.getElementById("password").value
@@ -24,82 +24,84 @@
         let birthday = document.getElementById('birthday').value
         let nickname = document.getElementById('nickname').value
 
-              $.ajax({
-                  type: 'POST',
-                  url: '/User/Register',
-                  data: {email:email, password:password, phone:phone, name:name, birthday:birthday, nickname:nickname},
-                  success: function (response) {
-                    if(response == "MISSING_EMAIL"){
-                        alert("이메일을 입력해주세요.")
-                    }  
-                    if(response == "EMAIL_EXISTS"){
-                        alert("이미 사용중인 이메일 입니다.")
-                    }
-                      if(response == "INVALID_EMAIL"){
-                        alert("입력하신 이메일을 확인해주세요.")
-                      }
-                      
-                      if(response == "MISSING_PASSWORD"){
-                        alert("사용할 비밀번호를 입력해주세요.")
-                      }
+        $.ajax({
+            type: 'POST',
+            url: '/User/Register',
+            data: { email: email, password: password, phone: phone, name: name, birthday: birthday, nickname: nickname },
+            success: function (response) {
+                if (response == "MISSING_EMAIL") {
+                    alert("이메일을 입력해주세요.")
+                }
+                if (response == "EMAIL_EXISTS") {
+                    alert("이미 사용중인 이메일 입니다.")
+                }
+                if (response == "INVALID_EMAIL") {
+                    alert("입력하신 이메일을 확인해주세요.")
+                }
 
-                      if(response == "TOO_MANY_DUPICATE"){
-                        alert('비밀번호는 3자 이상 같은 문자를 사용할 수 없습니다.')
-                      }
+                if (response == "MISSING_PASSWORD") {
+                    alert("사용할 비밀번호를 입력해주세요.")
+                }
 
-                      if(response == "PASSWORD_TOO_SHORT"){
-                        alert('비밀번호 최소 6자리 이상 입력해주세요.')
-                      }
+                if (response == "TOO_MANY_DUPICATE") {
+                    alert('비밀번호는 3자 이상 같은 문자를 사용할 수 없습니다.')
+                }
 
-                      if(response == "MISSING_PHONE"){
-                        alert('전화번호를 입력해주세요.')
-                      }
+                if (response == "PASSWORD_TOO_SHORT") {
+                    alert('비밀번호 최소 6자리 이상 입력해주세요.')
+                }
 
-                      if(response == "MISSING_NICKNAME"){
-                        alert('닉네임을 입력해주세요.')
-                      }
+                if (response == "MISSING_PHONE") {
+                    alert('전화번호를 입력해주세요.')
+                }
 
-                      if(response == "MISSING_NAME"){
-                        alert('실명을 입력해주세요.')
-                      }
+                if (response == "MISSING_NICKNAME") {
+                    alert('닉네임을 입력해주세요.')
+                }
 
-                      if(response == "OK"){
-                        alert('회원가입 성공!')
-                        location.href = "/Login"
-                      }
-                  }
-              });
+                if (response == "MISSING_NAME") {
+                    alert('실명을 입력해주세요.')
+                }
+
+                if (response == "OK") {
+                    alert('회원가입 성공!')
+                    location.href = "/Login"
+                }
+            }
+        });
     }
 
     function is_checked() {
-            const checkbox = document.getElementById("flexCheckDefault");
-            const is_checked = checkbox.checked;
-            if(is_checked){
-                document.getElementById("password").type = "text"
-                document.getElementById("password").autocomplete = "off"
-            }else{
-                document.getElementById("password").type = "password"
-                document.getElementById("password").autocomplete = "current-password"
-            }
+        const checkbox = document.getElementById("flexCheckDefault");
+        const is_checked = checkbox.checked;
+        if (is_checked) {
+            document.getElementById("password").type = "text"
+            document.getElementById("password").autocomplete = "off"
+        } else {
+            document.getElementById("password").type = "password"
+            document.getElementById("password").autocomplete = "current-password"
         }
-  </script>
-  <style>
-    .check-password{
+    }
+</script>
+<style>
+    .check-password {
         display: flex;
     }
 
-    .form-check-input-login{
+    .form-check-input-login {
         margin-left: -220px;
         padding-right: 0px;
     }
-  </style>
+</style>
 
 <body>
     <div>
         <!-- 헤더 시작 -->
         <header id="header">
             <div>
-                <a href="/"><h1>DAILY<br>LOG</h1></a>
+                <a href="/">
+                    <h1>DAILY<br>LOG</h1>
+                </a>
                 <p>회원가입에 필요한 기본정보를 입력해주세요.</p>
             </div>
         </header>
@@ -125,7 +127,8 @@
                         <input type="password" id="password" placeholder="비밀번호를 입력해주세요.">
                     </div>
                     <span class="check-password">
-                        <input class="form-check-input-login" title="비밀번호 표시" onclick="is_checked()" type="checkbox" name="flexCheckDefault" id="flexCheckDefault">
+                        <input class="form-check-input-login" title="비밀번호 표시" onclick="is_checked()" type="checkbox"
+                            name="flexCheckDefault" id="flexCheckDefault">
                         <label for="flexCheckDefault" style="float:right">
                             비밀번호 표시
                         </label>

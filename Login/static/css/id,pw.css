@@ -1,6 +1,7 @@
-*{
+* {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 #login {
     width: 12.5rem;
     height: 5rem;
@@ -12,7 +13,7 @@
 
 }
 
-header > h1 {
+header>h1 {
     line-height: 100%;
 }
 
@@ -29,6 +30,7 @@ section {
     box-sizing: border-box;
     border-right: 0.063rem solid #B8B8B8;
 }
+
 #left_content {
     width: 19.125rem;
     height: 37.5rem;
@@ -42,6 +44,7 @@ section {
     float: right;
     box-sizing: border-box;
 }
+
 #right_content {
     width: 19.125rem;
     height: 37.5rem;
@@ -49,6 +52,7 @@ section {
     text-align: center;
     display: block;
 }
+
 .email_input {
 
     width: 17.5rem;
@@ -80,11 +84,13 @@ section {
     line-height: 1.42857143;
     margin-top: 1.25rem;
 }
-article > p {
+
+article>p {
     font-size: 0.625rem;
     color: #515151;
     display: block;
 }
+
 .id {
     width: 19.125rem;
     margin: auto;
@@ -92,6 +98,7 @@ article > p {
     padding-bottom: 1.25rem;
 
 }
+
 .idpw_title {
     font-size: 1.25rem;
     display: block;
@@ -101,8 +108,9 @@ article > p {
     margin: auto;
     color: #515151;
 }
+
 .idpw_article {
-    font-size:0.75rem;
+    font-size: 0.75rem;
     color: #B8B8B8;
 
 }
@@ -124,7 +132,8 @@ article > p {
         width: 100%;
         border: none;
     }
-	#right {
+
+    #right {
         width: 100%;
 
     }

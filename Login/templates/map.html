@@ -91,14 +91,14 @@
                         if (filter == "") {
                             customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
                         } else {
-                            if(filter == "맑음" || filter == "흐림" || filter == "비" || filter == "눈" || filter == "바람") {
-                                if(filter == Feel){
+                            if (filter == "맑음" || filter == "흐림" || filter == "비" || filter == "눈" || filter == "바람") {
+                                if (filter == Feel) {
                                     customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
                                 }
 
-                            }else{
+                            } else {
                                 Created_At = element.Created_At.split("T")[0].split("-")[0] + "-" + element.Created_At.split("T")[0].split("-")[1] + "-" + element.Created_At.split("T")[0].split("-")[2]
-                                if(filter == Created_At){
+                                if (filter == Created_At) {
                                     customMarker(Feel, LAT, LNG, ADR, Name, Created_At, element.Created_At)
                                 }
                             }
@@ -113,7 +113,7 @@
 
 <body>
     <div class="wrap">
-    <!-- 헤더 시작 -->
+        <!-- 헤더 시작 -->
         <header class="header">
             <div class="top_align">
                 <!-- 네비 시작 -->
@@ -128,12 +128,12 @@
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                        <a href="/">
-                            <i class="fa-solid fa-house-user"></i>
-                        </a>
-                            <a href="/">
-                                <h1>DAILY LOG</h1>
-                            </a>
+                    <a href="/">
+                        <i class="fa-solid fa-house-user"></i>
+                    </a>
+                    <a href="/">
+                        <h1>DAILY LOG</h1>
+                    </a>
                 </div>
                 <!-- 로고 끝 -->
                 <!-- 모바일용 햄버거 -->
@@ -301,10 +301,10 @@
                         marker.setPosition(mouseEvent.latLng);
                         marker.setMap(map);
                         var overlay = new kakao.maps.CustomOverlay({
-                                content: content,
-                                map: map,
-                                position: marker.getPosition()
-                            })
+                            content: content,
+                            map: map,
+                            position: marker.getPosition()
+                        })
 
                         overlays.push(overlay)
 

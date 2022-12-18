@@ -128,7 +128,7 @@
     padding: 0.3rem;
 }
 
-#file span{
+#file span {
     font-size: 0.8rem;
     opacity: 50%;
 }
@@ -146,47 +146,58 @@ button {
 @media screen and (max-width: 768px) {
     .write_sub input {
         width: auto;
-        
+
     }
+
     .write_wrap {
         padding: 20px;
     }
+
     .select_box {
         width: auto;
         display: block;
     }
+
     #textarea {
         width: 80%;
         margin: auto;
     }
+
     .write_section {
         margin: 12rem 0 3rem 0;
     }
+
     .text_div {
         width: 80%;
         margin: auto;
     }
+
     .btn_div {
         width: 100%;
         margin: auto;
     }
+
     .btn_div button {
         width: 30%;
     }
+
     .write_select #option {
         width: 160.8px;
         padding: 14.88px;
         margin: 0px;
 
     }
+
     .select_box {
         width: 192.55px;
     }
+
     .write_select2 #option2 {
         width: 160.8px;
         padding: 14.88px;
         margin: 0px;
     }
+
     .write_sub input {
         width: 160.8px;
         font-size: 0.75rem;
@@ -197,6 +208,3 @@ button {
         margin: 0px;
     }
 }
-
-
-    

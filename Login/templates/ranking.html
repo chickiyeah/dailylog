@@ -25,7 +25,7 @@
 
 <body>
     <div class="wrap">
-         <!-- 헤더 시작 -->
+        <!-- 헤더 시작 -->
         <header class="header">
             <div class="top_align">
                 <!-- 네비 시작 -->
@@ -40,12 +40,12 @@
                 <!-- 네비 끝 -->
                 <!-- 로고 시작 -->
                 <div class="top_logo">
-                        <a href="/">
-                            <i class="fa-solid fa-house-user"></i>
-                        </a>
-                            <a href="/">
-                                <h1>DAILY LOG</h1>
-                        </a>
+                    <a href="/">
+                        <i class="fa-solid fa-house-user"></i>
+                    </a>
+                    <a href="/">
+                        <h1>DAILY LOG</h1>
+                    </a>
                 </div>
                 <!-- 로고 끝 -->
                 <!-- 모바일용 햄버거 -->
@@ -54,53 +54,54 @@
                 </div>
                 <!-- 아이콘 시작 -->
                 <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
+                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png"
+                            alt="메뉴의 좋아요 아이콘"></a>
                     <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
                 </div>
                 <!-- 아이콘 끝 -->
             </div>
         </header>
         <!-- 헤더 끝 -->
-    <!-- 헤더 끝 -->
+        <!-- 헤더 끝 -->
 
 
-    <!-- 메인 시작 -->
-    <main id="main">
-        <section class="ranking_wrap">
-            <div class="ranking_section">
-                <div class="ranking_text">
-                    <h1>나의 12월 기록 챌린지</h1>
-                    <h4>저번 달 나의 기록을 통하여 바쁜 일상을 되돌아보고 순위를 알아봐요 : )</h4>
+        <!-- 메인 시작 -->
+        <main id="main">
+            <section class="ranking_wrap">
+                <div class="ranking_section">
+                    <div class="ranking_text">
+                        <h1>나의 12월 기록 챌린지</h1>
+                        <h4>저번 달 나의 기록을 통하여 바쁜 일상을 되돌아보고 순위를 알아봐요 : )</h4>
+                    </div>
+                    <div class="ranking_category">
+                        <ul>
+                            <li onclick="getFeelPercent()"><a>기분</a></li>
+                            <li onclick="getPlacePercent()"><a>장소</a></li>
+                            <li onclick="getPersonPercent()"><a>사람</a></li>
+                            <li onclick="getEatPercent()" id="li_food"><a>음식</a></li>
+                        </ul>
+                    </div>
+                    <div id="ranking_card" class="ranking_card">
+                        <!--  데이터 들어가는 자리 -->
+                    </div>
                 </div>
-                <div class="ranking_category">
-                    <ul>
-                        <li onclick="getFeelPercent()"><a >기분</a></li>
-                        <li onclick="getPlacePercent()"><a >장소</a></li>
-                        <li onclick="getPersonPercent()"><a >사람</a></li>
-                        <li onclick="getEatPercent()" id="li_food"><a >음식</a></li>
-                    </ul>
-                </div>
-                <div id="ranking_card" class="ranking_card">
-                    <!--  데이터 들어가는 자리 -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- 메인 끝 -->
+            </section>
+        </main>
+        <!-- 메인 끝 -->
 
-    <!-- 푸터 시작 -->
-    <footer class="footer">
-        <div class="bottom_wrap">
-            <div class="bottom_simbol">
-                <i class="fa-solid fa-house-user"></i>
+        <!-- 푸터 시작 -->
+        <footer class="footer">
+            <div class="bottom_wrap">
+                <div class="bottom_simbol">
+                    <i class="fa-solid fa-house-user"></i>
+                </div>
+                <div class="bottom_info">
+                    <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
+                    <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
+                </div>
             </div>
-            <div class="bottom_info">
-                <span>Copyright 2022 . DAILYLOG . All Rights Reserved .</span>
-                <span>전체서비스 이용약관 개인정보처리방침 통합검색 고객센터 © DAILY LOG</span>
-            </div>
-        </div>
-    </footer>
-    <!-- 푸터 끝 -->
+        </footer>
+        <!-- 푸터 끝 -->
 </body>
 
 </html>

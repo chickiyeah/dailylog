@@ -25,38 +25,38 @@
 <script>
     $(document).ready(function () {
         let uploading = false
-        if(document.cookie.includes("id=")){
+        if (document.cookie.includes("id=")) {
             login = true
-            if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
+            if (document.cookie.split("id=")[1].includes(";")) {
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("id=")[1].replace(" ", "")
             }
             let userinfo = ""
             $.ajax({
-                url:"/User",
-                method:"POST",
-                data:{
-                    id:id
+                url: "/User",
+                method: "POST",
+                data: {
+                    id: id
                 },
-                success: function(response){
+                success: function (response) {
                     name = response.nickname
                     console.log(userinfo)
-                                //목록 가져오기
+                    //목록 가져오기
                     $.ajax({
-                        url:"/Write",
-                        method:"POST",
-                        data:{
-                            "Author":id
+                        url: "/Write",
+                        method: "POST",
+                        data: {
+                            "Author": id
                         },
-                        success: function(response){
+                        success: function (response) {
                             response.forEach(element => {
                                 let now = new Date()
 
                                 let year = now.getFullYear()
                                 let month = now.getMonth()
                                 let day = now.getDate()
-                                let hours = now.getHours()+9
+                                let hours = now.getHours() + 9
                                 let minutes = now.getMinutes()
                                 let seconds = now.getSeconds()
 
@@ -68,25 +68,25 @@
                                 let wmon = new Date(element.Created_At).getUTCMonth()
                                 let wday = new Date(element.Created_At).getDate()
 
-                                if(chai < 1000 * 60)
+                                if (chai < 1000 * 60)
                                     a += '방금'
-                                else if(chai < 1000 * 60 * 60)
+                                else if (chai < 1000 * 60 * 60)
                                     a += Math.floor(chai / (1000 * 60)) + ' 분전';
-                                else if(chai < 1000 * 60 * 60 * 24)
+                                else if (chai < 1000 * 60 * 60 * 24)
                                     a += Math.floor(chai / (1000 * 60 * 60)) + ' 시간전';
-                                else if(chai < 1000 * 60 * 60 * 24 * 30)
+                                else if (chai < 1000 * 60 * 60 * 24 * 30)
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24)) + ' 일전';
-                                else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                else if (chai < 1000 * 60 * 60 * 24 * 30 * 12)
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + ' 달전';
-                                
-                                addCard(wmon+"/"+wday, element.Description, name, a)
+
+                                addCard(wmon + "/" + wday, element.Description, name, a)
                             });
                         }
                     })
                 }
             })
 
-        }else{ 
+        } else {
             login = false
             location.href = "/Login?loc = write/2"
             alert("로그인이 필요합니다.")
@@ -99,77 +99,77 @@
 
     function openMap() {
         window.name = "글 작성";
-        openWin = window.open("/write/popupmap", "장소를 선택해주세요.","width=870, height=880, resizable = no, scrollbars = no")
+        openWin = window.open("/write/popupmap", "장소를 선택해주세요.", "width=870, height=880, resizable = no, scrollbars = no")
     }
     let uploading = false
     function upload() {
-        if(uploading != false){
+        if (uploading != false) {
             alert("이미 글을 업로드 중입니다.")
-        }else{
-            
-        
-        ok = true
-        if(document.getElementById("title").value == ''){
-            ok = false
-            $(".title").focus()
-            alert('제목을 입력해주세요.')
-            return
-        }
+        } else {
 
-        if(document.getElementById("maps").value == ''){
-            ok = false
-            $(".maps").focus()
-            alert('지역을 입력해주세요.')
-            //$(".map").attr('placeholder', '지역을 입력해주세요.')
-            return
-        }
 
-        if(document.getElementById("todayuser").value == ''){
-            ok = false
-            $(".todayuser").focus()
-            alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
-            return
-        }
+            ok = true
+            if (document.getElementById("title").value == '') {
+                ok = false
+                $(".title").focus()
+                alert('제목을 입력해주세요.')
+                return
+            }
 
-        if($("#select #option").text() == '오늘의 기분'){
-            ok = false
-            $("#select #option").focus()
-            $("#select ul").toggle();
-            alert("오늘의 기분을 선택해주세요.")
-            return
-        }
+            if (document.getElementById("maps").value == '') {
+                ok = false
+                $(".maps").focus()
+                alert('지역을 입력해주세요.')
+                //$(".map").attr('placeholder', '지역을 입력해주세요.')
+                return
+            }
 
-        if($("#select2 #option2").text() == '오늘의 메뉴'){
-            ok = false
-            $("#select2 #option2").focus()
-            $("#select2 ul").toggle();
-            alert("오늘의 메뉴를 선택해주세요.")
-            return
-        }
+            if (document.getElementById("todayuser").value == '') {
+                ok = false
+                $(".todayuser").focus()
+                alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
+                return
+            }
 
-        if($("#textarea").val() == ''){
-            ok = false
-            $("#textarea").focus()
-            alert("내용을 입력해주세요.")
-            return
-        }
+            if ($("#select #option").text() == '오늘의 기분') {
+                ok = false
+                $("#select #option").focus()
+                $("#select ul").toggle();
+                alert("오늘의 기분을 선택해주세요.")
+                return
+            }
 
-        if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
-        }
-        uploading = true
-        if(ok == true){
-            if(document.getElementById("todayuser").value != "없음"){
-                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
-                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
-                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
-                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
-                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+            if ($("#select2 #option2").text() == '오늘의 메뉴') {
+                ok = false
+                $("#select2 #option2").focus()
+                $("#select2 ul").toggle();
+                alert("오늘의 메뉴를 선택해주세요.")
+                return
+            }
+
+            if ($("#textarea").val() == '') {
+                ok = false
+                $("#textarea").focus()
+                alert("내용을 입력해주세요.")
+                return
+            }
+
+            if (document.cookie.split("id=")[1].includes(";")) {
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("id=")[1].replace(" ", "")
+            }
+            uploading = true
+            if (ok == true) {
+                if (document.getElementById("todayuser").value != "없음") {
+                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ", "")
+                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ", "")
+                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ", "")
+                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ", "") : LOAD_ADR = 'null'
+                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ", "") : NAME = 'null'
 
                     json = {
-                        'Author':id,
+                        'Author': id,
                         'Name': document.getElementById("title").value,
                         'Desc': document.getElementById("textarea").value,
                         'People_meet': document.getElementById("todayuser").value,
@@ -177,82 +177,82 @@
                         'Eat': $("#select2 #option2").text(),
                         'AttachFiles': link,
                         'Area': {
-                            'ADR' : ADR,
-                            'LOAD_ADR' : LOAD_ADR,
-                            'LAT' : LAT,
-                            'LNG' : LNG,
-                            'NAME' : NAME,
-                            'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                            'ADR': ADR,
+                            'LOAD_ADR': LOAD_ADR,
+                            'LAT': LAT,
+                            'LNG': LNG,
+                            'NAME': NAME,
+                            'CUSTOM_NAME': !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
                         }
                     }
                     $.ajax({
-                        url:"/write/upload",
-                        method:"POST",
-                        data:json,
-                        success: function(response){
+                        url: "/write/upload",
+                        method: "POST",
+                        data: json,
+                        success: function (response) {
                             console.log(response)
-                            if(response == "OK"){
-                                    location.href="/write/1"
-                                    alert("게시글 등록 완료!")
-                                }
+                            if (response == "OK") {
+                                location.href = "/write/1"
+                                alert("게시글 등록 완료!")
+                            }
                         }
                     })
-                }else{
-                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
-                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
-                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
-                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
-                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+                } else {
+                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ", "")
+                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ", "")
+                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ", "")
+                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ", "") : LOAD_ADR = 'null'
+                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ", "") : NAME = 'null'
 
-                        json = {
-                            'Author':id,
-                            'Name': document.getElementById("title").value,
-                            'Desc': document.getElementById("textarea").value,
-                            'People_meet': "None",
-                            'Feel': $("#select #option").text(),
-                            'Eat': $("#select2 #option2").text(),
-                            'AttachFiles': link,
-                            'Area': {
-                                'ADR' : ADR,
-                                'LOAD_ADR' : LOAD_ADR,
-                                'LAT' : LAT,
-                                'LNG' : LNG,
-                                'NAME' : NAME,
-                                'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                    json = {
+                        'Author': id,
+                        'Name': document.getElementById("title").value,
+                        'Desc': document.getElementById("textarea").value,
+                        'People_meet': "None",
+                        'Feel': $("#select #option").text(),
+                        'Eat': $("#select2 #option2").text(),
+                        'AttachFiles': link,
+                        'Area': {
+                            'ADR': ADR,
+                            'LOAD_ADR': LOAD_ADR,
+                            'LAT': LAT,
+                            'LNG': LNG,
+                            'NAME': NAME,
+                            'CUSTOM_NAME': !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                        }
+                    }
+                    $.ajax({
+                        url: "/write/upload",
+                        method: "POST",
+                        data: json,
+                        success: function (response) {
+                            if (response == "OK") {
+                                location.href = "/write/1"
                             }
                         }
-                        $.ajax({
-                            url:"/write/upload",
-                            method:"POST",
-                            data:json,
-                            success: function(response){
-                                if(response == "OK"){
-                                    location.href="/write/1"
-                                }
-                            }
-                        })
-                             
+                    })
+
+                }
+                uploading = false
             }
-            uploading = false
+
         }
-        
-    }
-        
+
     }
 
     function compare(a, b) {
-        return a-b
+        return a - b
     }
 
 
-    function getFeelPercent(){
+    function getFeelPercent() {
         $.ajax({
-            url:"/Write",
-            method:"POST",
-            data:{
-                "Author":id
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
             },
-            success: function(response){
+            success: function (response) {
                 let great = 0
                 let good = 0
                 let medium = 0
@@ -261,71 +261,71 @@
                 let total = 0
                 response.forEach(element => {
                     feel = element.Feel
-                    if(feel == "맑음"){
+                    if (feel == "맑음") {
                         great += 1
                     }
-                    if(feel == "흐림"){
+                    if (feel == "흐림") {
                         medium += 1
                     }
-                    if(feel == "비"){
+                    if (feel == "비") {
                         medium += 1
-                    }                    
-                    if(feel == "눈"){
+                    }
+                    if (feel == "눈") {
                         bad += 1
                     }
-                    if(feel == "바람"){
+                    if (feel == "바람") {
                         too_bad += 1
                     }
                 });
-                total = great+good+medium+bad+too_bad
+                total = great + good + medium + bad + too_bad
                 let greatper = (great / total * 100)
                 let goodper = (good / total * 100)
                 let mediumper = (medium / total * 100)
                 let badper = (bad / total * 100)
                 let too_badper = (too_bad / total * 100)
 
-                const per = [greatper,goodper,mediumper,badper,too_badper];
-                per.sort(function(a,b) {
-                    return b-a;
+                const per = [greatper, goodper, mediumper, badper, too_badper];
+                per.sort(function (a, b) {
+                    return b - a;
                 })
                 let top = []
                 per.forEach(element => {
-                    if(greatper == element){
+                    if (greatper == element) {
                         data = {
-                            "name":"맑음",
-                            "value":element
+                            "name": "맑음",
+                            "value": element
                         }
                         top.push(data)
                     }
 
-                    if(goodper == element){
+                    if (goodper == element) {
                         data = {
-                            "name":"흐림",
-                            "value":element
+                            "name": "흐림",
+                            "value": element
                         }
                         top.push(data)
                     }
 
-                    if(mediumper == element){
+                    if (mediumper == element) {
                         data = {
-                            "name":"비",
-                            "value":element
+                            "name": "비",
+                            "value": element
                         }
                         top.push(data)
                     }
 
-                    if(badper == element){
+                    if (badper == element) {
                         data = {
-                            "name":"눈",
-                            "value":element
+                            "name": "눈",
+                            "value": element
                         }
                         top.push(data)
                     }
 
-                    if(too_badper == element){
+                    if (too_badper == element) {
                         data = {
-                            "name":"바람",
-                            "value":element
+                            "name": "바람",
+                            "value": element
                         }
                         top.push(data)
                     }
@@ -337,21 +337,21 @@
         });
     }
 
-    function getPlacePercent(){
+    function getPlacePercent() {
         $.ajax({
-            url:"/Write",
-            method:"POST",
-            data:{
-                "Author":id
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
             },
-            success: function(response){
+            success: function (response) {
                 const result = {};
                 response.forEach(element => {
                     adr = element.AREA_ADR
-                    result[adr] = (result[adr] || 0)+1; 
+                    result[adr] = (result[adr] || 0) + 1;
                 })
 
-                
+
                 let per = []
                 let resmap = new Map(Object.entries(result))
                 const mapSort1 = new Map([...resmap.entries()].sort((a, b) => b[1] - a[1]));
@@ -362,41 +362,41 @@
                 })
 
                 mapSort1.forEach(element => {
-                    percent = element/max * 100
+                    percent = element / max * 100
                     per.push(percent)
                 })
 
                 let keyarr = Array.from(mapSort1.keys())
                 let permap = []
-                for(var i = 0; i < keyarr.length; i++){
-                    permap.push({'name':keyarr[i], 'per':per[i]})
+                for (var i = 0; i < keyarr.length; i++) {
+                    permap.push({ 'name': keyarr[i], 'per': per[i] })
                 }
 
                 return permap
-                    
-                
+
+
 
             }
-        })        
+        })
     }
 
     function getPersonPercent() {
         $.ajax({
-            url:"/Write",
-            method:"POST",
-            data:{
-                "Author":id
+            url: "/Write",
+            method: "POST",
+            data: {
+                "Author": id
             },
-            success: function(response){
+            success: function (response) {
                 const result = {};
                 response.forEach(element => {
                     peo = element.People_meet
 
-                    if(peo.includes(""))
-                    result[peo] = (result[peo] || 0)+1; 
+                    if (peo.includes(""))
+                        result[peo] = (result[peo] || 0) + 1;
                 })
 
-                
+
                 let per = []
                 let resmap = new Map(Object.entries(result))
                 const mapSort1 = new Map([...resmap.entries()].sort((a, b) => b[1] - a[1]));
@@ -407,22 +407,22 @@
                 })
 
                 mapSort1.forEach(element => {
-                    percent = element/max * 100
+                    percent = element / max * 100
                     per.push(percent)
                 })
 
                 let keyarr = Array.from(mapSort1.keys())
                 let permap = []
-                for(var i = 0; i < keyarr.length; i++){
-                    permap.push({'name':keyarr[i], 'per':per[i]})
+                for (var i = 0; i < keyarr.length; i++) {
+                    permap.push({ 'name': keyarr[i], 'per': per[i] })
                 }
 
                 return permap
-                    
-                
+
+
 
             }
-        })           
+        })
     }
 
 
@@ -432,7 +432,7 @@
     }
 
     function Card(Date, Name, UserName, Ex) {
-    return `<a href="/Record?detail">
+        return `<a href="/Record?detail">
                 <div class="write_box">
                     <div>
                         <h2>${Date}</h2>
@@ -444,45 +444,46 @@
                     </div>
                 </div>
             </a>`
-}
+    }
 </script>
+
 <body>
     <!-- 헤더 시작 -->
-        <header class="header">
-            <div class="top_align">
-                <!-- 네비 시작 -->
-                <nav>
-                    <ul class="navbar_menu">
-                        <li><a href="/map">지도보기</a></li>
-                        <li><a href="/write/1">기록하기</a></li>
-                        <li><a href="/rank">랭킹보기</a></li>
-                        <li><a href="/Mypage">마이페이지</a></li>
-                    </ul>
-                </nav>
-                <!-- 네비 끝 -->
-                <!-- 로고 시작 -->
-                <div class="top_logo">
-                        <a href="/">
-                            <i class="fa-solid fa-house-user"></i>
-                        </a>
-                            <a href="/">
-                                <h1>DAILY LOG</h1>
-                            </a>
-                </div>
-                <!-- 로고 끝 -->
-                <!-- 모바일용 햄버거 -->
-                <div class="nav_toogleBT">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <!-- 아이콘 시작 -->
-                <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
-                </div>
-                <!-- 아이콘 끝 -->
+    <header class="header">
+        <div class="top_align">
+            <!-- 네비 시작 -->
+            <nav>
+                <ul class="navbar_menu">
+                    <li><a href="/map">지도보기</a></li>
+                    <li><a href="/write/1">기록하기</a></li>
+                    <li><a href="/rank">랭킹보기</a></li>
+                    <li><a href="/Mypage">마이페이지</a></li>
+                </ul>
+            </nav>
+            <!-- 네비 끝 -->
+            <!-- 로고 시작 -->
+            <div class="top_logo">
+                <a href="/">
+                    <i class="fa-solid fa-house-user"></i>
+                </a>
+                <a href="/">
+                    <h1>DAILY LOG</h1>
+                </a>
             </div>
-        </header>
-        <!-- 헤더 끝 -->
+            <!-- 로고 끝 -->
+            <!-- 모바일용 햄버거 -->
+            <div class="nav_toogleBT">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- 아이콘 시작 -->
+            <div class="top_icon">
+                <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
+                <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
+            </div>
+            <!-- 아이콘 끝 -->
+        </div>
+    </header>
+    <!-- 헤더 끝 -->
     <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
@@ -532,9 +533,9 @@
                         </div>
                     </div>
                     <div>
-                        <form action = '/UploadFile' method = "POST" entype = "multipart/form-data">
+                        <form action='/UploadFile' method="POST" entype="multipart/form-data">
                             <input type="file" name="file" id="input">
-                        </form>  
+                        </form>
                     </div>
                     <div class="text_div">
                         <textarea id="textarea" rows=20 cols=45 placeholder="오늘 있었던 일 적기"></textarea>
@@ -575,19 +576,19 @@
 
         function handleFiles() {
             const filelist = this.files
-            for (let i = 0, numFiles = filelist.length; i < numFiles; i++){
+            for (let i = 0, numFiles = filelist.length; i < numFiles; i++) {
                 let file = filelist[i]
                 let formdata = new FormData()
                 formdata.append('File', file)
-                    let xhr = new XMLHttpRequest();
-                    xhr.open('POST', '/UploadFile' ,true)
-                    xhr.onload = xhr.onerror = function() {
-                        link= xhr.responseText
-                        image = `<img src="${xhr.responseText}">`
-                        console.log(image)
-                        $("#textarea").append(image)
-                    };
-                    xhr.send(formdata)
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', '/UploadFile', true)
+                xhr.onload = xhr.onerror = function () {
+                    link = xhr.responseText
+                    image = `<img src="${xhr.responseText}">`
+                    console.log(image)
+                    $("#textarea").append(image)
+                };
+                xhr.send(formdata)
             }
         }
     </script>

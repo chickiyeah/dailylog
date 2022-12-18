@@ -21,113 +21,113 @@
 </head>
 <script>
     $(document).ready(function () {
-    if(document.cookie.includes("id=")){
-        login = true
-        if(document.cookie.split("id=")[1].includes(";")){
-            id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-        }else{
-            id = document.cookie.split("id=")[1].replace(" ","")
-        }
-        let userinfo = ""
-        $.ajax({
-            url:"/User",
-            method:"POST",
-            data:{
-                id:id
-            },
-            success: function(response){
-                name = response.nickname
-                console.log(userinfo)
-                            //목록 가져오기
-                $.ajax({
-                    url:"/Write",
-                    method:"POST",
-                    data:{
-                        "Author":id
-                    },
-                    success: function(response){
-                        response.forEach(element => {
-                            let now = new Date()
-
-                            let year = now.getFullYear()
-                            let month = now.getMonth()
-                            let day = now.getDate()
-                            let hours = now.getHours()+9
-                            let minutes = now.getMinutes()
-                            let seconds = now.getSeconds()
-
-                            let nowdate = new Date(year, month, day, hours, minutes, seconds)
-
-                            let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
-                            let a = ""
-
-                            let wmon = element.Created_At.split("-")[1]
-                            let wday = element.Created_At.split("-")[2].split("T")[0]
-
-                            if(chai < 1000 * 60)
-                                a += '방금'
-                            else if(chai < 1000 * 60 * 60)
-                                a += Math.floor(chai / (1000 * 60)) + '분 전';
-                            else if(chai < 1000 * 60 * 60 * 24)
-                                a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
-                            else if(chai < 1000 * 60 * 60 * 24 * 30)
-                                a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
-                            else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
-                                a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
-                            else
-                                a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
-                            
-                            addCard(wmon+"/"+wday, element.Name, name, a, element.Created_At)
-                        });
-                    }
-                })
+        if (document.cookie.includes("id=")) {
+            login = true
+            if (document.cookie.split("id=")[1].includes(";")) {
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("id=")[1].replace(" ", "")
             }
-        })
+            let userinfo = ""
+            $.ajax({
+                url: "/User",
+                method: "POST",
+                data: {
+                    id: id
+                },
+                success: function (response) {
+                    name = response.nickname
+                    console.log(userinfo)
+                    //목록 가져오기
+                    $.ajax({
+                        url: "/Write",
+                        method: "POST",
+                        data: {
+                            "Author": id
+                        },
+                        success: function (response) {
+                            response.forEach(element => {
+                                let now = new Date()
 
-    }else{ 
-        login = false
-        location.href = "/Login?loc = write/1"
-        alert("로그인이 필요합니다.")
-    }
-})
+                                let year = now.getFullYear()
+                                let month = now.getMonth()
+                                let day = now.getDate()
+                                let hours = now.getHours() + 9
+                                let minutes = now.getMinutes()
+                                let seconds = now.getSeconds()
 
-function addCard(Date, Name, UserName, Ex, id) {
-    card = Card(Date, Name, UserName, Ex, id)
-    $("#write_main").prepend(card)
-}
-let del = false
-function Delete() {
-    let chk = document.getElementsByClassName("optionCheck")
-    let list = []
-    if(del != true){ 
-        del = true
-        for (var i = 0; i < chk.length; i++) {
-            if(chk[i].checked == true) {
-                //생성 시간, 작성자 아이디, 
-                created_At = chk[i].id.split("_chk")[0]
-                $.ajax({
-                    url:'/Write',
-                    method:"DELETE",
-                    data:{
-                        'id':id,
-                        'Created_At':created_At
-                    },
-                    success: function(response) {
-                        location.reload()
-                        alert("글을 삭제했습니다.")
-                    }
-                })
-            }       
+                                let nowdate = new Date(year, month, day, hours, minutes, seconds)
+
+                                let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
+                                let a = ""
+
+                                let wmon = element.Created_At.split("-")[1]
+                                let wday = element.Created_At.split("-")[2].split("T")[0]
+
+                                if (chai < 1000 * 60)
+                                    a += '방금'
+                                else if (chai < 1000 * 60 * 60)
+                                    a += Math.floor(chai / (1000 * 60)) + '분 전';
+                                else if (chai < 1000 * 60 * 60 * 24)
+                                    a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
+                                else if (chai < 1000 * 60 * 60 * 24 * 30)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
+                                else if (chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
+                                else
+                                    a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
+
+                                addCard(wmon + "/" + wday, element.Name, name, a, element.Created_At)
+                            });
+                        }
+                    })
+                }
+            })
+
+        } else {
+            login = false
+            location.href = "/Login?loc = write/1"
+            alert("로그인이 필요합니다.")
         }
-        console.log(list)
-        del = false
-    }else{
-        alert("이미 게시글 삭제가 진행 중 입니다.\n기존 삭제가 완료될때까지 대기해주세요.\n이 문제가 5분 이상 지속될시 DB의 에러 일수있으니\n문의해주시기 바랍니다.")
-    }
-}
+    })
 
-function Card(Date, Name, UserName, Ex, id) {
-return `<a href="/write/detail?postid=${id}">
+    function addCard(Date, Name, UserName, Ex, id) {
+        card = Card(Date, Name, UserName, Ex, id)
+        $("#write_main").prepend(card)
+    }
+    let del = false
+    function Delete() {
+        let chk = document.getElementsByClassName("optionCheck")
+        let list = []
+        if (del != true) {
+            del = true
+            for (var i = 0; i < chk.length; i++) {
+                if (chk[i].checked == true) {
+                    //생성 시간, 작성자 아이디, 
+                    created_At = chk[i].id.split("_chk")[0]
+                    $.ajax({
+                        url: '/Write',
+                        method: "DELETE",
+                        data: {
+                            'id': id,
+                            'Created_At': created_At
+                        },
+                        success: function (response) {
+                            location.reload()
+                            alert("글을 삭제했습니다.")
+                        }
+                    })
+                }
+            }
+            console.log(list)
+            del = false
+        } else {
+            alert("이미 게시글 삭제가 진행 중 입니다.\n기존 삭제가 완료될때까지 대기해주세요.\n이 문제가 5분 이상 지속될시 DB의 에러 일수있으니\n문의해주시기 바랍니다.")
+        }
+    }
+
+    function Card(Date, Name, UserName, Ex, id) {
+        return `<a href="/write/detail?postid=${id}">
             <div id=${id} class="write_box">
                 <input id=${id}_chk class="optionCheck" type="checkbox" id="check_btn">
                     <label for="chkBox">
@@ -142,44 +142,47 @@ return `<a href="/write/detail?postid=${id}">
                 </div>              
             </div>
         </a>`
-}
+    }
 </script>
+
 <body>
-        <!-- 헤더 시작 -->
-        <header class="header">
-            <div class="top_align">
-                <!-- 네비 시작 -->
-                <nav>
-                    <ul>
-                        <li><a href="/map">지도보기</a></li>
-                        <li><a href="/write/1">기록하기</a></li>
-                        <li><a href="/rank">랭킹보기</a></li>
-                        <li><a href="/Mypage">마이페이지</a></li>
-                    </ul>
-                </nav>
-                <!-- 네비 끝 -->
-                <!-- 로고 시작 -->
-                <div class="top_logo">
-                    <div class="simbol">
-                        <i class="fa-solid fa-house-user"></i>
-                    </div>
-                    <a href="/"><h1>DAILY LOG</h1></a>
+    <!-- 헤더 시작 -->
+    <header class="header">
+        <div class="top_align">
+            <!-- 네비 시작 -->
+            <nav>
+                <ul>
+                    <li><a href="/map">지도보기</a></li>
+                    <li><a href="/write/1">기록하기</a></li>
+                    <li><a href="/rank">랭킹보기</a></li>
+                    <li><a href="/Mypage">마이페이지</a></li>
+                </ul>
+            </nav>
+            <!-- 네비 끝 -->
+            <!-- 로고 시작 -->
+            <div class="top_logo">
+                <div class="simbol">
+                    <i class="fa-solid fa-house-user"></i>
                 </div>
-                <!-- 로고 끝 -->
-                <!-- 모바일용 햄버거 -->
-                <div class="nav_toogleBT">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <!-- 아이콘 시작 -->
-                <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
-                </div>
-                <!-- 아이콘 끝 -->
+                <a href="/">
+                    <h1>DAILY LOG</h1>
+                </a>
             </div>
-        </header>
-    </div>    
-        <!-- 헤더 끝 -->
+            <!-- 로고 끝 -->
+            <!-- 모바일용 햄버거 -->
+            <div class="nav_toogleBT">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- 아이콘 시작 -->
+            <div class="top_icon">
+                <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like.png" alt="메뉴의 좋아요 아이콘"></a>
+                <a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>
+            </div>
+            <!-- 아이콘 끝 -->
+        </div>
+    </header>
+    </div>
+    <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
     <main id="main">
@@ -187,11 +190,11 @@ return `<a href="/write/detail?postid=${id}">
             <div class="mypage_section">
                 <div class="mypage_left">
                     <ul>
-                    <li onclick="location.href='/Mypage'">내계정</li>
-                    <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
-                    <li onclick="location.href='/Mypage/Like'">내 이미지</li>
-                    <li onclick="logout()">로그아웃</li>
-                    <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
+                        <li onclick="location.href='/Mypage'">내계정</li>
+                        <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
+                        <li onclick="location.href='/Mypage/Like'">내 이미지</li>
+                        <li onclick="logout()">로그아웃</li>
+                        <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
                     </ul>
                 </div>
                 <div class="mywrite_right">

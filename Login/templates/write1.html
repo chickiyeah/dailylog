@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../static/css/write1.css">
     <title>DAILY LOG</title>
 
-   <!-- 아이콘 -->
+    <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/80a9730165.js" crossorigin="anonymous"></script>
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./static/assets/house.svg" type="image/x-icon">
-    <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/assets/house.svg" type="image/x-icon">
+    <link rel="icon" href="../static/assets/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
     <script src="../static/js/index.js" defer></script>
@@ -27,38 +27,38 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-        $(document).ready(function () {
-        if(document.cookie.includes("id=")){
+    $(document).ready(function () {
+        if (document.cookie.includes("id=")) {
             login = true
-            if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
+            if (document.cookie.split("id=")[1].includes(";")) {
+                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("id=")[1].replace(" ", "")
             }
             let userinfo = ""
             $.ajax({
-                url:"/User",
-                method:"POST",
-                data:{
-                    id:id
+                url: "/User",
+                method: "POST",
+                data: {
+                    id: id
                 },
-                success: function(response){
+                success: function (response) {
                     name = response.nickname
-                                //목록 가져오기
+                    //목록 가져오기
                     $.ajax({
-                        url:"/Write",
-                        method:"POST",
-                        data:{
-                            "Author":id
+                        url: "/Write",
+                        method: "POST",
+                        data: {
+                            "Author": id
                         },
-                        success: function(response){
+                        success: function (response) {
                             response.forEach(element => {
                                 let now = new Date()
 
                                 let year = now.getFullYear()
                                 let month = now.getMonth()
                                 let day = now.getDate()
-                                let hours = now.getHours()+9
+                                let hours = now.getHours() + 9
                                 let minutes = now.getMinutes()
                                 let seconds = now.getSeconds()
 
@@ -70,25 +70,25 @@
                                 let wmon = element.Created_At.split("-")[1]
                                 let wday = element.Created_At.split("-")[2].split("T")[0]
 
-                                if(chai < 1000 * 60)
+                                if (chai < 1000 * 60)
                                     a += '방금'
-                                else if(chai < 1000 * 60 * 60)
+                                else if (chai < 1000 * 60 * 60)
                                     a += Math.floor(chai / (1000 * 60)) + ' 분전';
-                                else if(chai < 1000 * 60 * 60 * 24)
+                                else if (chai < 1000 * 60 * 60 * 24)
                                     a += Math.floor(chai / (1000 * 60 * 60)) + ' 시간전';
-                                else if(chai < 1000 * 60 * 60 * 24 * 30)
+                                else if (chai < 1000 * 60 * 60 * 24 * 30)
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24)) + ' 일전';
-                                else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                else if (chai < 1000 * 60 * 60 * 24 * 30 * 12)
                                     a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + ' 달전';
-                                
-                                addCard(wmon+"/"+wday, element.Name, name, a, element.Created_At)
+
+                                addCard(wmon + "/" + wday, element.Name, name, a, element.Created_At)
                             });
                         }
                     })
                 }
             })
 
-        }else{ 
+        } else {
             login = false
             location.href = "/Login?loc = write/1"
             alert("로그인이 필요합니다.")
@@ -101,10 +101,10 @@
     }
 
     function Card(Date, Name, UserName, Ex, id) {
-        if(Name.length > 48){
+        if (Name.length > 48) {
             Name = Name.substring(0, 47)
         }
-    return `<a href="/write/detail?postid=${id}">
+        return `<a href="/write/detail?postid=${id}">
                 <div class="write_box">
                     <div>
                         <h2>${Date}</h2>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </a>`
-}
+    }
     let link = []
     let meetl = []
 
@@ -125,19 +125,19 @@
 
     function openMap() {
         window.name = "글 작성";
-        openWin = window.open("/write/popupmap", "장소를 선택해주세요.","width=870, height=880, resizable = no, scrollbars = no")
+        openWin = window.open("/write/popupmap", "장소를 선택해주세요.", "width=870, height=880, resizable = no, scrollbars = no")
     }
 
     function upload() {
         ok = true
-        if(document.getElementById("title").value == ''){
+        if (document.getElementById("title").value == '') {
             ok = false
             $(".title").focus()
             alert('제목을 입력해주세요.')
             return
         }
 
-        if(document.getElementById("maps").value == ''){
+        if (document.getElementById("maps").value == '') {
             ok = false
             $(".maps").focus()
             alert('지역을 입력해주세요.')
@@ -145,14 +145,14 @@
             return
         }
 
-        if(document.getElementById("todayuser").value == ''){
+        if (document.getElementById("todayuser").value == '') {
             ok = false
             $(".todayuser").focus()
             alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
             return
         }
 
-        if($("#select #option").text() == '오늘의 기분'){
+        if ($("#select #option").text() == '오늘의 기분') {
             ok = false
             $("#select #option").focus()
             $("#select ul").toggle();
@@ -160,7 +160,7 @@
             return
         }
 
-        if($("#select2 #option2").text() == '오늘의 메뉴'){
+        if ($("#select2 #option2").text() == '오늘의 메뉴') {
             ok = false
             $("#select2 #option2").focus()
             $("#select2 ul").toggle();
@@ -168,143 +168,144 @@
             return
         }
 
-        if($("#textarea").val() == ''){
+        if ($("#textarea").val() == '') {
             ok = false
             $("#textarea").focus()
             alert("내용을 입력해주세요.")
             return
         }
 
-        if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
+        if (document.cookie.split("id=")[1].includes(";")) {
+            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+        } else {
+            id = document.cookie.split("id=")[1].replace(" ", "")
         }
 
-        if(ok == true){
-            if(document.getElementById("todayuser").value != "없음"){
-                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
-                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
-                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
-                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
-                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+        if (ok == true) {
+            if (document.getElementById("todayuser").value != "없음") {
+                ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ", "")
+                LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ", "")
+                LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ", "")
+                !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ", "") : LOAD_ADR = 'null'
+                !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ", "") : NAME = 'null'
 
-                    json = {
-                        'Author':id,
-                        'Name': document.getElementById("title").value,
-                        'Desc': document.getElementById("textarea").value,
-                        'People_meet': document.getElementById("todayuser").value,
-                        'Feel': $("#select #option").text(),
-                        'Eat': $("#select2 #option2").text(),
-                        'AttachFiles': link,
-                        'Area': {
-                            'ADR' : ADR,
-                            'LOAD_ADR' : LOAD_ADR,
-                            'LAT' : LAT,
-                            'LNG' : LNG,
-                            'NAME' : NAME,
-                            'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                json = {
+                    'Author': id,
+                    'Name': document.getElementById("title").value,
+                    'Desc': document.getElementById("textarea").value,
+                    'People_meet': document.getElementById("todayuser").value,
+                    'Feel': $("#select #option").text(),
+                    'Eat': $("#select2 #option2").text(),
+                    'AttachFiles': link,
+                    'Area': {
+                        'ADR': ADR,
+                        'LOAD_ADR': LOAD_ADR,
+                        'LAT': LAT,
+                        'LNG': LNG,
+                        'NAME': NAME,
+                        'CUSTOM_NAME': !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                    }
+                }
+                $.ajax({
+                    url: "/write/upload",
+                    method: "POST",
+                    data: json,
+                    success: function (response) {
+                        console.log(response)
+                        if (response == "OK") {
+                            location.href = "/write/2"
+                            alert("업로드를 완료했습니다!")
                         }
                     }
-                    $.ajax({
-                        url:"/write/upload",
-                        method:"POST",
-                        data:json,
-                        success: function(response){
-                            console.log(response)
-                            if(response == "OK"){
-                                    location.href="/write/2"
-                                    alert("업로드를 완료했습니다!")
-                                }
-                        }
-                    })
-                }else{
-                    ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ","")
-                    LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ","")
-                    LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ","")
-                    !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ","") : LOAD_ADR = 'null'
-                    !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ","") : NAME = 'null'
+                })
+            } else {
+                ADR = document.cookie.split("adr=")[1].split(";")[0].replace(" ", "")
+                LAT = document.cookie.split("LAT=")[1].split(";")[0].replace(" ", "")
+                LNG = document.cookie.split("LNG=")[1].split(";")[0].replace(" ", "")
+                !!document.cookie.includes("road_adr=") ? LOAD_ADR = document.cookie.split("road_adr=")[1].split(";")[0].replace(" ", "") : LOAD_ADR = 'null'
+                !!document.cookie.includes("name=") ? NAME = document.cookie.split("name=")[1].split(";")[0].replace(" ", "") : NAME = 'null'
 
-                        json = {
-                            'Author':id,
-                            'Name': document.getElementById("title").value,
-                            'Desc': document.getElementById("textarea").value,
-                            'People_meet': "None",
-                            'Feel': $("#select #option").text(),
-                            'Eat': $("#select2 #option2").text(),
-                            'AttachFiles': link,
-                            'Area': {
-                                'ADR' : ADR,
-                                'LOAD_ADR' : LOAD_ADR,
-                                'LAT' : LAT,
-                                'LNG' : LNG,
-                                'NAME' : NAME,
-                                'CUSTOM_NAME' : !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
-                            }
+                json = {
+                    'Author': id,
+                    'Name': document.getElementById("title").value,
+                    'Desc': document.getElementById("textarea").value,
+                    'People_meet': "None",
+                    'Feel': $("#select #option").text(),
+                    'Eat': $("#select2 #option2").text(),
+                    'AttachFiles': link,
+                    'Area': {
+                        'ADR': ADR,
+                        'LOAD_ADR': LOAD_ADR,
+                        'LAT': LAT,
+                        'LNG': LNG,
+                        'NAME': NAME,
+                        'CUSTOM_NAME': !!document.getElementById("mapname").value == "" ? 'null' : document.getElementById("mapname").value
+                    }
+                }
+                $.ajax({
+                    url: "/write/upload",
+                    method: "POST",
+                    data: json,
+                    success: function (response) {
+                        if (response == "OK") {
+                            location.href = "/write/2"
+                            alert("업로드를 완료했습니다!")
                         }
-                        $.ajax({
-                            url:"/write/upload",
-                            method:"POST",
-                            data:json,
-                            success: function(response){
-                                if(response == "OK"){
-                                    location.href="/write/2"
-                                    alert("업로드를 완료했습니다!")
-                                }
-                            }
-                        })
-                             
+                    }
+                })
+
             }
         }
 
-        
+
     }
 </script>
+
 <body>
-<!-- 헤더 시작 -->
-        <header class="header">
-            <div class="top_align">
-                <!-- 네비 시작 -->
-                <nav>
-                    <ul class="navbar_menu">
-                        <li><a href="/map">지도보기</a></li>
-                        <li><a href="/write/1">기록하기</a></li>
-                        <li><a href="/rank">랭킹보기</a></li>
-                        <li><a href="/Mypage">마이페이지</a></li>
-                    </ul>
-                </nav>
-                <!-- 네비 끝 -->
-                <!-- 로고 시작 -->
-                <div class="top_logo">
-                        <a href="/">
-                            <i class="fa-solid fa-house-user"></i>
-                        </a>
-                            <a href="/">
-                                <h1>DAILY LOG</h1>
-                            </a>
-                </div>
-                <!-- 로고 끝 -->
-                <!-- 모바일용 햄버거 -->
-                <div class="nav_toogleBT">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <!-- 아이콘 시작 -->
-                <div class="top_icon">
-                    <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
-                    <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
-                </div>
-                <!-- 아이콘 끝 -->
+    <!-- 헤더 시작 -->
+    <header class="header">
+        <div class="top_align">
+            <!-- 네비 시작 -->
+            <nav>
+                <ul class="navbar_menu">
+                    <li><a href="/map">지도보기</a></li>
+                    <li><a href="/write/1">기록하기</a></li>
+                    <li><a href="/rank">랭킹보기</a></li>
+                    <li><a href="/Mypage">마이페이지</a></li>
+                </ul>
+            </nav>
+            <!-- 네비 끝 -->
+            <!-- 로고 시작 -->
+            <div class="top_logo">
+                <a href="/">
+                    <i class="fa-solid fa-house-user"></i>
+                </a>
+                <a href="/">
+                    <h1>DAILY LOG</h1>
+                </a>
             </div>
-        </header>
-    </div>    
-<!-- 헤더 끝 -->
+            <!-- 로고 끝 -->
+            <!-- 모바일용 햄버거 -->
+            <div class="nav_toogleBT">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- 아이콘 시작 -->
+            <div class="top_icon">
+                <a onclick="location.href='/Mypage/Like'"><img src="../static/assets/like2.png" alt="메뉴의 좋아요 아이콘"></a>
+                <a href="/Mypage"><img src="../static/assets/mypage2.png" alt="메뉴의 마이페이지 아이콘"></a>
+            </div>
+            <!-- 아이콘 끝 -->
+        </div>
+    </header>
+    </div>
+    <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
     <main id="main">
         <section calss="write_wrap">
             <div class="write_section">
                 <div class="write_bt">
-                    <button onclick="location.href='/write/2'" >기록하기</button>
+                    <button onclick="location.href='/write/2'">기록하기</button>
                 </div>
 
                 <div class="write_main" id="write_main">
@@ -335,19 +336,19 @@
 
         function handleFiles() {
             const filelist = this.files
-            for (let i = 0, numFiles = filelist.length; i < numFiles; i++){
+            for (let i = 0, numFiles = filelist.length; i < numFiles; i++) {
                 let file = filelist[i]
                 let formdata = new FormData()
                 formdata.append('File', file)
-                    let xhr = new XMLHttpRequest();
-                    xhr.open('POST', '/UploadFile' ,true)
-                    xhr.onload = xhr.onerror = function() {
-                        link.push( xhr.responseText )
-                        image = `<img src="${xhr.responseText}">`
-                        console.log(image)
-                        $("#textarea").append(image)
-                    };
-                    xhr.send(formdata)
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', '/UploadFile', true)
+                xhr.onload = xhr.onerror = function () {
+                    link.push(xhr.responseText)
+                    image = `<img src="${xhr.responseText}">`
+                    console.log(image)
+                    $("#textarea").append(image)
+                };
+                xhr.send(formdata)
             }
         }
     </script>

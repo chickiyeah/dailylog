@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     }else{ 
         login = false
-        location.href = "/Login?loc = write/2"
+        location.href = "/Login?loc = rank"
         alert("로그인이 필요합니다.")
     }
 })

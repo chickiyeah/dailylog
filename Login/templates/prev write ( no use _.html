@@ -13,9 +13,8 @@
     <script type="text/javascript">
         var openWin
 
-        function openMap()
-        {
-            window.name="글쓰기"
+        function openMap() {
+            window.name = "글쓰기"
         }
     </script>
 
@@ -26,14 +25,14 @@
 
     function upload() {
         ok = true
-        if(document.getElementById("title").value == ''){
+        if (document.getElementById("title").value == '') {
             ok = false
             $(".title").focus()
             alert('제목을 입력해주세요.')
             return
         }
 
-        if(document.getElementById("maps").value == ''){
+        if (document.getElementById("maps").value == '') {
             ok = false
             $(".map").focus()
             alert('지역을 입력해주세요.')
@@ -41,14 +40,14 @@
             return
         }
 
-        if(document.getElementById("todayuser").value == ''){
+        if (document.getElementById("todayuser").value == '') {
             ok = false
             $(".todayuser").focus()
             alert('오늘 만난 사람을 입력해주세요. 만난사람이 없는경우 없음 이라고 적어주세요.')
             return
-        }r
+        } r
 
-        if($("#select #option").text() == '오늘의 기분'){
+        if ($("#select #option").text() == '오늘의 기분') {
             ok = false
             $("#select #option").focus()
             $("#select ul").toggle();
@@ -56,7 +55,7 @@
             return
         }
 
-        if($("#select2 #option2").text() == '오늘의 메뉴'){
+        if ($("#select2 #option2").text() == '오늘의 메뉴') {
             ok = false
             $("#select2 #option2").focus()
             $("#select2 ul").toggle();
@@ -64,76 +63,79 @@
             return
         }
 
-        if($("#textarea").html() == ''){
+        if ($("#textarea").html() == '') {
             ok = false
             $("#textarea").focus()
             alert("내용을 입력해주세요.")
             return
         }
 
-        if(document.cookie.split("id=")[1].includes(";")){
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-            }else{
-                id = document.cookie.split("id=")[1].replace(" ","")
+        if (document.cookie.split("id=")[1].includes(";")) {
+            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+        } else {
+            id = document.cookie.split("id=")[1].replace(" ", "")
         }
 
-        if(ok == true){
-            if(document.getElementById("todayuser").value != "없음"){
-                    json = {
-                        'Author':id,
-                        'Name': document.getElementById("title").value,
-                        'Desc': $("#textarea").html(),
-                        'People_meet': document.getElementById("todayuser").value,
-                        'Feel': $("#select #option").text(),
-                        'Eat': $("#select2 #option2").text(),
-                        'AttachFiles': link,
-                        'Area': document.getElementById("maps").value
+        if (ok == true) {
+            if (document.getElementById("todayuser").value != "없음") {
+                json = {
+                    'Author': id,
+                    'Name': document.getElementById("title").value,
+                    'Desc': $("#textarea").html(),
+                    'People_meet': document.getElementById("todayuser").value,
+                    'Feel': $("#select #option").text(),
+                    'Eat': $("#select2 #option2").text(),
+                    'AttachFiles': link,
+                    'Area': document.getElementById("maps").value
+                }
+                console.log(json)
+                $.ajax({
+                    url: "/write/upload",
+                    method: "POST",
+                    data: json,
+                    success: function (response) {
+                        console.log(response)
                     }
-                    console.log(json)
-                    $.ajax({
-                        url:"/write/upload",
-                        method:"POST",
-                        data:json,
-                        success: function(response){
-                            console.log(response)
+                })
+            } else {
+                json = {
+                    'Author': id,
+                    'Name': document.getElementById("title").value,
+                    'Desc': $("#textarea").html(),
+                    'People_meet': "None",
+                    'Feel': $("#select #option").text(),
+                    'Eat': $("#select2 #option2").text(),
+                    'AttachFiles': link,
+                    'Area': document.getElementById("maps").value
+                }
+                console.log(json)
+                $.ajax({
+                    url: "/write/upload",
+                    method: "POST",
+                    data: json,
+                    success: function (response) {
+                        if (response == "OK") {
+                            location.href = "/"
+                            alert("업로드를 완료했습니다!")
                         }
-                    })
-                }else{
-                        json = {
-                            'Author':id,
-                            'Name': document.getElementById("title").value,
-                            'Desc': $("#textarea").html(),
-                            'People_meet': "None",
-                            'Feel': $("#select #option").text(),
-                            'Eat': $("#select2 #option2").text(),
-                            'AttachFiles': link,
-                            'Area': document.getElementById("maps").value
-                        }
-                        console.log(json)
-                        $.ajax({
-                            url:"/write/upload",
-                            method:"POST",
-                            data:json,
-                            success: function(response){
-                                if(response == "OK"){
-                                    location.href="/"
-                                    alert("업로드를 완료했습니다!")
-                                }
-                            }
-                        })
-                             
+                    }
+                })
+
             }
         }
 
-        
+
     }
 </script>
+
 <body>
 
     <!-- 헤더 시작 -->
     <header id="header">
         <div>
-            <a href="/"><h1>DAILY<br>LOG</h1></a>
+            <a href="/">
+                <h1>DAILY<br>LOG</h1>
+            </a>
         </div>
         <!-- 네비 시작 -->
         <nav id="nav">
@@ -156,7 +158,7 @@
     </div>
     <!-- 헤더 끝 -->
 
- <!-- 메인 시작 -->
+    <!-- 메인 시작 -->
     <main id="main">
         <section class="content">
             <div class="write_section">
@@ -177,7 +179,7 @@
                         <div class="write_select">
                             <div id="select" class="select">
                                 <strong></strong>
-                                <div id="option" class="feel" >오늘의 기분</div>
+                                <div id="option" class="feel">오늘의 기분</div>
                                 <ul>
                                     <li data-option="맑음">맑음</li>
                                     <li data-option="흐림">흐림</li>
@@ -201,9 +203,9 @@
                         </div>
                     </div>
                     <div>
-                        <form action = '/UploadFile' method = "POST" entype = "multipart/form-data">
+                        <form action='/UploadFile' method="POST" entype="multipart/form-data">
                             <input type="file" name="file" id="input">
-                        </form>    
+                        </form>
                     </div>
                     <div id="textarea" contenteditable="true">
                     </div>
@@ -241,19 +243,19 @@
 
         function handleFiles() {
             const filelist = this.files
-            for (let i = 0, numFiles = filelist.length; i < numFiles; i++){
+            for (let i = 0, numFiles = filelist.length; i < numFiles; i++) {
                 let file = filelist[i]
                 let formdata = new FormData()
                 formdata.append('File', file)
-                    let xhr = new XMLHttpRequest();
-                    xhr.open('POST', '/UploadFile' ,true)
-                    xhr.onload = xhr.onerror = function() {
-                        link.push( xhr.responseText )
-                        image = `<img src="${xhr.responseText}">`
-                        console.log(image)
-                        $("#textarea").append(image)
-                    };
-                    xhr.send(formdata)
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', '/UploadFile', true)
+                xhr.onload = xhr.onerror = function () {
+                    link.push(xhr.responseText)
+                    image = `<img src="${xhr.responseText}">`
+                    console.log(image)
+                    $("#textarea").append(image)
+                };
+                xhr.send(formdata)
             }
         }
     </script>

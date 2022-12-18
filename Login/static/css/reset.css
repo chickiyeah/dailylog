@@ -7,7 +7,7 @@ body {
     /*넣어주는 이유 찾아보기*/
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
-    background: #fff6f5;
+    background: #fff6e9;
 }
 
 html,
@@ -72,6 +72,8 @@ textarea {
     font-family: inherit;
     border: 0;
 }
+
+
 
 fieldset,
 iframe {

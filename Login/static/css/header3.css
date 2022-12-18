@@ -26,28 +26,30 @@
     opacity: 50%;
 }
 
-@media screen and (max-width: 768px) {
-
-}
+@media screen and (max-width: 768px) {}
 
 @media(min-width:320px) and (max-width:767px) {
     .mypage_left {
         position: absolute;
-        top:9rem;
+        top: 9rem;
         width: 100%;
         margin: 0 auto;
         padding: 1rem 0 1rem 3.1rem;
     }
-    .mypage_left ul{
+
+    .mypage_left ul {
         display: flex;
     }
-    .mypage_left ul li{
+
+    .mypage_left ul li {
         margin: 0.5rem;
     }
-    .mypage_left ul li:nth-child(5){
+
+    .mypage_left ul li:nth-child(5) {
         display: none;
     }
-    .mypage_left ul li:hover{
+
+    .mypage_left ul li:hover {
         font-weight: 600;
     }
 }
