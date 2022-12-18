@@ -11,9 +11,12 @@
 }
 
 .ranking_text h1 {
-    font-size: 2.5rem;
+    width: 60%;
+    font-size: 3rem;
     font-weight: 500;
-    color: #35B8E1;
+    line-height: 3rem;
+    color: #F8774A;
+    margin: auto;
 }
 
 .ranking_text h4 {
@@ -21,29 +24,29 @@
     font-weight: 400;
     color: #515151;
     opacity: 60%;
-    margin-top: 0.3rem;
+    margin: 1rem;
 }
 
 .ranking_category ul {
     display: flex;
     flex-direction: row;
-    margin: 1.6rem;
     justify-content: center;
 }
 
 .ranking_category ul li {
-    color: #35B8E1;
-    border: 0.04rem solid #35B8E1;
-    border-radius: 0.5rem;
+    color: #F8774A;
+    border: 1.5px dotted #F8774A;
+    border-radius: 1.5rem;
     padding: 0.9rem 3.5rem;
     cursor: pointer;
+    font-weight: 500;
     font-size: 1rem;
     transition: all 0.2s ease-in-out;
     margin-right: 0.8rem;
 }
 
 .ranking_category ul li:hover {
-    box-shadow: 2px 2px #0a87ad, 3px 3px #0a87ad, 4px 4px #0a87ad;
+    box-shadow: 2px 2px #F8774A, 3px 3px #F8774A, 4px 4px #F8774A;
     transform: translateX(0.2rem);
 }
 
@@ -55,25 +58,91 @@
     height: 100vh;
 }
 
-.ranking_card div {
-    width: 400px;
-    height: 400px;
+.ranking_text2 {
+    position: relative;
+    top: -15rem;
+    text-align: center;
+}
+
+.ranking_text2 h2{
+    font-size: 2rem;
+    color: #515151;
+}
+
+.ranking_text2 h4{
+    font-size: 1.2rem;
+    color: #515151;
+}
+
+.ranking_text2 p{
+    font-size: 1.3rem;
+    color: #515151;
+}
+
+.square{
+    width: 23rem;
+    height: 23rem;
     position: relative;
 }
 
-.ranking_card div h2 {
+.square span{
     position: absolute;
     width: inherit;
     height: 100%;
-    border: 1px solid #515151;
     border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
     transition: 0.5s;
 }
 
-@keyframes circle{
-0%{
-    transform:rotate(0);
+.square span:nth-child(1){
+    animation: circle 6s linear infinite;
+    opacity: 0.3;
+    background-color: #F8774A;
 }
+
+.square span:nth-child(2){
+    animation: circle 4s linear infinite;
+    animation-direction: reverse;
+    opacity: 0.5;
+    background-color: #F8774A;
+}
+
+.square span:nth-child(3){
+    animation: circle 10s linear infinite;
+    opacity: 0.8;
+    background-color: #B4D2FF;
+}
+
+.square:hover span:nth-child(1){
+    background-color: #B4D2FF;
+    border: none;
+    opacity: 0.3;
+    cursor: pointer;
+    color: #fff;
+}
+
+.square:hover span:nth-child(2){
+    background-color: #FFCF87;
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+    color: #fff;
+}
+
+.square:hover span:nth-child(3){
+    background-color: #F8774A;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #fff;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
 }
 
 
@@ -85,7 +154,30 @@
         font-size: 2rem;
         top: 2rem;
         right: 2rem;
-        color: #909090;
+        color: #515151;
+    }
+
+    .ranking_text {
+        width: 90%;
+        text-align: center;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .ranking_text h1 {
+        width: 60%;
+        font-size: 2.5rem;
+    }
+
+    .ranking_text h4 {
+        width: 60%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .ranking_card{
+        width: 100%;
+        margin-top: 23rem;
     }
 
     .ranking_section {
@@ -117,17 +209,4 @@
         align-items: center;
 
     }
-
-    .ranking_text {
-        width: 50%;
-        text-align: center;
-        padding: 1rem;
-        margin: auto;
-    }
-
-    .ranking_text h4 {
-        width: 100%;
-        margin: 1.5rem 0;
-    }
-
 }

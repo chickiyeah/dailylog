@@ -78,9 +78,16 @@ function addCard(rank, str, per) {
 
 function Card(rank, str, per) {
 return `<div>
-            <h2>${rank}위</h2>
-            <h4>${str}</h4>
-            <p>${per}%</p>
+            <div class="square">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ranking_text2">
+                <h2>${rank}위</h2>
+                <h4>${str}</h4>
+                <p>${per}%</p>
+            </div>
         </div>`
 }
 
