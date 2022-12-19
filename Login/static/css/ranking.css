@@ -153,8 +153,9 @@
         position: absolute;
         font-size: 2rem;
         top: 2rem;
-        right: 2rem;
+        right: 1.8rem;
         color: #515151;
+        z-index: 999;
     }
 
     .ranking_text {
