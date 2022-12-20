@@ -4,8 +4,8 @@ $(document).ready(function () {
         document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
         location.href = "/"
     }
-    if (document.cookie.includes("id")) {
-        if (document.cookie.split("id=")[1].includes(";")) {
+    if (document.cookie.includes("user_id")) {
+        if (document.cookie.split("user_id=")[1].includes(";")) {
             id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
             getEatPercent(id)
             getPersonPercent(id)
@@ -13,7 +13,7 @@ $(document).ready(function () {
             $(".top_icon").append(`<a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>`)
             showall()
         } else {
-            id = document.cookie.split("id=")[1].replace(" ", "")
+            id = document.cookie.split("user_id=")[1].replace(" ", "")
             getEatPercent(id)
             getPersonPercent(id)
             getPlacePercent(id)

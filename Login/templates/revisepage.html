@@ -42,12 +42,12 @@
             location.href = `/`;
             alert("표시할 글의 아이디가 지정되어있지 않습니다.\n카드에서 다시 클릭해보세요.\n홈으로 이동합니다.")
         }
-        if (document.cookie.includes("id=")) {
+        if (document.cookie.includes("user_id=")) {
             login = true
-            if (document.cookie.split("id=")[1].includes(";")) {
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            if (document.cookie.split("user_id=")[1].includes(";")) {
+                id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
             } else {
-                id = document.cookie.split("id=")[1].replace(" ", "")
+                id = document.cookie.split("user_id=")[1].replace(" ", "")
             }
             let userinfo = ""
             $.ajax({
@@ -205,6 +205,7 @@
                             <input type="submit" class="submit" value="수정">
                             <a onclick="Delete()"><input type="submit" class="submit" value="삭제" style="background-color: #FF774D"></a>
                         </div>
+                        
                     </article>
                 </div>    
             </section>`

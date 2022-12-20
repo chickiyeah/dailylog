@@ -73,6 +73,14 @@
     background-color: #FF774D;
 }
 
+.detail_bT .share_icon {
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+}
+
 @media(max-width:767px) and (min-width:320px) {
     .top_logo i {
         display: block;

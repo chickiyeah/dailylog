@@ -24,8 +24,8 @@ function Login() {
                 alert("비밀번호를 입력해주세요.")
                 return
               }
-        document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-        document.cookie = "id = "+response
+        document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+        document.cookie = "user_id = "+response
         if(location.href.includes("?")){
             loc = location.href.split("?")[1].split("loc%20=%20")[1]
             location.href = "/"+loc

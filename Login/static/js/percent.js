@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    if(document.cookie.includes("id=")){
+    if(document.cookie.includes("user_id=")){
         login = true
-        if(document.cookie.split("id=")[1].includes(";")){
-            id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
+        if(document.cookie.split("user_id=")[1].includes(";")){
+            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ","")
         }else{
-            id = document.cookie.split("id=")[1].replace(" ","")
+            id = document.cookie.split("user_id=")[1].replace(" ","")
         }
         getFeelPercent()
         $.ajax({

@@ -1,43 +1,112 @@
 let postid = ""
+let visitor = false
+let id = ""
+let Author = ""
 $(document).ready(function () {
-    
-    if(location.href.includes("?")){
+    if (location.href.includes("?")) {
         postid = location.href.split("?")[1].split("postid=")[1]
-    }else{
+        if(postid.includes(";")) {
+            let postid1 = postid.split(";")[0].replace(" ","")
+            let secdata = postid.split(";")[1].replace(" ","")
+            console.log(secdata)
+            if(secdata.includes("post_author")) {
+                visitor = true
+                Author = secdata.split("post_author=")[1].replace(" ","")
+
+                let userinfo = ""
+                $.ajax({
+                    url: "/User",
+                    method: "POST",
+                    data: {
+                        id: Author
+                    },
+                    success: function (response) {
+                        //목록 가져오기
+                        $.ajax({
+                            url: "/Write",
+                            method: "POST",
+                            data: {
+                                "Author": Author
+                            },
+                            success: function (response) {
+                                response.forEach(element => {
+                                    let now = new Date()
+        
+                                    let year = now.getFullYear()
+                                    let month = now.getMonth()
+                                    let day = now.getDate()
+                                    let hours = now.getHours() + 9
+                                    let minutes = now.getMinutes()
+                                    let seconds = now.getSeconds()
+        
+                                    let nowdate = new Date(year, month, day, hours, minutes, seconds)
+        
+                                    let chai = nowdate.getTime() - new Date(element.Created_At).getTime()
+                                    let a = ""
+        
+                                    let wmon = element.Created_At.split("-")[1]
+                                    let wday = element.Created_At.split("-")[2].split("T")[0]
+        
+                                    if (chai < 1000 * 60)
+                                        a += '방금'
+                                    else if (chai < 1000 * 60 * 60)
+                                        a += Math.floor(chai / (1000 * 60)) + '분 전';
+                                    else if (chai < 1000 * 60 * 60 * 24)
+                                        a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
+                                    else if (chai < 1000 * 60 * 60 * 24 * 30)
+                                        a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
+                                    else if (chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                                        a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
+                                    else
+                                        a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
+        
+        
+                                    if (postid1 == element.Created_At) {
+                                        addCard(element)
+                                    }
+                                });
+                            }
+                        })
+                    }
+                })
+            }
+        }
+        
+    } else {
         location.href = `/`;
         alert("표시할 글의 아이디가 지정되어있지 않습니다.\n카드에서 다시 클릭해보세요.\n홈으로 이동합니다.")
     }
-    if(document.cookie.includes("id=")){
+    if (document.cookie.includes("user_id=")) {
         login = true
-        if(document.cookie.split("id=")[1].includes(";")){
-            id = document.cookie.split("id=")[1].split(";")[0].replace(" ","")
-        }else{
-            id = document.cookie.split("id=")[1].replace(" ","")
+        if (document.cookie.split("user_id=")[1].includes(";")) {
+            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
+        } else {
+            id = document.cookie.split("user_id=")[1].replace(" ", "")
         }
         let userinfo = ""
         $.ajax({
-            url:"/User",
-            method:"POST",
-            data:{
-                id:id
+            url: "/User",
+            method: "POST",
+            data: {
+                id: id
             },
-            success: function(response){
+            success: function (response) {
                 name = response.nickname
-                            //목록 가져오기
+                //목록 가져오기
                 $.ajax({
-                    url:"/Write",
-                    method:"POST",
-                    data:{
-                        "Author":id
+                    url: "/Write",
+                    method: "POST",
+                    data: {
+                        "Author": id
                     },
-                    success: function(response){
+                    success: function (response) {
                         response.forEach(element => {
                             let now = new Date()
 
                             let year = now.getFullYear()
                             let month = now.getMonth()
                             let day = now.getDate()
-                            let hours = now.getHours()+9
+                            let hours = now.getHours() + 9
                             let minutes = now.getMinutes()
                             let seconds = now.getSeconds()
 
@@ -49,21 +118,21 @@ $(document).ready(function () {
                             let wmon = element.Created_At.split("-")[1]
                             let wday = element.Created_At.split("-")[2].split("T")[0]
 
-                            if(chai < 1000 * 60)
+                            if (chai < 1000 * 60)
                                 a += '방금'
-                            else if(chai < 1000 * 60 * 60)
+                            else if (chai < 1000 * 60 * 60)
                                 a += Math.floor(chai / (1000 * 60)) + '분 전';
-                            else if(chai < 1000 * 60 * 60 * 24)
+                            else if (chai < 1000 * 60 * 60 * 24)
                                 a += Math.floor(chai / (1000 * 60 * 60)) + '시간 전';
-                            else if(chai < 1000 * 60 * 60 * 24 * 30)
+                            else if (chai < 1000 * 60 * 60 * 24 * 30)
                                 a += Math.floor(chai / (1000 * 60 * 60 * 24)) + '일 전';
-                            else if(chai < 1000 * 60 * 60 * 24 * 30 * 12)
+                            else if (chai < 1000 * 60 * 60 * 24 * 30 * 12)
                                 a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30)) + '달 전';
                             else
                                 a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
-                            
 
-                            if(postid == element.Created_At) {
+
+                            if (postid == element.Created_At) {
                                 addCard(element)
                             }
                         });
@@ -72,17 +141,21 @@ $(document).ready(function () {
             }
         })
 
-    }else{
-        if(location.href.includes("?")){
-            loc = location.href.split("?")[1].split("postid=")[1]
-            location.href = `/Login?loc = write/detail?postid=${loc}`
-        }else{
-            location.href = `/Login?loc = `;
-        } 
-        login = false
-        alert("로그인이 필요합니다.")
+    } else {
+        if (!location.href.includes("post_author")) {
+            if (location.href.includes("?")) {
+                loc = location.href.split("?")[1].split("postid=")[1]
+                location.href = `/Login?loc = write/detail?postid=${loc}`
+            } else {
+                location.href = `/Login?loc = `;
+            }
+            login = false
+            alert("로그인이 필요합니다.")
+        }
     }
 })
+
+
 
 function addCard(element) {
     console.log(element)
@@ -90,36 +163,90 @@ function addCard(element) {
     let wmon = element.Created_At.split("-")[1]
     let wday = element.Created_At.split("-")[2].split("T")[0]
 
-    let Date = wyear+"년 "+wmon+"월 "+wday+"일"
+    let Date = wyear + "년 " + wmon + "월 " + wday + "일"
     let people_meet = ""
     let image = ""
     let card = ""
-    if(element.People_meet == "None"){
+    if (element.People_meet == "None") {
         people_meet = "없음"
-    }else{
+    } else {
         people_meet = element.People_meet
     }
 
-    if(element.AttachFiles == "null" || element.AttachFiles == ""){
+    if (element.AttachFiles == "null" || element.AttachFiles == "") {
         card = Card(element.Name, element.AREA_ADR, people_meet, Date, element.Feel, element.Description, element.Eat)
-    }else{
+    } else {
         image = element.AttachFiles
         card = CardI(element.Name, element.AREA_ADR, people_meet, image, Date, element.Feel, element.Description, element.Eat)
     }
-    
+
     $('#main').prepend(card)
+}
+
+function copyURL() {
+    navigator.clipboard.writeText(window.location.href);
+}
+
+Kakao.init('4c43d4733daa8022e6465b441f59f10c')
+function kakaoTalkShare() {
+    Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+            title: '저의 일기를 공유합니다!',
+            description: '저의 일기를 여러분에게 공유합니다!',
+            imageUrl:
+                'https://firebasestorage.googleapis.com/v0/b/chi-talk.appspot.com/o/daily-log%2Fstory_img1.png?alt=media&token=74437281-f431-4b02-9250-e8410eceffc2',
+            link: {
+                mobileWebUrl: 'http://daily-log.kro.kr',
+                webUrl: 'http://daily-log.kro.kr',
+            },
+        },
+        buttons: [
+            {
+                title: '일기 보러가기',
+                link: {
+                    mobileWebUrl: window.location.href+";post_author="+id,
+                    webUrl: window.location.href+";post_author="+id,
+                },
+            },
+            {
+                title: '나도 쓰러가기',
+                link: {
+                    mobileWebUrl: 'http://daily-log.kro.kr',
+                    webUrl: 'http://daily-log.kro.kr',
+                },
+            }
+        ],
+    });
+}
+
+function kakaoStoryShare() {
+    Kakao.Story.share({
+        url: window.location.href+";post_author="+id,
+        text: '저의 일기를 공유합니다!'
+    })
+}
+
+function twiterShare() {
+    const pageUrl = window.location.href+";post_author="+id
+    window.open(`https://twitter.com/intent/tweet?text="저의 일기를 공유합니다."&url=${pageUrl}`, '트위터 공유' , "width=870, height=880, resizable = no, scrollbars = no")
+}
+
+function facebookShare() {
+    const pageUrl = window.location.href+";post_author="+id
+    window.open(`http://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '페이스북 공유', "width=870, height=880, resizable = no, scrollbars = no")
 }
 
 function Delete() {
     let created_At = location.href.split("?")[1].split("postid=")[1]
     $.ajax({
-        url:'/Write',
-        method:"DELETE",
-        data:{
-            'id':id,
-            'Created_At':created_At
+        url: '/Write',
+        method: "DELETE",
+        data: {
+            'id': id,
+            'Created_At': created_At
         },
-        success: function(response) {
+        success: function (response) {
             location.href = "/"
             alert("글을 삭제했습니다.")
         }
@@ -127,76 +254,154 @@ function Delete() {
 }
 
 function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
-        if(desc.length > 60){
-            descleng = desc.length
-            
-        }
-    return `<section id="section">
-                <div class="detail_wrap">
-                    <div class="detail_section">
-                        <div class="detail_title">
-                            <h1>${name}</h1>
-                        </div>
-                        <div class="picture">
-                            <img src="${image}" alt="메뉴의 마이페이지 아이콘">
-                        </div>
-                        <div class="detail_content">
-                            <div class="comment1">
-                                <p>${date}</p>
-                                <p>장소 : ${adr}</p>
-                                <p>기분 : ${feel}</p>
-                                <p>누구랑 : ${people_meet}</p>
-                                <p>음식 : ${Eat}</p>
-                            </div>
-                            <div>
-                                <div class="comment2">
-                                    <p>
-                                       ${desc}
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="detail_bT">
-                                <a href="/write/edit?postid=${postid}" ><input type="submit" class="submit" value="수정">
-                                <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>`
-}
-function Card(name, adr, people_meet,  date, feel, desc, Eat) {
-    if(desc.length > 60){
-        desc = desc.substring(0,61)+"\n"+desc.substring(62)
+    if (desc.length > 60) {
+        descleng = desc.length
+
     }
-return `<section id="section">
-                <div class="detail_wrap">
-                    <div class="detail_section">
-                        <div class="detail_title">
-                            <h1>${name}</h1>
-                        </div>
-                        <div class="picture">
-                        </div>
-                        <div class="detail_content">
-                            <div class="comment1">
-                                <p>${date}</p>
-                                <p>장소 : ${adr}</p>
-                                <p>기분 : ${feel}</p>
-                                <p>누구랑 : ${people_meet}</p>
-                                <p>음식 : ${Eat}</p>
+
+    
+    console.log(visitor)
+    if (visitor == false){
+        return `<section id="section">
+                    <div class="detail_wrap">
+                        <div class="detail_section">
+                            <div class="detail_title">
+                                <h1>${name}</h1>
                             </div>
-                            <div>
-                                <div class="comment2">
-                                    <p>
-                                       ${desc}
-                                    </p>
+                            <div class="picture">
+                                <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                            </div>
+                            <div class="detail_content">
+                                <div class="comment1">
+                                    <p>${date}</p>
+                                    <p>장소 : ${adr}</p>
+                                    <p>기분 : ${feel}</p>
+                                    <p>누구랑 : ${people_meet}</p>
+                                    <p>음식 : ${Eat}</p>
                                 </div>
-                            </div>
-                            <div class="detail_bT">
-                                <a href="/write/edit?postid=${postid}"><input type="submit" class="submit" value="수정">
-                                <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
+                                <div>
+                                    <div class="comment2">
+                                        <p>
+                                        ${desc}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail_bT">
+                                    <a href="/write/edit?postid=${postid}" ><input type="submit" class="submit" value="수정">
+                                    <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
+                                </div>
+                                <div class="detail_bT">
+                                    <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:facebookShare()"><img src="../static/assets/share_icon/facebook.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
+                </section>`
+    }else{
+        return `<section id="section">
+                    <div class="detail_wrap">
+                        <div class="detail_section">
+                            <div class="detail_title">
+                                <h1>${name}</h1>
+                            </div>
+                            <div class="picture">
+                                <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                            </div>
+                            <div class="detail_content">
+                                <div class="comment1">
+                                    <p>${date}</p>
+                                    <p>장소 : ${adr}</p>
+                                    <p>기분 : ${feel}</p>
+                                    <p>누구랑 : ${people_meet}</p>
+                                    <p>음식 : ${Eat}</p>
+                                </div>
+                                <div>
+                                    <div class="comment2">
+                                        <p>
+                                        ${desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>`        
+    }
+}
+function Card(name, adr, people_meet, date, feel, desc, Eat) {
+    if (desc.length > 60) {
+        desc = desc.substring(0, 61) + "\n" + desc.substring(62)
+    }
+
+    if (visitor == false) {
+        return `<section id="section">
+                    <div class="detail_wrap">
+                        <div class="detail_section">
+                            <div class="detail_title">
+                                <h1>${name}</h1>
+                            </div>
+                            <div class="picture">
+                            </div>
+                            <div class="detail_content">
+                                <div class="comment1">
+                                    <p>${date}</p>
+                                    <p>장소 : ${adr}</p>
+                                    <p>기분 : ${feel}</p>
+                                    <p>누구랑 : ${people_meet}</p>
+                                    <p>음식 : ${Eat}</p>
+                                </div>
+                                <div>
+                                    <div class="comment2">
+                                        <p>
+                                        ${desc}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail_bT">
+                                    <a href="/write/edit?postid=${postid}"><input type="submit" class="submit" value="수정">
+                                    <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
+                                </div>
+                                <div class="detail_bT">
+                                    <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                    <a href="javascript:facebookShare()"><img src="../static/assets/share_icon/facebook.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </section>`
+    }else{
+        return `<section id="section">
+            <div class="detail_wrap">
+                <div class="detail_section">
+                    <div class="detail_title">
+                        <h1>${name}</h1>
+                    </div>
+                    <div class="picture">
+                    </div>
+                    <div class="detail_content">
+                        <div class="comment1">
+                            <p>${date}</p>
+                            <p>장소 : ${adr}</p>
+                            <p>기분 : ${feel}</p>
+                            <p>누구랑 : ${people_meet}</p>
+                            <p>음식 : ${Eat}</p>
+                        </div>
+                        <div>
+                            <div class="comment2">
+                                <p>
+                                ${desc}
+                                </p>
+                            </div>
+                        </div>                          
+                    </div>
                 </div>
-            </section>`
+            </div>
+        </section>`
+    }
 }

@@ -21,10 +21,10 @@ $(document).ready(function () {
         showall(val)
     });
 
-    if (document.cookie.split("id=")[1].includes(";")) {
-        id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+    if (document.cookie.split("user_id=")[1].includes(";")) {
+        id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
     } else {
-        id = document.cookie.split("id=")[1].replace(" ", "")
+        id = document.cookie.split("user_id=")[1].replace(" ", "")
     }
     document.getElementById("showall").addEventListener('click', function () {
         if (document.getElementById("showall").checked) {
