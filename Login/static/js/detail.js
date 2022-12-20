@@ -229,7 +229,7 @@ function kakaoStoryShare() {
 
 function twiterShare() {
     const pageUrl = window.location.href+";post_author="+id
-    window.open(`https://twitter.com/intent/tweet?text="저의 일기를 공유합니다."&url=${pageUrl}`, '트위터 공유' , "width=870, height=880, resizable = no, scrollbars = no")
+    window.open(`https://twitter.com/intent/tweet?text=저의 일기를 공유합니다.\n&url=${pageUrl}`, '트위터 공유' , "width=870, height=880, resizable = no, scrollbars = no")
 }
 
 function facebookShare() {
