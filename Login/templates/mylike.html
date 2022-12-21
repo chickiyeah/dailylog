@@ -40,11 +40,11 @@
             document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
             location.href = "/"
         }
-        if (document.cookie.split("id=")[1].includes(";")) {
-            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+        if (document.cookie.split("user_id=")[1].includes(";")) {
+            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
             showimage(id)
         } else {
-            id = document.cookie.split("id=")[1].replace(" ", "")
+            id = document.cookie.split("user_id=")[1].replace(" ", "")
             showimage(id)
         }
 

@@ -1,5 +1,5 @@
 .detail_wrap {
-    padding: 15rem 0 0 0;
+    padding: 15rem 0 5rem 0;
 }
 
 .detail_section {
@@ -50,9 +50,16 @@
 .detail_bT {
     display: flex;
     justify-content: center;
-    margin: 3rem 0 2rem 0;
+    margin: 3rem 0 1rem 0;
     padding-top: 2rem;
     border-top: 1px dotted #cfcfcf;
+}
+
+.detail_button {
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .detail_bT input {
@@ -73,7 +80,7 @@
     background-color: #FF774D;
 }
 
-.detail_bT .share_icon {
+.detail_button .share_icon {
     width: 3rem;
     height: 3rem;
     align-self: center;

@@ -259,8 +259,6 @@ function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
 
     }
 
-    
-    console.log(visitor)
     if (visitor == false){
         return `<section id="section">
                     <div class="detail_wrap">
@@ -290,7 +288,7 @@ function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
                                     <a href="/write/edit?postid=${postid}" ><input type="submit" class="submit" value="수정">
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
-                                <div class="detail_bT">
+                                <div class="detail_button">
                                     <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
@@ -365,7 +363,7 @@ function Card(name, adr, people_meet, date, feel, desc, Eat) {
                                     <a href="/write/edit?postid=${postid}"><input type="submit" class="submit" value="수정">
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
-                                <div class="detail_bT">
+                                <div class="detail_button">
                                     <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>

@@ -1,3 +1,14 @@
+$(document).ready(function () {
+  let code = ""
+  if (location.href.includes("?") && location.href.includes("code=")) {
+    if (location.href.split("code=")[1].includes(";")) {
+      code = location.href.split("code=")[1].split(";")[0].replace(" ", "")
+    } else {
+      code = location.href.split("code=")[1].replace(" ", "")
+    }
+  }
+})
+
 function Login() {
     let id = document.getElementById("emaill").value
     let password = document.getElementById("passwordd").value
