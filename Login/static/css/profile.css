@@ -3,7 +3,7 @@
 }
 
 .profile_right div {
-    margin: 0 0 1rem 0;
+    margin: auto;
 }
 
 .profile_right label {
@@ -44,5 +44,9 @@ button:hover {
         top: 2rem;
         right: 2rem;
         color: #909090;
+    }
+
+    .profile_right{
+        z-index: -1;
     }
 }

@@ -36,6 +36,13 @@ function Login() {
     })
 }
 
+Kakao.init('4c43d4733daa8022e6465b441f59f10c')
+function kakaAuth() {
+  Kakao.Auth.authorize({
+    redirectUri: 'http://dev-daily-log.kro.kr/Login'
+  })
+}
+
 function is_checked() {
     const checkbox = document.getElementById("flexCheckDefault");
     const is_checked = checkbox.checked;

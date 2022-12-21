@@ -47,7 +47,7 @@
 }
 
 .write_box p {
-    width: 95%;
+    width: 100%;
     font-size: 0.9rem;
     margin-top: 0.2rem;
     overflow: hidden;
@@ -71,7 +71,7 @@
     }
 
     .write_section {
-        padding: 10rem 0 3rem 0;
+        padding: 10rem 0 0 0;
     }
 
     .write_box {

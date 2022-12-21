@@ -346,7 +346,7 @@ i:nth-child(3) {
     .map_top input {
         width: 87%;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         margin-bottom: 1.25rem;
     }
 
@@ -377,7 +377,7 @@ i:nth-child(3) {
     .feel-check {
         width: 100%;
         margin: auto;
-        margin-left: -0.5rem;
+        margin-left: -1.5rem; 
     }
 
     .search_btn {

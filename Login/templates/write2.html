@@ -33,6 +33,7 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+    let id = ""
     $(document).ready(function () {
         let uploading = false
         if (document.cookie.includes("user_id=")) {
@@ -116,6 +117,11 @@
         if (uploading != false) {
             alert("이미 글을 업로드 중입니다.")
         } else {
+                        if (document.cookie.split("user_id=")[1].includes(";")) {
+                id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("user_id=")[1].replace(" ", "")
+            }
 
 
             ok = true
@@ -164,10 +170,10 @@
                 return
             }
 
-            if (document.cookie.split("id=")[1].includes(";")) {
-                id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            if (document.cookie.split("user_id=")[1].includes(";")) {
+                id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
             } else {
-                id = document.cookie.split("id=")[1].replace(" ", "")
+                id = document.cookie.split("user_id=")[1].replace(" ", "")
             }
             uploading = true
             if (ok == true) {
