@@ -18,7 +18,7 @@
 /* 이런 경우엔 부모에 block을 주고 자식에 right준다. 위에<< */
 .write_section div button {
     font-size: 0.9rem;
-    background-color: #35B8E1;
+    background-color: #FF774D;
     color: #fff;
     border-radius: 2rem;
     width: 5rem;
