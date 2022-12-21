@@ -1,13 +1,22 @@
-$(document).ready(function () {
-  let code = ""
-  if (location.href.includes("?") && location.href.includes("code=")) {
-    if (location.href.split("code=")[1].includes(";")) {
-      code = location.href.split("code=")[1].split(";")[0].replace(" ", "")
-    } else {
-      code = location.href.split("code=")[1].replace(" ", "")
-    }
-  }
-})
+Kakao.init('4c43d4733daa8022e6465b441f59f10c')
+function kakaAuth() {
+  Kakao.Auth.login({
+    success: function (response) {
+      Kakao.API.request({
+        url: '/v2/user/me',
+        success: function (response) {
+          console.log(response)
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+    },
+    fail: function (error) {
+      console.log(error)
+    },
+  })
+}
 
 function Login() {
     let id = document.getElementById("emaill").value
@@ -45,13 +54,6 @@ function Login() {
         }
       }
     })
-}
-
-Kakao.init('4c43d4733daa8022e6465b441f59f10c')
-function kakaAuth() {
-  Kakao.Auth.authorize({
-    redirectUri: 'http://dev-daily-log.kro.kr/Login'
-  })
 }
 
 function is_checked() {

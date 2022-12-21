@@ -58,11 +58,13 @@ input[type="checkbox"] {
 
 .write_box h2 {
     font-size: 1.18rem;
+    margin-left: -21rem;
 }
 
 .write_box h3 {
     font-size: 14px;
     margin-top: 3px;
+    margin-left: -21rem;
     font-weight: 400;
     word-break: break-all;
 }
@@ -95,4 +97,27 @@ label .chkBox {
 .bottom_hr {
     margin-bottom: 3.125rem;
     opacity: 30%;
+}
+
+@media(max-width:767px) and (min-width:320px) {
+    .top_logo i {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        top: 2rem;
+        right: 2rem;
+        color: #909090;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mywrite_right{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
 }
