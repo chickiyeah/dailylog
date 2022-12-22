@@ -1,17 +1,29 @@
 let id = ""
 $(document).ready(function () {
     if (location.href.includes("?")) {
-        document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+        document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
         location.href = "/"
     }
     if (document.cookie.includes("user_id")) {
         if (document.cookie.split("user_id=")[1].includes(";")) {
-            id = document.cookie.split("id=")[1].split(";")[0].replace(" ", "")
+            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
             getEatPercent(id)
             getPersonPercent(id)
             getPlacePercent(id)
             $(".top_icon").append(`<a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>`)
             showall()
+            $.ajax({
+                type: "POST",
+                url: "/User",
+                data: { 'id': id },
+                success: function (response) {
+                    if(response.email == undefined){
+                        alert("계정정보 로딩 실패 다시 로그인해주세요.")
+                        document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                        location.href = "/"
+                    }
+                }
+            })
         } else {
             id = document.cookie.split("user_id=")[1].replace(" ", "")
             getEatPercent(id)
@@ -19,6 +31,18 @@ $(document).ready(function () {
             getPlacePercent(id)
             showall()
             $(".top_icon").append(`<a href="/Mypage"><img src="../static/assets/mypage.png" alt="메뉴의 마이페이지 아이콘"></a>`)
+            $.ajax({
+                type: "POST",
+                url: "/User",
+                data: { 'id': id },
+                success: function (response) {
+                    if(response.email == undefined){
+                        alert("계정정보 로딩 실패 다시 로그인해주세요.")
+                        document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                        location.href = "/"
+                    }
+                }
+            })
         }
     } else {
         $(".top_icon").append(`<a href="/Login"><p>로그인</p></a>`)

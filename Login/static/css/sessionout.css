@@ -61,6 +61,10 @@ p {
     border-radius: 1.25rem;
 }
 
+.socialre {
+    text-align: center;
+}
+
 .session_article button:hover {
     background-color: #f86437;
 }

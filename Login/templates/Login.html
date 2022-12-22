@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/Login.css">
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     <style type="text/css">
         A:link {
@@ -50,8 +48,9 @@
     <link rel="icon" href="./static/assets/house.svg" type="image/x-icon">
 
     <!-- 스크립트 -->
-    <script src="../static/js/index.js" defer></script>
     <script src="../static/js/Login.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 
 </head>
@@ -90,6 +89,12 @@
                     <span class="signup">회원가입</span>
                 </a>
             </p>
+            <div class="SocialLogin">
+                <span>소셜 로그인</span>
+                <div style="margin-top: 1rem;">
+                    <a href="javascript:kakaAuth()"><img src="../static/assets/share_icon/kakao.png" class="social_icon" alt="메뉴의 공유 아이콘"></a>
+                </div>
+            </div>
         </article>
     </section>
 
