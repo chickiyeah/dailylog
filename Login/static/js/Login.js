@@ -44,6 +44,11 @@ function Login() {
                 alert("비밀번호를 입력해주세요.")
                 return
               }
+
+if(response == "EMAIL_NOT_FOUND") {
+alert("해당 아이디를 찾을수 없습니다./n아이디를 확인하고 다시 시도해주세요.")
+return
+}
         document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
         document.cookie = "user_id = "+response
         if(location.href.includes("?")){
