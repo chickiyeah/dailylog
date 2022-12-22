@@ -196,7 +196,7 @@ async def user_create():
     if(str(c).split("\"")[1].split("\"")[0] == "Status Code : 200 | OK : Successfully added data "):
         return "OK"
     
-    print c 
+    print(c)
     return c['errorMessage']
 
 @app.route("/User", methods=["POST"])
