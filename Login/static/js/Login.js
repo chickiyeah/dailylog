@@ -1,3 +1,16 @@
+function handleCredentialResponse(response) {
+  // decodeJwtResponse() is a custom function defined by you
+  // to decode the credential response.
+  const responsePayload = parseJwt(response.credential);
+
+  console.log("ID: " + responsePayload.sub);
+  console.log('Full Name: ' + responsePayload.name);
+  console.log('Given Name: ' + responsePayload.given_name);
+  console.log('Family Name: ' + responsePayload.family_name);
+  console.log("Image URL: " + responsePayload.picture);
+  console.log("Email: " + responsePayload.email); 
+};
+
 function googleauth(response) {
   // decodeJwtResponse() is a custom function defined by you
   // to decode the credential response.
@@ -133,7 +146,6 @@ function kakaAuth() {
                     }
 
                     if (response == "OK") {
-                      alert('회원가입 성공!')
                       $.ajax({
                         type: 'POST',
                         url: '/User/Login',
@@ -162,14 +174,29 @@ function kakaAuth() {
                             alert("해당 아이디를 찾을수 없습니다.\n아이디를 확인하고 다시 시도해주세요.")
                             return
                           }
-                          document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                          document.cookie = "user_id = " + response
-                          if (location.href.includes("?")) {
-                            loc = location.href.split("?")[1].split("loc%20=%20")[1]
-                            location.href = "/" + loc
-                          } else {
-                            location.href = `/`;
-                          }
+
+                          $.ajax({
+                            type: "POST",
+                            url: "/User",
+                            data: { 'id': id },
+                            success: function (response) {
+                                if(response.email == undefined){
+                                    alert("계정정보 로딩 실패 다시 로그인해주세요.")
+                                    document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                                    location.href = "/Login"
+                                }else{
+                                  document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                                  document.cookie = "user_id = " + response
+                                  if (location.href.includes("?")) {
+                                    loc = location.href.split("?")[1].split("loc%20=%20")[1]
+                                    location.href = "/" + loc
+                                  } else {
+                                    location.href = `/`;
+                                  }
+                                }
+                            }
+                        })
+
                         }
                       })
                     }
@@ -230,14 +257,27 @@ function Login() {
         alert("해당 아이디를 찾을수 없습니다.\n아이디를 확인하고 다시 시도해주세요.")
         return
       }
-      document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-      document.cookie = "user_id = " + response
-      if (location.href.includes("?")) {
-        loc = location.href.split("?")[1].split("loc%20=%20")[1]
-        location.href = "/" + loc
-      } else {
-        location.href = `/`;
-      }
+      $.ajax({
+        type: "POST",
+        url: "/User",
+        data: { 'id': id },
+        success: function (response) {
+            if(response.email == undefined){
+                alert("계정정보 로딩 실패 다시 로그인해주세요.")
+                document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                location.href = "/Login"
+            }else{
+              document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+              document.cookie = "user_id = " + response
+              if (location.href.includes("?")) {
+                loc = location.href.split("?")[1].split("loc%20=%20")[1]
+                location.href = "/" + loc
+              } else {
+                location.href = `/`;
+              }
+            }
+        }
+    })
     }
   })
 }
