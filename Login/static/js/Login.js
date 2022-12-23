@@ -1,3 +1,26 @@
+function googleauth(response) {
+  // decodeJwtResponse() is a custom function defined by you
+  // to decode the credential response.
+  const responsePayload = parseJwt(response.credential);
+
+  console.log("ID: " + responsePayload.sub);
+  console.log('Full Name: ' + responsePayload.name);
+  console.log('Given Name: ' + responsePayload.given_name);
+  console.log('Family Name: ' + responsePayload.family_name);
+  console.log("Image URL: " + responsePayload.picture);
+  console.log("Email: " + responsePayload.email); 
+};
+
+function parseJwt (token) {
+  var base64Url = token.split('.')[1];
+  var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+
+  return JSON.parse(jsonPayload);
+};
+
 //처음 실행하는 함수
 function init() {
 	gapi.load('auth2', function() {
@@ -33,11 +56,6 @@ function onSignIn(googleUser) {
 }
 function onSignInFailure(t){		
 	console.log(t);
-}
-
-function googleauth(googleUser) {
-  let profile = googleUser.getBasicProfile()
-  console.log(profile)
 }
 
 Kakao.init('4c43d4733daa8022e6465b441f59f10c')
