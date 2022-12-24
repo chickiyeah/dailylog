@@ -6,7 +6,8 @@ $(document).ready(function () {
     }
     if (document.cookie.includes("user_id")) {
         if (document.cookie.split("user_id=")[1].includes(";")) {
-            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
+            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")    
+            console.log(id)
             getEatPercent(id)
             getPersonPercent(id)
             getPlacePercent(id)
@@ -25,7 +26,9 @@ $(document).ready(function () {
                 }
             })
         } else {
+            
             id = document.cookie.split("user_id=")[1].replace(" ", "")
+            console.log(id)
             getEatPercent(id)
             getPersonPercent(id)
             getPlacePercent(id)

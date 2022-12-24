@@ -294,15 +294,16 @@ function Login() {
       $.ajax({
         type: "POST",
         url: "/User",
-        data: { 'id': id },
+        data: { 'id': response },
         success: function (response) {
+          console.log(response)
             if(response.email == undefined){
                 alert("계정정보 로딩 실패 다시 로그인해주세요.")
                 document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                location.href = "/Login"
+                //location.href = "/Login"
             }else{
               document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-              document.cookie = "user_id = " + response
+              document.cookie = "user_id = " + response.id
               if (location.href.includes("?")) {
                 loc = location.href.split("?")[1].split("loc%20=%20")[1]
                 location.href = "/" + loc

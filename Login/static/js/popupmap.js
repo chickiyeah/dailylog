@@ -13,6 +13,31 @@ $(document).ready(function() {
         navigator.geolocation.getCurrentPosition (function(pos) {
             console.log(pos.coords.latitude);     // 위도
             console.log(pos.coords.longitude); // 경도
+            let curpos = new kakao.maps.LatLng(pos.coords.latitude,pos.coords.longitude)
+            map.panTo(curpos)
+
+            var marker = new kakao.maps.Marker({
+                position: curpos
+            })
+            
+            markers.push(marker)
+            hideMarkers()
+            hideOverlay()
+            marker.setMap(map)
+
+            let content = '<div class="bAddr">' +
+                '<span class="title">네트워크상 현재 주소</span>' +
+                '</div>';
+
+            var overlay = new kakao.maps.CustomOverlay({
+                content: content,
+                map: map,
+                position: marker.getPosition()
+            })
+
+            overlays.push(overlay)
+
+            
         },
         function(err){
             console.log(err)

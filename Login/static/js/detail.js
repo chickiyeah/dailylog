@@ -184,7 +184,8 @@ function addCard(element) {
 }
 
 function copyURL() {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(window.location.href+";post_author="+id);
+    alert("클립보드에 링크를 복사했습니다!")
 }
 
 Kakao.init('4c43d4733daa8022e6465b441f59f10c')
@@ -197,8 +198,8 @@ function kakaoTalkShare() {
             imageUrl:
                 'https://firebasestorage.googleapis.com/v0/b/chi-talk.appspot.com/o/daily-log%2Fstory_img1.png?alt=media&token=74437281-f431-4b02-9250-e8410eceffc2',
             link: {
-                mobileWebUrl: 'http://daily-log.kro.kr',
-                webUrl: 'http://daily-log.kro.kr',
+                mobileWebUrl: 'https://daily-log.co.kr',
+                webUrl: 'https://daily-log.co.kr',
             },
         },
         buttons: [
@@ -212,8 +213,8 @@ function kakaoTalkShare() {
             {
                 title: '나도 쓰러가기',
                 link: {
-                    mobileWebUrl: 'http://daily-log.kro.kr',
-                    webUrl: 'http://daily-log.kro.kr',
+                    mobileWebUrl: 'https://daily-log.co.kr',
+                    webUrl: 'https://daily-log.co.kr',
                 },
             }
         ],
@@ -289,6 +290,7 @@ function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
                                 <div class="detail_button">
+                                    <a href="javascript:copyURL()"><img src="../static/assets/share_icon/copy.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
@@ -364,6 +366,7 @@ function Card(name, adr, people_meet, date, feel, desc, Eat) {
                                     <a href="#" onclick="Delete()"><input type="reset" class="submit" value="삭제"></a>
                                 </div>
                                 <div class="detail_button">
+                                    <a href="javascript:copyURL()"><img src="../static/assets/share_icon/copy.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoTalkShare()"><img src="../static/assets/share_icon/kakao.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:kakaoStoryShare()"><img src="../static/assets/share_icon/kakaostory.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
                                     <a href="javascript:twiterShare()"><img src="../static/assets/share_icon/twiter.png" class="share_icon" alt="메뉴의 공유 아이콘"></a>
