@@ -37,25 +37,146 @@ function handleCredentialResponse(response) {
   // to decode the credential response.
   const responsePayload = parseJwt(response.credential);
 
-  console.log("ID: " + responsePayload.sub);
-  console.log('Full Name: ' + responsePayload.name);
-  console.log('Given Name: ' + responsePayload.given_name);
-  console.log('Family Name: ' + responsePayload.family_name);
-  console.log("Image URL: " + responsePayload.picture);
-  console.log("Email: " + responsePayload.email); 
-};
+  let goid = responsePayload.sub;
+  let goname = responsePayload.name;
 
-function googleauth(response) {
-  // decodeJwtResponse() is a custom function defined by you
-  // to decode the credential response.
-  const responsePayload = parseJwt(response.credential);
+  let email = responsePayload.email
+  let gpassword0 =  "!"+responsePayload.sub.substring(2,5)+"$"+responsePayload.sub.substring(10,13)+"@&dfhjsdalajsj%^%%$&243"+responsePayload.sub.substring(15,19)+"&$#&@!*332"+responsePayload.sub.substring(19)
+  
+  console.log(responsePayload)
+  $.ajax({
+    type: 'POST',
+    url: '/User/Login',
+    data: { email: email, password: gpassword0 },
+    success: function (response) {
+      if (response == "MISSING_EMAIL") {
+        alert("이메일 허가가 필요합니다.")
+        return
+      }
+      if (response == "INVALID_EMAIL") {
+        alert("이메일 허가가 필요합니다.")
+        return
+      }
 
-  console.log("ID: " + responsePayload.sub);
-  console.log('Full Name: ' + responsePayload.name);
-  console.log('Given Name: ' + responsePayload.given_name);
-  console.log('Family Name: ' + responsePayload.family_name);
-  console.log("Image URL: " + responsePayload.picture);
-  console.log("Email: " + responsePayload.email); 
+      if (response == "INVALID_PASSWORD") {
+        alert("SNS 커넥션중 계정 최초 접속날짜 오류가 발생했습니다.\n채널톡으로 문의해주세요.")
+        return
+      }
+
+      if (response == "MISSING_PASSWORD") {
+        alert("SNS 커넥션중 최초 접속날짜 찾을수 없음 오류가 발생했습니다.\n채널톡으로 문의해주세요.")
+        return
+      }
+
+      if (response == "EMAIL_NOT_FOUND") {
+        $.ajax({
+          type: 'POST',
+          url: '/User/Register',
+          data: { email: email, password: gpassword0, phone: 'google', name: goname, birthday: "2022-12-24", nickname: goname },
+          success: function (response) {
+            if (response == "MISSING_EMAIL") {
+              alert("이메일을 입력해주세요.")
+            }
+            if (response == "EMAIL_EXISTS") {
+              alert("이미 사용중인 이메일 입니다.")
+            }
+            if (response == "INVALID_EMAIL") {
+              alert("입력하신 이메일을 확인해주세요.")
+            }
+
+            if (response == "MISSING_PASSWORD") {
+              alert("사용할 비밀번호를 입력해주세요.")
+            }
+
+            if (response == "TOO_MANY_DUPICATE") {
+              alert('비밀번호는 3자 이상 같은 문자를 사용할 수 없습니다.')
+            }
+
+            if (response == "PASSWORD_TOO_SHORT") {
+              alert('비밀번호 최소 6자리 이상 입력해주세요.')
+            }
+
+            if (response == "MISSING_PHONE") {
+              alert('전화번호를 입력해주세요.')
+            }
+
+            if (response == "MISSING_NICKNAME") {
+              alert('닉네임을 입력해주세요.')
+            }
+
+            if (response == "MISSING_NAME") {
+              alert('실명을 입력해주세요.')
+            }
+
+            if (response == "OK") {
+              $.ajax({
+                type: 'POST',
+                url: '/User/Login',
+                data: { email: email, password: gpassword0 },
+                success: function (response) {
+                  if (response == "MISSING_EMAIL") {
+                    alert("이메일을 입력해주세요.")
+                    return
+                  }
+                  if (response == "INVALID_EMAIL") {
+                    alert("입력하신 이메일을 확인해주세요.")
+                    return
+                  }
+            
+                  if (response == "INVALID_PASSWORD") {
+                    alert("비밀번호가 일치하지 않습니다.")
+                    return
+                  }
+            
+                  if (response == "MISSING_PASSWORD") {
+                    alert("비밀번호를 입력해주세요.")
+                    return
+                  }
+            
+                  if (response == "EMAIL_NOT_FOUND") {
+                    alert("해당 아이디를 찾을수 없습니다.\n아이디를 확인하고 다시 시도해주세요.")
+                    return
+                  }
+
+                  $.ajax({
+                    type: "POST",
+                    url: "/User",
+                    data: { 'id': id },
+                    success: function (response) {
+                        if(response.email == undefined){
+                            alert("계정정보 로딩 실패 다시 로그인해주세요.")
+                            document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                            location.href = "/Login"
+                        }else{
+                          document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                          document.cookie = "user_id = " + response
+                          if (location.href.includes("?")) {
+                            loc = location.href.split("?")[1].split("loc%20=%20")[1]
+                            location.href = "/" + loc
+                          } else {
+                            location.href = `/`;
+                          }
+                        }
+                    }
+                })
+
+                }
+              })
+            }
+          }
+        });
+      }
+
+      document.cookie = "user_id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+      document.cookie = "user_id = " + response
+      if (location.href.includes("?")) {
+        loc = location.href.split("?")[1].split("loc%20=%20")[1]
+        location.href = "/" + loc
+      } else {
+        location.href = `/`;
+      }
+    }
+  })
 };
 
 function parseJwt (token) {
