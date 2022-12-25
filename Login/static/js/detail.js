@@ -6,12 +6,35 @@ $(document).ready(function () {
     if (location.href.includes("?")) {
         postid = location.href.split("?")[1].split("postid=")[1]
         if(postid.includes(";")) {
-            let postid1 = postid.split(";")[0].replace(" ","")
-            let secdata = postid.split(";")[1].replace(" ","")
-            console.log(secdata)
-            if(secdata.includes("post_author")) {
+            postid = postid.split(";")[0]
+            if(location.href.includes("post_author")) {
                 visitor = true
-                Author = secdata.split("post_author=")[1].replace(" ","")
+                Author = location.href.split("post_author=")[1].replace(" ","")
+                if(Author.includes(";")) {
+                    Author = Author.split(";")[0]
+                }
+                let page = ""
+                if (location.href.includes("?")) {
+                    let ihref = location.href.split("?")[1]
+                    if (ihref.includes("post_page")) {
+                        let plnk = ""
+                        if (ihref.includes(";")) {
+                            plnk = ihref.split("post_page=")[1].split(";")[0]
+                            if (plnk == "") {
+                                page = 0
+                            } else {
+                                page = plnk
+                            }
+                        } else {
+                            plnk = ihref.split("post_page=")[1]
+                            if (plnk == "") {
+                                page = 0
+                            } else {
+                                page = plnk
+                            }
+                        }
+                    }
+                }
 
                 let userinfo = ""
                 $.ajax({
@@ -26,7 +49,8 @@ $(document).ready(function () {
                             url: "/Write",
                             method: "POST",
                             data: {
-                                "Author": Author
+                                "Author": Author,
+                                "Page": page
                             },
                             success: function (response) {
                                 response.forEach(element => {
@@ -83,7 +107,29 @@ $(document).ready(function () {
         } else {
             id = document.cookie.split("user_id=")[1].replace(" ", "")
         }
-        let userinfo = ""
+        
+        let page = ""
+        if (location.href.includes("?")) {
+            let ihref = location.href.split("?")[1]
+            if (ihref.includes("post_page")) {
+                let plnk = ""
+                if (ihref.includes(";")) {
+                    plnk = ihref.split("post_page=")[1].split(";")[0]
+                    if (plnk == "") {
+                        page = 0
+                    } else {
+                        page = plnk
+                    }
+                } else {
+                    plnk = ihref.split("post_page=")[1]
+                    if (plnk == "") {
+                        page = 0
+                    } else {
+                        page = plnk
+                    }
+                }
+            }
+        }
         $.ajax({
             url: "/User",
             method: "POST",
@@ -97,9 +143,11 @@ $(document).ready(function () {
                     url: "/Write",
                     method: "POST",
                     data: {
-                        "Author": id
+                        "Author": id,
+                        "Page": page
                     },
                     success: function (response) {
+                        console.log(response)
                         response.forEach(element => {
                             let now = new Date()
 

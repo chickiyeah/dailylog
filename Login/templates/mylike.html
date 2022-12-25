@@ -75,7 +75,7 @@
                         console.log(inum)
                         if (!num.includes(num1)) {
 
-                            if (response[num1].AttachFiles != "null") {
+                            if (response[num1].AttachFiles != "null" && response[num1].AttachFiles != "") {
                                 inum = 0
                                 num.push(num1)
                             } else {
@@ -120,7 +120,7 @@
             <nav>
                 <ul>
                     <li><a href="/map">지도보기</a></li>
-                    <li><a href="/write/1">기록하기</a></li>
+                    <li><a href="/write/1?post_page=0">기록하기</a></li>
                     <li><a href="/rank">랭킹보기</a></li>
                     <li><a href="/Mypage">마이페이지</a></li>
                 </ul>
@@ -166,9 +166,9 @@
                 </div>
                 <div class="mylike_right">
                     <div class="mylike_card">
-                        <figure id="image">
-                            <div></div>
-                        </figure>
+                        <div id="image">
+
+                        </div>
                     </div>
                     <div>
                         <!-- 페이징처리 -->

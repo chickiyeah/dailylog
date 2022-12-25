@@ -519,10 +519,11 @@ async def get_mapdata():
 @app.route("/Write",methods=["POST"])
 async def example():
         Author = request.form['Author']
-
+        Page = request.form['Page']
         #변수 = {}
         json1 = { 
             'Author':Author,
+            'Page':Page
         }       
 
         try:
