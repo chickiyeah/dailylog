@@ -41,87 +41,91 @@
 <script>
 
     function remove() {
-        let id = document.getElementById("email").value
-        let password = document.getElementById("password").value
+        if (confirm("정말 탈퇴하시겠어요?\n이 작업은 취소할수 없습니다!") == true) {
+            let id = document.getElementById("email").value
+            let password = document.getElementById("password").value
 
-        $.ajax({
-            type: 'POST',
-            url: '/User/Login',
-            data: { email: id, password: password },
-            success: function (response) {
-                if (response == "MISSING_EMAIL") {
-                    alert("이메일을 입력해주세요.")
-                    return
-                }
-                if (response == "INVALID_EMAIL") {
-                    alert("입력하신 이메일을 확인해주세요.")
-                    return
-                }
-
-                if (response == "INVALID_PASSWORD") {
-                    alert("비밀번호가 일치하지 않습니다.")
-                    return
-                }
-
-                if (response == "MISSING_PASSWORD") {
-                    alert("비밀번호를 입력해주세요.")
-                    return
-                }
-
-                $.ajax({
-                    type: "POST",
-                    url: "/User",
-                    data: { 'id': response },
-                    success: function (response) {
-                        $.ajax({
-                            type: "DELETE",
-                            url: "/User",
-                            data: { 'id': response.id, 'email': response.email, 'phone': response.phone },
-                            success: function (response) {
-                                if (response == "OK") {
-                                    document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                                    alert("탈퇴가 완료되었습니다.\n감사합니다.")
-                                    location.href = "/?delete"
-                                }
-                            }
-                        })
+            $.ajax({
+                type: 'POST',
+                url: '/User/Login',
+                data: { email: id, password: password },
+                success: function (response) {
+                    if (response == "MISSING_EMAIL") {
+                        alert("이메일을 입력해주세요.")
+                        return
                     }
-                })
+                    if (response == "INVALID_EMAIL") {
+                        alert("입력하신 이메일을 확인해주세요.")
+                        return
+                    }
 
-            }
-        });
+                    if (response == "INVALID_PASSWORD") {
+                        alert("비밀번호가 일치하지 않습니다.")
+                        return
+                    }
+
+                    if (response == "MISSING_PASSWORD") {
+                        alert("비밀번호를 입력해주세요.")
+                        return
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/User",
+                        data: { 'id': response },
+                        success: function (response) {
+                            $.ajax({
+                                type: "DELETE",
+                                url: "/User",
+                                data: { 'id': response.id, 'email': response.email, 'phone': response.phone },
+                                success: function (response) {
+                                    if (response == "OK") {
+                                        document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                                        alert("탈퇴가 완료되었습니다.\n감사합니다.")
+                                        location.href = "/?delete"
+                                    }
+                                }
+                            })
+                        }
+                    })
+
+                }
+            });
+        }
     }
 
     function removesns() {
-        let userdata = null
+        if (confirm("정말 탈퇴하시겠어요?\n이 작업은 취소할수 없습니다!") == true) {
+            let userdata = null
 
-        let id = ""
+            let id = ""
 
-        if (document.cookie.split("user_id=")[1].includes(";")) {
-            id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
-        } else {
-            id = document.cookie.split("user_id=")[1].replace(" ", "")
-        }
-
-        $.ajax({
-            type: "POST",
-            url: "/User",
-            data: { 'id': id },
-            success: function (response) {
-                $.ajax({
-                    type: "DELETE",
-                    url: "/User",
-                    data: { 'id': response.id, 'email': response.email, 'phone': response.phone },
-                    success: function (response) {
-                        if (response == "OK") {
-                            document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                            alert("탈퇴가 완료되었습니다.\n감사합니다.")
-                            location.href = "/?delete"
-                        }
-                    }
-                })
+            if (document.cookie.split("user_id=")[1].includes(";")) {
+                id = document.cookie.split("user_id=")[1].split(";")[0].replace(" ", "")
+            } else {
+                id = document.cookie.split("user_id=")[1].replace(" ", "")
             }
-        })
+
+            $.ajax({
+                type: "POST",
+                url: "/User",
+                data: { 'id': id },
+                success: function (response) {
+                    $.ajax({
+                        type: "DELETE",
+                        url: "/User",
+                        data: { 'id': response.id, 'email': response.email, 'phone': response.phone },
+                        success: function (response) {
+                            if (response == "OK") {
+                                document.cookie = "id = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                                alert("탈퇴가 완료되었습니다.\n감사합니다.")
+                                location.href = "/?delete"
+                            }
+                        }
+                    })
+                }
+            })
+        }
     }
 
     function is_checked() {
