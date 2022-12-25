@@ -78,7 +78,61 @@
                 },
                 success: function (response) {
                     name = response.nickname
-                    //목록 가져오기
+
+                    $.ajax({
+                        url: "/WriteA",
+                        method: "POST",
+                        data: {
+                            "Author": id
+                        },
+                        success: function (response) {
+                            let maxtenpage = response.length / 10
+
+                            let maxpage = Math.ceil(maxtenpage)
+
+                            let tenxpage = (parseInt(page) + 1) * 10
+                            console.log(response.length)
+                            console.log(maxpage)
+                            console.log(tenxpage)
+
+                            if (maxpage >= tenxpage && ((maxpage - parseInt(page)) >= 0)) {
+                                // <<
+                                let befte = beften(parseInt(page))
+                                $('#PageNum').append(befte)
+                            }
+
+                            if (page > 0) {
+                                // <
+                                let bef = befone(parseInt(page))
+                                $('#PageNum').append(bef)
+                            }
+
+                            for (i = 1; i <= maxpage; i++) {
+                                if(i == parseInt(page)+1){
+                                    num = selpNum(i)
+                                    $('#PageNum').append(num)
+                                }else{
+                                    num = pNum(i)
+                                    $('#PageNum').append(num)
+                                }
+                            }
+
+                            if (page+1 <= maxpage) {
+                                // >
+                                let next = nextone(parseInt(page))
+                                $('#PageNum').append(next)
+                            }
+
+
+                            if ((maxpage - parseInt(page))>=10) {
+                                // >>
+                                let nexte = nextten(parseInt(page))
+                                $('#PageNum').append(nexte)
+                            }
+                        }
+                    })
+
+                    //페이징 가져오기
                     $.ajax({
                         url: "/Write",
                         method: "POST",
@@ -133,6 +187,32 @@
             alert("로그인이 필요합니다.")
         }
     })
+
+
+
+    function befone(num) {
+        return `<a href="/write/1?post_page=${num-1}"><div class="befone"><</div></a>`
+    }
+
+    function beften(num) {
+        return `<a href="/write/1?post_page=${num-10}"><div class="befone"><<</div></a>`
+    }    
+
+    function nextone(num) {
+        return `<a href="/write/1?post_page=${num+1}"><div class="nextone">></div></a>`
+    }
+
+    function nextten(num) {
+        return `<a href="/write/1?post_page=${num+10}"><div class="nextone">>></div></a>`
+    }    
+
+    function pNum(num) {
+        return(`<a href="/write/1?post_page=${num-1}"><div class="pnum">${num}</div></a>`)
+    }
+
+    function selpNum(num) {
+        return(`<a href="/write/1?post_page=${num-1}"><div class="selpnum">${num}</div></a>`)
+    }
 
     function addCard(Date, Name, UserName, Ex, id) {
         card = Card(Date, Name, UserName, Ex, id)
@@ -379,6 +459,7 @@
 
     <!-- 푸터 시작 -->
     <footer class="footer">
+        <div class="PageNum" id="PageNum"></div>
         <div class="bottom_wrap">
             <div class="bottom_simbol">
                 <i class="fa-solid fa-house-user"></i>

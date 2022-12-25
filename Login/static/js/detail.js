@@ -139,14 +139,12 @@ $(document).ready(function () {
                 name = response.nickname
                 //목록 가져오기
                 $.ajax({
-                    url: "/Write",
+                    url: "/WriteA",
                     method: "POST",
                     data: {
-                        "Author": id,
-                        "Page": page
+                        "Author": id
                     },
                     success: function (response) {
-                        console.log(response)
                         response.forEach(element => {
                             let now = new Date()
 
