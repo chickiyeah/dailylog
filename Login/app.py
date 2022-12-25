@@ -538,6 +538,26 @@ async def example():
 
         return json.loads(res._content)
 
+@app.route("/WriteA",methods=["POST"])
+async def showallwrite():
+        Author = request.form['Author']
+        #변수 = {}
+        json1 = { 
+            'Author':Author
+        }       
+
+        try:
+            res = requests.get(
+                url='https://2gseogdrb1.execute-api.ap-northeast-2.amazonaws.com/default2/write',
+                json=json1
+            )
+        except requests.exceptions.RequestException as error:
+            return error
+
+        res.encoding = "UTF-8"
+
+        return json.loads(res._content)
+
 
 ####여기부터
 @app.route("/ranking",methods=['POST'])

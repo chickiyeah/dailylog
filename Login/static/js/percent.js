@@ -17,7 +17,7 @@ $(document).ready(function () {
                 let name = response.nickname
                             //목록 가져오기
                 $.ajax({
-                    url:"/Write",
+                    url:"/WriteA",
                     method:"POST",
                     data:{
                         "Author":id
@@ -93,7 +93,7 @@ return `<div>
 
 function getFeelPercent(){
     $.ajax({
-        url:"/Write",
+        url:"/WriteA",
         method:"POST",
         data:{
             "Author":id
@@ -190,7 +190,7 @@ function getFeelPercent(){
 
 function getPlacePercent(){
     $.ajax({
-        url:"/Write",
+        url:"/WriteA",
         method:"POST",
         data:{
             "Author":id
@@ -235,7 +235,7 @@ function getPlacePercent(){
 
 function getPersonPercent() {
     $.ajax({
-        url:"/Write",
+        url:"/WriteA",
         method:"POST",
         data:{
             "Author":id
@@ -294,7 +294,7 @@ function getPersonPercent() {
 
 function getEatPercent(){
     $.ajax({
-        url:"/Write",
+        url:"/WriteA",
         method:"POST",
         data:{
             "Author":id

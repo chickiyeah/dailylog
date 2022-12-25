@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 function showall(filter) {
     $.ajax({
-        url: "/Write",
+        url: "/WriteA",
         method: "POST",
         data: {
             "Author": id

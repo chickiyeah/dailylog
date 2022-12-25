@@ -64,7 +64,7 @@ $(document).ready(function () {
 
 function getPlacePercent(id) {
     $.ajax({
-        url: "/Write",
+        url: "/WriteA",
         method: "POST",
         data: {
             "Author": id
@@ -105,7 +105,7 @@ function getPlacePercent(id) {
 
 function getEatPercent(id) {
     $.ajax({
-        url: "/Write",
+        url: "/WriteA",
         method: "POST",
         data: {
             "Author": id
@@ -192,12 +192,13 @@ function amesik() {
 
 function getPersonPercent(id) {
     $.ajax({
-        url: "/Write",
+        url: "/WriteA",
         method: "POST",
         data: {
             "Author": id
         },
         success: function (response) {
+            console.log(response)
             const result = {};
             response.forEach(element => {
                 peo = element.People_meet
@@ -247,12 +248,13 @@ function getPersonPercent(id) {
 
 function showall(filter) {
     $.ajax({
-        url: "/Write",
+        url: "/WriteA",
         method: "POST",
         data: {
             "Author": id
         },
         success: function (response) {
+            console.log(response)
             const result = {};
             let element = response[rand(0, response.length - 1)]
             console.log(element)
