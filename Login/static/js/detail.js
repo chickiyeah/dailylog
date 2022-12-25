@@ -85,7 +85,7 @@ $(document).ready(function () {
                                         a += Math.floor(chai / (1000 * 60 * 60 * 24 * 30 * 12)) + '년 전';
         
         
-                                    if (postid1 == element.Created_At) {
+                                    if (postid == element.Created_At) {
                                         addCard(element)
                                     }
                                 });
