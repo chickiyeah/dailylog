@@ -88,7 +88,7 @@
                         success: function (response) {
                             let maxtenpage = response.length / 10
 
-                            let maxpage = Math.ceil(maxtenpage)
+                            let maxpage = Math.floor(maxtenpage)
 
                             let tenxpage = (parseInt(page) + 1) * 10
                             console.log(response.length)
@@ -107,7 +107,7 @@
                                 $('#PageNum').append(bef)
                             }
 
-                            for (i = 1; i <= maxpage; i++) {
+                            for (i = 1; i <= maxpage+1; i++) {
                                 if(i == parseInt(page)+1){
                                     num = selpNum(i)
                                     $('#PageNum').append(num)
@@ -141,6 +141,7 @@
                             "Page": page
                         },
                         success: function (response) {
+                            console.log(response)
                             if (response.length == undefined) {
                                 alert("페이지에 표시할 내용이 없습니다!\n하나 작성해보는건 어떠신가요?")
                             } else {
