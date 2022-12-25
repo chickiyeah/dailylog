@@ -46,11 +46,10 @@ $(document).ready(function () {
                     success: function (response) {
                         //목록 가져오기
                         $.ajax({
-                            url: "/Write",
+                            url: "/WriteA",
                             method: "POST",
                             data: {
-                                "Author": Author,
-                                "Page": page
+                                "Author": Author
                             },
                             success: function (response) {
                                 response.forEach(element => {
