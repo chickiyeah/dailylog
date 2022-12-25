@@ -315,7 +315,7 @@ function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
                                 <h1>${name}</h1>
                             </div>
                             <div class="picture">
-                                <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                                <a href="${image}"><img src="${image}" alt="메뉴의 마이페이지 아이콘"></a>
                             </div>
                             <div class="detail_content">
                                 <div class="comment1">
@@ -356,7 +356,7 @@ function CardI(name, adr, people_meet, image, date, feel, desc, Eat) {
                                 <h1>${name}</h1>
                             </div>
                             <div class="picture">
-                                <img src="${image}" alt="메뉴의 마이페이지 아이콘">
+                                <a href="${image}"><img src="${image}" alt="메뉴의 마이페이지 아이콘"></a>
                             </div>
                             <div class="detail_content">
                                 <div class="comment1">
