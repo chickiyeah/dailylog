@@ -145,7 +145,7 @@ async def user_create():
             return "PASSWORD_TOO_SHORT"
         else:
             #비번에 4글자이상 중복되는 글자가 있으면
-            if(re.search('(([a-zA-Z0-9])\\2{3,})', password)):
+            if(re.search('(([a-zA-Z0-9])\\2{5,})', password)):
                 return "TOO_MANY_DUPICATE"
 
     #번호가 공란이면
