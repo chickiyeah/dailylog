@@ -174,7 +174,7 @@ function NaverLogin() {
   // Parameters to pass to OAuth 2.0 endpoint.
   var params = {
     'client_id': 'rmzcetOz2YMjocxnYhPh',
-    'redirect_uri': 'http://daily-log.co.kr/Login',
+    'redirect_uri': 'https://daily-log.co.kr/Login',
     'response_type': 'code',
     'state': 'Naver'
   };
