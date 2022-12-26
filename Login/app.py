@@ -1,6 +1,7 @@
 import cgi
 import html
-
+import flask_cors
+from flask_cors import CORS, cross_origin
 
 import django
 from django.utils.html import escape
@@ -13,6 +14,8 @@ import random
 import string
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
+CORS(app, resources={r'*': {'origins': '*'}})
+
 import firebase_admin
 from firebase_admin import auth
 from firebase_admin import credentials
@@ -61,7 +64,23 @@ def Register():
 
 @app.route("/Loginform")
 def loginpage():
+
+    #https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&client_id=rmzcetOz2YMjocxnYhPh&client_secret=yvMQuORapW&code
     return render_template('Login.html')
+
+@app.route("/Login/Navertoken", methods=["POST"])
+async def naver_token():
+    code = request.form['code']
+    response = requests.post(
+        url='https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&client_id=rmzcetOz2YMjocxnYhPh&client_secret=yvMQuORapW&code='+code
+    )
+    token = str(response._content).split("access_token\":\"")[1].split("\"")[0]
+    profile = requests.post(
+        url="https://openapi.naver.com/v1/nid/me",
+        headers={'Authorization':"Bearer "+token}
+    )
+    profile.encoding = "UTF-8"
+    return json.loads(str(profile.text))
 
 #유저 로그인 회원가입
 @app.route("/User/Login", methods=["POST"])
