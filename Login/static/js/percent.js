@@ -111,7 +111,7 @@ function getFeelPercent(){
                     great += 1
                 }
                 if(feel == "흐림"){
-                    medium += 1
+                    good += 1
                 }
                 if(feel == "비"){
                     medium += 1
