@@ -43,7 +43,7 @@ $(document).ready(function () {
                     $.ajax({
                       type: 'POST',
                       url: '/User/Register',
-                      data: { email: "naver_"+naverdata.email, password: naverdata.id, phone: naverdata.mobile, name: naverdata.name, birthday: naverdata.birthyear+"-"+naverdata.birthday, nickname: naverdata.nickname },
+                      data: { email: "naver_"+naverdata.email, password: naverdata.id, phone: "naver", name: naverdata.name, birthday: naverdata.birthyear+"-"+naverdata.birthday, nickname: naverdata.nickname },
                       success: function (response) {
                         if (response == "MISSING_EMAIL") {
                           alert("이메일을 입력해주세요.")
