@@ -100,6 +100,21 @@ label .chkBox {
 }
 
 @media(max-width:767px) and (min-width:320px) {
+
+    .write_box {
+        width: 90%;
+        margin: 0.55rem 0rem 0.55rem 0rem
+    }
+
+    .write_box h2 {
+        margin-left: -6rem;
+    }
+
+    .write_box h3 {
+        margin-left: -6rem;
+        font-size: 2px;
+    }
+
     .top_logo i {
         display: block;
         position: absolute;
