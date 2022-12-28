@@ -86,47 +86,56 @@
                             "Author": id
                         },
                         success: function (response) {
+                            page = parseInt(page)
                             let maxtenpage = response.length / 10
 
                             let maxpage = Math.floor(maxtenpage)
 
-                            let tenxpage = (parseInt(page) + 1) * 10
+                            let tenxpage = (page + 1) * 10
                             console.log(response.length)
                             console.log(maxpage)
                             console.log(tenxpage)
+                            
 
-                            if (maxpage >= tenxpage && ((maxpage - parseInt(page)) >= 0)) {
+                            if (maxpage >= tenxpage && ((maxpage - page) >= 0)) {
                                 // <<
-                                let befte = beften(parseInt(page))
+                                let befte = beften(page)
                                 $('#PageNum').append(befte)
                             }
 
-                            if (page > 0) {
+                            if (page > 0 && maxpage > page+1) {
                                 // <
-                                let bef = befone(parseInt(page))
+                                let bef = befone(page)
                                 $('#PageNum').append(bef)
                             }
-
-                            for (i = 1; i <= maxpage+1; i++) {
-                                if(i == parseInt(page)+1){
-                                    num = selpNum(i)
-                                    $('#PageNum').append(num)
-                                }else{
-                                    num = pNum(i)
-                                    $('#PageNum').append(num)
+                            let min = 0
+                            let max = 0
+                            if (page%10 == 0){
+                                min = page + 1
+                                max = page + 11
+                                if(max > maxpage){
+                                    max = maxpage +1
                                 }
                             }
-
+                                for (i = min; i <= max; i++) {
+                                    if(i == page+1){
+                                        num = selpNum(i)
+                                        $('#PageNum').append(num)
+                                    }else{
+                                        num = pNum(i)
+                                        $('#PageNum').append(num)
+                                    }
+                                }
                             if (page+1 <= maxpage) {
                                 // >
-                                let next = nextone(parseInt(page))
+                                let next = nextone(page)
                                 $('#PageNum').append(next)
                             }
 
 
-                            if ((maxpage - parseInt(page))>=10) {
+                            if ((maxpage - page)>=10) {
                                 // >>
-                                let nexte = nextten(parseInt(page))
+                                let nexte = nextten(page)
                                 $('#PageNum').append(nexte)
                             }
                         }
