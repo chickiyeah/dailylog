@@ -282,6 +282,26 @@ function displayMarker(place) {
             ${detailAddr}
         </span>`
                 )
+                hideOverlay()
+
+                document.cookie = "adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "road_adr = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LAT = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "LNG = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "name = ; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                document.cookie = "adr = "+result[0].address.address_name
+                !!result[0].road_address ? document.cookie = "road_adr = "+result[0].road_address.address_name : '';
+                document.cookie = "LAT = "+place.y
+                document.cookie = "LNG = "+place.x
+    
+                load = !!result[0].road_address ? result[0].road_address.address_name +" ("+place.place_name+")" : result[0].address.address_name +" ("+place.place_name+")"
+                
+                $("#selected").empty()
+                $("#selected").append(
+                    `<span>
+                        <span class="title">선택된 주소 : ${load}</span>
+                    </span>`
+                )
 
                 var overlay = new kakao.maps.CustomOverlay({
                     content: content,

@@ -1,0 +1,2 @@
+Login/venv/
+aws/node_modules/
