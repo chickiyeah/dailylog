@@ -34,5 +34,22 @@
 .mylike_right img {
     width: 25%;
     object-fit: cover;
-    margin: 3rem;
+    margin: 1rem;
+}
+
+/* 반응형 */
+@media(max-width:767px) and (min-width:320px) {
+
+        .top_logo i {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        top: 2rem;
+        right: 2rem;
+        color: #909090;
+    }
+
+    .mylike_card {
+    width: 100%;
+    }
 }

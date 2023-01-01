@@ -29,7 +29,7 @@
     align-items: flex-end;
     padding-bottom: 0.8rem;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .search_btn {
@@ -302,7 +302,7 @@ i:nth-child(3) {
     }
 
     .select_box {
-        margin-left: -37rem;
+        margin-left: -5rem;
     }
 
     .map_box {
@@ -375,9 +375,9 @@ i:nth-child(3) {
     }
 
     .feel-check {
-        width: 100%;
+        width: 80%;
         margin: auto;
-        margin-left: -1.5rem; 
+        margin-left: -0.7rem; 
     }
 
     .search_btn {

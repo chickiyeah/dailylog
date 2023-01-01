@@ -216,13 +216,14 @@
         <section class="mypage_wrap">
             <div class="mypage_section">
                 <div class="mypage_left">
-                    <ul>
-                        <li onclick="location.href='/Mypage'">내계정</li>
-                        <li onclick="location.href='/Mypage/Write'">내가 쓴 글</li>
-                        <li onclick="location.href='/Mypage/Like'">내 이미지</li>
-                        <li onclick="logout()">로그아웃</li>
-                        <li onclick="location.href='/Mypage/Delete'">탈퇴</li>
-                    </ul>
+                    <nav>
+                        <ul class="navbar_menu">
+                            <li><a href="/map">지도보기</a></li>
+                            <li><a href="/write/1?post_page=0">기록하기</a></li>
+                            <li><a href="/rank">랭킹보기</a></li>
+                            <li><a href="/Mypage">마이페이지</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="mywrite_right">
                     <label class="label">*작성 시간이 완전히 동일한 데이터가 있는경우 중복처리될수 있습니다.</label>
